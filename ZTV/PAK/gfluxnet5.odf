@@ -1,0 +1,52 @@
+[WeaponClass]
+classLabel = "arccannon"
+altName = "gfluxnet5"
+ordName = NULL
+wpnName = "Data Stream"
+fireSound = "igtow01.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 0 
+aiRange = 80 
+flashName = "gfluxnet5.render"
+
+[ArcCannonClass]
+
+startDist = 20.0
+finishDist = 60 
+
+travelVeloc = 25.0
+coneAngle = 0.5
+
+ammoCost = 1 // 3.0
+
+damageValue(N) = 50 // 20.0 
+damageValue(L) = 50 // 15.0 
+damageValue(H) = 20 // 10.0 
+
+damageValue(S) = 20.0 
+damageValue(D) = 20.0 
+damageValue(A) = 15.0 
+
+activeSound = "igtow01.wav"
+
+xplGround = NULL
+xplVehicle = "xplfluxnet5"
+xplBuilding = "xplfluxnet5"
+
+[Render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.3 
+emitDelayVar = 0.1
+emitVelocity = "0.0 0.1 0.0" 
+emitVariance = "3.0 3.0 3.0"
+emitInherit = "0.05 0.1 0.05"
+emitLife = 3.0 
+textureName = "bits-zeros.tga" 
+textureBlend = "one one modulate" 
+startColor = "60 150 60 70"
+finishColor = "20 150 20 5"
+startRadius = 4
+finishRadius = 4
+animateTime = 3.0
+rotationRate = 3.0

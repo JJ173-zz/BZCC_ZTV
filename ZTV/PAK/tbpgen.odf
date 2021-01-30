@@ -1,0 +1,36 @@
+[GameObjectClass]
+GeometryName = "tbreeder.xsi"
+geometryScale = 8.0
+classLabel = "powerplant"
+scrapCost = 30
+scrapValue = 10
+maxHealth = 4000
+maxAmmo = 0
+unitName = "Power Reactor"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+
+powerCost = -100
+
+canDetect = 1
+canInteract = 1
+ownsTerrain = 1
+canCollide = 1
+
+buildSupport = B
+buildRequire = F
+
+provideCount = 2
+provideName1 = "ibcbun"
+provideName2 = "ibpgen"
+
+lightHard2 = "hp_light_2"
+lightName2 = "omniblue"
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 100

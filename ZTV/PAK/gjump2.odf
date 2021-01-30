@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "jump2"
+wpnName = "Jumper"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 300 
+isAssault = 0
+
+[CannonClass]
+shotDelay = 1.5 
+salvoCount = 7 
+salvoDelay = 1.5 
+shotVariance = 2
+
+shotPitch = 1.58 // -1.58 = straight down

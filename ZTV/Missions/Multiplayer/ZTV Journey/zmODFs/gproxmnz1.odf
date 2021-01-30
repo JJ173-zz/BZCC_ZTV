@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+altname = "gproxmnz1"
+ordName = "proxkick"
+wpnName = "Prox Sequence"
+fireSound = "mmine01.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 300 
+isAssault = 0
+
+//localAmmo = 2400  // 12 @ 200 // local causes av if human uses in this case
+
+[CannonClass]
+shotDelay = 4.0 
+salvoCount = 10 
+salvoDelay = 4.0 
+shotVariance = 0.1
+shotPitch = -1.7 // -1.58 = straight down

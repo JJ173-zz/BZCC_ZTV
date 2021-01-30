@@ -1,0 +1,33 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = "rockjax.xsi"
+geometryScale = 0.25
+
+xplGround = "xplrock"
+xplVehicle = "xplrock"
+xplBuilding = "xplrock"
+xplExpire = "xplrock"
+
+renderName = NULL // "rockjax.render"
+
+ammoCost = 0.1
+lifeSpan = 25.0
+shotSpeed = 20.0
+
+// see xplrock for added damage
+
+damageValue(N) = 95
+damageValue(L) = 125
+damageValue(H) = 150
+damageValue(S) = 75
+damageValue(D) = 100
+damageValue(A) = 150
+
+kickRadius = 15.0
+kickOmega = -1.0
+kickVeloc = 7.5
+
+[BounceBombClass]
+bounceRatio = 0.920 // 0.925 // .93
+bounceSound = "xcollapse.wav"
+

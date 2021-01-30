@@ -1,0 +1,64 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = "rocksld2.xsi"
+//geometryScale = .25
+
+xplGround = "xplrsld"
+xplVehicle = "xplrsld"
+xplBuilding = "xplrsld"
+xplExpire = "xplrsld"
+
+renderName = "rocksld2.render"
+
+ammoCost = .1
+lifeSpan = 20.0
+shotSpeed = 27.0
+
+// see xplrsld for added damage
+
+damageValue(N) = 300
+damageValue(L) = 600
+damageValue(H) = 900
+damageValue(S) = 300
+damageValue(D) = 300
+damageValue(A) = 300
+
+kickRadius = 15.0
+kickOmega = -1.0
+kickVeloc = 7.5
+
+[BounceBombClass]
+bounceRatio = .73 // 0.920 // 0.925 // .93
+bounceSound = "xcollapse.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "rocksld2.sparks"
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "rocksld2.sparker"
+emitDelay = .1 // 0.05
+emitDelayVariance = .1 
+emitVelocity = "0.0 20.0 0.0"
+emitVariance = "10.0 10.0 10.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "rocksld2.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+lifeTime = 1.0
+textureName = "rockcnkz.tga" //"alphflk1.tga" 
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "80 60 10 155"
+finishColor = "80 50 10 0"
+startRadius = 4 //0.6
+finishRadius = 12 // 0.12
+animateTime = 1.0
+

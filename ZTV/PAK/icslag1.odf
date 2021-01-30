@@ -1,0 +1,21 @@
+[GameObjectClass]
+geometryName = "icslag1.xsi"
+geometryScale = 1
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "slag1"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+
+canDetect = 0
+canInteract = 0
+cancollide = 0
+ownsTerrain = 0
+
+

@@ -1,0 +1,70 @@
+[GameObjectClass]
+geometryName = "ibrtow00.xsi"
+classLabel = "turret"
+collisionRadius = 10.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+unitName = "Rocket Tower"
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+
+armorClass = H
+
+requireCount = 0
+
+buildSupport = "A"
+buildRequire = "F"
+
+weaponMask = 00111
+weaponHard1 = "HP_ROCKET_3"
+weaponName1 = "gfafmsl_a" //"gshadow_a"
+weaponAssault1 = 0
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gshadow_c"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gfafmsl_a" // "gshadow_a"
+weaponAssault3 = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 4
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "hp_light_1"
+turretName4 = "hp_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 300.0f
+periodScan = 4.0f
+velocJam = 0.0f
+weaponPitch = 2.5
+steerFactor = 0.5
+engageRange = 250
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+// include air units as attack targets
+// doesn't need to deploy to sub attack
+// doesn't move towards unit in sub attack
+
+[TurretCraftClass]
+omegaTurret = 1.0
+detectRange = 250
+
+[Lod1]
+geometryName = "ibgtowL1.xsi" ;geometry for lod1
+distance = 150                   ;bsphere under 200 pixel => switch to lod1
+dontShiftLOD = 1

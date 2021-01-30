@@ -1,0 +1,143 @@
+// insane version
+
+[GameObjectClass]
+geometryName = "tvdrop00.xsi"
+geometryScale = 0.60
+classLabel = "morphtank"
+collisionRadius = 1.0
+scrapValue = 15
+scrapCost = 10  //100
+customCost = 10  //100
+buildTime = 40 // 30.0
+customTime = 40.0
+maxHealth = 6000 // 13000
+addHealth = 10
+maxAmmo = 3000 // 15000 local ammo handles now 
+addAmmo = 5 //100  
+unitName = "Rig Drop c"
+//aiName = "TankFriend"
+//aiName2 = "TankEnemy"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 10.0
+imageSignature = 1.5
+radarSignature = 1.0
+isAssault = 1
+armorClass = H
+canSnipe = 1 // not with a regular rifle tho, need longer penetration bullet
+requireCount = 0
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+weaponMask = 01111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gdrill"  // uses local ammo , 1 only
+weaponAssault1 = 0
+
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gdfly" //"gbackup" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_rocket_1"
+weaponName3 = "gcrick1" 
+weaponAssault3 = 0
+
+////Rocket tank wont use this second rocket?
+////weaponHard4 = "HP_rocket_2" //"HP_cannon_1"
+////weaponName4 = "gtasker" // "g2dactyl" dactyl interferes w/ drill bits
+////weaponAssault4 = 0
+
+[CraftClass]
+//DoIdleDispatch = false 
+
+//OffensiveProcessIsDistractable = "false" 
+//OffensiveProcessIsDistractableAITeam = "false" 
+
+rangeScan = 450.0
+periodScan = 4.0
+velocJam = 0.0
+weaponPitch = 1.5
+engageRange = 200 // 70
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+[HoverCraftClass]
+setAltitude = 150 // 1.5
+accelDragStop = 8 // 4.0
+accelDragFull = 3 //1.0
+alphaTrack = 20 // 10.0
+alphaDamp = 9 // 3.0
+pitchPitch = 0.01 // 0.5
+pitchThrust = 0.001 // 0.1
+rollStrafe = 0.001 // 0.1
+rollSteer = 0.001 // 0.1
+
+velocForward = 35 // 15.0
+velocReverse = 20.0
+velocStrafe = 15.0
+accelThrust = 60.0
+accelBrake = 60.0
+omegaSpin = 1.0 // 2.0
+omegaTurn = 0.5 // 1.0
+alphaSteer = 2 // 5.0
+accelJump = 45 // 150.0
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+maxHealth = 4000 //7000
+addHealth = 10
+maxAmmo = 25000 // about 10 sentrys @ 2500 each
+addAmmo = 100  // 1 sentry per 25 secs after ammo runs out
+unitName = "Rig Drop a"
+isAssault = 0
+engageRange = 200
+rangeScan = 450.0
+periodScan = 0.0
+velocJam = 0.0
+
+setAltitude = 60 // 1.5
+accelDragStop = 8 //4.0
+accelDragFull = 3 // 1.0
+alphaTrack = 30 // 10.0
+alphaDamp = 9 // 3.0
+pitchPitch = 0.01 // 0.5
+pitchThrust = 0.001 // 0.1
+rollStrafe = 0.001 // 0.1
+rollSteer = 0.001 // 0.1
+
+velocForward = 20 // 15.0
+velocReverse = 25.0
+velocStrafe = 3.0
+accelThrust = 60.0
+accelBrake = 60.0
+omegaSpin = 1.0 // 2.0
+omegaTurn = 0.5 // 1.0
+alphaSteer = 3 // 5.0
+accelJump = 45 // 150.0
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[DeployableClass]
+soundDeploy="morph01.wav"
+soundUndeploy="morph01b.wav"
+deployTime = 1 // doesnt work
+undeployTime = 1 // 

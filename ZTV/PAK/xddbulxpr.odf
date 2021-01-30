@@ -1,0 +1,84 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "dvcarht.wav" // "gmagg04.wav"
+
+damageRadius = 12.0
+
+damageValue(N) = 100 // 20
+damageValue(L) = 80 // 20
+damageValue(H) = 50 // 20
+damageValue(S) = 80 // 10
+damageValue(D) = 80 // 10
+damageValue(A) = 80 // 10
+
+particleTypes = 4
+
+particleClass1 = "xddbulxpr.core"
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+particleCount1 = 1
+
+particleClass2 = "xddbulxpr.puff"
+particleVeloc2 = "0.0 0.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+particleCount2 = 1
+
+particleClass3 = "xddbulxpr.flare"
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+particleCount3 = 1
+
+particleClass4 = "xddbulxpr.smoke"
+particleVeloc4 = "0.0 0.0 0.0"
+particleBias4 = "0.0 0.0 0.0"
+particleCount4 = 5
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 1.2
+finishRadius = 6
+animateTime = 0.2
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 255"
+finishColor = "255 0 5 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 0.5
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 255"
+finishColor = "255 50 0 0"
+startRadius = 15
+finishRadius = 1
+animateTime = 0.3
+
+[Smoke]
+simulateBase = "sim_null"
+lifeTime = 1.5
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 70"
+finishColor = "50 50 50 0"
+startRadius = 2.0
+finishRadius = 10.0
+animateTime = 1.5
+

@@ -1,0 +1,109 @@
+//
+//   TV's Map info system
+//
+// =====================================================
+
+ConfigureInterface()
+{
+
+	DefineColorGroup("ICSILVER")
+	{
+		// unselected, unhighlit  
+		Foreground(0, 150, 150, 150, 190);
+		Background(0, 190, 190, 190, 200);
+		Gradient(0, 100, 100, 100, 200);
+
+		// selected, unhighlit
+		Foreground(1, 225, 0, 0, 255);
+		Background(1, 200, 200, 200, 255);
+		Gradient(1, 155, 155, 155, 255);
+
+		// unselected, highlit
+		Foreground(2, 255, 255, 255, 255);
+		Background(2, 255, 0, 0, 255);
+		Gradient(2, 127, 0, 0, 255);
+
+		// selected, highlit
+		Foreground(3, 255, 255, 255, 255);
+		Background(3, 255, 190, 40, 255);
+		Gradient(3, 150, 80, 0, 255);
+	}
+
+	DefineColorGroup("ICGREYLIST")
+	{
+		// unselected, unhighlit
+		Foreground(0, 190, 160, 0, 235);
+		Background(0, 90, 90, 90, 255);
+		Gradient(0, 50, 50, 50, 255);
+
+		// selected, unhighlit
+		Foreground(1, 255, 255, 255, 235);
+		Background(1, 255, 40, 20, 255);
+		Gradient(1, 155, 0, 0, 255);
+
+		// unselected, highlit
+		Foreground(2, 255, 255, 255, 235);
+		Background(2, 255, 0, 0, 255);
+		Gradient(2, 127, 0, 0, 255);
+
+		// selected, highlit
+		Foreground(3, 255, 255, 255, 235);
+		Background(3, 255, 110, 40, 255);
+		Gradient(3, 150, 60, 0, 255);
+	}
+
+	DefineColorGroup("ICBLACKBLUE")
+	{
+		// unselected, unhighlit
+		Foreground(0, 100, 100, 100, 205);
+		Background(0, 0, 0, 0, 255);
+		Gradient(0, 0, 0, 0, 255);
+
+		// selected, unhighlit
+		Foreground(1, 255, 255, 0, 255);
+		Background(1, 100, 40, 255, 255);
+		Gradient(1, 60, 20, 150, 255);
+
+		// unselected, highlit
+		Foreground(2, 120, 120, 120, 255);
+		Background(2, 63, 63, 90, 255);
+		Gradient(2, 63, 63, 90, 255);
+
+		// selected, highlit
+		Foreground(3, 255, 255, 255, 255);
+		Background(3, 80, 20, 255, 255);
+		Gradient(3, 40, 0, 155, 255);
+	}
+		
+	DefineColorGroup("ICKYGREY")
+	{
+		Foreground(0, 0, 0, 0, 255);
+		Background(0, 127, 127, 127, 255);
+		Gradient(0, 127, 127, 127, 255);
+		
+		Foreground(1, 255, 255, 255, 255);
+		Background(1, 255, 150, 0, 255);
+		Gradient(1, 255, 150, 0, 255);
+		
+		Foreground(2, 160, 160, 160, 255);
+		Background(2, 200, 200, 200, 255);
+		Gradient(2, 200, 200, 200, 255);
+		
+		Foreground(3, 220, 220, 220, 255);
+		Background(3, 255, 150, 0, 255);
+		Gradient(3, 255, 150, 0, 255);	
+	}			
+
+}
+
+//Cmd("iface.activate NoPausePanel");
+
+Cmd("mission.escape");
+
+Exec("icky_control.cfg");
+
+Exec("icky_read.cfg");
+
+Cmd("iface.fadein |IcMapInfoSys");
+
+

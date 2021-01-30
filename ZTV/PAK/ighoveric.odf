@@ -1,0 +1,75 @@
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = "ickywing3.xsi"
+geometryScale = 0.5
+ordName = NULL
+wpnName = "Wings" 
+wpnIcon = "wire_hover_ic1.tga"  
+fireSound = "wingflap1.wav" 
+
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+
+
+// cockpit geometry
+cockpitName = "cockpit_hgrip4.xsi"
+cockpitScale = 0.12
+animCountCockpit = 0
+
+
+//isAssault = 1 // tested, works to stop pickup
+
+[JetPackClass]
+ammoCost = 50 // 30
+burnTime = 11 // 7
+accelThrust = 14.75 // 15
+  
+activeSound = "wingflap2.wav" //"hover03i.wav"
+expireSound = "wingflap1.wav" //"hover04i.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ighoveric.sphere"
+
+//renderName1 = "ighoveric.flare"
+//renderName2 = "ighoveric.contrail"
+
+
+[Sphere]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "50 150 255 80" 
+finishColor = "50 150 255 5" 
+startRadius = 3.5
+finishRadius = 3.3
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 24
+
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "60 110 180 255"
+finishColor = "60 110 200 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "40 100 200 90"
+finishColor = "40 100 200 0"
+startRadius = 0.4
+finishRadius = 0.8 
+segmentTime = 3.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

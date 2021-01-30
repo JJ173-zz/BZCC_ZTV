@@ -1,0 +1,75 @@
+[GameObjectClass]
+geometryName = "tbturr00.xsi"
+geometryScale = 1.0
+
+classLabel = "turret"
+scrapCost = 50
+customCost = 60
+scrapValue = 20
+maxHealth = 4000
+maxAmmo = 10000
+addAmmo = 20
+aiAddAmmo = 100
+addHealth = 0.1
+unitName = "Warden"
+//aiName = "GunTowerFriend" // need this for using panel
+//aiName2 = "GunTowerEnemy"
+aiName = "SupportProcess" // this may use weapons better but no panel access
+aiName2 = "SupportProcess"
+heatSignature = 0.5
+imageSignature = 0.3
+radarSignature = 0.3
+isAssault = 1
+armorClass = H
+requireCount = 0
+//ownsTerrain = 1 causes slight pool lifting
+powerCost = 0
+needPilot = 0
+
+weaponMask = 00001
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "igwthrow" // "glasrkt"
+weaponAssault1 = 1
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "igwthrow" // "glasrkt2" //"grpsmak"
+weaponAssault2 = 1
+
+//////////////////////////////////
+
+turretCount = 4
+turretName1 = "turret_y_1"
+turretName2 = "rarm"
+turretName3 = "larm"
+turretName4 = "HP_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 300
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+weaponPitch = 1.2
+rangeScan = 200.0
+periodScan = 0.0
+velocJam = 0.0
+steerFactor = 0.5
+engageRange = 150
+
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+
+IgnoreDestroyedTargets = true
+ClosestEnemyGoodEyes = true
+
+[TurretCraftClass]
+omegaTurret = 2.5 // 2.0
+alphaTurret = 2.0
+detectRange = 300
+
+

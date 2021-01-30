@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "nullshot"
+wpnName = "Null"
+fireSound = "null.wav"
+wpnReticle = "gseek"
+wpnCategory = "SPEC"
+aiRange = 250 
+isAssault = 0
+
+[CannonClass]
+shotDelay = 1E3 
+salvoCount = 0 
+salvoDelay = 0.0 
+shotVariance = 0.0
+
+
+

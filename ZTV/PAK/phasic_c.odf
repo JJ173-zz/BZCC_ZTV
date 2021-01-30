@@ -1,0 +1,70 @@
+[OrdnanceClass]
+//classLabel = "bullet"
+classLabel = "thermalmissile"
+shotRadius = 1
+shotGeometry = NULL
+shotSound = "phasic1.wav" 
+renderName = "phasic_c.render"
+
+xplGround = "xphicgnd_c"
+xplVehicle = "xphiccar_c"
+xplBuilding = "xphicbld_c"
+xplExpire = "xphicxpr"
+
+ammoCost = 0.50 
+lifeSpan = 0.7 
+shotSpeed = 250 
+
+kickRadius = 0.8
+kickOmega = 1.0 
+kickVeloc = -1.0
+
+damageValue(N) = 4
+damageValue(L) = 3 
+damageValue(H) = 2 
+
+damageValue(S) = 5 
+damageValue(D) = 5  
+damageValue(A) = 5 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.15
+
+[ThermalMissileClass]
+coneAngle = 0.07
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "phasic_c.flare"
+renderName2 = "phasic_c.halo"
+renderName3 = "phasic_c.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 60 0 120"
+finishColor = "255 30 0 120"
+startRadius = 1.4
+finishRadius = 1.4
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "255 130 0 127"
+finishColor = "255 30 0 127"
+startRadius = 0.2
+finishRadius = 0.2
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 90"
+finishColor = "255 0 0 0"
+startRadius = 0.55
+finishRadius = 0.1
+segmentTime = 0.06 //0.3

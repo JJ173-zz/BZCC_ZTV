@@ -1,0 +1,131 @@
+[GameObjectClass]
+geometryName = "scavfact3.xsi"
+
+cockpitName = "ivscav_cockpit.xsi"
+classLabel = "scavenger"
+geometryScale = 0.5 // 0.75
+scrapValue = 0
+scrapCost = 20
+buildTime = 5.0 
+maxHealth = 20000
+addHealth = 5
+maxAmmo = 0
+explosionName = "xiccbxpl"
+weightInTons = 1E6
+
+addAmmo = 0.5  // this controls scrap production rate
+
+unitName = "_Scrap Breeder"
+
+//aiName = "ScavProcess"
+//aiName2 = "ScavProcess"
+
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 1.0
+isAssault = 0
+
+armorClass = H
+
+requireCount = 0
+boxCollide = 1
+
+cansnipe = 1
+needPilot = 1
+
+//weaponHard1 = "HP_SPECIAL_1"
+//VisualHard1 = "HP_SPECIAL_1"
+//weaponName1 = "gdataclue" 
+//weaponAssault1 = 1
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "ivscavfac.redflasher"
+
+effectHard2 = "hp_eyepoint"
+effectName2 = "ivscavfac.redflasher"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 1.0
+velocJam = 0.0
+
+braccelFactor = 0.09
+velFactor =	0.3
+steerFactor = 1.5
+omegaFactor = 0.1
+
+[TrackedVehicleClass]
+velocForward = 0.0001 
+velocReverse = 0.0001
+accelThrust = 0.0001 
+omegaSpin = 0.0001
+
+engineSound = "scavfac.wav" //"baice1b.wav" //"benv03.wav"//
+treadSound = "scavfac.wav" // "accelhum.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold =  30 // 0 will stop production, 30 is nice capture bonus
+deployClass = ""  //"ibscav"
+
+[RedFlasher]
+renderBase = "draw_emit"
+emitName = "ivscavfac.rflash1"
+emitDelay = 1.0 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[RFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivscavfac.redlight"
+renderName2 = "ivscavfac.redflare"
+renderName3 = "ivscavfac.redshock"
+
+[RedLight]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_light"
+startColor = "255 0 0 1555"
+finishColor = "255 0 0 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[RedFlare]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 80 80 255"
+finishColor = "255 80 80 255"
+startRadius = 24.0 
+finishRadius = 1
+
+[RedShock]
+simulateBase = "sim_null"
+lifeTime = 0.25
+renderBase = "draw_sphere"
+textureName = NULL //"smoke2.tga" 
+textureBlend = "one one modulate"
+startColor = "255 60 50 70"
+finishColor = "255 60 50 5" 
+startRadius = 10.0
+finishRadius = 1.0 
+animateTime = 0.25 
+latitudeBands = 12
+longitudeSegments = 24
+
+

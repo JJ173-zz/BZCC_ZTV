@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "phasic_c"
+wpnName = "Phaser"
+fireSound = "phasic3.wav" 
+wpnReticle = "gshotgun" 
+wpnCategory = "GUN"
+isAssault = 0
+isFlying = 0
+altName = "gphasic_a"
+flashname ="gphasic_c.flash"
+
+[CannonClass]
+shotDelay = 0.5
+salvoCount = 15 // 30
+salvoDelay = 0.02 // 0.03
+shotVariance = 0.001 // 0.01
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

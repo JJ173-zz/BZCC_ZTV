@@ -1,0 +1,140 @@
+[GameObjectClass]
+baseName = "fvtank"
+glowTexture = "fvtanka0.pic"
+geometryName = "fvtank_skel.xsi"
+cockpitName = "fvtank_cockpit.xsi"
+classLabel = "wingman"
+animCount = 7
+animName1 = "forward"
+animFile1 = "fvtank_ASF.xsi"
+animName2 = "neutral"
+animFile2 = "fvtank_ASN.xsi"
+animName3 = "reverse"
+animFile3 = "fvtank_ASR.xsi"
+animName4 = "deploy"
+animFile4 = "fvtank_MORPH.xsi"
+animName5 = "forward2"
+animFile5 = "fvtank_MSF.xsi"
+animName6 = "neutral2"
+animFile6 = "fvtank_MSN.xsi"
+animName7 = "reverse2"
+animFile7 = "fvtank_MSR.xsi"
+scrapValue = 15
+scrapCost = 25 // 55
+customCost = 25 // 65
+buildTime = 7 // 10.0
+customTime = 7 // 15.0
+maxHealth = 3500
+maxAmmo = 3000
+addAmmo = 6.0
+addhealth = 1.0
+
+unitName = "Warrior"
+//aiName = "RocketTankFriend"
+//aiName2 = "RocketTankEnemy"
+aiName = "SentryProcess"
+aiName2 = "SentryProcess"
+
+canSnipe = 0
+
+heatSignature = 2.0
+imageSignature = 2.5
+radarSignature = 0.5
+
+isAssault = 0
+
+armorClass = N
+
+requireCount = 1
+requireName1 = "fbkiln"
+requireText1 = "Kiln"
+
+/////// weapons ///////////////////
+weaponMask = 01111
+weaponHard1 = "HP_CANNON_3"
+weaponName1 = "gsarczm1"
+weaponAssault1 = 1
+
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "ggauss_c"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_GUN_2"
+weaponName3 = "ggauss_c"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "gblinkzm2"
+weaponAssault4 = 0
+
+weaponHard5 = "HP_SHIELD"
+weaponName5 = "gdeflect"
+weaponAssault5 = 0
+
+//////////////////////////////////
+
+[CraftClass]
+rangeScan = 300.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 220 // 120
+
+weaponPitch = 1.1 // plenty for bomber aiming
+
+avoidSpeed = 40;
+topSpeed = 40;
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+selectWaitMsg = "fvtank04.wav"
+selectAttackMsg = "fvtank01.wav"
+selectFollowMsg = "fvtank03.wav"
+selectGoMsg = "fvtank02.wav"
+selectOtherMsg = "fvtank04.wav"
+holdMsg = "fvtank12.wav"
+goMsg = "fvtank05.wav"
+attackMsg = "fvtank06.wav"
+followMeMsg = "fvtank08.wav"
+followMsg = "fvtank03.wav"
+repairMsg = "fvtank09.wav"
+reloadMsg = "fvtank09.wav"
+rescueMsg = "fvtank10.wav"
+recycleMsg = "fvtank11.wav"
+otherMsg = "fvtank05.wav" 
+
+user1Msg = ""  
+killedMsg = "fvtank07.wav"
+diedMsg = ""
+
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+velocForward = 37.0 // [30]
+velocReverse = 23.0 // [20]
+velocStrafe = 24.0 // [20]
+accelThrust = 40.0 //acceleration [25]
+accelBrake = 75.0 //braking []
+accelDragStop = 5.8 //how fast it stops once hands are off controls [18]
+accelJump = 40.0
+
+setAltitude = 1.0 // how high off the ground
+
+alphaTrack = 22.0 //springs speed it rights itself [21.]
+alphaDamp = 8.0 //shocks [8.]
+
+pitchPitch = .3 // 0.19 //nose up [.25]
+pitchThrust = 0.09 //nose down [.09]
+
+rollStrafe = 0.01 //rolls while strafing [.01]
+omegaSpin = 6.0 //spinning in place speed [1.5]
+omegaTurn = 4.0 //turning while moving speed [2.0]
+alphaSteer = 4.5 //how fast it responds to steering [3.1]
+rollSteer = 0.1 //rolls while steering [.09]
+
+soundThrust = "ssent01j.wav"
+
+
+// ASSAULT MODE /////////////////////

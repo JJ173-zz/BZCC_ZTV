@@ -1,0 +1,55 @@
+[GameObjectClass]
+mrmFactor = 0
+geometryName = "scraprec.xsi" // "fvrecy_deploy.xsi"
+animCount = 0
+collisionRadius = 10.0
+classLabel = "recycler"
+powerCost=0
+scrapCost=0
+scrapValue = 5
+scrapCost = 0
+maxHealth = 0
+addHealth = 0.5
+maxAmmo = 0
+unitName = "Recycler"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+
+canDetect = 0
+canInteract =0
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 1
+
+armorClass = H
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+buildItem1 = "ivscav"
+buildItem2 = "ivscout"
+buildItem3 = "ivturr"
+buildItem4 = "ivtug"
+buildItem5 = "ivcons"
+buildItem6 = "ivserv"
+buildItem7 = "apserv"
+buildItem8 = "ivscout_m"
+buildEmptyItem = 8
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+deployedMsg = "fvrecy10.wav"
+packedMsg = ""
+diedMsg = ""
+
+[RecyclerClass]
+scrapHold = 40
+recycleX = 3
+recycleZ = 2
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 100

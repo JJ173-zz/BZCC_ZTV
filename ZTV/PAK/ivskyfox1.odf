@@ -1,0 +1,125 @@
+[GameObjectClass]
+//baseName = "Sky Fox"
+geometryName = "skyfox1.xsi"
+geometryScale = 1.25 // 0.82
+cockpitName = "ivstas_cockpit.xsi"
+classLabel = "aircraft"
+scrapCost = 20
+customCost = 50
+scrapValue = 0
+buildTime = 3.0 // 
+customTime = 15
+unitName = "_Sky Fox"
+
+heatSignature = 0.5 
+imageSignature = 2.0 
+radarSignature = 0.1
+ 
+maxHealth = 1200 // 1800
+maxAmmo = 1000 //  1000 
+isAssault = 0
+armorClass = L
+
+canDetect = 1 
+canInteract = 1 
+canSnipe = 1
+//needPilot = 1
+collisionRadius = 0.7
+addAmmo = 0.5
+
+ejectRatio = 0
+boxCollide = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivskyfox1.tail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivskyfox1.tail"
+
+weaponMask = 01111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gairchn2" // "gmmg"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gairchn2" //"gmmg"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_ROCKET_1"
+visualHard3 = "HP_ROCKET_1"
+weaponName3 = "" // "gsquid" //"girairlk"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_SPECIAL_1"
+visualHard4 = "HP_SPECIAL_1"
+weaponName4 = "gflaxz"
+weaponAssault4 = 1 // 0 prevent upgrades
+
+//weaponHard5 = "HP_CANNON_1"
+//visualHard5 = "HP_CANNON_1"
+//weaponName5 = ""
+//weaponAssault5 = 0
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "spotblue"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotblue"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 3.0f
+velocJam = 5.0f
+engageRange = 225
+weaponPitch = 0.3
+
+[AirCraftClass]
+velocSet(L) = 20.0 // minimum velocity
+velocSet(M) = 35.0 // cruising velocity
+velocSet(H) = 49.0 // maximum velocity
+accelThrust = 6.8  // thrust acceleration
+accelBrake = 8 // 10.0 // brake acceleration
+accelDrag = 50 // 60.0 // drag acceleration -- affects sliding sideways
+// mouse as rudder
+omegaSteer(L) = 0.2  // 0.3 // steer turn rate at minimum
+omegaSteer(M) = 0.8  // 0.9 // steer turn rate at cruising
+omegaSteer(H) = 1.0 // 1.2 // steer turn rate at maximum
+// strafe affecting rudder
+omegaStrafe(L) = 0.15 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.4 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.5 // 0.9 // airbrake turn rate at maximum
+
+//this affects steering but not sliding
+alphaSteer = 1 // .8 // steering angular acceleration
+alphaStrafe = 0.1 // 0.01 // airbrake angular acceleration
+minAltitude = 5.0 // no effect? affects takeoff jump
+maxAltitude = 100.0 // maximum altitude no effect?
+alphaLevel = 7.5 // 10.0 // how fast you can change pitch/ overall manuver
+
+// this affects sliding sideways, 20 makes it jitter some tho 
+alphaDamp =  15 // 12 // damping angular acceleration
+//a low values under 5 get insanely tippy
+
+pitchPitch = 1.5 // 0.4 // maximum pitch angle
+rollSteer = 0.8 // 0.7 // maximum roll angle from steering
+rollStrafe = 1.6 // 1.5 //0.5 // maximum roll angle from airbraking
+// has imlications in deploy off map avs
+
+timeDeploy = 1.0 // 2.0 // time to deploy
+timeUndeploy = 2.0 // 2.0 // time to undeploy
+
+soundThrust = "ienge.wav"
+soundDeploy = "avapce2.wav"
+soundUndeploy = "avapce0.wav" 
+soundBrake = "iengf.wav"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "20 50 90 150"
+finishColor = "30 60 80 0"
+startRadius = 0.7
+finishRadius = 0.2 
+segmentTime = 0.6 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

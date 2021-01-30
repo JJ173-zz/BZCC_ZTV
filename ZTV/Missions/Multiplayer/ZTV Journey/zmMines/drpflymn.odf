@@ -1,0 +1,31 @@
+[GameObjectClass]
+geometryName = "ivdrop00_shake.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1
+unitName = "Drop Ship"
+addAmmo = 1
+addHealth = .5
+explosionName = "drpflxpl"
+xplExpire = "drpflxpl"
+
+fireSound = "dropdoor.wav"
+
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 0
+canCollide = 0
+armorClass = L 
+
+[MineClass]
+lifeSpan = 13.11 
+
+[FlareMineClass]
+payloadName = "dropfly1"
+triggerDelay = 13.1
+shotDelay = 13
+shotVariance = 0.00

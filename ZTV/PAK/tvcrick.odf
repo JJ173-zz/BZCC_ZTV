@@ -1,0 +1,121 @@
+[GameObjectClass]
+geometryName = "tvcrick1.xsi" //"ivcricket00.xsi"
+geometryScale = 1.2
+classLabel = "wingman"
+scrapCost = 35
+scrapValue = 5
+maxHealth = 650
+maxAmmo = 100
+unitName = "Cricket"
+//aiName = "SentryProcess"
+//aiName2 = "SentryProcess"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+heatSignature = 0.1
+imageSignature = 0.15
+radarSignature = 0.01
+isAssault = 0
+armorClass = L
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+canSnipe = 1
+needPilot = 1
+collisionRadius = 0.7
+addAmmo = 5
+addHealth = 1.8
+ejectRatio = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "tvcrick1.render"
+
+weaponMask = 00011
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 =  "igathrow" // "igpdust_c"
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_1"
+weaponName2 = "igneurnet" //"igemgun" 
+weaponAssault2 = 0
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = "iggspormine"
+weaponAssault2 = 1
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "tvcrick1.tail"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "50 50 90 150"
+finishColor = "50 50 80 0"
+startRadius = 0.6
+finishRadius = 0.2 
+segmentTime = 0.9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 2.5f
+velocJam = 0.0f
+engageRange = 600
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+selectWaitMsg = "fvartl04.wav"
+selectAttackMsg = "fvartl01.wav"
+selectFollowMsg = "fvartl03.wav"
+selectGoMsg = "fvartl02.wav"
+selectOtherMsg = "fvartl04.wav"
+holdMsg = "fvartl12.wav"
+goMsg = "fvartl05.wav"
+attackMsg = "fvartl06.wav"
+followMeMsg = "fvartl08.wav"
+followMsg = "fvartl03.wav"
+repairMsg = "fvartl09.wav"
+reloadMsg = "fvartl09.wav"
+rescueMsg = "fvartl10.wav"
+recycleMsg = "fvartl11.wav"
+otherMsg = "fvartl05.wav" 
+
+user1Msg = ""  
+killedMsg = "fvartl07.wav"
+diedMsg = ""
+
+avoidSpeed = 30;
+topSpeed = 35;
+
+[HoverCraftClass]
+setAltitude = 15 // 25.0      //Height from the ground
+accelDragStop = 8.0    //Time of hands-off stop (more stops faster)
+accelDragFull = 60.0   // 1.0 //Can't see any difference
+accelThrust = 15 // 15.0 //Acceleration/deceleration (more = quicker!)
+accelBrake = 10 //10.0 //braking effect, more is more
+aiAccelDrag = 10 //10
+
+alphaTrack = 10.0 // 14.0 //15.0 //Speed at which the ship rights itself, terrain following
+alphaDamp = 8.0 // 6.0    // 10.0 // Shock absorbers - steadiness of ship, gyros in effect
+pitchPitch = 0.3 // 0.05  Nose movement up (less is less)
+pitchThrust = 0.3 //0.05 Nose movement down (less is..urr less)
+rollStrafe = 0.3 // 0.2 Amount of Roll while strafing (bigger is more)
+rollSteer = 0.3 // 0.2 Amount of Roll while steering (bigger is more)
+
+velocForward = 45 // 35  // 22.0
+velocReverse = 15  // 8.0
+velocStrafe = 15  // 6.0
+
+omegaSpin = 7.0	//Speed of spinning while motionless (more is quicker)
+omegaTurn = 7.0 		//Speed of spinning while in motion (more is quicker)
+alphaSteer = 5.0	//Sensitivity to steer (mouse) - more is more sensitive
+accelJump = 35.0  // 20.0//Jump limiter
+
+soundThrust = "crickeng.wav"// 
+soundTurbo = "armor_up.wav"//"baruin1b.wav"// "bacrys2b.wav" 

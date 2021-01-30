@@ -1,0 +1,23 @@
+[GameObjectClass]
+geometryName = "exclaim.xsi"
+geometryScale = 0.20
+classLabel = "camerapod"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+addHealth = 1
+maxAmmo = 0
+unitName = "Important!"
+canCollide = 1
+collisionRadius = 0.1
+armorClass = L
+
+aiName = "PowerUpProcess"
+canDetect = 0
+canInteract = 1
+
+[CameraPodClass]
+omegaSpin = 9.0
+rangeScan = 0.0
+periodScan = 0.0
+

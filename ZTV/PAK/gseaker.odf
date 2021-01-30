@@ -1,0 +1,17 @@
+// water version of seekers
+
+[WeaponClass]
+classLabel = "dispenser"
+altName = "gmlock_c"
+ordName = NULL		// <-- this is important!
+wpnName = "Seaker"
+fireSound = "gsand00.wav"
+wpnReticle = "gmlock_a"
+wpnCategory = "CANN"
+aiRange = 300
+isAssault = 1
+//flashName = "fball2b.render"
+
+[DispenserClass]
+shotDelay = 2.0
+objectClass = "seaker"

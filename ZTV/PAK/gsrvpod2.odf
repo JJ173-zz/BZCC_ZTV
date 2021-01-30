@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "cyanball.xsi" 
+wpnName = "Service Pod"
+ordName = NULL
+
+fireSound =  "iarm01.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 20
+objectClass = "apserv"
+

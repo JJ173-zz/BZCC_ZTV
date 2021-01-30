@@ -1,0 +1,12 @@
+[LightClass]
+classLabel = "spotlight"
+lightColor.r = 0.5
+lightColor.g = 0.0
+lightColor.b = 0.0
+lightRange = 30.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+coneFalloff = 0.0
+coneAngInner = 0.04 // 0.03
+coneAngOuter = 2.5 // 0.03

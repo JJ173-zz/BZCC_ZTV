@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Install Mod 3"
+fireSound = "itug03.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "gun"
+aiRange = 0
+isAssault = 0
+
+//localAmmo = 10000 
+
+
+[DispenserClass]
+shotDelay = 10
+objectClass = "aphlase" 
+

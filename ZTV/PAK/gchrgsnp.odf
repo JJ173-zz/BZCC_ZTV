@@ -1,0 +1,48 @@
+[WeaponClass]
+classLabel = "chargegun"
+altName = "gpblink"
+ordName = NULL
+wpnName = "Rail Sniper"
+fireSound = "iserv03.wav"
+wpnReticle = "grifle"
+wpnCategory = "HAND"
+isAssault = 1
+
+//isFlying = 1
+//wpnPriority = 3
+
+aiRange = 200
+
+[ChargeGunClass]
+startRate = 5000 
+deltaRate = 4000
+startVolume = 40  
+deltaVolume = 20  
+
+ordnanceCount = 3
+
+shotDelay1 = 1.0
+salvoCount1 = 1
+salvoDelay1 = 0.01
+shotVariance1 = 0.01 
+fireSound = "snip01.wav"
+ordName1 = "snipxtr3"
+wpnReticle1 = "gshotgun" 
+
+shotDelay2 = 2.0
+salvoCount2 = 1
+salvoDelay2 = 0.01
+shotVariance2 = 0.0001
+fireSound = "snip01.wav" 
+ordName2 = "snipxtr1"
+wpnReticle2 = "grifle"  
+
+shotDelay3 = 6.0
+salvoCount3 = 1
+salvoDelay3 = 0.01
+shotVariance3 = 0.0
+fireSound = "snip01.wav" 
+ordName3 = "snipxtr2"
+wpnReticle3 = "grifle_s"
+
+holdRate = 4.5 // 15

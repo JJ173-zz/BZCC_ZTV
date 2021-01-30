@@ -1,0 +1,66 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = NULL 
+
+shotGeometry = NULL
+shotRadius = 0.1
+xplGround = NULL 
+xplVehicle = "xmrtpxpr" 
+xplBuilding = NULL 
+
+xplExpire = "xmrtpxpr" 
+
+renderName = "mrtrap.render"
+
+ammoCost = 0.1
+lifeSpan = 1.0 
+shotSpeed = 0.01
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 70 // 80 // 50.0 
+objPushCenter = -30.0
+objPushEdge = -10.0
+objDrag = 2.0  // 4.0
+ordPushCenter = -100.0
+ordPushEdge = 0.0
+ordDrag = 1.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "mrtrap.flash"
+renderName2 = "mrtrap.sphere"
+
+[Flash]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" 
+textureBlend = "one one modulate"
+startColor = "50 0 80 90" 
+finishColor = "0 0 155 0" 
+startRadius = 70.0
+finishRadius = 10.0
+animateTime = 1.0
+
+[Sphere]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" 
+textureBlend = "one one modulate"
+startColor = "40 0 70 20" 
+finishColor = "0 0 80 20" 
+startRadius = 70.0
+finishRadius = 70.0
+animateTime = 1.0
+latitudeBands = 24
+longitudeSegments = 32
+

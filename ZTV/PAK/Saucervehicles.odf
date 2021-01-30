@@ -1,0 +1,16 @@
+[MPVehicles]
+xsi1 = "ivscout00.xsi"
+cfg1 = "ivscout"
+Description1 = "Scout"
+
+// xsi2 = "saucer-m1.xsi"
+// cfg2 = "saucer-m1"
+// Description2 = "Read Me 1"
+
+// xsi3 = "saucer-m2.xsi"
+// cfg3 = "saucer-m2"
+// Description3 = "Read Me 2"
+
+// xsi4 = "saucer-m3.xsi"
+// cfg4 = "saucer-m3"
+// Description4 = "Read Me 3"

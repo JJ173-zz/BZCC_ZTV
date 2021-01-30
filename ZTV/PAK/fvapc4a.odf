@@ -1,0 +1,139 @@
+[GameObjectClass]
+geometryName = "fvapc05.xsi" // "fvapc03.xsi"
+geometryScale = 1.1 // 4.0
+glowTexture = "submglow.tga"
+classLabel = "apc"
+collisionRadius = 7.0
+scrapValue = 0
+scrapCost = 40
+customCost = 40
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 3000
+addHealth = 2
+maxAmmo = 1000
+addAmmo = 7
+unitName = "Urchin"
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 1.0
+imageSignature = 0.5
+radarSignature = 0.01
+isAssault = 0
+needsPilot = 0
+canSnipe = 0
+armorClass = L
+
+requireCount = 0
+boxCollide = 1
+
+effectHard1 = "hp_special_1"
+effectName1 = "fvapc4.tail"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue2"
+
+weaponMask = 01111
+weaponHard1 = "HP_GUN_1"
+weaponName1 =  "giongnz1"
+weaponAssault1 = 0
+
+//weaponHard2 = "HP_GUN_2"
+//weaponName2 =   "giongnz1"
+//weaponAssault2 = 0
+
+weaponHard2 = "HP_ROCKET_1"
+weaponName2 = "gsting_c"  
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = "" //"gzpilo"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_SHIELD"
+weaponName4 = "gdeflect"
+weaponAssault4 = 0
+
+[CraftClass]
+rangeScan = 350.0
+periodScan = 3.0
+velocJam = 0.0
+engageRange = 175
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+selectOtherMsg = "avapcvj.wav"
+
+goMsg = "avapcv0.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+followMeMsg = "avapcv3.wav"
+repairMsg = "avapcv4.wav"
+recycleMsg = "avapcv6.wav"
+rescueMsg = "avapcv5.wav"
+otherMsg = "avapcvh.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 7.0 // 1.5
+accelDragStop = 7 // 4.0
+accelDragFull = 1.0
+alphaTrack = 5 // 10.0 
+alphaDamp = 2 // 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.01 // 0.1
+rollSteer = 0.01 // 0.1
+
+velocForward = 10.0
+velocReverse = 7.0
+velocStrafe = 7.0
+accelThrust = 30.0
+accelBrake = 20.0
+omegaSpin = 2.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 250 // 150.0 speed to aquire alttitude low or high
+
+soundThrust = "water01.wav"
+soundSteer = "avapce5.wav"
+
+[APCClass]
+soldierType = "iszpilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 0.1 // 2.5
+flightAltitude = 10 // 75.0
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" // "sonic03c.wav"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "50 50 100 150"
+finishColor = "50 50 80 0"
+startRadius = 0.6
+finishRadius = 0.2 
+segmentTime = .9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

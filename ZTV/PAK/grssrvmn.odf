@@ -1,0 +1,109 @@
+[GameObjectClass]
+geometryName = "grssrvmn.xsi"
+geometryScale = 1.0
+classLabel = "turret"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+addHealth = 1
+maxAmmo = 10000
+unitName = "secret panel"
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+powerCost = 0 
+ownsTerrain = 1
+canDetect = 0
+canInteract = 0
+canCollide = 0 // cant enter tunnel otherwise
+armorClass = H
+explosionName = "dmbasxpl"
+canSnipe = 1
+
+weaponMask = 0001
+weaponHard1 = "hp_special_1"
+weaponName1 =  "gapbuddz" //"gaplift1" 
+weaponAssault1 = 0
+
+turretCount = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "grssrvmn.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "grssrvmn.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "grssrvmn.render"
+
+[CraftClass]
+rangeScan = 10.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "grssrvmn.bubbles"
+renderName2 = "grssrvmn.bubbles2"
+renderName3 = "grssrvmn.bubbles3"
+
+[Bubbles]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.05
+emitVelocity = "0.0 4.0 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.04
+finishRadius = 0.1
+animateTime = 20.0
+rotationRate = 0.0
+
+[Bubbles2]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.5 
+emitDelayVar = 0.05
+emitVelocity = "0.0 3.7 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.1
+finishRadius = 0.2
+animateTime = 20.0
+rotationRate = 0.0
+
+[Bubbles3]
+renderBase = "draw_twirl_trail"
+emitDelay = 1.8 
+emitDelayVar = 0.1
+emitVelocity = "0.0 3.5 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.2
+finishRadius = 0.3
+animateTime = 20.0
+rotationRate = 0.0

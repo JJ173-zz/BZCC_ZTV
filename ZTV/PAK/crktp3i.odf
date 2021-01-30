@@ -1,0 +1,49 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "javelin2i.xsi"
+shotSound = "glowrkti.wav" 
+
+xplGround = "xplcrktp2i"
+xplVehicle = "xplcrktp2i"
+xplBuilding = "xplcrktp2i"
+
+renderName = "crktp3i.tail"
+
+effectHard1 = "hp_emit_2"
+effectName1 = "crktp3i.tail"
+
+effectHard2 = "hp_emit_3"
+effectName2 = "crktp3i.tail"
+
+ammoCost = 9 // 12
+lifeSpan = 7.0 // 4.5 
+shotSpeed = 55.0
+
+damageValue(N) = 200 // 40 
+damageValue(L) = 180 // 30  
+damageValue(H) = 30 // 5  
+
+damageValue(S) = 30 
+damageValue(D) = 30 
+damageValue(A) = 30 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5 // 4.0
+omegaWaver = 0.5 	
+rateWaver = 0.01 
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 50"
+startRadius = 0.25
+finishRadius = 0.01 
+segmentTime = 1.0 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 1.0
+textureRate = 0.03
+
+

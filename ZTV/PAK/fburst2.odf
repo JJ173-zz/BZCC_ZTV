@@ -1,0 +1,150 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = "cansflx.xsi"
+
+xplGround = "fburstxpl"
+xplVehicle = "fburstxpl"
+xplBuilding = "fburstxpl"
+xplExpire = "fburstxpl"
+
+renderName = "fburst.render2"
+
+ammoCost = 40 // 50
+lifeSpan = 3  // 1.7
+shotSpeed = 55 // 50.0
+
+damageValue(N) = 300 // 200
+damageValue(L) = 300 // 100
+damageValue(H) = 50
+damageValue(S) = 75
+damageValue(D) = 100
+damageValue(A) = 50
+
+[BounceBombClass]
+bounceRatio = 0.01 // 0.9
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "fburst.tailA"
+renderName2 = "fburst.flareA"
+renderName3 = "fburst.lightA"
+
+[TailA]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 20 255"
+finishColor = "50 10 0 0" //"255 90 10 0"
+startRadius = 0.8
+finishRadius = 0.2 
+segmentTime = 0.3 // 0.9 // time each segment animates
+segmentVariance = "0.01 0.01 0.01"
+textureRate = 0.05
+
+[FlareA]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 55 0 255"
+finishColor = "255 55 0 255"
+startRadius = 2.5
+finishRadius = 2.5
+
+[LightA]
+renderBase = "draw_light"
+startColor = "255 55 0 250"
+finishColor = "255 55 0 250"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Render2]
+renderBase = "draw_multi"
+renderCount = 7
+renderName1 = "fburst.trail"
+renderName2 = "fburst.flare"
+renderName3 = "fburst.flare2"
+renderName4 = "fburst.flash"
+renderName5 = "fburst.flame"
+renderName6 = "fburst.puff"
+renderName7 = "fburst.flash"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 120 160 80"
+finishColor = "30 110 120 0"
+startRadius = 0.6
+finishRadius = 1.5 
+segmentTime = 0.6 
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.6 
+textureRate = 0.1 
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 205 155 255"
+finishColor = "255 205 155 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Flare2]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 90 25 255"
+finishColor = "255 90 25 255"
+startRadius = 1.0
+finishRadius = 1.0
+animateTime = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.4
+finishRadius = 0.15
+animateTime = 0.1
+emitDelay = 0.003
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.1
+
+[Puff]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 30 30 35 185"
+finishColor = "30 30 40 0"
+startRadius = 0.7
+finishRadius = 5
+rotationRate = 5.0
+animateTime = 3.0
+emitDelay = 6 // 4 long to keep it at origin
+emitVariance = "0.8 0.8 0.8"
+emitVelocity = "0.0 0.0 2.0"
+emitLife = 3.0
+
+[Flash]
+renderBase = "draw_twirl_trail"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 180 55 255"
+finishColor = "255 90 55 0"
+startRadius = 3.0
+finishRadius = 9
+rotationRate = 0.0
+animateTime = 0.5 // 1.0
+emitDelay = 6 // 4 long to keep it at origin
+emitVariance = "0.0 0.0 0.0"
+emitVelocity = "0.0 0.0 0.0"
+emitLife = 0.5 // 1.0

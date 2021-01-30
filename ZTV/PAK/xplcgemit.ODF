@@ -1,0 +1,109 @@
+// ========================
+// Death Ray Charge PULSE EMIT
+// ========================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+particleClass1 = "xplcgemit.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+particleClass2 = "xplcgemit.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+particleClass3 = "xplcgemit.shock2"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+particleClass4 = "xplcgemit.shock3"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleBias4 = "0.0 0.0 0.0"
+particleClass5 = "xplcgemit.shock4"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+particleBias5 = "0.0 0.0 0.0"
+
+explSound = "ipgen01.wav" //"ivcons01.wav"// "iext01.wav"
+
+damageRadius = 30 // 28.0
+
+damageValue(N) = 200
+damageValue(L) = 150
+damageValue(H) = 50
+
+damageValue(S) = 150
+damageValue(D) = 150
+damageValue(A) = 50
+
+kickRadius = 24.0
+kickOmega = 0.4
+kickVeloc = -10 // -5.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_sprite"
+textureName = "spiralR1.tga" // "ring.tga" //
+textureBlend = "one one modulate"
+startColor = "255 155 0 100"
+finishColor = "255 155 0 0"
+startRadius = 8 // 0.1
+finishRadius = 25 // 15.1
+animateTime = 0.15 //0.2
+rotationRate = 20
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.10
+renderBase = "draw_light"
+startColor = "255 0 0 2550"
+finishColor = "255 0 0 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.10
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock2]
+simulateBase = "sim_null"
+lifeTime = 0.17
+renderBase = "draw_sprite"
+textureName = "spiralL1.tga" // "lightflare.tga" // "wasplat.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 90"
+finishColor = "255 0 0 0"
+startRadius = 10
+finishRadius = 27
+animateTime = 0.17 //0.2
+rotationRate = 20
+
+[Shock3]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_sprite"
+textureName = "lightflare.tga" // "lightflare.tga" // "wasplat.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 0 200"
+finishColor = "155 255 0 0"
+startRadius = 5
+finishRadius = 35
+animateTime = 0.15 //0.2
+rotationRate = 20
+
+[Shock4]
+simulateBase = "sim_null"
+lifeTime = 0.18
+renderBase = "draw_sprite"
+textureName = "plasma.tga" // "lightflare.tga" // "wasplat.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 0 100"
+finishColor = "155 255 0 0"
+startRadius = 10
+finishRadius = 35
+animateTime = 0.18 //0.2
+rotationRate = 20

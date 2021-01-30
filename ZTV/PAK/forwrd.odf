@@ -1,0 +1,50 @@
+[OrdnanceClass]
+classLabel = "magnetshell"
+shotGeometry = NULL
+shotRadius = -10
+shotSound = NULL
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+canCollide= 0
+
+renderName = "forwrd.render" 
+
+ammoCost = 0
+lifeSpan = 0.22
+shotSpeed = 25
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 2.0 
+objPushCenter = -100 // -40.0
+objPushEdge =  -20 // -80.0
+objDrag = 1.6 // 1.5
+ordPushCenter = 0.0 
+ordPushEdge = 0.0 
+ordDrag = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "forwrd.sphere"
+
+[Sphere]
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 5"
+finishColor = "255 255 255 5"
+startRadius = 2
+finishRadius = 2
+animateTime = 15
+latitudeBands = 24
+longitudeSegments = 36

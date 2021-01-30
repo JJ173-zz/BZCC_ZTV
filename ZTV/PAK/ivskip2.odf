@@ -1,0 +1,95 @@
+[GameObjectClass]
+baseName = "ivspydrn"
+geometryName = "ivskip.xsi" // "ivspydrn.xsi" 
+geometryScale = 1.75 // 1.1
+animCount = 0
+classLabel = "sav"
+scrapValue = 0
+scrapCost = 0
+customCost = 0
+buildTime = 3.0 // 
+customTime = 10.0
+maxHealth = 300
+armorClass = N
+addHealth = 0.5
+maxAmmo = 50
+addAmmo = 1
+unitName = "Skipper"
+
+needPilot = 1 // 0 means it wont pick you up
+canSnipe = 1
+
+heatSignature = 0.5
+imageSignature = 0.5
+radarSignature = 0.0
+
+isAssault = 0
+
+aiName = "TankFriend" // --works ok with SAV
+aiName2 = "TankEnemy"
+
+requireCount = 0
+
+weaponMask = 00011
+weaponHard1 = "HP_MORTAR_1"
+weaponName1 = "gprobgn2"  
+weaponAssault1 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 1.5f
+velocJam = 10.0f
+engageRange = 200 // 0
+weaponPitch = 0.4
+
+braccelFactor = 0.05
+velFactor = 0.2
+steerFactor = 1.0
+omegaFactor = 0.5
+strafeFactor = 0.2
+
+topSpeed = 50
+
+[HoverCraftClass]
+setAltitude = 18 // 80.0 // rises to this on firing/deploying
+accelDragStop = 10 
+accelDragFull = 10  
+alphaTrack = 15 
+alphaDamp = 6 
+pitchPitch = 0.1
+pitchThrust = 0.1 
+rollStrafe = 0.1 
+rollSteer = 0.1 
+
+velocForward = 49.0
+velocReverse = 49.0
+velocStrafe = 30.0
+accelThrust = 10 // 4 
+accelBrake = 20 // 4 // 10.0
+omegaSpin = 1.5 // 0.7
+omegaTurn = 1.5 //0.7
+alphaSteer = 3.0 //0.7
+accelJump = 500 // 120.0 speed to aquire alttitude low or high, terrain tracking
+
+soundThrust = "ssent01c.wav" 
+soundSteer = "ssent01c.wav" 
+
+[SavClass]
+flightAltitude = 200 // 150.0
+soundDeploy = "benv03.wav"
+soundUndeploy = "benv03.wav"
+
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 1 
+
+flightAltitude = 22 // 150  
+
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" 

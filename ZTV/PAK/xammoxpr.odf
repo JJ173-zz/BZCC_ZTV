@@ -1,0 +1,50 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+particleClass1 = "xammoxpr.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xammoxpr.poof"
+particleCount2 = 1
+particleVeloc2 = "0.0 -0.1 0.0"
+
+explSound = NULL 
+damageRadius = 32.0
+damageValue(N) = -15
+damageValue(L) = -15
+damageValue(H) = -15
+damageValue(S) = -15
+damageValue(D) = -15
+damageValue(A) = -15
+
+kickRadius = 16.0  // 7
+kickOmega = 0.0
+kickVeloc = -2.7 // -2.2
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "0 0 255 12550"
+finishColor = "0 0 255 0"
+startRadius = 80.0 
+finishRadius = 80.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Poof]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "30 80 255 155"
+finishColor = "50 100 255 0"
+startRadius = 0.001 
+finishRadius = 9.0 
+animateTime = 2.0 
+rotationRate = 25.0 // 1.0

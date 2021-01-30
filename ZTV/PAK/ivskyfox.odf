@@ -1,0 +1,141 @@
+[GameObjectClass]
+baseName = "Sky Fox"
+geometryName = "skyfox.xsi"
+cockpitName= "ivscout_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 50
+buildTime = 3.0 // 0.0
+customTime = 12.0
+maxHealth = 1800
+maxAmmo = 1000
+addAmmo = 6
+unitName = "SKY FOX"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+heatSignature = 1.7
+imageSignature = 1.5
+radarSignature = 0.1
+geometryScale = 0.82
+canSnipe = 1
+boxCollide = 1
+
+armorClass = N
+
+/////// weapons ///////////////////
+
+weaponMask = 00031
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "MMG"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "MMG"
+weaponAssault2 = 0
+
+
+
+effectHard1 = "hp_emit_1"
+effectName1 = "skyfox.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "skyfox.2"
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "icaflame.tga"
+textureBlend = "one one modulate"
+startColor = "180 150 100 220"
+finishColor = "100 20 0 0"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 1.0
+emitDelay = 0.2
+emitVelocity = "0.0 0.0 20.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 1.0
+
+[2]
+renderBase = "draw_twirl_trail"
+textureName = "icaflame.tga"
+textureBlend = "one one modulate"
+startColor = "180 120 80 130"
+finishColor = "100 20 0 0"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 2.0
+emitDelay = 0.2
+emitVelocity = "0.0 0.0 40.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 2.0
+
+//////////////////////////////////
+
+
+[CraftClass]
+rangeScan = 350.0f
+periodScan = 5.0f
+velocJam = 10.0f
+
+blastDist = 170
+
+braccelFactor = 0.9
+velFactor = 8.0
+steerFactor = 1.0
+omegaFactor = 1.0
+strafeFactor = 2.4
+
+
+topSpeed = 60
+
+selectWaitMsg = "ivscout04.wav"
+selectAttackMsg = "ivscout01.wav"
+selectFollowMsg = "ivscout03.wav"
+selectGoMsg = "ivscout02.wav"
+selectOtherMsg = "ivscout04.wav"
+
+goMsg = "ivscout05.wav"
+attackMsg = "ivscout06.wav"
+followMeMsg = "ivscout03.wav"
+followMsg = "ivscout08.wav"
+repairMsg = "ivscout09.wav"
+reloadMsg = "ivscout09.wav"
+rescueMsg = "ivscout10.wav"
+recycleMsg = "ivscout11.wav"
+otherMsg = "ivscout10.wav" 
+holdMsg = "ivscout12.wav"
+
+user1Msg = ""  
+killedMsg = "ivscout07.wav"
+diedMsg = ""
+
+[HoverCraftClass]
+velocForward = 98.0
+velocReverse = 22.0
+velocStrafe = 18.0
+accelThrust = 32.0 // acceleration
+accelDragStop = 4.3 // how fast it stops once hands are off controls
+accelJump = 20.0
+aiAccelDrag = 0
+
+setAltitude = 2.2 // how high off the ground
+
+alphaTrack = 0.51 //springs speed it rights itself
+alphaDamp = 0.80 //shocks
+
+pitchPitch = 0.15 // nose up
+pitchThrust = 0.11 // nose down
+
+rollStrafe = 0.19 // rolls while strafing
+omegaSpin = 2.8 // spinning in place speed   used to be 1.8
+omegaTurn = 2.1 // turning while moving speed used to be 3.8
+alphaSteer = 3.1 // how fast it responds to steering  used to be 2.5
+rollSteer = 0.20 // rolls while steering
+
+accelDragFull = 0.0 // nothing
+
+soundThrust = "=engine1.wav"
+soundTurbo = "avtanke3.wav"
+
+animSteer = "steer"
+
+
+

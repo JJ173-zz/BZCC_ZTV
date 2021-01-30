@@ -1,0 +1,48 @@
+[GameObjectClass]
+geometryName = "towertur1.xsi"
+geometryScale= 0.125
+
+classLabel = "turret"
+collisionRadius = 10.0
+scrapCost = 50
+powerCost = 0
+scrapValue = 0
+maxHealth = 7000
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addAmmo = 20
+unitName = "Guard"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 0.8
+imageSignature = 3.0
+radarSignature = 1.0
+isAssault = 1
+
+cancollide = 1
+ownsTerrain = 0
+
+armorClass = L
+
+weaponMask = 00011
+weaponHard1 = "hp_gun_1"
+weaponName1 = "gtglaser" // "gcoretur"
+weaponAssault1 = 0
+weaponHard2 = "hp_gun_2"
+weaponName2 = "gtglaser" //"gcoretur"
+weaponAssault2 = 0
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "hp_eyepoint"
+
+[CraftClass]
+rangeScan = 200
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 150
+
+[TurretCraftClass]
+omegaTurret = 2.0

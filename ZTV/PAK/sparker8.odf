@@ -1,0 +1,66 @@
+[GameObjectClass]
+geometryName = "bubbler.xsi"
+geometryScale = 0.25
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 
+unitName = "Sparker 8"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "sparker8.modulator"
+
+[Modulator]
+renderBase = "draw_emit"
+emitName = "sparker8.ontime1"
+emitDelay = 4
+emitDelayVar =  6 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "30.0 30.0 0.0" //"10.0 10.0 0.0"
+
+[OnTime1]
+simulateBase = "sim_smoke"
+lifeTime = 2  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker8.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "sparker8.ontime2"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "120.0 120.0 0.0" //"60.0 60.0 0.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.05  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker8.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 0.05
+renderBase = "draw_bolt"
+textureName = "lightflare.tga" // "plasma.tga" //"boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 150 180 255"
+finishColor = "40 50 50 0"
+startRadius = 3 // 1 
+finishRadius = 5 // 3 
+segmentLength = 1.0 
+segmentVariance = "0.2 0.2 0.0"
+animateTime = 0.1
+textureRate = 1

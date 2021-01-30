@@ -1,0 +1,158 @@
+[GameObjectClass]
+//geometryName = "igflar00.xsi"
+geometryName = "postmine.xsi"
+geometryScale = 1.5
+
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0 
+maxAmmo = 1E6
+unitName = "Damage Field"
+
+armorClass = H
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 1
+canSnipe = 0
+canCollide = 1
+
+effectHard1 = "hp_emit_2"
+effectName1 = "pidmgmin.beam" bleam seems to be causing random crashes in 1.3
+
+effectHard2 = "hp_emit_4"
+effectName2 = "pidmgmin.redflasher"
+
+effectHard3 = "hp_emit_3"
+effectName3 = "pidmgmin.bluflasher"
+
+
+[MineClass]
+lifeSpan = 1e6 //10.0
+
+[FlareMineClass]
+payloadName = "pidamg"
+fireSound = NULL 
+triggerDelay = 0.001 
+shotDelay = 1.0 
+shotVariance = 0 
+damageRadius = 0.0 
+damageValue(N) = 1 
+damageValue(L) = 0 
+damageValue(H) = 0 
+damageValue(S) = 0
+damageValue(D) = 0 
+damageValue(A) = 0 
+kickRadius = 0
+kickVeloc = 0 
+kickOmega = 0 
+
+[BluFlasher]
+renderBase = "draw_emit"
+emitName = "pidmgmin.bflash1"
+emitDelay = 1.0 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "pidmgmin.blulight"
+renderName2 = "pidmgmin.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "0 0 255 1555"
+finishColor = "0 0 255 0"
+startRadius = 30 
+finishRadius = 30 
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255"
+finishColor = "80 80 255 255"
+startRadius = 2.0 
+finishRadius = 0.5
+
+[RedFlasher]
+renderBase = "draw_emit"
+emitName = "pidmgmin.rflash1"
+emitDelay = 1.5 
+emitVelocity = "0.0 0.0 1.0"
+emitVariance = "0.0 0.0 0.0"
+
+[RFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "pidmgmin.redlight"
+renderName2 = "pidmgmin.redflare"
+
+[RedLight]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 0 0 455"
+finishColor = "255 0 0 0"
+startRadius = 30 
+finishRadius = 30 
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[RedFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 100 255"
+finishColor = "255 100 100 255"
+startRadius = 2.0
+finishRadius = 0.5
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "pidmgmin.beamer"
+emitDelay = 3.0
+emitDelayVar = 0 
+emitVelocity = "0.0 0.0 1000.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.6 
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "pidmgmin.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" 
+textureBlend = "one one modulate"
+startColor = "0 0 255 100"
+finishColor = "255 0 0 100"
+startRadius = 0.5
+finishRadius = 0.5
+//segmentLength = 1.0 
+segmentLength = 0.8 
+segmentVariance = "0.0 0.0 0.0"
+//animateTime = 0.4
+animateTime = 0.3
+

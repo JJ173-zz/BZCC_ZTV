@@ -1,0 +1,57 @@
+
+[GameObjectClass]
+geometryName = "airturt1.xsi"
+geometryScale = 1.0
+classLabel = "turret"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+addHealth = 1
+maxAmmo = 10000
+unitName = "AA Turret"
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+heatSignature = 10.0
+imageSignature = 2.0
+radarSignature = 1.0
+isAssault = 0
+powerCost = 0 
+ownsTerrain = 1
+canDetect = 1
+canCollide = 0 // cant enter tunnel otherwise
+armorClass = H
+
+canSnipe = 1
+
+weaponMask = 0001
+weaponHard1 = "hp_gun_1"
+weaponName1 = "gairchn1"  
+weaponAssault1 = 0
+
+weaponHard2 = "hp_gun_2"
+weaponName2 = "gairchn1"  
+weaponAssault2 = 0
+
+turretCount = 2
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+//turretName3 = "hp_eyepoint"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.25  
+steerFactor = 0.2
+engageRange = 300
+
+[TurretCraftClass]
+omegaTurret = 1.5 // 1 //0.0
+alphaTurret = 0.4 // .2
+detectRange = 300
+
+
+//[AssaultTankClass]
+//recoilName1 = "recoil_l"
+//recoilName2 = "recoil_r"

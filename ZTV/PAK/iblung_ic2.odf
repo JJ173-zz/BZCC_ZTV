@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "mechcube1.xsi"
+geometryScale = 1
+
+classLabel = "powerlung"
+
+animCount = 0
+
+collisionRadius = 0.0
+
+scrapCost = 20
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+
+unitName = "Mass Converter"
+
+heatSignature = 0.01
+imageSignature = 0.01
+radarSignature = 0.01
+canDetect = 0
+canInteract = 1
+
+canCollide = 0 
+isAssault = 0
+powerCost = 1  // -1 is neutral
+
+explosionName = "xicmcxpl"
+
+armorClass = L

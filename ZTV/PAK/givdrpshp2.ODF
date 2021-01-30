@@ -1,0 +1,38 @@
+[WeaponClass]
+geometryName = "blueball.xsi"
+classLabel = "dispenser"
+wpnName = "_Trans-w/cons"
+fireSound = "iapc04.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+flashName = "givdrpshp.flash"
+
+localAmmo = 2000 // [4 x 500]
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "ivdropshp2" 
+
+[flash]
+simulateBase = "sim_smoke"
+lifeTime = 1 // 0.1
+renderBase = "draw_emit"
+emitName = "givdrpshp.puff"
+emitDelay = 0.01 // 0.1
+emitVelocity = "0.0 15.0 0.0"
+emitVariance = "1.0 1.0 0.0"
+
+[puff]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "100 150 150 255"
+finishColor = "100 150 150 255"
+startRadius = 12 // 0.11
+finishRadius = 12 // 0.11
+animateTime = 2.5
+rotationRate = 0.1

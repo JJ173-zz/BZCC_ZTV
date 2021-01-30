@@ -1,0 +1,65 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = "cansflx.xsi"
+
+xplGround = "flaxzxpl"
+xplVehicle = "flaxzxpl"
+xplBuilding = "flaxzxpl"
+xplExpire = "flaxzxpl"
+
+renderName = "flaxz.render"
+
+ammoCost = 50
+lifeSpan = 1.7
+shotSpeed = 50.0
+
+damageValue(N) = 200
+damageValue(L) = 100
+damageValue(H) = 50
+damageValue(S) = 75
+damageValue(D) = 100
+damageValue(A) = 50
+
+[BounceBombClass]
+bounceRatio = 0.01 // 0.9
+//bounceSound = "jax02b.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "flaxz.tail"
+renderName2 = "flaxz.flare"
+renderName3 = "flaxz.light"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 20 255"
+finishColor = "255 90 10 0"
+startRadius = 0.8
+finishRadius = 0.2 
+segmentTime = 0.9 // time each segment animates
+segmentVariance = "0.01 0.01 0.01"
+//animateTime = 0.5
+textureRate = 0.05
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 55 0 255"
+finishColor = "255 55 0 255"
+startRadius = 2.5
+finishRadius = 2.5
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 55 0 250"
+finishColor = "255 55 0 250"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

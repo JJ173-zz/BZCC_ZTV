@@ -1,0 +1,26 @@
+[GameObjectClass]
+classLabel = "ivrecy"
+scrapCost = 40 // this will be cost to undeploy
+scrapValue = 100
+unitName = "Recycler ZM1"
+
+requireCount = 2
+requireName1 = "ibfact"
+requireText1 = "Build Factory"
+requireName2 = "ibsbay"
+requireText2 = "Build Service Bay"
+
+[CraftClass]
+
+[TrackedVehicleClass]
+velocReverse = 10.0
+accelThrust = 50.0
+
+[TrackedDeployableClass]
+
+[DeployBuildingClass]
+deployName = "ibrecy_zm1"
+
+[RecyclerVehicleClass]
+
+[Lod1]

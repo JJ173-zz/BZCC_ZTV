@@ -1,0 +1,31 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+
+ordName = "autotur1"
+wpnName = "Auto Turret"
+fireSound = "gmini01.wav"
+wpnReticle = "grifle"
+wpnCategory = "GUN"
+wpnPriority = 3
+isAssault = 0
+isFlying = 0
+flashName = "gturtrk1.flash"
+airange = 105
+
+[CannonClass]
+shotDelay = 0.1 // 2.5
+shotVariance = 0.05
+
+//salvoCount = 1
+//salvoDelay = 0.10 //0.002
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "55 0 255 255"
+finishColor = "55 0 255 255"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.3
+geomName = "g_sflash.xsi"

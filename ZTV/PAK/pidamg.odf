@@ -1,0 +1,59 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 2.0
+xplGround = NULL // "xflmhit"
+xplVehicle = NULL // "xflmhit"
+xplBuilding = NULL // "xflmhit"
+xplExpire = "pidmgxpr"
+
+//shotSound = "bird1.wav"
+
+//renderName = "pidamg.render"
+
+ammoCost = 1e-6 // 1
+lifeSpan = 0.1 // 1.0
+shotSpeed = 0.1 //50.0
+
+damageValue(N) = 1 // 25
+damageValue(L) = 0 // 10
+damageValue(H) = 0 // 2
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "pidamg.in"
+renderName2 = "pidamg.out"
+
+[In]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"//"plasma.tga" //"vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "200 255 0 20"
+finishColor = "110 100 10 255"
+startRadius = 100// 3.0
+finishRadius = 100 // 0.1
+animateTime = 1.5
+latitudeBands = 4 // 8
+longitudeSegments = 8 // 16
+
+[Out]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" //"plasma.tga" //"vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 220 0 255"
+finishColor = "90 120 20 20"
+startRadius = 100 // 0.1
+finishRadius = 100 // 3.0
+animateTime = 1.0
+latitudeBands = 4 // 8
+longitudeSegments = 8 // 16
+

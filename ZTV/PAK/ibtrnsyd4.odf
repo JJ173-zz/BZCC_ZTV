@@ -1,0 +1,93 @@
+[GameObjectClass]
+basename = "ibtrnsyd"
+geometryName = "ibtrnsyd4.xsi"
+classLabel = "turret"
+scrapCost = 50
+scrapValue = 0
+maxHealth = 8000
+maxAmmo = 10000
+unitName = "Air Yard III"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 0.0
+isAssault = 1
+powerCost = -1 // mc costs 2
+// total = 3 power cost
+
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+
+canDetect = 1
+canCollide = 0 // cant enter tunnel otherwise
+
+ownsTerrain = 1
+
+armorClass = H
+
+upgradeName = "ibtrnsyd"
+
+buildSupport = B //  B seems to support anything, A = nothing, F = nothing
+buildRequire = F // F = Free (anywhere)
+
+requireCount = 4
+requireName1 = "ibrecy_ic1"
+requireText1 = "Build Rectifier"
+requireName2 = "ibdcen"
+requireText2 = "Build Data Center"
+requireName3 = "ibfact_ic2"
+requireText3 = "Upgrade Research Center"
+requireName4 = "ibsens_ic1"
+requireText4 = "Build Radar Station"
+
+provideCount = 3
+provideName1 = "ibtrnsyd" 
+provideName2 = "ibtrnsyd2"
+provideName3 = "ibtrnsyd3"
+ 
+weaponMask = 0001
+
+weaponHard1 = "hp_special_1"
+visualHard1 = "hp_visual_1"
+weaponName1 =  "givdrpshp2" 
+weaponAssault1 = 0
+
+weaponHard2 = "hp_special_2"
+visualHard2 = "hp_visual_2"
+weaponName2 =  "givhawk" 
+weaponAssault2 = 1
+
+weaponHard3 = "hp_gun_1"
+visualHard3 = "hp_visual_3"
+weaponName3 =  "givbear"  
+weaponAssault3 = 0
+
+weaponHard4 = "hp_gun_2"
+visualHard4 = "hp_visual_4"
+weaponName4 = "givgoose" 
+weaponAssault4 = 1
+
+weaponHard5 = "hp_gun_2"
+visualHard5 = "hp_visual_5"
+weaponName5 =  "gyarmnull" // "gringnull" 
+weaponAssault4 = 1
+
+
+[BuildingClass]
+soundAmbient = "command4.wav"
+
+[CraftClass]
+rangeScan = 1.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "iblung_ic2"  

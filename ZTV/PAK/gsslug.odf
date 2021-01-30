@@ -1,0 +1,10 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Sea Slug"
+fireSound = "running.wav"
+wpnReticle = "gproxmin"
+wpnCategory = "SPEC"
+
+[DispenserClass]
+shotDelay = 120.0
+objectClass = "ivseaslg"

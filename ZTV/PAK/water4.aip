@@ -1,0 +1,236 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 250
+buildtype1 = "fvscav"
+buildcount1 = 2
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 240
+doNextOnFail = 1
+
+[Plan3]
+planType = "CollectPool"
+planPriority = 230
+doNextOnFail = 1
+
+[Plan4]
+planType = "buildminimums"
+planPriority = 220
+buildtype1 = "fvcons"
+buildcount1 = 1
+buildtype2 = "fvtug"
+buildcount2 = 1
+
+[Plan5]
+planType = "buildminimums"
+planPriority = 210
+buildtype1 = "fvscoutz"
+buildcount1 = 2
+buildtype2 = "fvapc4a"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 200
+planCondition = "HisExists"
+planConditionClass = "isuser_m"
+planConditionCount = 1
+targettype = "isuser_m"
+attacktype1 = "fvapc4a"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 190
+planCondition = "HisExists"
+planConditionClass = "isuser"
+planConditionCount = 1
+targettype = "isuser"
+attacktype1 = "fvapc4a"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 180
+planCondition = "HisExists"
+planConditionClass = "ivtank"
+planConditionCount = 1
+targettype = "ivtank"
+attacktype1 = "fvscoutz"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 170
+planCondition = "HisExists"
+planConditionClass = "ivscout"
+planConditionCount = 1
+targettype = "ivscout"
+attacktype1 = "fvscoutz"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "basebuildminimums"
+planPriority = 160
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[Plan11]
+planType = "CollectPool"
+planPriority = 150
+doNextOnFail = 1
+
+[Plan12]
+planType = "upgrade"
+planPriority = 140
+planCondition = "NotExists"
+planConditionClass = "fbforg"
+planConditionCount = 1
+Unittype = "fbkiln"
+
+[Plan13]
+planType = "buildminimums"
+planPriority = 130
+buildtype1 = "fvsentd"
+buildcount1 = 2
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 120
+planCondition = "HisExists"
+planConditionClass = "ivtug"
+planConditionCount = 1
+targettype = "ivtug"
+attacktype1 = "fvsentd"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan15]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 110
+planCondition = "HisExists"
+planConditionClass = "ivtug"
+planConditionCount = 2
+targettype = "ivtug"
+attacktype1 = "fvsentd"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan16]
+planType = "basebuildminimums"
+planPriority = 100
+buildtype1 = "fbdowe"
+buildloc1 = "dower"
+buildtype2 = "fbstro"
+buildloc2 = "stronghold"
+buildtype3 = "fbspire"
+buildloc3 = "spire1"
+
+[Plan17]
+planType = "basebuildminimums"
+planPriority = 90
+buildtype1 = "fbantm"
+buildloc1 = "antenna"
+
+[Plan18]
+planType = "buildminimums"
+planPriority = 80
+buildtype1 = "fvtankz"
+buildcount1 = 2
+buildtype2 = "fvserv"
+buildcount2 = 2
+
+[Plan19]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 70
+planCondition = "HisExists"
+planConditionClass = "ibpgen"
+planConditionCount = 1
+targettype = "ibpgen"
+attacktype1 = "fvtankz"
+doNextOnFail = 1
+
+[Plan20]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 60
+planCondition = "HisExists"
+planConditionClass = "ibpgen"
+planConditionCount = 2
+targettype = "ibpgen"
+attacktype1 = "fvtankz"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan21]
+planType = "buildminimums"
+planPriority = 50
+buildtype1 = "fvtanks"
+buildcount1 = 2
+buildtype2 = "fvtugz"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan22]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 40
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planConditionCount = 2
+targettype = "ibscav"
+attacktype1 = "fvtanks"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan23]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 30
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planConditionCount = 1
+targettype = "ibscav"
+attacktype1 = "fvtanks"
+doNextOnFail = 1
+ContinueEvenIfFail = true
+
+[Plan24]
+planType = "upgrade"
+planPriority = 20
+planCondition = "NotExists"
+planConditionClass = "fbover"
+planConditionCount = 1
+Unittype = "fbantm"
+
+[Plan25]
+planType = "buildminimums"
+planPriority = 10
+buildtype1 = "fvatankw"
+buildcount1 = 1
+ContinueEvenIfFail = true
+

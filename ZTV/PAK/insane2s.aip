@@ -1,0 +1,206 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscavc"
+checkProvides = false
+
+[IdleDispatcher] 
+ScavIdleSeconds = 1 
+UnitIdleSeconds = 800 // <== After a units is idle this many seconds, the ID grabs it 
+MinAttackForce = 1 
+MaxAttackForce = 99 
+MaxTargets = 99 
+BomberIdleSeconds = 300 
+MaxBomberTargets = 99 
+//MinMissionSeconds = 600 
+sendAllUnitsOnStartup = false
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 290
+buildtype1 = "fvscavc"
+buildcount1 = 4
+
+[Plan5]
+planType = "buildminimums"
+planPriority = 250
+buildtype1 = "fvcons"
+buildcount1 = 2
+
+[Plan6]
+planType = "basebuildminimums"
+planPriority = 240
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[Plan8]
+planType = "upgrade"
+planPriority = 200
+planCondition = "NotExists"
+planConditionClass = "fbforg"
+planConditionCount = 1
+Unittype = "fbkiln"
+
+[Plan9]
+planType = "basebuildminimums"
+planPriority = 190
+buildtype1 = "fbdrome2"
+buildloc1 = "drome"
+buildtype2 = "fbdowe"
+buildloc2 = "dower"
+buildtype3 = "fbantm"
+buildloc3 = "antenna"
+buildtype4 = "fbstro"
+buildloc4 = "stronghold"
+buildtype5 = "fbspir"
+buildloc5 = "spire1"
+
+[Plan10]
+planType = "buildminimums"
+planPriority = 180
+buildtype1 = "fvwalkz"
+buildcount1 = 2
+buildtype2 = "fvwalkp"
+buildcount2 = 1
+
+[Plan11]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 170
+planCondition = "HisExists"
+planConditionClass = "ivturr"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ivturr"
+attacktype1 = "fvwalkz"
+ContinueEvenIfFail = true
+maxAttacks = 0
+
+[Plan12]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 160
+planCondition = "HisExists"
+planConditionClass = "ivturr"
+planCompare = ">="
+planConditionCount = 2
+targettype = "ivturr"
+attacktype1 = "fvwalkz"
+ContinueEvenIfFail = true
+maxAttacks = 0
+
+// [Plan13]
+// planType = "basebuildminimums"
+// planPriority = 159
+// buildtype1 = "fbantm"
+// buildloc1 = "antenna"
+
+[Plan14]
+planType = "upgrade"
+planPriority = 158
+planCondition = "NotExists"
+planConditionClass = "fbover"
+planConditionCount = 1
+Unittype = "fbantm"
+
+[Plan15]
+planType = "basebuildminimums"
+planPriority = 140
+buildtype1 = "fbdrome2"
+buildloc1 = "drome"
+
+[Plan16]
+planType = "basebuildminimums"
+planPriority = 100
+buildtype1 = "fbspir"
+buildloc1 = "spire2"
+
+
+[Plan17]
+planType = "buildminimums"
+planPriority = 79
+buildtype1 = "fvapcz3"
+buildcount1 = 1
+
+[Plan18]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 78
+//planCondition = "HisExists"
+//planConditionClass = "ivaccelgun"
+//planConditionCount = 1
+targettype = "ivaccelgun"
+attacktype1 = "fvapcz3"
+ContinueEvenIfFail = true
+
+[Plan20]
+planType = "buildminimums"
+planPriority = 50
+buildtype1 = "fvarchz"
+buildcount1 = 2
+buildtype2 = "fvrbomb"
+buildcount2 = 2
+
+[Plan21]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 40
+planCondition = "HisExists"
+planConditionClass = "ibrecy_zm2"
+planCompare = ">="
+planConditionCount = 2
+targettype = "ibrecy_zm2"
+attacktype1 = "fvrbomb"
+ContinueEvenIfFail = true
+maxAttacks = 0
+
+[Plan22]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 30
+planCondition = "HisExists"
+planConditionClass = "ibrecy_zm2"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ibrecy_zm2"
+attacktype1 = "fvrbomb"
+ContinueEvenIfFail = true
+maxAttacks = 0
+
+[Plan23]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 20
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 2
+targettype = "ibscav"
+attacktype1 = "fvarchz"
+ContinueEvenIfFail = true
+maxAttacks = 0
+
+[Plan24]
+planType = "attacker"
+AttackAnything = true
+maxAttacks = 0
+planPriority = 10
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ibscav"
+attacktype1 = "fvarchz"
+ContinueEvenIfFail = true
+maxAttacks = 0
+

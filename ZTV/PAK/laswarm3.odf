@@ -1,0 +1,57 @@
+[OrdnanceClass]
+classLabel = "missile"
+shotGeometry ="glowrkt9.xsi" //"glowrkt3.xsi"
+xplGround = "xlrktcar3"
+xplVehicle = "xlrktcar3"
+xplBuilding = "xlrktbld3"
+xplExpire = "xlrktcar3"
+
+renderName = "laswarm3.render"
+
+ammoCost = 10
+lifeSpan = 15.5  
+shotSpeed = 45.0
+
+damageValue(N) = 65 // 230 // 60 // none
+damageValue(L) = 40 // 160 // 55 // light
+damageValue(H) = 25 // 100 // 50 // heavy
+
+damageValue(S) = 60 // 150 // 55 // standard
+damageValue(D) = 50 // 130 // 50 // deflection
+damageValue(A) = 60 // 100 // 60 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.5 // 2.2
+
+omegaWaver = 0.5 //1.5 	
+rateWaver = 0.01 // 4 // 3.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+
+renderName1 = "laswarm3.tail"
+renderName2 = "laswarm3.flare"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "boltline.tga" //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "200 95 0 90"
+startRadius = 0.65 // 1.0 //0.6
+finishRadius = 0.01 // 0.2 
+segmentTime = 0.4 // .9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.4
+textureRate = 0.001 //0.05
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 105 0 255"
+finishColor = "255 0 0 255"
+startRadius = 2.0 // 1
+finishRadius = 1.5

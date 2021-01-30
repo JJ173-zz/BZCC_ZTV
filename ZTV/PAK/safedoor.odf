@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "safedoor.xsi"
+geometryScale = 2.0
+//classLabel = "magnet"
+classLabel = "i76building"
+//classLabel = "powered"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 1
+unitName = "Blast Door"
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = H
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+ownsTerrain = 0
+powercost = 0
+collisionRadius = 10

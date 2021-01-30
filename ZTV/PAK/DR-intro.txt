@@ -1,0 +1,29 @@
+Welcome to ZTV. World's first ever Mission Team Strat - MPI - Instant hybrid map using ZEEDER's magic dll with mapping by TimeVirus.
+__________________________________________________________________________________________
+
+PLAY MODES:
+ 
+Single play alone vs the computer
+MPI team play vs the computer
+Team1 vs the computer vs Team2
+Team1 with Team2 vs the computer
+Team vs Team strat
+
+Summary: Get the Death Ray before the other team does.
+
+Select the difficulty level PLUS the human players present. Both settings combine to affect the total difficulty.
+
+When playing allied teams it is best to set players to 8 in the stock selection box and lock the game after 4 players enter. This is to allow proper HUD and F-slot team usage.
+
+Choose "none" for difficulty when playing a Team Strat style of game. When "none" is selected, the player force selection is not in effect and the AI will not be active.
+
+You must restart BZ2 before rejoining if you lag or leave for any reason or bad assets will result. We are still working on this issue.
+
+__________________________________________________________________________________________
+From an idea by {VnB}Aegeis and DeadScion 
+
+Thanks to Beta Testers:
+Red Devil, Spawn, Sentient, Dave, Phoenix Flame, NukeDaddy, Aegeis, Red Dragon, technoid, T-Bolt, {GFA} Weevil, ~RIP~aougli, ~RIP~Fried, NoKomm3nt, Zero Angel, Nosferatu, Rubicon Alpha, appel,  Deadscion, Major Tom, JetFire, zippo369 
+
+Special thanks to Fishbone for help with some of the models.
+

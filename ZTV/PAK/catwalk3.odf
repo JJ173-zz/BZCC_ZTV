@@ -1,0 +1,83 @@
+// the lighted twin of catwalk2
+
+[GameObjectClass]
+geometryName = "catwalk6.xsi"
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "walkway"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+//collisionRadius = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+ownsTerrain = 1
+
+alwaysClip = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "catwalk3.yelflasher"
+
+[BuildingClass]
+
+justFlat = 1
+
+[YelFlasher]
+renderBase = "draw_emit"
+emitName = "catwalk3.yflash1"
+emitDelay = 1.0
+emitDelayVar = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[YFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "catwalk3.yellight"
+renderName2 = "catwalk3.yelflare"
+renderName3 = "catwalk3.sphere"
+
+[YelLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 155 0 755"
+finishColor = "255 155 0 0"
+startRadius = 40 // 0.4
+finishRadius = 40 // 0.1
+animateTime = 0.10
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[YelFlare]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 125 0 255"
+finishColor = "255 125 0 255"
+startRadius = 6.0 
+finishRadius = 0.0001
+animateTime = 0.15
+
+[Sphere]
+simulateBase = "sim_null"
+lifeTime = 1.0 // 1.0
+renderBase = "draw_sphere"
+textureName = NULL // "plasma.tga" //"vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 0"
+finishColor = "255 155 10 120"
+startRadius = 2.0
+finishRadius = 0.25
+animateTime = 0.15
+latitudeBands = 9 
+longitudeSegments = 12 

@@ -1,0 +1,137 @@
+// =============
+// AA Flak EXPLOSION
+// =============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 7
+particleClass1 = "xwaflak.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xwaflak.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "xwaflak.puff"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xwaflak.shock2"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xwaflak.smoke"
+particleCount5 = 12
+particleVeloc5 = "100.0 100.0 100.0"
+particleClass6 = "xwaflak.core"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+particleClass7 = "xwaflak.flash"
+particleCount7 = 1
+particleVeloc7 = "0.0 0.0 0.0"
+
+
+explSound = "gmagg05.wav"
+
+damageRadius = 100.0
+
+kickRadius = 100.0
+kickOmega = 0.7 
+kickVeloc = 2.0
+
+damageValue(N) = 40 // 20
+damageValue(L) = 400 // 600  // 1000
+damageValue(H) = 80 // 40
+
+damageValue(S) = 40
+damageValue(D) = 20
+damageValue(A) = 60
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 125 80"
+finishColor = "255 75 35 5"
+startRadius = 10.0
+finishRadius = 100.0
+animateTime = 0.5
+latitudeBands = 24
+longitudeSegments = 36
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 200.0
+finishRadius = 200.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Puff]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 180 50 255" 
+finishColor = "255 180 50 0"
+startRadius = 20
+finishRadius = 200 // 5.0
+animateTime = 0.5
+
+[Shock2]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 255 25"
+finishColor = "50 75 255 0"
+startRadius = 100.0
+finishRadius = 100.0
+animateTime = 0.3
+latitudeBands = 24
+longitudeSegments = 36
+
+[Smoke]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 70"
+finishColor = "50 50 50 0"
+startRadius = 32.0
+finishRadius = 140.0
+animateTime = 1.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 150 205"
+finishColor = "255 90 5 0"
+startRadius = 15.0
+finishRadius = 90.0
+animateTime = 0.5
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 50 255" 
+finishColor = "255 150 50 0"
+startRadius = 70
+finishRadius = 20 
+animateTime = 0.2
+

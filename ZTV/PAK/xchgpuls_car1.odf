@@ -1,0 +1,118 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv1.wav"
+
+damageRadius = 16.0
+
+damageValue(N) = 100
+damageValue(L) = 70
+damageValue(H) = 40
+
+damageValue(S) = 50
+damageValue(D) = 100
+damageValue(A) = 40
+
+kickRadius = 18.0
+kickOmega = -4.0
+kickVeloc = 8.0  
+
+particleTypes = 6
+
+particleClass1 = "xchgpuls_car1.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xchgpuls_car1.puff"
+particleCount2 = 4
+particleVeloc2 = "5.0 5.0 5.0"
+
+particleClass3 = "xchgpuls_car1.splat"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xchgpuls_car1.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xchgpuls_car1.char"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+particleClass6 = "xchgpuls_car1.chardark"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "blast.tga" // flame
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 155 55 0"
+startRadius = 2
+finishRadius = 0.5
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "155 55 0 0"
+startRadius = 0.5
+finishRadius = 5.0
+animateTime = 1.0
+rotaionRate = 10
+
+[Splat]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 155 55 0"
+startRadius = 0.1
+finishRadius = 2.0
+animateTime = 0.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 2.5
+renderBase = "draw_light"
+startColor = "255 0 0 2550"
+finishColor = "255 0 0 0"
+startRadius = 90.0
+finishRadius = 50.0
+animateTime = 2.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 6.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 100 0 255"
+finishColor = "50 0 0 0"
+startRadius = 18.0   // 2.0
+finishRadius = 0.05  // .05
+animateTime = 6.0
+
+[chardark]
+simulateBase = "sim_null"
+lifeTime = 30.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 180"
+finishColor = "0 0 0 0"
+startRadius = 20.0   // 2.0
+finishRadius = 10.0  // .05
+animateTime = 30.0

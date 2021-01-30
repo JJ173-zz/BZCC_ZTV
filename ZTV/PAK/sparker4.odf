@@ -1,0 +1,90 @@
+[GameObjectClass]
+geometryName = "bubbler.xsi"
+geometryScale = 0.25
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 
+unitName = "Sparker 4"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "sparker4.modulator"
+
+[Modulator]
+renderBase = "draw_emit"
+emitName = "sparker4.ontime1"
+emitDelay = 12.73
+emitDelayVar =  4  
+
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "20.0 20.0 0.0"
+
+[OnTime1]
+simulateBase = "sim_smoke"
+lifeTime = 2  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker4.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "sparker4.ontime2"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "30.0 30.0 0.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.2  
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "sparker4.bolt"
+renderName2 = "sparker4.puff1"
+
+[bolt]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga" //"boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 160 70 100"
+finishColor = "40 50 30 0"
+startRadius = 0.15
+finishRadius = 0.3
+segmentLength = 0.3 //1.0 //3.1
+segmentVariance = "1.0 1.0 0.0"
+animateTime = 0.2
+
+//// ---------------------
+
+[Puff1]
+simulateBase = "sim_smoke"
+lifeTime = 1.1
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker4.puff"
+
+[Puff]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "20 40 10 90
+finishColor = "20 40 10 0"
+startRadius = 1 // 5.5
+finishRadius = 2 // 8.0
+animateTime = 1.0
+emitDelay = 0.15 // 0.1
+emitVelocity = "0.5 4.0 0.5"
+emitVariance = "4.0 1.0 4.0"
+emitLife = 1.0

@@ -1,0 +1,61 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xlgttrp.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xlgttrp.puff"
+particleCount2 = 20
+particleVeloc2 = "25.0 25.0 25.0"
+particleClass3 = "xlgttrp.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+explSound = "xsv2.wav"
+damageRadius = 30.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 100 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 200 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 200 // absorbtion
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 255 255"
+finishColor = "155 155 255 0"
+startRadius = 3.0
+finishRadius = 40.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 255 255"
+finishColor = "155 155 255 0"
+startRadius = 15.0
+finishRadius = 0.5
+animateTime = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "155 255 255 755"
+finishColor = "155 155 255 0"
+startRadius = 80.0
+finishRadius = 80.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

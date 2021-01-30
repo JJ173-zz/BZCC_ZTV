@@ -1,0 +1,52 @@
+[GameObjectClass]
+GeometryName = "tbsilo2.xsi"
+geometryScale = 0.5
+classLabel = "extractor"
+scrapCost = 120
+scrapValue = 60
+maxHealth = 6000
+unitName = "Scrap Reactor II"
+
+heatSignature = 0.5
+imageSignature = 0.5
+radarSignature = 0.5
+collisionRadius = 0.1
+canDetect = 1
+canInteract = 1
+armorClass = H
+
+upgradeName = "tbscup2"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "tbscup.render"
+
+buildSupport = B
+buildRequire = F
+
+provideCount = 2
+provideName1 = "ibcbun"
+provideName2 = "ibpgen"
+
+[BuildingClass]
+soundAmbient = "iext01.wav"
+
+[ExtractorClass]
+initDelay = 0.0
+scrapDelay = 0.25 
+scrapHold = 60
+detectRange = 200
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "153 153 203 150
+finishColor = "76 76 100 0"
+startRadius = 5.5
+finishRadius = 8.0
+animateTime = 1.0
+emitDelay = 0.1
+emitVelocity = "0.5 12.0 0.5"
+emitVariance = "12.0 1.0 12.0"
+emitLife = 1.2 // 1.0
+

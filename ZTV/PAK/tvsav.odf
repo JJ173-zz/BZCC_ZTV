@@ -1,0 +1,72 @@
+[GameObjectClass]
+//geometryName = "fvsav00.xsi"
+geometryName = "tvrover.xsi" 
+geometryScale = 5.0
+classLabel = "sav"
+scrapValue = 0
+scrapCost = 10
+maxHealth = 2000
+addHealth = 1 //10
+maxAmmo = 3000
+addAmmo = 10
+armorClass = L
+unitName = "Vigilante"
+//aiName = "SAVFriend"
+//aiName2 = "SAVEnemy"
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 0.5
+imageSignature = 0.8
+radarSignature = 1.0
+explosionName = "xbldxpl"
+
+canSnipe = 1 // doesnt work on sav class
+needPilot = 1
+
+weaponMask = 00011
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 =  "iglsrtrk2" // "iglsrtrk" 
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_1"
+weaponName2 = "gcrktp2" //"gseacru3"
+weaponAssault2 = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+effectHard1 = "hp_emit_1"
+effectName1 = "tvrover.effect"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 5.0
+weaponPitch = 1.1
+engageRange = 400
+
+[HoverCraftClass]
+setAltitude = 25.0
+accelDragStop = 3 //5.0
+alphaTrack = 10 //20.0
+alphaDamp = 3 // 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 20 // 60.0
+velocReverse = 10 // 20.0
+velocStrafe = 10 // 20.0
+accelThrust = 30 // 50.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 100 // 400.0
+//soundThrust = "avsave0.wav"
+soundThrust = "water01.wav"
+
+[SavClass]
+flightAltitude = 50 // 150.0
+soundDeploy = "avsave6.wav"
+soundUndeploy = "avsave5.wav"

@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "sgseek00.xsi"
+geometryScale = 1.2
+classLabel = "torpedo"
+baseName = "grccmi"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 200
+maxAmmo = 1
+unitName = "Seaker"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+heatSignature = 10.0
+imageSignature = 10.0
+radarSignature = 10.0
+
+effectHard1 = "Seaker"
+effectName1 = "seeker.render"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 30.0
+alphaDamp = 10.0
+velocForward = 18.0
+accelThrust = 10.0
+omegaTurn = 10.0
+alphaSteer = 15.0
+lifeSpan = 25.0
+xplBlast = "xseakxpl"

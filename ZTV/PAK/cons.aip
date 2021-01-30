@@ -1,0 +1,37 @@
+[Start]
+scrapCount = 40
+consClass = "fvconsz"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[plan11]
+plantype = "basebuildminimums"
+planpriority = 140
+buildtype1 = "fbspirz"
+buildloc1 = "spire5"
+donextonfail = 1
+
+[plan2]
+plantype = "basebuildminimums"
+planpriority = 135
+buildtype1 = "fbspirz"
+buildloc1 = "spire6"
+donextonfail = 1
+
+[plan3]
+plantype = "basebuildminimums"
+planpriority = 137
+buildtype1 = "fbspirz"
+buildloc1 = "spire3"
+donextonfail = 1
+
+[plan4]
+plantype = "basebuildminimums"
+planpriority = 130
+buildtype1 = "fbspirz"
+buildloc1 = "spire4"
+donextonfail = 1
+buildcount = 1

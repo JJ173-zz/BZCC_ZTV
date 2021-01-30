@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "dispenser"
+
+wpnName = "Marshal"
+
+ordName = NULL
+isassault = 0
+
+//wpnIcon = "wire_igrdrprobe.tga"
+
+fireSound = "mmine01.wav" // "unitenabled.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+
+localAmmo = 4000 // 2 x [2000]
+
+[DispenserClass]
+shotDelay = 10.0
+objectClass = "ibmarshl"

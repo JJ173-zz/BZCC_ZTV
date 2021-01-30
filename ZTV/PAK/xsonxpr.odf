@@ -1,0 +1,29 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 0
+particleClass1 = "xsonxpr.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = NULL // "xsv2.wav"
+damageRadius = 90.0
+damageValue(N) = 0
+damageValue(L) = 5
+damageValue(H) = 0
+damageValue(S) = 10
+damageValue(D) = 10
+damageValue(A) = 10
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 55"
+finishColor = "0 255 0 0"
+startRadius = 20 // 0.2
+finishRadius = 35 // 2.0
+animateTime = 0.5
+

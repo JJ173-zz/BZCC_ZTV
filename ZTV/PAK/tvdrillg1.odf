@@ -1,0 +1,111 @@
+[GameObjectClass]
+//baseName = "ivtuntur"
+geometryName = "drillrig.xsi"
+geometryScale = 1.0
+cockpitName = "ivturr_cockpit.xsi"
+animCount = 0
+classLabel = "assaulttank" // "turrettank"
+scrapCost = 60
+customCost = 80
+scrapValue = 20
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 7000
+addHealth = 1
+maxAmmo = 6000
+addAmmo = 5
+unitName = "Tunnel Rig"
+//aiName = "TurretTankFriend"
+//aiName2 = "TurretTankEnemy"
+//aiName = "RocketTankFriend"
+//aiName2 = "RocketTankEnemy"
+aiName = "AssaultTankProcess"
+aiName2 = "AssaultTankProcess"
+
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.1
+isAssault = 0
+canDetect = 1
+canInteract = 1
+armorClass = H
+requireCount = 0
+canSnipe = 0
+weightInTons = 1E6
+PilotCost = 0
+ejectRatio = 0
+
+/////// weapons ///////////////////
+
+weaponMask = 11111
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gpushb" //"gdarc_c" 
+weaponAssault1 = 1
+
+//weaponHard2 = "HP_gun_2"
+//weaponName2 = "gbackup2" 
+//weaponAssault2 = 0
+//////////////////////////////////
+
+needPilot = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "lasersite1"
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x_1"
+//turretName3 = "HP_eyepoint"
+
+[CraftClass]
+weaponPitch = 1.2 //1.5
+rangeScan = 450.0
+periodScan = 0.0
+velocJam = 1.0
+engageRange = 500
+needPilot = 0
+ejectRatio = 0
+
+braccelFactor = 0.05 // 0.01
+velFactor = 0.2 // 0.4
+steerFactor = 0.85 // 1.2
+omegaFactor = 0.01 // 0.2
+strafeFactor = 0.1
+
+selectWaitMsg = "ivatank04.wav"
+selectAttackMsg = "ivatank01.wav"
+selectFollowMsg = "ivatank08.wav"
+selectGoMsg = "ivatank02.wav"
+selectOtherMsg = "ivatank04.wav"
+
+goMsg = "ivatank05.wav"
+attackMsg = "ivatank06.wav"
+followMeMsg = "ivatank08.wav"
+followMsg = "ivatank08.wav"
+repairMsg = "ivatank09.wav"
+reloadMsg = "ivatank09.wav"
+rescueMsg = "ivatank10.wav"
+recycleMsg = "ivatank11.wav"
+otherMsg = "ivatank04.wav" 
+holdMsg = "ivatank12.wav"
+
+user1Msg = ""  
+killedMsg = "ivatank07.wav"
+diedMsg = ""
+
+[TrackedVehicleClass]
+omegaSpin = 3.0 // 4.0
+velocForward = 12.0
+velocReverse = 8.0
+accelThrust = 15 // 10.0
+
+engineSound = "iatank01.wav"
+treadSound = "iatank02.wav"
+
+[AssaultTankClass]
+yawRate = 2.0 // 4.0
+pitchMin = -.5 // -0.1
+pitchMax = 1.2 // 0.5
+
+//recoilName1 = "recoil_1"
+//laserName1 = "recoil_1"

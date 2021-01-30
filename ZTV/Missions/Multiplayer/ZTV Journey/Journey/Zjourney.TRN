@@ -1,0 +1,53 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX = -2048.0
+MinZ = -2048.0
+Width = 4096.0
+Depth = 4096.0
+Height = 100.0
+Tile = 1
+Color = "51 125 20 255"
+
+[Texture]
+TileTexture1 = "zmire.tga"
+TileTexture2 = "rend6z.tga"
+TileTexture3 = "mire3.tga"
+TileTexture4 = "mire4.tga"
+TileTexture5 = "mire5.tga"
+TileTexture6 = ""
+TileTexture7 = "mire7.tga"
+TileTexture8 = "wasteland5z.tga"
+TileTexture9 = "mire.tga"
+TileTexture10 = "zmbeta.tga"
+TileTexture11 = ""
+TileTexture12 = "mars3.tga"
+TileTexture13 = "dune6.tga"
+TileTexture14 = "mars5.tga"
+TileTexture15 = "mars6.tga"
+
+[LightningBolt]
+minDelay=10.0
+maxDelay=20.0
+Bolts=1
+Duration=.200
+Distance=120
+Width=0.3
+Sound=thunder.wav
+Sound2=thunder2.wav
+texture=bolt.tga
+
+[Rain]
+OnPeriod = 300.000
+OffPeriod = 300.000
+TranPeriod = 10.000
+ScaleFactor= 1.0
+
+
+[Mirror]
+Enabled    = 1
+UseTexture = 1
+Offset     = -.01
+
+[Shadows]
+Stencil = 1

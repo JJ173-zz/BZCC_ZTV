@@ -1,0 +1,75 @@
+[GameObjectClass]
+geometryName = "ibfact_ic3.xsi"
+classLabel = "factory"
+buildTime = 0.1
+scrapCost = 0
+scrapValue = 0
+maxHealth = 8000
+maxAmmo = 0
+unitName = "Research Cntr II"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+armorClass = H
+//isSingle = 0
+
+upgradeName = "ibfact_ic3"
+
+requireCount = 1
+requireName1 = "ibdcen"
+requireText1 = " Need Data Center"
+
+provideCount = 3
+provideName1 = "ibfact_ic2"
+provideName2 = "ibfact_ic1"
+provideName3 = "ibfact"
+//provideName4 = "ibtrain"
+
+collisionRadius = 4.0
+
+buildSupport = B //  "A" didnt support anything
+buildRequire = F // F = free-anywhere
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ibfact_ic2.beam"
+effectHard2 = "hp_emit_2"
+effectName2 = "ibfact_ic2.beam"
+effectHard3 = "hp_emit_3"
+effectName3 = "ibfact_ic2.beam"
+effectHard4 = "hp_emit_4"
+effectName4 = "ibfact_ic2.beam"
+
+[PoweredBuildingClass]
+detectRange = 300
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "ivturr_ic2" 
+
+
+[BuildingClass]
+soundAmbient = "ibfact00.wav"
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+ buildItem1 = "ivserv2_ic1" // in RC I
+ buildItem2 = "ivftruck"    // in RC I
+ buildItem3 = "ivspydrn"    // in RC I
+ buildItem4 = "ivdfly"      // in RC I
+ buildItem5 = "ivvbird"
+ buildItem6 = "ivfbird_ic1"
+ buildItem7 = "ivsgoose1"   
+ buildItem8 = "ivbomb_ic1"
+ buildItem9 = "ivsauc_ic1"
+buildItem10 = "ivrainer"

@@ -1,0 +1,115 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xsv1.wav" 
+damageRadius = 25.0
+
+damageValue(N) = 100 // none
+damageValue(L) = 200 // light
+damageValue(H) = 250 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 100 // absorbtion
+
+kickRadius = 18.0
+kickOmega = -2.0
+kickVeloc = 7.0
+
+particleTypes = 5
+particleClass1 = "xplrrain.core"
+particleCount1 = 2
+particleVeloc1 = "20.0 0.0 20.0"
+particleBias1 = "5.0 -1.0 5.0"
+particleVariance = "5.0 5.0 5.0"
+
+particleClass2 = "xplrrain.chunks"
+particleCount2 = 4
+particleVeloc2 = "6.0 4.0 6.0"
+particleBias2 = "-2.0 5.0 -2.0"
+particleVariance = "5.0 5.0 5.0"
+
+particleClass3 = "xplrrain.chunks2"
+particleCount3 = 4
+particleVeloc3 = "6.0 4.0 6.0"
+particleBias3 = "2.0 5.0 2.0"
+particleVariance = "5.0 5.0 5.0"
+
+particleClass4 = "xplrrain.chunks3"
+particleCount4 = 4
+particleVeloc4 = "6.0 4.0 6.0"
+particleBias4 = "4.0 10.0 -4.0"
+particleVariance = "5.0 5.0 5.0"
+
+particleClass5 = "xplrrain.chunks4"
+particleCount5 = 4
+particleVeloc5 = "10.0 8.0 10.0"
+particleBias5 = "0.0 7.0 0.0"
+particleVariance = "15.0 10.0 15.0"
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 2.25
+renderBase = "draw_twirl"
+textureName = "rockcnkz.tga" // "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "40 20 0 255" 
+finishColor = "40 20 0 0"
+startRadius = 2.0
+finishRadius = 16.0
+animateTime = 2.25
+rotationRate = 0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 2.25
+renderBase = "draw_sprite"
+textureName = "rockcnkz.tga" // "flame2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+//textureBlend = "one one modulate"
+startColor = "75 35 0 255" 
+finishColor = "75 35 0 10"
+startRadius = 1
+finishRadius = 5.0
+animateTime = 2.25
+
+[Chunks2]
+simulateBase = "sim_ember"
+lifeTime = 2.25
+renderBase = "draw_sprite"
+textureName = "rockcnkz.tga" // "flame2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+//textureBlend = "one one modulate"
+startColor = "75 35 0 255" 
+finishColor = "75 35 0 10"
+startRadius = 1
+finishRadius = 5.0
+animateTime = 2.25
+
+[Chunks3]
+simulateBase = "sim_ember"
+lifeTime = 2.25
+renderBase = "draw_sprite"
+textureName = "rockcnkz.tga" // "flame2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+//textureBlend = "one one modulate"
+startColor = "75 35 0 255" 
+finishColor = "75 35 0 10"
+startRadius = 1
+finishRadius = 5.0
+animateTime = 2.25
+
+[Chunks4]
+simulateBase = "sim_ember"
+lifeTime = 2.25
+renderBase = "draw_sprite"
+textureName = "rockcnkz.tga" // "flame2.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+//textureBlend = "one one modulate"
+startColor = "75 35 0 255" 
+finishColor = "75 35 0 10"
+startRadius = 1
+finishRadius = 6.0
+animateTime = 2.25
+

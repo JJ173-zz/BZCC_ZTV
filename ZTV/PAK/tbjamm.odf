@@ -1,0 +1,36 @@
+[GameObjectClass]
+geometryName = "tbjam1.xsi"
+classLabel = "jammer"
+collisionRadius = 5.0
+scrapCost = 50
+scrapValue = 5
+maxHealth = 2500
+maxAmmo = 0
+powerCost = 0
+unitName = "Jamming Station"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+canCollide = 1
+isAssault = 1
+ownsTerrain = 1
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F" // "F" is free // "A" is adjacent // "B" is next to bunker
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "fbjamm"
+
+[PoweredBuildingClass]
+powerCost = 0
+detectRange = 200
+
+[BuildingClass]
+soundAmbient = "sjam01.wav"
+
+[JammerTowerClass]
+jammerRange = 300.0

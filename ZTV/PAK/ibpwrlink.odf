@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "powerlink1.xsi"
+geometryScale = 1.0 
+classLabel = "powerlung"
+animCount = 0
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Power Pack"
+heatSignature = 2.0
+imageSignature = 2.0
+radarSignature = 2.0
+canCollide = 1
+isAssault = 1  // 0
+powerCost = -5 // -30
+
+explosionName = "xicppxpl"
+
+armorClass = L
+
+[BuildingClass]
+soundAmbient = 

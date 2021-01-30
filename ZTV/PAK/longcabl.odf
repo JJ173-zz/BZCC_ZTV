@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "longcabl.xsi"
+geometryScale = 1
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+unitName = "cable, vert"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+

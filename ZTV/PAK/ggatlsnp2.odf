@@ -1,0 +1,116 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "ggatlsnp2"
+ordName = "gatlsnp2"
+geometryName = "snipshrd.xsi"
+wpnName = "Periscope Sniper"
+fireSound = "gmagg02.wav"
+wpnReticle = "grifle_s"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "ggatlsnp2.flash"
+aiRange = 70
+
+[CannonClass]
+shotDelay = 2 
+shotAlternate = 0
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 6
+renderName1 = "ggatlsnp2.muzzle"
+renderName2 = "ggatlsnp2.casing"
+renderName3 = "ggatlsnp2.ember"
+renderName4 = "ggatlsnp2.burn"
+renderName5 = "ggatlsnp2.puff"
+renderName6 = "ggatlsnp2.shock"
+
+[Muzzle]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 155 55 255"
+startRadius = 10.0
+finishRadius = 1
+animateTime = 0.1
+geomName = "g_sflash.xsi"
+
+[Casing]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "ggatlsnp2.shell"
+emitDelay = 0.1
+emitVelocity = "2.0 3.0 0.0"
+emitVariance = "1.0 1.0 0.0"
+
+[Shell]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "scasing.tga"
+textureBlend = "one one modulate"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 0.11
+finishRadius = 0.11
+animateTime = 2.5
+rotationRate = 0.1
+
+[Ember]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "ggatlsnp2.spark"
+emitDelay = 0.01
+emitVelocity = "0.0 -10.0 10.0"
+emitVariance = "10.0 10.0 2.0"
+
+[Spark]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 63 255"
+finishColor = "255 0 0 50"
+startRadius = 0.05
+finishRadius = 0.005
+animateTime = 0.3
+
+[Burn]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 510"
+finishColor = "255 155 0 510"
+startRadius = 5
+finishRadius = 1
+animateTime = 0.20
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 255"
+finishColor = "255 0 5 0"
+startRadius = 2.0
+finishRadius = 6.0
+animateTime = 1.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 65" 
+finishColor = "255 0 5 0" 
+startRadius = 1.8
+finishRadius = 0.2
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16

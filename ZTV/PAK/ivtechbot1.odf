@@ -1,0 +1,174 @@
+[GameObjectClass]
+baseName = "ivtechbot"
+geometryName = "ivtasker.xsi"
+geometryScale = 0.30
+cockpitName = "ivrckt_cockpit.xsi"
+//classLabel = "assaulttank"
+classLabel = "commVehicle"  //causes loss of turreting
+
+scrapValue = 5
+scrapCost = 50
+customCost = 65
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 1200
+maxAmmo = 800
+addAmmo = 7  // 5
+addHealth = 1
+unitName = "TechBot"
+weightInTons = 1E6
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+//aiName = "SupportProcess"
+//aiName2 = "SupportProcess"
+
+//aiName = "TurretTankFriend"
+//aiName2 = "TurretTankEnemy"
+
+heatSignature = 0.05
+imageSignature = 0.1
+radarSignature = 0.05
+isAssault = 0
+needPilot = 1
+armorClass = N
+canSnipe = 1
+canDetect = 0
+
+LightsOnlyWhenPiloted = True // if true, lights on only when piloted.	
+
+provideCount = 1
+provideName1 = "ivtechbot1"
+
+/////// weapons /////////
+
+weaponMask = 00011
+
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "gzmp_a" 
+weaponAssault2 = 0
+
+weaponHard1 = "HP_GUN_2"
+weaponName1 =  "gzmp_a" 
+weaponAssault1 = 0
+
+weaponHard3 = "HP_SPECIAL_1"  // "HP_CANNON_1" // "HP_gun_3" 
+weaponName3 =  "gtechlink" 
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_CANNON_1" // HP_SPECIAL_1
+//weaponName4 = "gzmp_a2" 
+//weaponAssault4 = 0
+
+//////////////////////////////////
+
+effectHard1 = "hp_special_1"
+effectName1 = "ivtechbot1.cycleon"
+effectHard2 = "hp_special_2"
+effectName2 = "ivtechbot1.cycleon"
+
+turretCount = 3
+turretName1 = "turret_y" 
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+//lightHard1 = "hp_special_1"
+//lightName1 = "lasersite1"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotlite"
+lightHard1 = "hp_light_1"
+lightName1 = "tasklite"
+lightHard2 = "hp_light_2"
+lightName2 = "tasklite"
+
+//ejectRatio = 0
+
+[CraftClass]
+rangeScan = 449.0f
+periodScan = 4.0f
+velocJam = 0.0f
+
+engageRange = 150 // 600
+
+braccelFactor = 0.5 // .1 // .05 // 0.05f; // serv truck is .09
+strafeFactor = 0.1 // 0.1f;  // serv truck is ---
+steerFactor = 0.9 // 0.85 // serv truck is 1.4
+omegaFactor = 0.01 // 0.01f;  // serv truck is .2
+velFactor = 0.2 // 0.2f;   // serv truck is .3
+
+DoIdleDispatch = false 
+
+OffensiveProcessIsDistractable = false 
+OffensiveProcessIsDistractableAITeam = false 
+
+[TrackedVehicleClass]
+TREAD_STATIC_FRICTION = 2.0 
+SPRING_FACTOR = 0.05 
+DAMPING_FACTOR = 3
+
+LevelForce =  0.5  
+ThrustTrack = -0.5
+Center_Shift = -0.95
+
+omegaSpin = 1.0  
+omegaTurn = 0.5  
+velocForward = 10.0 
+velocReverse = 10.0 
+accelThrust = 20.0
+
+engineSound = "techbot_eng.WAV" // "accelhum.wav" 
+treadSound =   "techbot_trd.WAV" // "ipgen01.wav" 
+
+[AssaultTankClass]
+yawMax = 2.0
+pitchMin = -0.4 
+pitchMax = 1.5 
+
+[TrackedDeployableClass]
+isStealthDeployed = true // just like under DeployableClass
+
+timeDeploy = 2.0
+timeUndeploy = 2.0
+
+soundDeploy = "techbot_de.WAV"      //  "srecy02.wav"
+soundUndeploy = "techbot_un.WAV" //  "trundepl.wav"
+
+[CommVehicleClass]
+DoBettyOn = true // true = bettyvoice when switched on
+DoBettyOff = true // true = bettyvoice when switched no
+viewDist = 100.0
+MinViewDist = 25.0 // If specified, minimum height of commbunker view
+MaxViewDist = 250.0 // If specified, maximim height of commbunker view
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "ivtechbot1.ontime"
+emitDelay = 0.05//0.1 
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "20.0 20.0 30.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.04 //
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ivtechbot1.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.05 // 0.15
+finishRadius = 0.25 // 0.3
+segmentLength = 0.09 // .5 
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 0.1
+
+
+
+

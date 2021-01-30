@@ -1,0 +1,81 @@
+Welcome to Icarus Aircraft Strategy. The race you are playing as is a multiplayer offshoot of the "51ers", a group of black ops techs and scientists originally part of the ISDF.
+
+Icarus Strategy uses an exciting new scrap system. Scrap flow rate is unrelated to the storage capacity your team has.  Instead it is determined by the number of Scrap Breeder Reactors your team owns. Breeders are located at remote factory sites spread across the map. The more breeders your team claims by entering their control room, the faster the scrap comes in. They also act as temporary storage, so if they were full when claimed from other team, you will get their spare scrap too. Silos come as both powered and unpowered versions, but both work similarly. Powered silos can be made by the commander, while unpowered silos can be deployed on any avaialble silo flange by any team member. The advantage is they get their power from the flange connections instead of drawing off base power.
+
+  
+ UNITS  ##########################################
+
+Note: AI cannot enter or use the aircraft units and some other units. Units are indicated with a "_" in front of their name when this is the case, ie _Sky Fox. 
+
+_Sky Fox - fastest combat unit in game. Used for dogfighting, interception and general travel.
+
+_Dactyl - a commander's vehicle. Cant do much damage but it has a good view and manuver. It has a firebomb to hassle enemy pilots and burn up spare ships laying around base. It can also dispense a limited supply of pods to troops. 
+
+Cricket - a tiny scout ai unit good for picking you up across map and general scouting functions. Very cheap, very weak.  
+
+_Transport - carries three empty silo trucks for remote deployment. Also armed with shadowers. When load is empty, pilot releases the onboard dactyl "dingy" to use, then self destructs the now mostly useless transport. In the upgraded Air Yard II a _Transport with a cargo of 2 Field Constructors is avaliable. 
+ 
+Spy Drone - Carries one high tech sensor probe. Uses 1 power per probe dispensed. Scouting function, no weaponry.
+
+Flak Truck - Base defensive unit against air units
+
+FireBird -  AI only assault unit
+
+_Sky Hawk - Medium Duty air unit for players
+
+_Sky Bear - Heavy Duty ait unit for players
+
+Black Cloud - AI only base assault unit, very weak, but attacks from out of range
+
+Dragon Fly - AI only support unit 
+
+_Air Tasker - Contains several shield generators useful for sealing the doors of breeders
+
+Sentinel - Multipurpose defense unit 
+
+Meteor, Flak - Field flak unit 
+
+_Saucer - Player only base assault unit, very strong, uses lots of base power
+
+_Goose - Player piloted bomber with huge payload of cluster bombs
+
+Javelin - Anti Air tracked unit
+
+Vulture - Long range AI torpedo ship for base assaults.
+
+
+ TIPS ############################################
+
+_Transport Ships are used by players to deliver storage silos to the remote factory sites. Once you have enough, you can afford to build storage silos in your own base, relieving you of the chore of aquiring distant storage. The remote tanks have the benefit of getting their power for operation from local facilities, freeing your base power production for other uses. They also cost far less scrap. 
+
+Buildings that are upgradeable are indicated with a number after their name, for example Service I and Service II.
+
+The Radar Arrays are upgradeable starting from 700, then 900, then 1100 m ranges. 
+
+The Research Center (Factory) is upgradable in a loop. This allows commander to produce level one units after upgrading the Center first time. This second upgrade costs only 2 scrap to loop once so you dont get charged much for accessing level one units.
+
+_Scrap Breeders are extremely explosive if they are destroyed. Use caution when around them. 
+
+Can launch bomb with armory. Its currently set to 1/2 strength of stock bomb and costs 40 each toss. You can also toss pods remotely using the armory. 
+
+Low GFX users should consider changing their sky setting to "high" for the addional orientation cues it provides aircraft users.
+
+Commanders can build several structures that dispense units and weaponry to players on demand. Such buildings require a Mass Converter unit to do this (Air Yards, Pilot Arsenals, Runways Arsenals). MC's requires extra power and only dispense a limited number of suplies until they are refilled by commander upgrading the building. This mass converter unit is usually protected by being mounted beneath building, but should it be destroyed by area damage before the building it services, the explosion is large. 
+
+Power Cores in the Power Reactors are the most explosive base building. Commanders should consider building them on remote edges of bases.
+
+Why aren't the planes faster? They have been made as fast as is possible without exceeding BZ II's prediction code limits. This minimizes warp problems. Play stock BZ II if you need warp to have fun. 
+
+What's with the uber units at the end of the tech tree? The idea is to not have long games that end in stalemate. With only one race both teams had the exactly the same chance to get uber units first. Just get them, end the game and start a new one before resynchs start up. :) 
+
+Why is the scrap meter red instead of yellow? It doesnt matter, scrap doesn't flow based on the meter anyways. The meter only indicates your teams total scrap storage limit and current supply. The flow rate is based on how many Scrap Breeders your team owns, and this isn't shown on the meter. Having 2 breeders equals the scrap flow rate in yellow part of meter in stock Bz2, or 1 per second. Having 4 would be like having all your pools upgraded. Also the Breeders hold 30 spare scrap each, allowing commander to let meter rise far over green before scrap flow stops. Later game the technology becomes available to make Mobile Scrap Breeders. These are also highly explosive, plus power consuming and should be used with care.
+
+
+################################################
+
+Thanks to Beta Testers: Spawn, Red Devil, BZ wardog, RocketmanX, PhoenixFlame, Aegeis.
+
+Special thanks to spAce for his Sky Fox plane model.
+ 
+
+copyrighted 2003-2005 Zeeder & TV, AKA ZTV

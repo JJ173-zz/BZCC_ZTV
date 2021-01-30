@@ -1,0 +1,47 @@
+// ==============
+// SCRAP PRIMER EXPLOSION
+// ==============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+particleClass1 = "xscrprxpl.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xscrprxpl.puff"
+particleCount2 = 15
+particleVeloc2 = "90.0 90.0 90.0"
+
+explSound = "xmv1.wav"
+damageRadius = 60.0
+damageValue(N) = 600
+damageValue(L) = 500
+damageValue(H) = 400 // 200
+damageValue(S) = 400
+damageValue(D) = 600
+damageValue(A) = 200
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 128 255"
+finishColor = "255 80 80 0"
+startRadius = 5.0
+finishRadius = 50.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 80 60 0"
+startRadius = 15.0
+finishRadius = 3.0
+animateTime = 1.0

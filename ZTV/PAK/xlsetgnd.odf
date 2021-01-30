@@ -1,0 +1,80 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xms2.wav"
+
+damageRadius = 30.0
+
+damageValue(N) = 300 // none
+damageValue(L) = 200 // light
+damageValue(H) = 100 // heavy
+
+damageValue(S) = 200 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 200 // absorbtion
+
+particleTypes = 4
+particleClass1 = "xlsetgnd.ring"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xlsetgnd.chunks"
+particleCount2 = 8
+particleVeloc2 = "5.0 5.0 5.0"
+particleBias2 = "0.0 5.0 0.0"
+particleClass3 = "xlsetgnd.puff"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 1.0 0.0"
+particleClass4 = "xlsetgnd.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+[Ring]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "10 10 30 255"
+finishColor = "10 10 30 0"
+startRadius = 16.0
+finishRadius = 16.0
+animateTime = 10.0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "dirt.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 5 40 255"
+finishColor = "0 0 0 0"
+startRadius = 0.6
+finishRadius = 0.6
+animateTime = 3.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 4.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "44 64 84 127"
+finishColor = "44 64 84 0"
+startRadius = 0.5
+finishRadius = 16 //5.0
+animateTime = 4.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 140"
+finishColor = "55 55 255 0"
+startRadius = 0.5
+finishRadius = 16
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16

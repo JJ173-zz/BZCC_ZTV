@@ -1,0 +1,57 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 2.0
+xplGround = NULL // "xflmhit"
+xplVehicle = "xflmhit"
+xplBuilding = "xflmhit"
+
+renderName = "firez1.render"
+ammoCost = 0
+lifeSpan = 2.0
+shotSpeed = 5 
+
+damageValue(N) = 200
+damageValue(L) = 100
+damageValue(H) = 20
+damageValue(S) = 150
+damageValue(D) = 150
+damageValue(A) = 50
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "firez1.puff"
+renderName2 = "firez1.bursts"
+
+[Puff]
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 200 185"
+finishColor = "255 155 0 0"
+startRadius = 3.0
+finishRadius = 12.0
+animateTime = 1.5
+
+[Bursts]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "firez1.puffb"
+emitDelay = 2.1
+emitVelocity = "0.0 5.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[Puffb]
+simulateBase = "sim_ember"
+lifeTime = 1.5
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 5 0 185"
+finishColor = "255 5 0 0"
+startRadius = 4.0
+finishRadius = 12.0
+animateTime = 1.5

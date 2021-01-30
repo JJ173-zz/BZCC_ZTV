@@ -1,0 +1,37 @@
+[OrdnanceClass]
+classLabel = "popper"
+shotGeometry = "gravanchor.xsi" //
+xplGround = NULL //"xpmlaunc"
+xplVehicle = "xpmlaunc"
+xplBuilding = "xpmlaunc"
+xplExpire = NULL // "xpmlaunc"
+renderName = "pmflak.render"
+
+ammoCost = 30
+lifeSpan = 0.2 // 2
+shotSpeed = 1 // 50.0
+damageValue(N) = 50
+damageValue(L) = 50
+damageValue(H) = 50
+damageValue(S) = 50
+damageValue(D) = 50
+damageValue(A) = 50
+
+[PopperClass]
+scanRange = 150 
+launchXpl = "xpmlaunc"
+launchOrd = "pmflak2"
+
+[Render]
+renderBase = "draw_trail"
+textureName = NULL // "trail2.tga"
+textureBlend = "invsrc invsrc modulate"// "one one modulate"
+startColor = "0 0 0 155 " //"160 50 0 80"
+finishColor = "0 0 0 0 " //"110 120 30 0"
+startRadius = 0.1  
+finishRadius = 0.1  
+segmentTime = 0.5   
+segmentVariance = "0.01 0.01 0.01"
+animateTime = 0.5 
+textureRate = 0.1 
+

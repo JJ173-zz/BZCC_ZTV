@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "cannon"
+altname = "gzeeker"
+ordName = "zeekick1"
+wpnName = "Depth Chg 15m"
+fireSound = "atstab01.wav"
+wpnReticle = "gseek"
+wpnCategory = "SPEC"
+aiRange = 120 
+isAssault = 0
+
+
+[CannonClass]
+shotDelay = 6.0 
+salvoCount = 3 
+salvoDelay = 0.9 
+shotVariance = 0.0
+//shotPitch = -1.4 // -1.58 = straight down
+
+
+

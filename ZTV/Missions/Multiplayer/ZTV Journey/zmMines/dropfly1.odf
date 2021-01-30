@@ -1,0 +1,16 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = "ivdrop_90.xsi"
+shotRadius = 0.0
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+xplExpire = NULL
+
+shotSound = "avtanke3.wav"
+
+ammoCost = .1
+lifeSpan = 50
+shotSpeed = 12
+
+

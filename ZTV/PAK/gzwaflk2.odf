@@ -1,0 +1,16 @@
+// AI Version for rocket tank ai use
+
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "AA Flak"
+fireSound = "mmine01.wav"
+wpnReticle = "gflare_s"
+wpnPriority = 1
+wpnCategory = "SPEC"
+isAssault = 1
+aiRange = 300
+
+
+[DispenserClass]
+shotDelay = 20 // 10 // 6.0
+objectClass = "flakwak" //"waflakmn"

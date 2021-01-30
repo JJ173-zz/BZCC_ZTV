@@ -1,0 +1,40 @@
+[GameObjectClass]
+geometryName = "ibtcen00.xsi"
+classLabel = "powered"
+scrapCost = 80
+scrapValue = 3
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Technical Center"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 4.0
+isAssault = 1
+isSingle = 1
+
+upgradeName = "ibtcen_b_zm2"
+
+armorClass = H
+
+requireCount = 2
+requireName1 = "ibarmo"
+requireText1 = "Build Armory"
+requireName2 = "ibsbay"
+requireText2 = "Build Service Bay"
+
+provideCount = 2
+provideName1 = "ibtcen"
+provideName2 = "ibtcen_zm2"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_orange_nf"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+[PoweredBuildingClass]
+detectRange = 100
+
+[Lod1]
+geometryName = "ibtcenL1.xsi" ;geometry for lod1
+distance = 50                 ;bsphere under 200 pixel => switch to lod1

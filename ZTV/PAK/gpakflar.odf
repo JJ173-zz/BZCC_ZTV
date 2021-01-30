@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "IR Flare"
+ordName = NULL
+fireSound = "mmine01.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "HAND"
+isAssault = 1
+
+//localAmmo = 210 // 3 * 70
+
+[DispenserClass]
+shotDelay = 5.0
+objectClass = "irbeacon"
+

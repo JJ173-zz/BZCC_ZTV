@@ -1,0 +1,57 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotSound = "flash01.wav" 
+renderName = "sphase.render"
+
+xplGround = "xsphasgd"
+xplVehicle = "xsphascr"
+xplBuilding = "xsphascr"
+xplExpire = "xsphasxp"
+
+ammoCost = 0.2 //
+lifeSpan = 1.5 // 80m
+shotSpeed = 100 //
+
+damageValue(N) = 1.5 
+damageValue(L) = 2 
+damageValue(H) = 2 
+
+damageValue(S) = 2 
+damageValue(D) = 2  
+damageValue(A) = 2 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "sphase.flare"
+renderName2 = "sphase.halo"
+renderName3 = "sphase.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 60 255 120"
+finishColor = "0 30 255 120"
+startRadius = 1.4
+finishRadius = 1.4
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 130 255 127"
+finishColor = "0 30 255 127"
+startRadius = 0.2
+finishRadius = 0.2
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 90"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 0.0
+segmentTime = 0.05 

@@ -1,0 +1,30 @@
+[GameObjectClass]
+//mrmFactor = 0
+geometryName = "ibscav_ic6.xsi"
+geometryScale = 0.5
+classLabel = "extractor"
+scrapCost = 40
+scrapValue = 20
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Silo"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+canInteract=1 
+ownsTerrain = 1
+
+armorClass = L
+
+[BuildingClass]
+soundAmbient = "iext01.wav"
+
+[ExtractorClass]
+initDelay = 1E6 // 12.0
+scrapDelay = 1E6 // 1.0
+scrapHold = 20
+detectRange = 450 // 100
+
+

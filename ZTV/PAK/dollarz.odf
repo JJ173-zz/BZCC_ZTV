@@ -1,0 +1,23 @@
+[GameObjectClass]
+geometryName = "dollarsn.xsi"
+geometryScale = 0.20
+classLabel = "camerapod"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+addHealth = 1
+maxAmmo = 0
+unitName = "Points!"
+canCollide = 0 //1
+collisionRadius = 0.1
+armorClass = N
+
+aiName = "PowerUpProcess"
+canDetect = 0
+canInteract = 1
+
+[CameraPodClass]
+omegaSpin = 9.0
+rangeScan = 0.0
+periodScan = 0.0
+

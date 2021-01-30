@@ -1,0 +1,27 @@
+[GameObjectClass]
+GeometryName = "tbreeder.xsi"
+geometryScale = 8.0
+classLabel = "extractor"
+scrapCost = 60
+scrapValue = 60
+maxHealth = 6000
+unitName = "Scrap Silo"
+
+heatSignature = 1.5
+imageSignature = 0.5
+radarSignature = 0.5
+collisionRadius = 0.0
+
+canDetect = 1
+canInteract = 1
+ownsTerrain = 1
+canCollide = 1
+
+buildSupport = B
+buildRequire = F
+
+[ExtractorClass]
+initDelay = 5.0
+scrapDelay = 0.5
+scrapHold = 60
+detectRange = 200

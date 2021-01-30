@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Sea Squids"
+fireSound = NULL
+wpnReticle = "gflare_s"
+wpnPriority = 1
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 50
+
+
+[DispenserClass]
+shotDelay = 15.0
+objectClass = "squeder" 

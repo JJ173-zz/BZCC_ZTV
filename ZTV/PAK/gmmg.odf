@@ -1,0 +1,27 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gmmg"
+ordName = "bmmg"
+wpnName = "MMG"
+fireSound = "mmg.wav"
+wpnReticle = "glaser"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gmmg.flash"
+aiRange = 135.0
+
+[CannonClass]
+shotDelay = 0.2
+shotVariance = 0.015
+
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "=flash1.bmp"
+textureBlend = "one one modulate"
+startColor = "255 240 230 255"
+finishColor = "255 240 230 60"
+startRadius = 2.2
+finishRadius = 3.0
+animateTime = 0.12
+geomName = "g_sflash.xsi"

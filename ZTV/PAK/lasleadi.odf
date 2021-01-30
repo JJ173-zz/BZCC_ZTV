@@ -1,0 +1,40 @@
+[OrdnanceClass]
+classLabel = "leader"
+shotGeometry = NULL 
+xplGround = "xlrkleadi_gnd"
+xplVehicle = "xlrkleadi_car"
+xplBuilding = "xlrkleadi_car"
+
+renderName = "lasleadi.trail"
+
+ammoCost = 1
+lifeSpan = 265E-5 // 350E-5
+shotSpeed = 1E5
+
+damageValue(N) = 0 
+damageValue(L) = 0 
+damageValue(H) = 0 
+
+damageValue(S) = 0 
+damageValue(D) = 0 
+damageValue(A) = 0 
+
+[LeaderRoundClass]
+stickTime = 7.0 
+
+[trail]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" 
+textureBlend = "one one modulate" 
+startColor = "200 0 0 255"
+finishColor = "200 0 0 0"
+startRadius = 0.1
+finishRadius = 0.1
+segmentLength = 2 
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+textureRate = 0.01
+
+
+
+

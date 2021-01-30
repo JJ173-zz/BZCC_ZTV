@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Lancer"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "CANNON" 
+aiRange = 400
+isAssault = 1
+
+altName = "glanc"
+
+//localAmmo = 15000 // 1 // needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 9.0
+objectClass = "fvarchns2"
+

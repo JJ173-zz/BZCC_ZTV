@@ -1,0 +1,16 @@
+[WeaponClass]
+geometryName = "orngball.xsi"
+classLabel = "dispenser"
+wpnName = "_Hawk 1"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+localAmmo = 12000 // [4 x 3000]
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "ivhawk1" 
+

@@ -1,0 +1,81 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 40
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 210
+buildtype1 = "fvscav"
+buildcount1 = 2
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 205
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "CollectPool"
+planPriority = 200
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "CollectPool"
+planPriority = 195
+ContinueEvenIfFail = true
+
+[plan5]
+plantype = "basebuildminimums"
+planpriority = 170
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[plan6]
+plantype = "buildminimums"
+planpriority = 165
+buildtype1 = "fvwing"
+buildcount1 = 1
+buildtype2 = "fvzeeder"
+buildcount2 = 1
+buildtype3 = "fvtv"
+buildcount3 = 1
+
+[plan7]
+plantype = "basebuildminimums"
+planpriority = 160
+buildtype1 = "fbspirz1"
+buildloc1 = "spire1"
+buildtype2 = "fbspirz1"
+buildloc2 = "spire2"
+
+[plan8]
+plancondition = "NotExists"
+planconditionclass = "fbforg"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+plantype = "upgrade"
+planpriority = 150
+Unittype = "fbkiln"
+
+[plan9]
+plantype = "basebuildminimums"
+planpriority = 145
+buildtype1 = "fbstro"
+buildloc1 = "stronghold"
+
+[plan10]
+plantype = "basebuildminimums"
+planpriority = 140
+buildtype1 = "fbdowzm1"
+buildloc1 = "dower"
+
+[plan11]
+plantype = "basebuildminimums"
+planpriority = 135
+buildtype1 = "fbantm"
+buildloc1 = "antenna"

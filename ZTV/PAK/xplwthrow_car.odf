@@ -1,0 +1,87 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "flame01.wav"
+
+damageRadius = 12.0
+
+damageValue(N) = 20 // none
+damageValue(L) = 10 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 20 // deflection
+damageValue(A) = 10 // absorbtion
+
+particleTypes = 4
+particleClass1 = "xplwthrow_car.core"
+particleCount1 = 2
+particleVeloc1 = "20.0 5.0 20.0"
+particleBias1 = "5.0 0.0 5.0"
+particleVariance = "10.0 10.0 10.0"
+
+particleClass2 = "xplwthrow_car.chunks"
+particleCount2 = 3
+particleVeloc2 = "10.0 0.0 10.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "xplwthrow_car.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xplwthrow_car.char"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "grndchar.tga" //"flame2.tga"
+//textureBlend = "one one modulate"
+textureBlend = "invsrc invsrc modulate"
+startColor = "100 0 0 255" 
+finishColor = "30 0 0 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 0.8
+rotationRate = 6
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "grndchar.tga" //"flame2.tga"
+//textureBlend = "one one modulate"
+textureBlend = "invsrc invsrc modulate"
+startColor = "100 0 0 255"
+finishColor = "30 0 0 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 0.8
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "250 0 0 255"
+finishColor = "250 0 0 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Char]
+simulateBase = "sim_null"
+lifeTime = 30.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 50 0 0 180"
+finishColor = "0 0 0 0"
+startRadius = 14.0   // 2.0
+finishRadius = 8.0  // .05
+animateTime = 5.0

@@ -1,0 +1,81 @@
+[OrdnanceClass]
+classLabel = "pulse"
+shotGeometry = "iorckt00.xsi" // NULL
+shotRadius = 2.5
+shotSound = "chgpulshot.wav"
+
+xplGround = "xchgpuls_car1"
+xplVehicle = "xchgpuls_car1"
+xplBuilding = "xchgpuls_car1"
+
+renderName = "chgpuls6.render"
+
+ammoCost = 15 // 1.5
+lifeSpan = 2.25 
+shotSpeed = 200.0
+
+damageValue(N) = 1100 // none 
+damageValue(L) = 750 // light 
+damageValue(H) = 350 // heavy 
+
+damageValue(S) = 700 // standard 
+damageValue(D) = 900 // deflection 
+damageValue(A) = 500 // absorbtion 
+
+[PulseShellClass]
+pulseDelay = 0.2 //  0.3
+pulsePeriod = 0.1 //  0.3
+xplPulse = "xplcgemit"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "chgpuls6.flare"
+renderName2 = "chgpuls6.halo"
+renderName3 = "chgpuls6.trail"
+renderName4 = "chgpuls6.light"
+renderName5 = "chgpuls6.trail2"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "220 200 20 255"
+finishColor = "200 180 20 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "150 160 50 150"
+finishColor = "150 160 50 150"
+startRadius = 2.5
+finishRadius = 2.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga" // "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "220 200 0 255"
+finishColor = "200 0 0 0"
+startRadius = 1.8    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.3 // 0.9  // time each segment animates
+segmentVariance = "0.001 0.001 0.001 "
+animateTime = 0.15 // 0.2 
+textureRate = 0.2 // 0.01
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_light"
+startColor = "255 120 0 2550"
+finishColor = "255 120 0 0"
+startRadius = 60.0
+finishRadius = 60.0
+animateTime = 1.25
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

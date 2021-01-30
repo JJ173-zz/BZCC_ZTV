@@ -1,0 +1,91 @@
+[WeaponClass]
+classLabel = "chargegun"
+altName = NULL 
+ordName = NULL
+wpnName = "Charge Pulse"
+fireSound = "cryshum.wav" 
+wpnReticle = "gmaggun.0"
+wpnCategory = "CANNON" 
+isAssault = 1
+flashName = "gchgpuls.flash"
+
+aiRange = 450
+
+[ChargeGunClass]
+startRate = 1000 // 11025.0
+deltaRate = 10000 //4000.0  // how fast to reach top
+startVolume = 80 // 40.0
+deltaVolume = 20.0
+
+ordnanceCount = 7
+
+shotDelay1 = 0.4
+salvoCount1 = 1
+salvoDelay1 = 0.4
+shotVariance1 = 0.06
+fireSound1 = "pulschg1.wav" 
+ordName1 = "chgpuls1"
+wpnReticle1 = "gmaggun.0"
+
+shotDelay2 = 0.6
+salvoCount2 = 2
+salvoDelay2 = 0.3
+shotVariance2 = 0.05
+fireSound2 = "pulschg2.wav" 
+ordName2 = "chgpuls1"
+wpnReticle2 = "gmaggun.1"
+
+shotDelay3 = 1.0
+salvoCount3 = 3
+salvoDelay3 = 0.3
+shotVariance3 = 0.04
+fireSound3 = "pulschg3.wav" 
+ordName3 = "chgpuls1"
+wpnReticle3 = "gmaggun.2"
+
+shotDelay4 = 1.5
+salvoCount4 = 4
+salvoDelay4 = 0.3
+shotVariance4 = 0.03
+fireSound4 = "pulschg4.wav" 
+ordName4 = "chgpuls1"
+wpnReticle4 = "gmaggun.3"
+
+shotDelay5 = 2.0
+salvoCount5 = 5
+salvoDelay5 = 0.25
+shotVariance5 = 0.02
+fireSound5 = "pulschg5.wav" 
+ordName5 = "chgpuls1"
+wpnReticle5 = "gmaggun.4"
+
+shotDelay6 = 2.5
+salvoCount6 = 6
+salvoDelay6 = 0.2
+shotVariance6 = 0.0
+fireSound6 = "pulschg6.wav" 
+ordName6 = "chgpuls1"
+wpnReticle6 = "gmaggun.5"
+
+shotDelay7 = 3.0
+salvoCount7 = 7
+salvoDelay7 = 0.2
+shotVariance7 = 0.0
+fireSound7 = "pulschg7.wav" 
+ordName7 = "chgpuls7"
+wpnReticle7 = "gmaggun.6"
+
+holdRate = 60 // 20 // 100.0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "255 155 0 2500"
+finishColor = "255 155 0 100"
+startRadius = 100.0
+finishRadius = 100.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

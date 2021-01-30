@@ -1,0 +1,106 @@
+[GameObjectClass]
+BaseName = "tvcrick4"
+classLabel = "aircraft"
+geometryName = "zairdisk.xsi"
+geometryScale = 8.0 //1.2
+scrapCost = 35
+scrapValue = 5
+maxHealth = 1200
+maxAmmo = 100
+unitName = "Axe"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+heatSignature = 0.1
+imageSignature = 0.4
+radarSignature = 0.1
+isAssault = 0
+armorClass = L
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+canSnipe = 1
+needPilot = 0
+collisionRadius = 0.7
+addAmmo = 5
+addHealth = 1.8
+ejectRatio = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "tvcrick4.tail"
+
+weaponMask = 01111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gcrktp2" //"gcrktp" 
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gcrktp2" //"gcrktp" 
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 =  "iglascr1" 
+weaponAssault3 = 0
+weaponHard4 = "HP_ROCKET_2"
+weaponName4 =  "iglascr1" 
+weaponAssault4 = 0
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 3.0f
+velocJam = 5.0f
+engageRange = 225
+weaponPitch = 0.35
+
+selectWaitMsg = "fvartl04.wav"
+selectAttackMsg = "fvartl01.wav"
+selectFollowMsg = "fvartl03.wav"
+selectGoMsg = "fvartl02.wav"
+selectOtherMsg = "fvartl04.wav"
+holdMsg = "fvartl12.wav"
+goMsg = "fvartl05.wav"
+attackMsg = "fvartl06.wav"
+followMeMsg = "fvartl08.wav"
+followMsg = "fvartl03.wav"
+rescueMsg = "fvartl10.wav"
+otherMsg = "fvartl05.wav" 
+killedMsg = "bombgen02.wav"
+
+[AirCraftClass]
+velocSet(L) = -30.0 // minimum velocity
+velocSet(M) = 0.0 // cruising velocity
+velocSet(H) = 40.0 // maximum velocity
+accelThrust = 40.0 // thrust acceleration
+accelBrake = 10.0 // brake acceleration
+accelDrag = 5.0 // drag acceleration
+// mouse as rudder
+omegaSteer(L) = 0.3 // steer turn rate at minimum
+omegaSteer(M) = 0.9 // steer turn rate at cruising
+omegaSteer(H) = 1.1 // steer turn rate at maximum
+// strafe affecting rudder
+omegaStrafe(L) = 0.01//0.6 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.01//0.9 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.01//1.1 // airbrake turn rate at maximum
+
+//this affects steering but not sliding
+alphaSteer = 0.8 // 0.7 // steering angular acceleration
+// tried .01 - 5 to stop sliding sideways not much effect
+alphaStrafe = 0.0 //0.5 // airbrake angular acceleration
+
+minAltitude = 40.0 // minimum altitude - no effect?
+maxAltitude = 150.0 // maximum altitude
+alphaLevel = 5.0 // leveling angular acceleration
+// this affects sliding sideways, 20 makes it jitter some tho 
+alphaDamp = 10 // 5.0 // damping angular acceleration
+
+pitchPitch = 0.6 // maximum pitch angle
+rollSteer = 0.9 // maximum roll angle from steering
+rollStrafe = 0.9 // maximum roll angle from airbraking
+
+timeDeploy = 2.0 // time to deploy
+timeUndeploy = 2.0 // time to undeploy
+
+soundThrust = "crickeng.wav"
+soundSteer = "crickeng.wav"
+soundDeploy = "crickeng.wav"
+soundUndeploy = "crickeng.wav"
+soundBrake = "crickeng.wav"
+

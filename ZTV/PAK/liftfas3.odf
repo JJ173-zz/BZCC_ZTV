@@ -1,0 +1,59 @@
+// Powerup lift 
+
+[OrdnanceClass]
+classLabel = "magnetshell"
+shotGeometry = NULL
+shotRadius = -15
+shotSound = NULL //"baruin1b.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+xplExpire = "lift3xpr"
+canCollide= 0
+
+renderName = "liftfas3.render" 
+
+ammoCost = 0
+lifeSpan = 90
+shotSpeed = 3
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 0.5 // 3.0
+objPushCenter = -5 // -10.0
+objPushEdge = -10.0 // -15
+objDrag = 10.0
+ordPushCenter = 0.0 
+ordPushEdge = 0.0 
+ordDrag = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "liftfas3.sphere"
+
+[Sphere]
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 0"
+finishColor = "255 255 255 5"
+startRadius = 0.5
+finishRadius = 0.5
+animateTime = 15
+latitudeBands = 24
+longitudeSegments = 36
+
+// Works for powerups
+// fieldRadius = 0.5 
+// objPushCenter = -10.0
+// objPushEdge = -15.0
+// objDrag = 10.0 <-- drag is the key value

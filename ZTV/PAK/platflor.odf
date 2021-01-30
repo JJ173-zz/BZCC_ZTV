@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "platflor.xsi"
+classLabel = "powerlung"
+animCount = 0
+collisionRadius = 0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Floor"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canCollide = 0
+isAssault = 0
+canDetect = 0
+canInteract = 0
+
+armorClass = H
+
+[BuildingClass]
+soundAmbient = 

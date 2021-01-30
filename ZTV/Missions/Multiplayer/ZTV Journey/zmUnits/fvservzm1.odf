@@ -1,0 +1,27 @@
+[GameObjectClass]
+classLabel = "fvserv"
+scrapValue = 10
+scrapCost = 10
+buildTime = 7 //10.0
+maxHealth = 3500 // 3000
+
+requireCount = 0
+
+[CraftClass]
+
+[TrackedVehicleClass]
+omegaSpin = 3.0 // 2.0
+velocForward = 22 // 25.0
+velocReverse = 15.0
+accelThrust = 20.0
+
+[ServiceTruck]
+supplyRange = 25 // 20.0
+supplyRadius = 20 // 15.0
+supplyRate = 60 // 45.0
+
+[Supply]
+
+[Halo]
+
+[Bolt]

@@ -1,0 +1,151 @@
+[GameObjectClass]
+baseName = "ivserv"
+geometryName = "rprtank.xsi"
+geometryScale = 0.75 
+cockpitName = "ivserv_cockpit.xsi"
+classLabel = "service"
+animCount = 0
+scrapValue = 30
+scrapCost = 130
+buildTime = 5.0
+maxHealth = 2500
+maxAmmo = 1200
+unitName = "Service Relay"
+aiName = "ServiceProcess"
+aiName2 = "ServiceProcess"
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.0
+isAssault = 0
+needPilot = 0
+
+powerCost = 2
+
+armorClass = L
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+effectHard1 = "hp_special_1"
+effectName1 = "tvserv2.effect"
+
+[CraftClass]
+rangeScan = 300.0f
+periodScan = 5.0f
+velocJam = 5.0f
+
+braccelFactor = 0.3 // 0.09
+velFactor = 0.3
+steerFactor = 1.4
+omegaFactor = 0.4  // 0.2
+strafeFactor = 0.1
+
+TeamTransferrable = true
+
+selectAttackMsg = "ivserv04.wav"
+selectGoMsg = "ivserv02.wav"
+selectFollowMsg = "ivserv03.wav"
+selectOtherMsg = "ivserv04.wav"
+
+goMsg = "ivserv02.wav"
+goObjectMsg = "ivserv11.wav"
+attackMsg = "ivserv01.wav"
+followMeMsg = "ivserv08.wav"
+followMsg = "ivserv03.wav"
+repairMsg = "ivserv09.wav"
+reloadMsg = "ivserv09.wav"
+rescueMsg = "ivserv11.wav"
+recycleMsg = "ivserv11.wav"
+holdMsg = "ivserv12.wav"
+user1Msg = "ivserv01.wav"
+killedMsg = ""
+diedMsg = ""
+
+[TrackedVehicleClass]
+omegaSpin = 2.0
+velocForward = 12 // 20.0
+velocReverse = 12.0
+accelThrust = 20 // 10.0
+
+engineSound = "iserv01.wav"
+treadSound  = "iserv02.wav"
+
+[ServiceTruck]
+supplyRange = 95  // pulls up till here?
+supplyRadius = 100 // 80 // looks for units?
+supplyRate = 80 // 150 // 40.0
+supplySound = "mnu_empt.wav"
+supplyEffect = "ivserv2_ic1.supply"
+supplyHard = "hp_special_1"
+
+[Supply]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivserv2_ic1.halo"
+renderName2 = "ivserv2_ic1.bolt"
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "particle.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 127"
+finishColor = "0 0 255 0"
+startRadius = 5.0
+finishRadius = 1.0
+animateTime = 0.3
+
+[Bolt]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 63"
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "0.5 0.5 0.5"
+animateTime = 0.3
+textureRate = 0.05
+textureSpeed = -0.5
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "ivserv2_ic1.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivserv2_ic1.blulight"
+renderName2 = "ivserv2_ic12.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "120 0 255 120"
+finishColor = "120 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "120 0 255 255"
+finishColor = "120 0 255 255"
+startRadius = 6.0 // 1
+finishRadius = 0.5
+animateTime = 0.1

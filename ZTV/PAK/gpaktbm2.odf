@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = "igsatc00.xsi"
+geometryScale = 0.12
+wpnName = "Time Bomb"
+ordName = "tbomkick"
+
+//wpnIcon = "wire_igsatc1.tga"
+fireSound = "bounce.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "HAND"
+isAssault = 1
+localAmmo = 6 // 3 * 
+
+//[DispenserClass]
+//shotDelay = 10.0
+//objectClass = "tbomkick"
+
+[CannonClass]
+shotDelay = 11.0

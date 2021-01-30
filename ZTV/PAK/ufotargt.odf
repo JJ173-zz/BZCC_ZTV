@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "ufotargt.xsi"
+geometryScale = 1.5
+classLabel = "powered" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 100
+maxAmmo = 0
+unitName = "Target"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+canCollide = 0
+ownsTerrain = 0
+armorClass = L
+powerCost = 0 
+isAssault = 1
+

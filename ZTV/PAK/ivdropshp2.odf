@@ -1,0 +1,146 @@
+[GameObjectClass]
+baseName = "ivdropshp1"
+geometryName = "ivdrop_ic2.xsi"
+geometryScale = 0.60
+
+classLabel = "apc"
+collisionRadius = 1.0
+scrapValue = 0
+scrapCost = 40
+customCost = 80
+buildTime = 3.0 //
+customTime = 10.0
+maxHealth = 2000 // 4000
+unitName = "_Transport."
+
+maxAmmo = 500 
+addAmmo = 0
+
+heatSignature = 1.0
+imageSignature = 2.0
+radarSignature = 2.0
+isAssault = 1
+canDetect = 1
+canInteract = 1
+
+armorClass = L
+
+canSnipe = 0 // prolly need special sniper bullet
+boxCollide = 1
+
+requireCount = 0
+
+explosionName = "xnegxpl"
+
+
+/////// weapons ///////////////////
+
+weaponMask = 01111
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gshadow_c" // "givcrick"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_SPECIAL_1"
+VisualHard2 = "HP_CANNON_1"
+weaponName2 = "gscav3" // no visual
+weaponAssault2 = 1
+
+weaponHard3 = "HP_GUN_1"
+weaponName3 = "givfox2" 
+weaponAssault3 = 0
+
+weaponHard4 = "HP_CANNON_1"
+VisualHard4 = "HP_CANNON_1"
+weaponName4 = "gcons_ic2" // visual load
+weaponAssault4 = 1
+
+
+lightHard1 = "hp_light_3"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_4"
+lightName2 = "spotblue"
+
+effectHard1 = "hp_light_1"
+effectName1 = "ivdropshp1.exhaust"
+
+effectHard2 = "hp_light_2"
+effectName2 = "ivdropshp1.exhaust"
+
+[CraftClass]
+weaponPitch = 1.2 // 1.3 // 1.5
+rangeScan = 375.0
+periodScan = 5.0
+velocJam = 1.0
+engageRange = 0
+
+braccelFactor = 0.05f;
+strafeFactor = 10.1f;
+steerFactor = 3.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 6;
+topSpeed = 10;
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+rescueMsg = "avapcv5.wav"
+
+[HoverCraftClass]
+setAltitude = 11.5 // 6 // lowers to this on firing/deploying
+accelDragStop = 1.5 
+accelDragFull = 2 
+alphaTrack = 30 
+alphaDamp = 6 
+pitchPitch = 0.01
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 17 // 25  
+velocReverse = 10 
+velocStrafe = 2.5
+accelThrust = 20  
+accelBrake = 6 
+omegaSpin = 0.25 // .3 
+omegaTurn = 0.25 // .3 
+alphaSteer = 0.5 
+accelJump = 200 // 250.0 speed to aquire alttitude low or high
+
+soundThrust = "ienge.wav"
+soundSteer = "ienge.wav"
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 2.5 
+
+flightAltitude = 175 // 16 
+
+//soundThrust = "ienge.wav"
+//soundSteer = "ienge.wav"
+soundDeploy = "dropleav.wav"
+soundUndeploy = "droppass.wav"
+
+[exhaust]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 15.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "1 1 1"
+emitLife = 0.5
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 127"
+finishColor = "0 100 255 0"
+startRadius = 8
+finishRadius = 1
+animateTime = 0.5
+rotationRate = 2.0
+//maxDist	= 2000.0f
+//maxRadii = 2000.0f

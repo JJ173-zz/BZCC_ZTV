@@ -1,0 +1,33 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+shotSound = NULL 
+shotGeometry = NULL
+shotRadius = 0.0
+xplGround = NULL 
+xplVehicle = NULL 
+xplBuilding = NULL 
+
+ammoCost = 0
+lifeSpan = 0.4 // 150m
+shotSpeed = 15 // 25
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[MagnetShellClass]
+triggerDelay = 0.0
+fieldRadius = 8 
+objPushCenter = -100.0
+objPushEdge = 0.0
+objDrag = 1.8 // .8
+ordPushCenter = 0.0
+ordPushEdge = 0.0
+ordDrag = 0.0
+
+
+

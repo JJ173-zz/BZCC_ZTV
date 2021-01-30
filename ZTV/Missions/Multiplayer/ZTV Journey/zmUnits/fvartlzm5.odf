@@ -1,0 +1,31 @@
+[GameObjectClass]
+classLabel = "fvartl"
+geometryScale = 2.0
+buildTime = 10 // 20.0
+buildTime = 10 // 20.0
+maxHealth = 1000
+addAmmo = 1
+
+requireCount = 1
+requireName1 = "fbforg"
+requireText1 = "Upgrade Kiln"
+
+///// WEAPONS ////////////////////
+
+weaponHard1 = "HP_MORTAR_1"
+weaponName1 = "gpopgnzm1" //"gpopgun"
+weaponAssault1 = 0
+
+//////////////////////////////////
+
+[CraftClass]
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+[HoverCraftClass]
+
+[ArtilleryClass]
+
+[DeployableClass]
+timeUndeploy = 10.0

@@ -1,0 +1,83 @@
+[GameObjectClass]
+baseName = "ivscav_ic3"
+geometryName = "moblsilo3.xsi"
+geometryScale = 1.5
+cockpitName = "ivscav_cockpit.xsi"
+
+animCount = 0
+//animName1 = "deploy"
+//animFile1 = "ivscav00.xsi"
+
+classLabel = "scavenger"
+
+scrapValue = 10
+scrapCost = 20
+buildTime = 5.0
+maxHealth = 4000
+maxAmmo = 1 // 10 // set ammo for weapons under scavenger class section
+unitName = "Silo Truck"
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+isAssault = 1
+
+armorClass = L
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue" 
+
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue"
+
+
+[CraftClass]
+rangeScan = 300.0
+periodScan = 0.0
+velocJam = 0.0
+
+braccelFactor = 0.09
+velFactor = 0.3
+steerFactor = 1.5
+omegaFactor = 0.1
+
+TeamTransferrable = true
+selectWaitMsg = "ivscav05.wav"
+selectGoMsg = "ivscav05.wav"
+selectPickupMsg = "ivscav05.wav"
+selectDropoffMsg = "ivscav05.wav"
+selectOtherMsg = "ivscav05.wav"
+selectFollowMsg = "ivscav05.wav"
+holdMsg = "ivscav05.wav"
+goMsg = "ivscav05.wav"
+stopMsg = "ivscav05.wav"
+followMsg = "ivscav05.wav"
+followMeMsg = "ivscav05.wav"
+rescueMsg = "ivscav05.wav"
+repairMsg = "ivscav05.wav"
+recycleMsg = "ivscav05.wav"
+otherMsg = "ivscav05.wav" // "ivscav13.wav" // got it covered
+
+[TrackedVehicleClass]
+velocForward = 8 // 15.0
+velocReverse = 8 // 10.0
+accelThrust = 50.0
+omegaSpin = 1.0 // [2.0]
+
+engineSound = "iscav01.wav"
+treadSound = "iscav01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 3.0
+timeUndeploy = 3.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold = 30 // 0 // set ammo for weapons here
+deployClass = "ibscav_ic1"
+

@@ -1,0 +1,42 @@
+[GameObjectClass]
+geometryName = "airjav1.xsi" //"igmcur00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 1
+unitName = "Squidder"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+armorClass = N
+canCollide = 1
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+explosionName = "xzm3nxpl"
+xplExpire = "xzm3nxpl"
+
+[MineClass]
+lifeSpan = 16.1 // 10.1
+
+[FlareMineClass]
+payloadName = "squidz2"
+
+fireSound = NULL
+triggerDelay = 0.01
+shotDelay = 1 // 2.0
+shotVariance = 0.1 
+
+damageRadius = 20.0
+kickRadius = 0.0
+kickOmega = 0.0 
+kickVeloc = 0.0
+
+damageValue(N) = 60 // 60
+damageValue(L) = 40 // 60
+damageValue(H) = 20 // 100
+
+damageValue(S) = 50
+damageValue(D) = 50
+damageValue(A) = 50

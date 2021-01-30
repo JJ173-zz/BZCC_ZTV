@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "ivlavegg.XSI" 
+geometryScale = 4.0
+classLabel = "moneybag"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Worm Egg"
+aiName = "PowerUpProcess"
+canDetect = 0
+canInteract = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivlavegg.effect"
+
+
+[PowerUpClass]
+soundPickup = "" //"armor_up.wav" // "pickup01.wav"
+soundReject = "reject.wav"
+
+[MoneyPowerupClass]
+moneyUp = 250
+

@@ -1,0 +1,23 @@
+[GameObjectClass]
+classLabel = "ibrecy"
+scrapValue = 100
+maxHealth = 14000
+unitName = "Recycler ZM1"
+
+//=====================================
+
+upgradeName = "ivrecy_zm1"
+
+//====================================
+
+[PoweredBuildingClass]
+
+[BuildingClass]
+
+[FactoryClass]
+buildItem8 = "ivscout_m"
+buildEmptyItem = 8
+
+[RecyclerClass]
+
+[Lod1]

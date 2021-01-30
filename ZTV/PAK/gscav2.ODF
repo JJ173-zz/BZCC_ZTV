@@ -1,0 +1,18 @@
+[WeaponClass]
+//geometryname = "consvisgun1.xsi"
+//geometryScale = 0.60
+classLabel = "dispenser"
+wpnName = "Empty Silo"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 150
+isAssault = 1
+
+
+localAmmo = 3 // 20 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "ivscav_ic2" 
+

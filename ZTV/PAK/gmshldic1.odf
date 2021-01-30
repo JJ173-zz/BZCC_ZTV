@@ -1,0 +1,18 @@
+[WeaponClass]
+
+classLabel = "mortar"
+ordName = "mshldkick1"
+ 
+wpnName = "Shield Gen"
+
+fireSound = "wuflhum.wav" // "mmine01.wav"
+wpnReticle = "gmcurmin"
+
+wpnCategory = "ROCKET"
+isAssault = 1
+
+
+[CannonClass]
+shotDelay = 10.0
+
+

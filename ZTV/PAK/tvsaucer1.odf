@@ -1,0 +1,139 @@
+[GameObjectClass]
+geometryName = "dwnbeam.xsi"
+geometryScale = 20
+classLabel = "morphtank"
+collisionRadius = 1.0
+scrapValue = 25
+scrapCost = 100
+customCost = 120
+buildTime = 50 // 40.0
+customTime = 50 // 40.0
+maxHealth = 2500 // 10000
+addHealth = 5
+maxAmmo = 500000 // 15000 local ammo handles now 
+addAmmo = 100 //100  
+unitName = "Saucer (c)"
+//aiName = "TankFriend"
+//aiName2 = "TankEnemy"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+//aiName = "SAVFriend"
+//aiName2 = "SAVEnemy"
+//aiName = "AttachOffensive"
+//aiName2 = "AttachOffensive"
+heatSignature = 10.0
+imageSignature = 0.5
+radarSignature = 0.0
+isAssault = 0
+armorClass = H
+canSnipe = 1 //
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "ufolite"
+lightHard2 = "hp_light_2"
+lightName2 = "ufolite"
+lightHard3 = "hp_light_3"
+lightName3 = "ufolite"
+lightHard4 = "hp_light_4"
+lightName4 = "ufolite"
+
+weaponMask = 00111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 =  "gflashdr" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_special_1"
+weaponName2 = "gsonshld" 
+weaponAssault2 = 0
+
+[CraftClass]
+PathingType = 1  // -1 = auto, 0 = Hover, 1 = Walker, 2 = Person, 3 = Tracked, 4 = Flyer 
+AvoidType = 2    // -1 = auto, 0 = None, 1 = force, 2 = plan 
+
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 0.0
+weaponPitch = 0.090 // .05 works pretty good
+engageRange = 0 // 75
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 3.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+[HoverCraftClass]
+setAltitude = 72 // 110 // 1.5
+accelDragStop = 8 // 4.0
+accelDragFull = 3 //1.0
+alphaTrack = 20 // 10.0
+alphaDamp = 9 // 3.0
+pitchPitch = 0.01 // 0.5
+pitchThrust = 0.001 // 0.1
+rollStrafe = 0.001 // 0.1
+rollSteer = 0.001 // 0.1
+
+velocForward = 30 // 15.0
+velocReverse = 20.0
+velocStrafe = 15.0
+accelThrust = 50.0
+accelBrake = 40.0
+omegaSpin = 1 // 2.0
+omegaTurn = 1 // 1.0
+alphaSteer = 8 // 5.0
+accelJump = 45 // 150.0
+
+soundThrust = "furyengine.WAV" //"SaucerEng2.ogg" // "iapc02.wav"
+soundSteer = "furyengine.WAV" // "SaucerEng2.ogg" // "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+maxHealth = 4000 // 8000
+addHealth = 20
+maxAmmo = 500000  
+addAmmo = 100   
+unitName = "Saucer (a)"
+isAssault = 1
+engageRange = 600 
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 0.0
+
+setAltitude = 68 // 1.5
+accelDragStop = 6 //4.0
+accelDragFull = 3 // 1.0
+alphaTrack = 25 // 10.0
+alphaDamp = 9 // 3.0
+pitchPitch = 0.01 // 0.5
+pitchThrust = 0.001 // 0.1
+rollStrafe = 0.001 // 0.1
+rollSteer = 0.001 // 0.1
+
+velocForward = 15 // 15.0
+velocReverse = 10
+velocStrafe = 5.0
+accelThrust = 40.0
+accelBrake = 40.0
+omegaSpin = 0.7 // 2.0
+omegaTurn = 1 // 1.0
+alphaSteer = 3 // 5.0
+accelJump = 35 // 150.0
+
+soundThrust = "furyengine.WAV" //"SaucerEng2.ogg" // "iapc02.wav"
+soundSteer = "furyengine.WAV" //"SaucerEng2.ogg" // "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[DeployableClass]
+soundDeploy="morph01.wav"
+soundUndeploy="morph01b.wav"
+deployTime = 1 // doesnt work
+undeployTime = 1 // 

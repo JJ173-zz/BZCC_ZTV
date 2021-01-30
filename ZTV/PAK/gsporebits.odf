@@ -1,0 +1,64 @@
+[GameObjectClass]
+geometryName = "sporebits.xsi"
+classLabel = "seeker" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 1
+unitName = "ground spore"
+heatSignature = 0.1
+imageSignature = 0.1
+radarSignature = 2.0
+isAssault = 1
+armorClass = N
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+collisionRadius = 3.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniblue"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "gsporebits.render"
+
+[MineClass]
+lifeSpan = 25 // 
+xplBlast = "xplgspore"
+xplExpire = "xplgspore"
+
+[SeekerClass]
+searchRange = 175.0
+floatVeloc = 50 
+setAltitude = 2.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gsporebits.tail"
+renderName2 = "gsporebits.poof"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 140 0 90"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 1.0 
+segmentTime = 2.5  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05
+
+[Poof]
+renderBase = "draw_twirl"
+lifeTime = 15.0
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "80 0 0 255"
+finishColor = "0 0 150 150"
+startRadius = 3.5 
+finishRadius = 2.5 
+animateTime = 5.0 
+rotationRate = 5.0 // 1.0

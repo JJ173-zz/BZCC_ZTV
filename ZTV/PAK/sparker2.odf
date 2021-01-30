@@ -1,0 +1,66 @@
+[GameObjectClass]
+geometryName = "bubbler.xsi"
+geometryScale = 0.25
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 
+unitName = "Sparker 2"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "sparker2.modulator"
+
+[Modulator]
+renderBase = "draw_emit"
+emitName = "sparker2.ontime1"
+emitDelay = 5.37 
+emitDelayVar =  10 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "10.0 10.0 0.0"
+
+[OnTime1]
+simulateBase = "sim_smoke"
+lifeTime = 2  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker2.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "sparker2.ontime2"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "60.0 60.0 0.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.05  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker2.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 0.05
+renderBase = "draw_bolt"
+textureName = "lightflare.tga" // "plasma.tga" //"boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 120 255"
+finishColor = "40 50 30 0"
+startRadius = 1 
+finishRadius = 3 
+segmentLength = 1.0 
+segmentVariance = "0.2 0.2 0.0"
+animateTime = 0.1
+textureRate = 1

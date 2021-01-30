@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "tunpgen.xsi"
+geometryScale = 1
+//classLabel = "i76building"
+classLabel = "powerplant"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Power Generator"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+canCollide = 1
+ownsTerrain = 0
+powerCost = -100
+armorClass = H
+
+lightHard2 = "hp_light_2"
+lightName2 = "omniblue"
+
+buildSupport = "A"
+buildRequire = "F" // "F" is free // "A" is adjacent // "B" is next to bunker
+
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 50

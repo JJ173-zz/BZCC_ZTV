@@ -1,0 +1,74 @@
+[GameObjectClass]
+geometryName = "glowrkt8.xsi"
+geometryScale = 1.0 
+classLabel = "torpedo"
+baseName = "grccmi"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 300
+maxAmmo = 40 // 10
+unitName = "Trident"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xplcrktp"
+eplExpire = "xplcrktp"
+
+heatSignature = 3.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+effectHard1 = "hp_emit_2"
+effectName1 = "crktp.tail"
+
+effectHard2 = "hp_emit_3"
+effectName2 = "crktp.tail"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 2.5 
+alphaTrack = 2 // 15 // 20.0 nose up and down terrain tracking
+alphaDamp = 0.1 // 3.0 stickiness to terrain height
+velocForward = 40 // 35 // 15.0
+accelThrust = 50.0
+omegaTurn = 1.0 // 2.0
+alphaSteer = 2.5 // 5.0
+lifeSpan = 15.0
+xplBlast = "xplcrktp"
+
+soundThrust = "glowrkt.wav" 
+
+[Tail]
+renderBase = "draw_multi"
+renderCount = 1
+//renderName1 = "crktp.taillong"
+renderName1 = "crktp.tailshort"
+
+[TailLong]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "220 100 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.7
+finishRadius = 0.1 
+segmentTime = 0.7 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.03
+
+[TailShort]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.1 
+segmentTime = 0.4 //1.5 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.15
+textureRate = 0.1 // 0.05

@@ -1,0 +1,31 @@
+[WeaponClass]
+classLabel = "forcefield"
+ordName = NULL
+wpnName = "Enviro Shield"
+fireSound = "phan01.wav"
+wpnReticle = "gforce.0"
+wpnPriority = 0
+wpnCategory = "PACK" // "SPEC"
+wpnIcon = "wire_gfshield.tga" 
+
+
+[SpecialItemClass]
+activeSound = "sgtow01.wav"
+expireSound = "phan03.wav"
+ammoCost = 2.0 //4.0
+
+[ForceFieldClass]
+renderName = "gfshield2.render"
+soundAbsorb = "lhit.wav"
+
+[Render]
+renderBase = "draw_sphere"
+textureName = "10grey.tga" // "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 50 0 550000"
+finishColor = "0 0 255 50"
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 120.0
+latitudeBands = 16
+longitudeSegments = 24

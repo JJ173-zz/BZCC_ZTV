@@ -1,0 +1,63 @@
+[OrdnanceClass]
+classLabel = "missile" // "anchor"
+
+shotGeometry = "javelin.xsi" // "iorckt00.xsi"
+shotRadius = 1.5
+xplGround = "xjavcar"
+xplVehicle = "xjavcar"
+xplBuilding = "xjavcar"
+xplExpire = "xjavcar"
+
+renderName = "javswarm.render"
+
+ammoCost = 10
+lifeSpan = 8.5  
+shotSpeed = 40.0
+
+damageValue(N) = 210 // 60 // none
+damageValue(L) = 180 // 55 // light
+damageValue(H) = 100 // 50 // heavy
+
+damageValue(S) = 150 // 55 // standard
+damageValue(D) = 130 // 50 // deflection
+damageValue(A) = 100 // 60 // absorbtion
+
+
+[AnchorRocketClass]
+accelDrag = 2.0 // 2.0 /// 2.2  
+alphaDrag = 0.5 // .45 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.8 // 2.2
+omegaWaver = 0.5 //1.5 	
+rateWaver = 0.01 // 3.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "javswarm.flare"
+renderName2 = "javswarm.tail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "245 235 155 255"
+finishColor = "245 235 155 255"
+startRadius = 2.0 // 1
+finishRadius = 0.5
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "170 80 0 250"
+finishColor = "0 0 120 0"
+startRadius = 1.0 //0.6
+finishRadius = 0.3 // 0.2 
+segmentTime = 1.0 // .9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.001 //0.05
+

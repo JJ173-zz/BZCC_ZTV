@@ -1,0 +1,143 @@
+[GameObjectClass]
+geometryName = "lavaturr.xsi"
+geometryScale = 1.0
+animCount = 0
+classLabel = "turrettank"
+
+scrapCost = 0
+customCost = 0
+scrapValue = 0
+
+buildTime = 3.0 // 0.0
+customTime = 10.0
+
+maxHealth = 200000
+addHealth = 100
+
+maxAmmo = 100000
+addAmmo = 100
+
+unitName = "Lava Worm"
+
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+heatSignature = 1
+imageSignature = 1
+radarSignature = 1
+
+canDetect = 1
+canInteract = 1
+canCollide = 1
+armorClass = L
+needPilot = 0 
+isAssault = 0
+canSnipe = 0
+explosionName = "xicmcxpl"
+
+boxCollide = 1
+
+weightInTons = 1E6
+requireCount=0
+
+effectHard1 = "turret_x"
+effectName1 = "lavaworm1.effect"
+
+effectHard2 = "cockpit" // "turret_y"
+effectName2 = "lavaworm1.effect"
+
+/////// weapons ///////////////////
+
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 =  "gautzaric"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gautzaric"
+weaponAssault2 = 0
+//weaponHard3 = "HP_GUN_3"
+//weaponName3 = "gelemp_c"
+//weaponAssault3 = 0
+
+//////////////////////////////////
+
+turretCount=2
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+
+[CraftClass]
+rangeScan = 200.0 
+periodScan = 2.0f 
+velocJam = 5.0f 
+engageRange = 240
+
+weaponPitch = 0.9 // .08 can't shoot much above eyelevel
+
+selectGoMsg="rhin02.wav"
+selectAttackMsg="rhin06.wav"
+selectDeployMsg="rhinocry.wav"
+selectOtherMsg="rhin02.wav"
+holdMsg="rhin06.wav"
+goMsg="rhin06.wav"
+followMeMsg="rhin06.wav"
+reloadMsg="rhin02.wav"
+repairMsg="rhin02.wav"
+rescueMsg="rhin07.wav"
+recycleMsg="rhin02.wav"
+otherMsg="rhin02.wav"
+attackMsg="rhin02.wav"
+deployedMsg="rhin06.wav"
+killedMsg="rhinocry.wav"
+
+[HoverCraftClass]
+setAltitude = 12 // 0.2
+accelDragStop = 20.0
+accelDragFull = 1.0
+alphaTrack = 10.0
+alphaDamp = 10 // 3.0
+pitchPitch = 0.0
+pitchThrust = 0.01
+rollStrafe = 0.001
+rollSteer = 0.001
+
+velocForward = 8.0
+velocReverse = 8.0
+velocStrafe = 8.0
+accelThrust = 40.0
+accelBrake = 50.0
+omegaSpin = 0.4
+omegaTurn = 0.4
+alphaSteer = 1.0
+accelJump = 0.0
+
+soundThrust = "rmort01.wav"
+soundSteer = NULL //"avturre8.wav"
+soundDeploy = "rhin06.wav"
+soundUndeploy = "rhin06.wav"
+
+[TurretTankClass]
+omegaTurret= 0.1 // 0.25
+alphaTurret= 0.1 // 0.5
+timeDeploy=.2 
+timeUndeploy=.2
+
+[Effect]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "lavaworm1.alternate"
+
+[Alternate]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.03
+emitVelocity = "0.0 1.0 0.0" 
+emitVariance = "14.0 3.0 14.0"
+emitInherit = "0.9 0.9 0.9"
+emitLife = 3.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "180 40 0 20"
+finishColor = "255 0 0 0"
+startRadius = 20
+finishRadius = 30
+animateTime = 3.0
+rotationRate = 3.0

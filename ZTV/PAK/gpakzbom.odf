@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Time Bomb"
+ordName = NULL
+
+fireSound = "bombset.wav" 
+
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "HAND"
+isAssault = 0
+localAmmo = 210 // 3 * 70
+aiRange = 50
+
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "packzbom"
+

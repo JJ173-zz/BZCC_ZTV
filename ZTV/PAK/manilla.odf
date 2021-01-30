@@ -1,0 +1,35 @@
+[GameObjectClass]
+geometryName = "manilla.xsi"
+geometryScale = 0.1
+classLabel = "magnet"
+//classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 200
+maxAmmo = 1
+unitName = "info #4"
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = L
+canCollide = 1
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+powercost = 0
+explosionName = "xnullxpl"
+
+[MineClass]
+lifeSpan = 1E6
+
+[MagnetMineClass]
+TeamFilter = 51
+//triggerDelay = 0.0 
+fieldRadius = 0 // 6 
+objPushCenter = 0 //-15.0 
+objPushEdge = 0 
+objDrag = 0.0
+ordPushCenter = 0 //-500
+ordPushEdge = 0 //-200
+ordDrag = 0 // 3.0

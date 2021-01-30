@@ -1,0 +1,43 @@
+[GameObjectClass]
+geometryName = "igmits00.xsi"
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1E6
+maxAmmo = 0
+unitName = "stayput"
+effectHard1 = "stayput"
+effectName1 = "stayputic1.field"
+canDetect = 0
+canInteract = 0
+
+[MineClass]
+lifeSpan = 1E6
+
+[MagnetMineClass]
+TeamFilter = 51
+triggerDelay = 0.0
+
+fieldRadius = 9 // [20.0]
+
+objPushCenter = -150  // -200.0
+objPushEdge = -10 // -3.0
+objDrag = 15 // 7  [2.0]
+
+ordPushCenter = 150.0
+ordPushEdge = 150.0
+ordDrag = 3.0
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 20"
+finishColor = "0 255 255 20"
+startRadius = 9.0
+finishRadius = 9.0
+animateTime = 0.0
+latitudeBands = 8
+longitudeSegments = 16
+
+// place 7 m above ground level to secure ivscavfac

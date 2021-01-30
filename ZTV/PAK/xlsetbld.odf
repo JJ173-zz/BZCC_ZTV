@@ -1,0 +1,99 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xfire1.wav"
+explSound = "xsv2.wav"
+damageRadius = 30.0
+
+damageValue(N) = 500 // none
+damageValue(L) = 25 // light
+damageValue(H) = 25 // heavy
+
+damageValue(S) = 250 // standard
+damageValue(D) = 200 // deflection
+damageValue(A) = 300 // absorbtion
+
+kickRadius = 20.0
+kickOmega = -3.0
+kickVeloc = 3.0
+
+particleTypes = 5
+particleClass1 = "xlsetcar.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xlsetcar.puff"
+particleCount2 = 7
+particleVeloc2 = "10.0 10.0 10.0"
+particleClass3 = "xlsetcar.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xlsetcar.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleClass5 = "xlsetcar.burst"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 255"
+finishColor = "55 55 255 55"
+startRadius = 8.0
+finishRadius = 0.1
+animateTime = 0.5
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 255"
+finishColor = "55 55 255 0"
+startRadius = 2.0
+finishRadius = 0.5
+animateTime = 0.3
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "55 55 255 955"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 140"
+finishColor = "55 55 255 0"
+startRadius = 0.5
+finishRadius = 16
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[Burst]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "105 55 255 255"
+finishColor = "105 55 255 150"
+startRadius = 20.0
+finishRadius = 0.5
+animateTime = 0.2
+

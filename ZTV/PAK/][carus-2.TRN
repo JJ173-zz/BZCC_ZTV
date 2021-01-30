@@ -1,0 +1,33 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1280
+MinZ=-1280
+Width=2560
+Depth=2560
+Height=100
+Tile = 1
+color=128 128 128 255
+
+[NormalView]
+
+FogColor="90 0 0 255"
+FogStart=250
+FogEnd=400
+VisibilityRange=400
+
+
+[Texture]
+TileTexture1 = "zcrstex01.tga"
+TileTexture2 = "antar1z.bmp" 
+
+TileTexture8 = "antar7z.bmp"
+
+TileTexture11 = "tbextf00.tga"
+TileTexture12 = "street_1.tga"
+TileTexture13 = "street_2.tga"
+TileTexture14 = "street_3.tga"
+TileTexture15 = "street_5.tga"
+
+
+

@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "grocksld"
+ordName = "rocksld"
+wpnName = "Rockslide"
+fireSound = "xlands.wav" // "jax01.wav"
+wpnReticle = "gjax.0"
+wpnCategory = "GUN"
+isAssault = 1
+aiRange = 800
+
+[CannonClass]
+shotDelay = 27 
+shotVariance = .4 
+shotPitch = .25 

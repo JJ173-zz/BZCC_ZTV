@@ -1,0 +1,109 @@
+[GameObjectClass]
+geometryName = "bubbler.xsi"
+geometryScale = 0.25
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 
+unitName = "Sparker 6"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "sparker6.modulator"
+
+[Modulator] // speed of movement
+renderBase = "draw_emit"
+emitName = "sparker6.ontime1"
+emitDelay = 15 // 5.37 
+emitDelayVar =  20 // 10 
+emitVelocity = "0.0 0.0 0.0"
+//emitVariance = "10.0 10.0 0.0" // how erratic the jumps
+emitVariance = "10.0 10.0 0.0"
+
+[OnTime1]
+simulateBase = "sim_smoke"
+lifeTime = 2  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker6.cycleon"
+
+[CycleOn]  // length of sparkler tail
+renderBase = "draw_emit"
+emitName = "sparker6.ontime2"
+emitDelay = 0.1 //0.1 // how many flicks per sec
+emitVelocity = "0.0 0.0 0.0"
+//emitVariance = "60.0 60.0 0.0" 
+emitVariance = "50.0 50.0 50.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 // 0.05  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker6.sparks"
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "sparker6.sparker"
+emitDelay = 0.05 // 0.2 // 0.5
+emitVelocity = "0.0 0.0 2.0"
+emitVariance = "3.0 3.0 5.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker6.sparkflare"
+renderName2 = "sparker6.sparkhalo"
+renderName3 = "sparker6.flarereverse"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+//textureName = "flame.tga"
+
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "45 60 20 90"
+finishColor = "15 25 5 0"
+
+
+//textureBlend = "one one modulate"
+//startColor = "0 100 0 80"
+//finishColor = "0 50 0 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 2.5
+
+
+
+[SparkHalo]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 0 50"
+finishColor = "0 50 0 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 1.0
+
+[FlareReverse]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 250 0 0"
+finishColor = "0 150 0 150"
+startRadius = 4.0
+finishRadius = 0.5
+animateTime = 1.0
+

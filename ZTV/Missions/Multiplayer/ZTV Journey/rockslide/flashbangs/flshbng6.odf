@@ -1,0 +1,30 @@
+[GameObjectClass]
+classLabel = "magnet"
+geometryName = "igflar00.xsi"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1
+unitName = "Geo Charge"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 1
+canInteract = 1
+canCollide = 0
+
+explosionName = "flsbnxpl"
+xplExpire = "flsbnxpl"
+
+[MineClass]
+lifeSpan = 5.1 
+xplBlast = "flsbnxpl"
+
+[MagnetMineClass]
+fieldRadius = 0 
+objPushCenter = 0  
+objPushEdge = 0 
+objDrag = 0
+ordPushCenter = 0
+ordPushEdge = 0
+ordDrag = 0

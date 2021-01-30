@@ -1,0 +1,69 @@
+[GameObjectClass]
+geometryName = "4spikes.xsi" // "techsensor2.xsi"
+geometryScale = 0.65  // .5
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 900000
+maxAmmo = 1
+unitName = "Stasis Unit"
+addAmmo = 1
+addHealth = 0.5
+collisonRadius = 10
+
+fireSound = NULL // "gmasg00.wav"
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 1
+canInteract = 1
+canCollide = 1
+armorClass = L
+
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "stazmine.cycleon"
+effectHard2 = "hp_emit_3" 
+effectName2 = "stazmine.cycleon"
+
+effectHard3 = "hp_emit_2" 
+effectName3 = "stazmine.cycleon"
+effectHard4 = "hp_emit_4" 
+effectName4 = "stazmine.cycleon"
+
+[MineClass]
+lifeSpan = 64000 
+
+[FlareMineClass]
+payloadName = "stazflak"
+triggerDelay = 0.0
+shotDelay = 0.5
+shotVariance = 0.00
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "stazmine.ontime"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 40.0" // lengh of bolt 250m
+emitVariance = "0.0 0.0 0.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime =  1.2  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "stazmine.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 155"
+finishColor = "50 40 255 0"
+startRadius = 0.5 // 0.15
+finishRadius = 10.0 // 0.3
+animateTime = 1.2
+

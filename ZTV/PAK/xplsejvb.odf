@@ -1,0 +1,36 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+particleClass1 = "xplsejvc.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+explSound = "snip03.wav"  
+
+damageRadius = 20.0
+
+damageValue(N) = 180 
+damageValue(L) = 130
+damageValue(H) = 10
+
+damageValue(S) = 100
+damageValue(D) = 100
+damageValue(A) = 100
+
+kickRadius = 8.0
+kickOmega = 0.1
+kickVeloc = 1.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "20 30 140 255" 
+finishColor = "20 30 140 0"
+startRadius = 1
+finishRadius = 28
+animateTime = 0.3

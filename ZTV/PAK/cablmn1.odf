@@ -1,0 +1,70 @@
+[GameObjectClass]
+geometryName = "cablez4.xsi" 
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0  
+unitName = "electrical cable"
+canCollide = 0
+canDetect = 0
+canInteract = 0
+
+explosionName = "xzm1nxpl"
+xplExpire = "xzm1nxpl"
+
+weaponHard1 =  "hp_weapon_1" 
+weaponName1 = "gcz1arc"
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "cablmn1.modulator"
+
+[MineClass]
+lifeSpan = 1E6
+
+[WeaponMineClass]
+searchRadius = 120.0
+heightScale = 1.0
+
+[Modulator]
+renderBase = "draw_emit"
+emitName = "cablmn1.ontime1"
+emitDelay = 5.0
+emitDelayVar = 2.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[OnTime1]
+simulateBase = "sim_smoke"
+lifeTime = 2  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "cablmn1.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "cablmn1.ontime2"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "100.0 100.0 100.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.25 // 0.3  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "cablmn1.bolts"
+
+[bolts]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_bolt"
+textureName = "trail2.tga" //"boltline.tga" 
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.4 // 0.1
+finishRadius = 0.8 // 0.2
+segmentLength = 1.0 // .5
+segmentVariance = "1.5 1.5 1.0"
+animateTime = 0.2

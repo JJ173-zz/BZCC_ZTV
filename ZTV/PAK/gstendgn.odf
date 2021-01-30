@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+altName = "gstendgn"
+ordName = "stendgn"
+wpnName = "tendril"
+fireSound = "anchor.wav"//"piranha.wav" //"gmini01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gstendgn.flash"
+aiRange = 135
+
+[CannonClass]
+shotDelay = 0.09
+shotVariance = 0.05 // 0.2
+salvoCount = 100
+salvoDelay = 0.09
+shotPitch = 0.05
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 255"
+startRadius = 2.0
+finishRadius = 0.75
+animateTime = 0.1
+geomName = "g_sflash.xsi"

@@ -1,0 +1,132 @@
+[GameObjectClass]
+geometryName = "rktpylgt.xsi"
+geometryScale = 1.0
+classLabel = "turret"
+scrapCost = 80
+customCost = 95
+scrapValue = 25
+maxHealth = 7000
+maxAmmo = 10000
+addAmmo = 200
+addHealth = 0.2
+unitName = "Rocket Pylon"
+//aiName = "GunTowerFriend" // need this for using panel
+//aiName2 = "GunTowerEnemy" // doesnt seem to work if assault weapon is first on list
+//aiName = "SupportProcess" // this may use weapons better but no panel access
+//aiName2 = "SupportProcess" // shoots down apcs |worse for fireweapon AVs?
+aiName = "TurretTankFriend" // cause of random fireweapon avs on world load?
+aiName2 = "TurretTankEnemy" // this shoots down apcs too.
+heatSignature = 0.1
+imageSignature = 0.5
+radarSignature = 1.5
+isAssault = 1
+armorClass = H
+requireCount = 0
+
+powerCost = 1
+
+buildSupport = "A"
+buildRequire = "F" // "F" is free // "A" is adjacent // "B" is next to bunker
+
+
+/////// weapons ///// crossed up weapons makes ai use both all the time
+///            but can crash if human uses, so removed panel
+
+weaponMask = 00111
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "glasrkt"
+weaponAssault1 = 1
+
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "glasrkt2" //"grpsmak"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_ROCKET_3"
+weaponName3 = "glasrkt2" //"grpsmak"
+weaponAssault3 = 0
+
+//////////////////////////////////
+
+effectHard1 = "hp_emit_1"
+effectName1 = "rktpylgt.bluflasher"
+effectHard2 = "hp_emit_2"
+effectName2 = "rktpylgt.bluflasher"
+effectHard3 = "hp_emit_3"
+effectName3 = "rktpylgt.bluflasher"
+effectHard4 = "hp_emit_4"
+effectName4 = "rktpylgt.bluflasher"
+
+//lightHard1 = "hp_light_3"
+//lightName1 = "lasersite2"
+//lightHard2 = "hp_light_4"
+//lightName2 = "lasersite2"
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "HP_eyepoint"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[PoweredBuildingClass]
+powerCost = 2
+detectRange = 400
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+weaponPitch = 1.5
+rangeScan = 400.0
+periodScan = 0.0
+velocJam = 1.0
+steerFactor = 0.5
+engageRange = 300
+
+//attackTask = "AssaultTankAttack"
+//subAttackTask = "SupportSubAttack"
+//subAttackClass = "ANS"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 400
+
+[BluFlasher]
+renderBase = "draw_emit"
+emitName = "rktpylgt.bflash1"
+emitDelay = 1.27 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "rktpylgt.blulight"
+renderName2 = "rktpylgt.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "0 0 255 1555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255"
+finishColor = "80 80 255 255"
+startRadius = 2.0 // 1
+finishRadius = 0.5
+
+

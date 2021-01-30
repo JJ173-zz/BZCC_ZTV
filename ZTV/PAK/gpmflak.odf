@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "pmflak"
+wpnName = "Savant"
+//fireSound = "gmasg00.wav"
+fireSound = "snip02b.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "MORT"
+aiRange = 300
+
+
+[CannonClass]
+shotDelay = 2.5 // 3.0
+shotPitch = 1.4 // 0
+shotLead = 1 // 1
+
+salvoCount = 5
+salvoDelay = 0.18
+shotVariance = 0.01

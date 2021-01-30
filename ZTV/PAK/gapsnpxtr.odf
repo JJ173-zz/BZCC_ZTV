@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "grnbal2.xsi" 
+wpnName = "Thrust/Sniper"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 0
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 30
+objectClass = "apsnpxtrc"
+

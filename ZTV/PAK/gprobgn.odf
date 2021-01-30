@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+geometryName = "probez1.xsi"
+
+animCount = 0
+altname = "gprobgn"
+ordName = "probkikz"
+wpnName = "Probe"
+fireSound = "cammo.wav" // "mdmort01.wav"
+wpnReticle = "gmdmgun.0"
+wpnLadder = "gmdmgun.L0"
+wpnPriority = 1
+wpnCategory = "ROCK"
+aiRange = 120 
+isAssault = 1
+
+
+localAmmo = 1
+
+
+[CannonClass]
+shotDelay = 10 
+salvoCount = 1  
+shotVariance = 0.0
+//shotPitch = -0.6 // -1.58 = straight down
+
+
+

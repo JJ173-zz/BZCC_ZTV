@@ -1,0 +1,17 @@
+[GameObjectClass]
+geometryName = "incubator5.xsi"
+geometryScale = 2
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "incubator"
+heatSignature = 1.0
+imageSignature = 0.1
+radarSignature = 0.1
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canCollide = 0
+ownsTerrain = 1

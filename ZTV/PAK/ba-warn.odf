@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "ba-warn.xsi"
+geometryScale = 0.1
+classLabel = "magnet"
+//classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 1
+unitName = "Assets Warning"
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = L
+canCollide = 1
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+powercost = 0
+explosionName = "lift4xpr"
+
+[MineClass]
+lifeSpan = 300
+
+[MagnetMineClass]
+TeamFilter = 51
+fieldRadius = 0  
+objPushCenter = 0 
+objPushEdge = 0 
+objDrag = 0.0
+ordPushCenter = 0 
+ordPushEdge = 0 
+ordDrag = 0 

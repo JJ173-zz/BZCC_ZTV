@@ -1,0 +1,82 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "flame01.wav"
+
+damageRadius = 6 // 4.0
+
+damageValue(N) = 100 // 70 
+damageValue(L) = 70 // 40 
+damageValue(H) = 30 // 10 
+
+damageValue(S) = 30 
+damageValue(D) = 30 
+damageValue(A) = 30 
+
+particleTypes = 4
+
+particleClass1 = "xprpraingnd.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+
+particleClass2 = "xprpraingnd.flashchar"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xprpraingnd.spread"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xprpraingnd.chardark"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite" //"draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "35 0 255 185" 
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 1.0
+rotationRate = 6
+
+[flashchar]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 80 40 255 255"
+finishColor = "20 0 255 0"
+startRadius = 4
+finishRadius = 1
+animateTime = 0.8
+
+[spread]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = " 50 30 255 150"
+finishColor = "20 0 255 0"
+startRadius = 1
+finishRadius = 3
+animateTime = 1.0
+
+[chardark]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 5 0 40 180"
+finishColor = "0 0 30 0"
+startRadius = 12.0   // 2.0
+finishRadius = 1.0  // .05
+animateTime = 2.0

@@ -1,0 +1,44 @@
+//
+// Recylistmpi.txt - List for starting recyclers for MPI.
+//
+// Translation: a way to pick a MOD before a game, and have it not
+// cause bad assets, assuming the author wrote it well.
+//
+// Format of lines: odf filename, space separator, description.
+// Lines starting with // are ignored.
+//
+// NOTE: do not put .odf extension on odf filename; added automatically
+// on loading
+//
+// Also, please remember that these vehicle names will be changed to
+// the appropriate race at runtime, so make sure they exist across
+// races -- for example, ivmbike has no Scion counterpart (fvmbike).
+//
+// The first field on each line must be 5 characters or longer, or the
+// line will be ignored.
+//
+ivrecy_zm2 ZTV
+//ivrecy_mb Strat/MPI: Stock Repair Units
+//ivrecystb Strat/MPI: Automatic Repair Units
+//ivrecytb Strat/MPI: No Empty Scouts
+//ivrecy_mu Strat/MPI: Undeployable with Empty Scouts
+//ivrecy_u Strat/MPI: Undeployable No Empty Scouts
+//
+//ivrecyold MPI-only: Smart Repair Units
+//ivrecyghb MPI-only: GreenHeart Variant
+//ivrecycmd MPI-only: Commando Variant A
+//ivrecycm1 MPI-only: Commando Variant B
+//ivrecyins MPI-only: Insane Variant
+//
+//ivrecyonb MPI-only: Smart Repair Units, no TTB
+//ivrecygh MPI-only: GreenHeart Variant, no TTB
+//ivrecycm2 MPI-only: Commando Variant C, no TTB
+//ivrecyin MPI-only: Insane Variant, no TTB
+//
+//ivrecy_m FFA: Stock Repair Units, no TTB
+//ivrecysst FFA: Automatic Repair Units, no TTB
+//ivrecy FFA: No Empty Scouts, no TTB
+//
+//ivrecy12 Strat/FFA: Commando's 1.2 variant
+//ivrecy_w Strat/FFA: wug Variant
+//ivrecy_lw Strat/FFA: Lucky Foot Variant

@@ -1,0 +1,78 @@
+[GameObjectClass]
+geometryName = "seacrus1.xsi" // "cruise4.xsi"
+geometryScale = 2.2 // 2.0
+classLabel = "torpedo"
+baseName = "grccmi"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 800
+maxAmmo = 55 // 250
+unitName = "Trident"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xplseacr"
+eplExpire = "xplseacr"
+
+heatSignature = 3.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+LightHard1 = "hp_emit_2"
+LightName1 = "dotblue"
+LightHard2 = "hp_emit_3"
+LightName2 = "dotblue"
+
+effectHard1 = "hp_emit_2"
+effectName1 = "seacrus.tail"
+effectHard2 = "hp_emit_3"
+effectName2 = "seacrus.tail"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 20 
+alphaDamp = 5.0
+velocForward = 28 // 25 
+accelThrust = 50.0
+omegaTurn = 1.5
+alphaSteer = 4.5 // 3.5 
+lifeSpan = 40.0
+xplBlast = "xplseacr"
+
+soundThrust = "seacrus.wav" 
+
+[Tail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "seacrus.taillong"
+renderName2 = "seacrus.tailshort"
+
+[TailLong]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 250 255 160"
+finishColor = "0 20 120 0"
+startRadius = 0.45
+finishRadius = 0.1 
+segmentTime = 1.0
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.2
+textureRate = 0.03
+
+[TailShort]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 220"
+finishColor = "0 0 150 0"
+startRadius = 0.3
+finishRadius = 0.1 
+segmentTime = 0.5 //1.5 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.1
+textureRate = 0.1 

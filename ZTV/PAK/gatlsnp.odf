@@ -1,0 +1,62 @@
+[OrdnanceClass]
+classLabel = "snipershell"
+shotGeometry = NULL
+
+renderName = "gatlsnp.render"
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 10
+lifeSpan = 0.3 // standard is 300
+shotSpeed = 1000
+
+damageValue(N) = 25 // 18
+damageValue(L) = 16 // 12
+damageValue(H) = 13 // 10
+
+damageValue(S) = 25
+damageValue(D) = 15
+damageValue(A) = 25
+
+[SniperShellClass]
+killRadius = 0.6  //  0.5 is standard
+killLength = 48 //1.8 so it wont go thru windshields, 1.0 wont go thru feet // 15.0 stock
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gatlsnp.core"
+renderName2 = "gatlsnp.halo"
+renderName3 = "gatlsnp.trail"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 215 215 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 55 0 90"
+finishColor = "255 55 0 90"
+startRadius = 0.5
+finishRadius = 0.5
+rotationRate = 10.0
+
+[Trail]
+renderBase = "draw_bolt"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 0 125"
+finishColor = "205 255 0 0"
+startRadius = 0.15
+finishRadius = 0.0
+segmentTime = 0.1
+segmentLength = 2

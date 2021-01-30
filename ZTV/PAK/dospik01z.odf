@@ -1,0 +1,25 @@
+[GameObjectClass]
+geometryName = "dospik01.xsi"
+classLabel = "i76Building"
+geometryScale = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 20000
+maxAmmo = 0
+unitName = ""
+
+canDetect = 0
+canInteract = 0
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+
+ownsTerrain = 1
+
+canCollide = 0
+
+[BuildingClass]
+bldEdge = "wwww"
+
+

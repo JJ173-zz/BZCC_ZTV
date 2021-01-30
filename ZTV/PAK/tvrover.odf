@@ -1,0 +1,165 @@
+[GameObjectClass]
+//baseName = "tvtskapc"
+geometryName = "tvrover.xsi" 
+geometryScale = 5.0
+//classLabel = "apc"
+classLabel = "wingman"
+
+collisionRadius = 7.0
+scrapValue = 0
+scrapCost = 60
+customCost = 80
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 2000
+addHealth = 1
+maxAmmo = 1500
+addAmmo = 5
+unitName = "Sea Rover"
+//aiName = "APCProcess"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+heatSignature = 1.0
+imageSignature = 0.5
+radarSignature = 0.01
+isAssault = 0
+needPilot = 1
+canSnipe = 1
+armorClass = L
+
+requireCount = 0
+boxCollide = 1
+
+weaponMask = 00011
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 =  "iglsrtrk2" // "iglsrtrk" 
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_1"
+weaponName2 = "gseacru3"
+weaponAssault2 = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+effectHard1 = "hp_emit_1"
+effectName1 = "tvrover.effect"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 0.0
+velocJam = 0.0
+engageRange = 450
+weaponPitch =  1.0
+
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+selectOtherMsg = "avapcvj.wav"
+
+goMsg = "avapcv0.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+followMeMsg = "avapcv3.wav"
+repairMsg = "avapcv4.wav"
+recycleMsg = "avapcv6.wav"
+rescueMsg = "avapcv5.wav"
+otherMsg = "avapcvh.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 3.0 // 1.5
+accelDragStop = 7 // 4.0
+accelDragFull = 1.0
+alphaTrack = 5 // 10.0 
+alphaDamp = 2 // 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.01 // 0.1
+rollSteer = 0.01 // 0.1
+
+velocForward = 20.0
+velocReverse = 12.0
+velocStrafe = 8.0
+accelThrust = 60.0
+accelBrake = 40.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 200 // 150.0 speed to aquire alttitude low or high
+
+soundThrust = "water01.wav"
+soundSteer = "avapce5.wav"
+
+[APCClass]
+soldierType = "tvrobot" //"mcjak01" //"issold" "ispilotv" //
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 0.1 // 2.5
+flightAltitude = 25 // 75.0
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" // "sonic03c.wav"
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "tvrover.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "tvrover.blulight"
+renderName2 = "tvrover.bluflare"
+renderName3 = "tvrover.wave"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 0 0 2555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "255 0 0 255"
+startRadius = 22.0 // 1
+finishRadius = 0.5
+animateTime = 0.1
+
+[Wave]
+renderBase = "draw_wave"
+textureName =  "wave.tga" //NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 55" 
+finishColor = "255 0 255 55" 
+startRadius = 3.0 
+finishRadius = 2.0 
+animateTime = 0.5 // 0.2
+waveAngle = 360 // .07 // 
+waveDepth = 0.6 // .3 //0.8
+waveSegments = 60 //8 across width, gradations 18 makes a star at 360

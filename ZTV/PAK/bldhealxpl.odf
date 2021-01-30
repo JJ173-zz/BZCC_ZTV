@@ -1,0 +1,70 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+//particleClass1 = "bldhealxpl.shock"
+//particleCount1 = 1
+//particleVeloc1 = "0.0 0.0 0.0"
+//particleBias1 = "0.0 0.0 0.0"
+
+//particleClass2 = "bldhealxpl.puff"
+//particleCount2 = 1
+//particleVeloc2 = "0.0 0.0 0.0"
+//particleBias2 = "0.0 0.0 0.0"
+
+particleClass1 = "bldhealxpl.poof"
+particleCount1 = 1
+particleVeloc1 = "5.0 5.0 5.0"
+particleBias3 = "2.0 2.0 2.0"
+
+explSound = "mnu_empt.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = -3 
+damageValue(L) = -3
+damageValue(H) = -3
+
+damageValue(S) = -3
+damageValue(D) = -3
+damageValue(A) = -3
+
+kickRadius = 0.0
+kickOmega = 0.0 
+kickVeloc = 0.0
+
+//[Shock]
+//simulateBase = "sim_ember"
+//lifeTime = 0.4
+//renderBase = "draw_twirl"
+//textureName = "plasma.tga"
+//textureBlend = "one one modulate"
+//startColor = "0 40 60 255" 
+//finishColor = "5 30 60 0"
+//startRadius = 5
+//finishRadius = 12
+//animateTime = 0.4
+
+//[puff]
+//simulateBase = "sim_null"
+//lifeTime = 0.4
+//renderBase = "draw_twirl"
+//textureName = "plasma.tga"
+//textureBlend = "one one modulate"
+//startColor = "0 40 60 125" 
+//finishColor = "5 30 60 0"
+//startRadius = 5
+//finishRadius = 12
+//animateTime = 0.4
+
+[poof]
+simulateBase = "sim_spray"
+lifeTime = 0.4
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 40 60 125" 
+finishColor = "5 30 60 0"
+startRadius = 5
+finishRadius = 12
+animateTime = 0.4

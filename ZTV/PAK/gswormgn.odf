@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+altName = "gswormgn"
+ordName = "swormgn"
+wpnName = "tendril"
+fireSound = "arrowclk.wav"//"piranha.wav" //"gmini01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gswormgn.flash"
+aiRange = 100
+
+[CannonClass]
+shotDelay = 0.5 //.09
+shotVariance = 0.05 // 0.2
+salvoCount = 30
+salvoDelay = 0.5 //0.09
+shotPitch = 0.05
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 255"
+startRadius = 2.0
+finishRadius = 0.75
+animateTime = 0.1
+geomName = "g_sflash.xsi"

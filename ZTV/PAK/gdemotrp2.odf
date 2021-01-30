@@ -1,0 +1,23 @@
+//DM version
+
+[WeaponClass]
+classLabel = "thermallauncher"
+ordName = "demotrp2"
+wpnName = "IR Hvy Torpedo"
+fireSound = "tmiss03.wav"
+wpnReticle = "ghornet.0"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 400
+
+[LauncherClass]
+lockRange = 600 // 800 
+shotDelay = 8 // 10.0
+lockDelay = 140 // 120.0 
+coneAngle = 0.07 // .05 
+lockingReticle = "ghornet.A"
+lockingSound = "demolock.wav"// 
+lockedReticle = "ghornet.B"
+lockedSound = "click02.wav" //
+targetCount = 3
+targetReticle = "ghornet.1"

@@ -1,0 +1,57 @@
+[GameObjectClass]
+geometryName = "minibayic.xsi"//"servpad.xsi"
+geometryScale = 1.0
+classLabel = "supplydepot"
+collisionRadius = 0.0
+scrapCost = 40
+scrapValue = 0
+maxHealth = 6000
+maxAmmo = 1
+unitName = "Service I"
+powerCost = 2
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+armorClass = H
+
+upgradeName = "ibminbay2"
+
+provideCount = 1
+provideName1 = "ibminbay"
+//provideName2 = "ibsbay" 
+
+requireCount = 1
+requireName1 = "ibtrnsyd"
+requireText1 = "Build Air Yard"
+//requireName2 = "ibsens_ic1"
+//requireText2 = "Build Radar Station"
+
+
+buildSupport = B
+buildRequire = F
+
+//effectHard1 = "hp_emit_1"
+//effectName1 = "ibminbay.render"
+
+[SupplyDepotClass]
+supplyRange = 22.0 // 32.0
+supplyRate = 100  //  150.0
+supplySound = "mnu_empt.wav"
+
+[render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.07 // 0.05
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 0.5 //.5
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "0 50 155 80"
+finishColor = "0 50 155 0"
+startRadius = 8 // 15
+finishRadius = 1
+animateTime = 0.5 // .5
+rotationRate = 2.0

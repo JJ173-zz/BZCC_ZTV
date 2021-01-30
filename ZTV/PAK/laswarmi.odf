@@ -1,0 +1,58 @@
+[OrdnanceClass]
+classLabel = "missile"
+
+shotGeometry = "rocket1i.xsi" // "iorckt00.xsi"
+xplGround = "xlrktignd"
+xplVehicle = "xlrkticar"
+xplBuilding = "xlrkticar"
+xplExpire = "xlrkticar"
+
+renderName = "laswarmi.render"
+
+ammoCost = 10
+lifeSpan = 8.5  
+shotSpeed = 50.0
+
+damageValue(N) = 80 // 230 
+damageValue(L) = 40 //  160 
+damageValue(H) = 20 //  100 
+
+damageValue(S) = 50 //  
+damageValue(D) = 50 // 
+damageValue(A) = 50 // 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 3 // 2.2
+
+omegaWaver = 1 	
+rateWaver = 4 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "laswarmi.flare"
+renderName2 = "laswarmi.tail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "245 235 255 255"
+finishColor = "245 235 255 255"
+startRadius = 2.0 // 1
+finishRadius = 0.5
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "70 30 180 250"
+finishColor = "0 0 120 0"
+startRadius = 1.0 //0.6
+finishRadius = 0.3 // 0.2 
+segmentTime = 1.5 // .9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.001 //0.05
+

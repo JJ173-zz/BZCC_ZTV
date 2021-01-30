@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "aapopper"
+wpnName = "Swatter"
+fireSound = "gpopp00.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "MORT"
+aiRange = 200
+
+[CannonClass]
+shotDelay = 1.5
+shotPitch = 1.0
+shotLead = 0
+

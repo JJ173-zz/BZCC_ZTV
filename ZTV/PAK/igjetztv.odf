@@ -1,0 +1,53 @@
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = "igjetp00.xsi"
+geometryScale = 0.12
+animCount = 1
+animName1 = "launch"
+animFile1 = "igjetp00.xsi"
+ordName = NULL
+wpnName = "Booster"
+wpnIcon = "wire_igjetp%d.tga"
+fireSound = "whcan.wav"
+flashName = "igjetztv.render"
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "PACK"
+localAmmo = 1
+aiRange = 200
+
+[JetPackClass]
+ammoCost = 0
+burnTime = 6.0
+accelThrust = 12.6 // 12.7 gives a bit too much rise
+activeSound = "water01.wav" //  "jpack01.wav"
+expireSound = "rmort01.wav" // "jpack02.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "igjetztv.flare"
+renderName2 = "igjetztv.contrail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "5 185 255 255"
+finishColor = "5 185 255 255"
+startRadius = 1.25 // 1.6
+finishRadius = 1.25
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "50 150 250 90"
+finishColor = "50 150 250 0"
+startRadius = 0.6 // 0.4
+finishRadius = 1.2 // 0.8 
+segmentTime = 0.8 // 3.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.02 // 0.05

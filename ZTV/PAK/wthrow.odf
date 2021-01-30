@@ -1,0 +1,70 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotGeometry =  NULL //"igproj00.xsi"
+geometryScale = 0.12
+shotSound = "flame01.wav"
+xplGround = "xplwthrow_car"
+xplVehicle = "xplwthrow_car"
+xplBuilding = "xplwthrow_car"
+
+renderName = "wthrow.render"
+
+ammoCost = 0.6 // 1.25
+lifeSpan = 1e30
+shotSpeed = 50 // 50
+//IsArcing = 0
+
+damageValue(N) = 20 // none
+damageValue(L) = 10 // light
+damageValue(H) = 5 // heavy
+
+damageValue(S) = 10 // stasis
+damageValue(D) = 15 // deflection
+damageValue(A) = 5  // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "wthrow.tail"
+renderName2 = "wthrow.poof"
+//renderName3 = "wthrow.spark"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "grndchar.tga" // "vsmoke.tga" // "trail2.tga"
+textureBlend = "invsrc invsrc modulate"
+//textureBlend = "one one modulate"
+startColor = "100 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 1.0 //.15 // 0.05
+finishRadius = 1.0 // .3 // 0.1 
+segmentTime = 0.4 // .2 //1.8  // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+animateTime = 0.3 // 0.7
+textureRate = 0.001 //0.05
+
+[Poof]
+renderBase = "draw_twirl"
+lifeTime = 2.6
+textureName = "grndchar.tga" //"plasma.tga" // "lighthalo.tga"
+//textureBlend = "one one modulate"
+textureBlend = "invsrc invsrc modulate"
+startColor = "100 0 0 255"
+finishColor = "50 0 0 150"
+startRadius = 0.8 // 0.5 
+finishRadius = 0.8 // 2.0 
+animateTime = 2.0 
+rotationRate = 20.0 // 1.0
+
+[Spark]
+renderBase = "draw_sprite"
+lifeTime = 2.6
+textureName = "grndchar.tga" //"plasma.tga" // "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 100 255"
+finishColor = "100 0 0 155"
+startRadius = 0.4 
+finishRadius = 0.7 
+animateTime = 2.0 
+
+

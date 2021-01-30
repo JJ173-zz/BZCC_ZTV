@@ -1,0 +1,35 @@
+[Size]
+MetersPerGrid = 8.0
+HeightGranularity = 0.1
+MinX=-1280
+MinZ=-1280
+Width=2560
+Depth=2560
+Height=100
+Tile = 1
+color=128 128 128 255
+
+[NormalView]
+
+FogColor="90 0 0 255"
+FogStart=250
+FogEnd=400
+VisibilityRange=400
+
+
+[Texture]
+TileTexture1 = "zcrstex01.tga"
+TileTexture2 = "zcrstex02.tga"
+TileTexture3 = "zcrstex03.tga"
+TileTexture4 = "tbextf00.tga"
+TileTexture5 = "zcrstex05.tga"
+TileTexture6 = "zcrstex04.tga"
+TileTexture7 = "zcrstex07.tga"
+TileTexture8 = "zcrstex08.tga"
+TileTexture9 = "zcrstex09.tga"
+TileTexture10 = "zcrstex10.tga"
+TileTexture11 = "zcrstex11.tga"
+TileTexture12 = "zcrstex12.tga"
+TileTexture13 = "zcrstex13.tga"
+TileTexture14 = "zcrstex14.tga"
+TileTexture15 = "street_2.tga"

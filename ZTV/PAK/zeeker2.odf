@@ -1,0 +1,25 @@
+[GameObjectClass]
+classLabel = "seeker"
+geometryName = "automine.xsi"
+geometryScale = 0.25
+scrapCost = 0
+scrapValue = 0
+maxHealth = 200
+maxAmmo = 100
+unitName = "Depth Charge"
+heatSignature = 10.0
+imageSignature = 10.0
+radarSignature = 10.0
+canCollide = 1
+collisionRadius = 10.0
+explosionName = "xzeekxpl"
+eplExpire = "xzeekxpl"
+
+[MineClass]
+lifeSpan = 45
+xplBlast = "xzeekxpl"
+
+[SeekerClass]
+searchRange = 200.0
+floatVeloc = 11 //6.0
+setAltitude = 25.0

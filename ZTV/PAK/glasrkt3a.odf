@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "targeting"
+ordName = "laswarm3"
+wpnName = "Laser Guided"
+fireSound = "tmiss03.wav"
+wpnReticle = "gtaggun.0"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 300
+
+[TargetingGunClass]
+
+leaderName = "laslead3"
+leaderSound = "laslead.wav"
+shotDelay = 0.1  //  0.1
+firstDelay = 0.1 // 0.1
+salvoDelay = 0.9 // .9 // 0.2
+salvoCount = 7 // 9
+lockingReticle = "gtaggun.1"
+lockedReticle = "gtaggun.2"

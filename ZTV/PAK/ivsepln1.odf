@@ -1,0 +1,104 @@
+[GameObjectClass]
+BaseName = "ivbomb"
+geometryName = "plane2.xsi"
+cockpitName = "snipcpit.xsi"
+classLabel = "aircraft"
+scrapValue = 0
+scrapCost = 60
+buildTime = 10.0
+maxHealth = 5000
+maxAmmo = 7000
+addAmmo = 2
+unitName = "Goose"
+
+heatSignature = 10.0
+imageSignature = 1.0
+radarSignature = 0.1
+isAssault = 1
+armorClass = L
+
+boxCollide = 1
+
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gairchn1"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gairchn1"
+weaponAssault2 = 0
+weaponHard3 = "HP_ROCKET_2"
+VisualHard3 = "HP_ROCKET_2"
+weaponName3 = "glsearkt"
+weaponAssault3 = 0
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "gzeeker"
+weaponAssault4 = 1
+visualHard4 = "HP_SPECIAL_1"
+weaponHard5 = "HP_SPECIAL_2"
+weaponName5 = "gzeeker2"
+weaponAssault5 = 0
+visualHard5 = "HP_SPECIAL_2"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue2"
+lightHard4 = "hp_light_4"
+lightName4 = "spotblue2"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 3.0f
+velocJam = 5.0f
+engageRange = 0
+weaponPitch = 0.3
+
+selectWaitMsg = "bombgen07.wav"
+selectAttackMsg = "bombgen05.wav"
+selectOtherMsg = "bombgen07.wav"
+goMsg = "bombgen06.wav"
+attackMsg = "bombgen01.wav"
+followMeMsg = "bombgen03.wav"
+followMsg = "bombgen03.wav"
+repairMsg = "bombgen03.wav"
+reloadMsg = "bombgen03.wav"
+rescueMsg = "bombgen03.wav"
+recycleMsg = "bombgen03.wav"
+killedMsg = "bombgen02.wav"
+
+[AirCraftClass]
+velocSet(L) = 15.0 // minimum velocity
+velocSet(M) = 25.0 // cruising velocity
+velocSet(H) = 37.0 // maximum velocity
+accelThrust = 5.0 // thrust acceleration
+accelBrake = 5.0 // brake acceleration
+accelDrag = 30.0 // drag acceleration
+omegaSteer(L) = 0.3 // steer turn rate at minimum
+omegaSteer(M) = 0.5 // steer turn rate at cruising
+omegaSteer(H) = 0.8 // steer turn rate at maximum
+
+omegaStrafe(L) = 0.1 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.1 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.1 // airbrake turn rate at maximum
+alphaSteer = 0.5 // steering angular acceleration
+
+alphaStrafe = 0.1 // airbrake angular acceleration
+minAltitude = 15.0 // minimum altitude
+maxAltitude = 110.0 // maximum altitude
+alphaLevel = 5 // 10.0 // leveling angular acceleration
+alphaDamp = 5.0 // damping angular acceleration
+pitchPitch = 0.35 // maximum pitch angle
+rollSteer = 0.2 // maximum roll angle from steering
+rollStrafe = 0.2 // maximum roll angle from airbraking
+
+timeDeploy = 3.0 // time to deploy
+timeUndeploy = 3.0 // time to undeploy
+
+soundThrust = "iapc02.wav"
+soundBrake = "avtanke0.wav"  //"ibomb.wav"
+soundSteer = "avtanke0.wav"
+soundDeploy = "dropleav.wav"
+soundUndeploy = "iapc04.wav" //"avapc30.wav"
+
+

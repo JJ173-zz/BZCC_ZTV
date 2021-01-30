@@ -1,0 +1,68 @@
+[ExplosionClass]
+classLabel = "explosion"
+explSound = "running2.wav"
+
+damageRadius = 10.0
+damageValue(N) = -50
+damageValue(L) = -100 
+damageValue(H) = -50 
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+kickRadius = 0.0
+kickOmega = 0.2
+kickVeloc = 0.0
+
+particleTypes = 3
+particleClass1 = "liftbxpr.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "liftbxpr.chunks"
+particleCount2 = 40
+particleVeloc2 = "20.0 20.0 20.0"
+particleBias2 = "0.0 0.0 0.0"
+//particleVariance = "200.0 200.0 200.0"
+
+particleClass3 = "liftbxpr.puff"
+particleCount3 = 8  
+particleVeloc3 = "60.0 60.0 60.0"
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 25"
+finishColor = "255 255 255 0"
+startRadius = 6
+finishRadius = 4
+animateTime = 0.2
+latitudeBands = 24
+longitudeSegments = 36
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 255 255" 
+finishColor = "155 200 255 0"
+startRadius = 0.2
+finishRadius = 0.3 //4.5
+animateTime = 0.9
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 255 15"
+finishColor = "100 100 255 0"
+startRadius = 3.0
+finishRadius = 9.0
+animateTime = 0.5

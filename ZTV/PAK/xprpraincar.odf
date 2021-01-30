@@ -1,0 +1,67 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "flame01.wav"
+
+damageRadius = 4.0
+
+damageValue(N) = 250 // 150 
+damageValue(L) = 200 // 120 
+damageValue(H) = 40 
+
+damageValue(S) = 50 
+damageValue(D) = 50 
+damageValue(A) = 50 
+
+particleTypes = 3
+particleClass1 = "xprpraincar.core"
+particleCount1 = 2
+particleVeloc1 = "-20.0 5.0 -20.0"
+particleVariance = "10.0 10.0 10.0"
+
+particleClass2 = "xprpraincar.chunks"
+particleCount2 = 3
+particleVeloc2 = "5.0 0.0 5.0"
+particleBias2 = "0.0 0.0 0.0"
+
+particleClass3 = "xprpraincar.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "45 0 255 255" 
+finishColor = "0 0 255 0"
+startRadius = 1.0
+finishRadius = 5.0
+animateTime = 1
+rotationRate = 6
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "40 0 255 255"
+finishColor = "30 0 200 0"
+startRadius = 0.5
+finishRadius = 2.0
+animateTime = 0.8
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "45 0 255 255"
+finishColor = "45 0 255 255"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

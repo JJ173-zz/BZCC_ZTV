@@ -1,0 +1,39 @@
+[GameObjectClass]
+geometryName = "icprobe1.xsi"
+geometryScale = 1.5
+classLabel = "sensor"
+scrapCost = 0
+scrapValue = 0
+isAssault = 1
+maxHealth = 600
+addHealth = 0 // -2
+armorClass = N
+
+
+//set ammo in probkikz instead
+maxAmmo = 0 
+
+powerCost =  1   
+
+unitName = "Probe"
+
+heatSignature = 0.5
+imageSignature = 0.5
+radarSignature = 0.1
+
+canCollide = 1 
+canDetect = 1 
+canInteract = 1
+ownsTerrain = 0
+ 
+explosionName = "xminxpl" // doesnt work on buildings
+
+[BuildingClass]
+SoundAmbient = "ping.wav" 
+SoundAmbientDist = 0.9  // not working?
+
+[PoweredBuildingClass]
+detectRange = 350.0
+
+[MotionSensorClass]
+rangeScan = 350.0

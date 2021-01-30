@@ -1,0 +1,107 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+//explSound = "xsv2.wav"
+
+// 10 x per sec
+damageRadius = 50.0
+
+damageValue(N) = 40 // 60
+damageValue(L) = 20 // 30
+damageValue(H) = 5 // 20
+
+damageValue(S) = 40 // 80
+damageValue(D) = 40 // 100
+damageValue(A) = 40 // 50
+
+
+particleTypes = 5
+particleClass1 = "xflsicbld.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xflsicbld.chunks"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 -10.0"
+particleVariance4 = "50.0 50.0 5.0"
+
+particleClass3 = "xflsicbld.puff"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 -10.0"
+particleVariance3 = "50.0 50.0 5.0"
+
+particleClass4 = "xflsicbld.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleVariance4 = "0.0 0.0 0.0"
+
+particleClass5 = "xflsicbld.light"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.5 // 0.2
+finishRadius = 5 // 2.0
+animateTime = 0.5
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 0 255"
+finishColor = "255 150 0 0"
+startRadius = 6.0
+finishRadius = 0.5
+animateTime = 0.5
+
+[Puff]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+spriteCenter.x = 0.0
+spriteCenter.y = -0.5
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 0 255" 
+finishColor = "255 100 0 0"
+startRadius = 3.0
+finishRadius = 12.0
+animateTime = 0.5
+rotationRate = 20
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sphere"
+textureName = "wavesphr2.tga"
+textureBlend = "one one modulate"
+startColor = "255 105 0 100"
+finishColor = "255 105 0 0"
+startRadius = 3
+finishRadius = 50
+animateTime = 1.0
+latitudeBands = 12
+longitudeSegments = 24
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_light"
+startColor = "255 155 0 1500"
+finishColor = "255 50 0 0"
+startRadius = 50.0
+finishRadius = 50.0
+animateTime = 0.15
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

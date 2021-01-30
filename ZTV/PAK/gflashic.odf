@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+
+ordName = "flashic"
+wpnName = "Destructo"
+fireSound = "destructo.wav"
+wpnReticle = "gflashgn"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 300
+
+[CannonClass]
+shotDelay = 0.1
+
+salvoCount = 600 // 60 secs // 3000
+salvoDelay = 0.1 
+shotVariance = 0.001
+
+shotPitch = -1.5 // -1.58 = straight down

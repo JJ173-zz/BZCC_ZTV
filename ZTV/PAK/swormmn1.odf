@@ -1,0 +1,30 @@
+// sea worm generator
+
+[GameObjectClass]
+geometryName = "rckminz2.xsi" 
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 100000 // seaworms 2500 a piece
+unitName = "Sea Worm Eggs"
+canCollide = 0
+canDetect = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+
+
+explosionName = "xzm3nxpl"
+xplExpire = "xzm3nxpl"
+
+weaponHard1 = "hp_weapon_1" 
+weaponName1 = "gsworm" //"gwrmkick" //"gsworm"
+
+[MineClass]
+lifeSpan = 1E6
+
+[WeaponMineClass]
+searchRadius = 300.0
+heightScale = 2.0
+

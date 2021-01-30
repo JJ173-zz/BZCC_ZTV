@@ -1,0 +1,164 @@
+[GameObjectClass]
+classLabel = "turrettank" 
+geometryScale = 5.0
+geometryName = "ivartl_ic1.xsi" // "tvartl2.xsi" 
+animCount = 0
+scrapValue = 5
+scrapCost = 65
+customCost = 80
+buildTime = 3.0 //.0
+CustomTime = 15.0
+maxHealth = 3000
+maxAmmo = 5000
+addAmmo = 4
+unitName = "Meteor F"
+
+//aiName = "AttachOffensive" // shoots too straight up
+//aiName2 = "AttachOffensive"
+
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+
+heatSignature = 1.0
+imageSignature = 0.1
+radarSignature = 0.1
+isAssault = 0
+armorClass = L
+
+requireCount = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivartl_ic1.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivartl_ic1.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivartl_ic1.render"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivartl_ic1.render"
+
+
+///// WEAPONS ////////////////////
+
+weaponHard1 = "HP_MORTAR_1"
+weaponName1 = "gfburst3"// "gtartill"
+weaponAssault1 = 1
+
+//////////////////////////////////
+
+turretCount = 2
+turretName1 = "turret_y"
+turretName2 = "turret_x_1"
+/// added for turret placeholder
+//turretName3 = "turret_x_2"
+//turretName3 = "HP_eyepoint"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 5.0f
+velocJam = 0.0f
+engageRange = 400
+
+weaponPitch = 1.5
+
+braccelFactor = 0.05f
+strafeFactor = 0.1f
+steerFactor = 1.0f
+omegaFactor = 0.1f
+velFactor = 0.2f
+
+selectWaitMsg = "fvartl04.wav"
+selectAttackMsg = "fvartl01.wav"
+selectFollowMsg = "fvartl03.wav"
+selectGoMsg = "fvartl02.wav"
+selectOtherMsg = "fvartl04.wav"
+holdMsg = "fvartl12.wav"
+goMsg = "fvartl05.wav"
+attackMsg = "fvartl06.wav"
+followMeMsg = "fvartl08.wav"
+followMsg = "fvartl03.wav"
+repairMsg = "fvartl09.wav"
+reloadMsg = "fvartl09.wav"
+rescueMsg = "fvartl10.wav"
+recycleMsg = "fvartl11.wav"
+otherMsg = "fvartl05.wav" 
+
+user1Msg = ""  
+killedMsg = "fvartl07.wav"
+diedMsg = ""
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+[HoverCraftClass]
+setAltitude = 15 // 1.0
+accelDragStop = 4.0
+accelDragFull = 1.0
+alphaTrack = 20.0
+alphaDamp = 10 // 5.0
+pitchPitch = 0.4
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 15.0
+velocReverse = 15.0
+velocStrafe = 15.0
+accelThrust = 50.0
+accelBrake = 75.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 15.0
+
+soundThrust = "ssent01d.wav"
+
+soundDeploy = "avartle0.wav"
+soundUndeploy = "avartle4.wav"
+
+[ArtilleryClass]
+omegaTurret = 2.0
+heightDeploy = 0.001 // -5.0
+timeDeploy = 5 // 5.0
+timeUndeploy = 5 // 10.0
+soundDeploy = ""
+soundUndeploy = ""
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivartl_ic1.smoke"
+renderName2 = "ivartl_ic1.flame"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 50" 
+finishColor = "153 153 153 0"
+startRadius = 0.2
+finishRadius = 0.7
+animateTime = 0.5 // 1.0
+emitDelay = 0.005 // 0.003
+emitVelocity = "0.0 -15.0 0.0"
+emitVariance = "0.6 0.6 0.6"
+
+emitInherit = "1.0 0.0 1.0"
+
+emitLife = 0.5 // 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.25
+finishRadius = 0.02
+animateTime = 0.07 // 0.01
+emitDelay = 0.001 // 0.0006
+emitVelocity = "0.0 -15.0 0.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.07 // 0.01
+
+emitInherit = "1.0 0.0 1.0"

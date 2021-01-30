@@ -1,0 +1,24 @@
+[WeaponClass]
+
+classLabel = "targeting"
+altName = "glasrkt"
+
+ordName = "laswarm2"
+wpnName = "Laser Guided II"
+//fireSound = "tmiss03.wav"
+fireSound = "gpopp00.wav"
+wpnReticle = "gtaggun.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 300
+
+[TargetingGunClass]
+
+leaderName = "laslead2"
+leaderSound = "laslead2.wav" // "flash01.wav" // "tmiss01.wav"
+shotDelay = 0.1  //  0.5
+firstDelay = 0.1 // 0.5
+salvoDelay = 0.2 // 0.5
+salvoCount = 9 // 5
+lockingReticle = "gtaggun.1"
+lockedReticle = "gtaggun.2"

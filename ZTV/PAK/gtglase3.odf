@@ -1,0 +1,46 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gtglase3"
+ordName = "tglase3"
+wpnName = "Assault Laser"
+fireSound = "cgun01.wav"
+wpnReticle = "glaser"
+wpnCategory = "SPECIAL" // for dfly
+isAssault = 1
+aiRange = 150
+flashName = "gtglase3.render"
+
+[CannonClass]
+shotDelay = 1.5 
+salvoCount = 7
+salvoDelay = 0.15
+shotVariance = 0.08 // 0.06
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gtglase3.light"
+renderName2 = "gtglase3.flash"
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.10
+renderBase = "draw_light"
+startColor = "0 0 255 900"
+finishColor = "0 0 255 0"
+startRadius = 30.0
+finishRadius = 30.0
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flash]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 20 255 255"
+finishColor = "50 0 255 0"
+startRadius = 10
+finishRadius = 0.1
+animateTime = 0.2

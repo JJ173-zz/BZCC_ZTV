@@ -1,0 +1,60 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotGeometry =  NULL //"igproj00.xsi"
+geometryScale = 0.12
+shotSound = "flame01.wav"
+xplGround = "xplathrow_car"
+xplVehicle = "xplathrow_car"
+xplBuilding = "xplathrow_car"
+
+renderName = "athrow.render"
+
+ammoCost = 0.6 // 1.25
+lifeSpan = 2.6  // 125m
+shotSpeed = 45 // 50
+
+damageValue(N) = 60 // none
+damageValue(L) = 40 // light
+damageValue(H) = 10 // heavy
+
+damageValue(S) = 50 // standard
+damageValue(D) = 40 // deflection
+damageValue(A) = 10 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "athrow.flare"
+renderName2 = "athrow.halo"
+renderName3 = "athrow.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 190 10 255"
+finishColor = "0 190 10 255"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 150 20 127"
+finishColor = "0 150 20 127"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "0 190 0 255"
+finishColor = "0 190 0 0"
+startRadius = 0.15    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.5 // 0.9  // time each segment animates
+segmentVariance = "0.001 0.001 0.001 "
+animateTime = 0.2
+

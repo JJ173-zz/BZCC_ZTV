@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Squids"
+ordName = NULL
+geometryName = "redball.xsi" 
+fireSound =  "icons02.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 60
+objectClass = "apgsquid"
+

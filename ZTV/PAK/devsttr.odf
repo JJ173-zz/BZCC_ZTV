@@ -1,0 +1,99 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotGeometry = "devsttr.xsi"
+
+xplGround = "xddbulgnd"
+xplVehicle = "xddbulcar" // +20
+xplBuilding = "xddbulbld"
+xplExpire = "xddbulxpr"
+
+renderName = "devsttr.render"
+
+ammoCost = 10 // 2 
+lifeSpan = 1.3  // 195 m   
+shotSpeed = 150.0
+
+damageValue(N) = 70 // 15  
+damageValue(L) = 50 // 10  
+damageValue(H) = 30 // 5   
+
+damageValue(S) = 65 // 15 
+damageValue(D) = 45 // 8 
+damageValue(A) = 70 // 16 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 5
+renderName1 = "devsttr.trail"
+renderName2 = "devsttr.flare"
+renderName3 = "devsttr.smoke"
+renderName4 = "devsttr.powder"
+renderName5 = "devsttr.traildark"
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail2.tga"
+startColor = "255 180 0 225"
+finishColor = "100 20 0 0"
+startRadius = 0.3
+finishRadius = 0.25
+segmentTime = 0.1
+textureRate = 0.5
+
+[TrailDark]
+renderBase = "draw_trail"
+textureName = "trail.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 90" 
+finishColor = "153 153 153 0"
+startRadius = 0.06
+finishRadius = 0.25 
+segmentTime = 0.17 
+textureRate = 1 // .005
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 25 0 510"
+finishColor = "255 25 0 510"
+startRadius = 0.8
+finishRadius = 0.8
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 40 50 50 115"
+finishColor = "150 165 170 0"
+startRadius = 0.9
+finishRadius = 8
+rotationRate = 5.0
+animateTime = 3.0
+emitDelay = 5
+emitVariance = "1.0 1.0 1.0"
+emitVelocity = "0.0 2.5 0.0"
+emitLife = 3.0
+
+[Powder]
+simulateBase = "sim_dust"
+lifeTime = 0.2 // 0.5
+renderBase = "draw_emit"
+emitName = "devsttr.spark"
+emitDelay = 0.006
+emitDelayVar = 0.001
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "7.0 7.0 2.0"
+
+[Spark]
+simulateBase = "sim_smoke"
+lifeTime = 0.15
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 80 5 205"
+finishColor = "255 0 0 50"
+startRadius = 0.3
+finishRadius = 0.05
+animateTime = 0.15

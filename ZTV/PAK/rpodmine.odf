@@ -1,0 +1,32 @@
+[GameObjectClass]
+geometryName ="invisi.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 100
+maxAmmo = 500 // 1
+unitName = "Repair"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+//isAssault = 0
+armorClass = L
+canCollide = 0
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+
+explosionName =  "xhealxpr"
+
+[MineClass]
+lifeSpan = 0 //.1 // -trigger * shotdelay for count
+
+[FlareMineClass]
+payloadName = "rpodkick"
+fireSound = NULL // "snip02.wav"// "mnu_back.wav" 
+triggerDelay = 0.0
+shotDelay = 3.0 
+shotVariance = 2.5
+
+[BuildingClass]
+SoundAmbient = "mnu_back.wav" 

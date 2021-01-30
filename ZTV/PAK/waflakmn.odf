@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "flxlnch1.xsi" // "igflar00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 10
+unitName = "AA Launcher"
+addAmmo = 1
+
+fireSound = "gmasg00.wav"
+
+heatSignature = 0.1
+imageSignature = 0.5
+radarSignature = 0.0
+canDetect = 1
+canInteract = 1
+canCollide = 1
+armorClass = N 
+
+[MineClass]
+lifeSpan = 35
+
+[FlareMineClass]
+payloadName = "waflak"
+triggerDelay = 0.5
+shotDelay = 3.0 // 2.5
+shotVariance = 0.03
+
+damageRadius = 10
+kickRadius = 10 
+kickOmega = 0.2 
+kickVeloc = 0.0
+
+damageValue(N) = 20 
+damageValue(L) = 20 
+damageValue(H) = 20 
+
+damageValue(S) = 100
+damageValue(D) = 100
+damageValue(A) = 100

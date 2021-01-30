@@ -1,0 +1,44 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+renderName = "turtrk2.render"
+
+xplGround = "xbulgnd" 
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 1.00 
+lifeSpan = 350E-2  
+shotSpeed = 300E2 
+
+damageValue(N) = 32 //16 //  10 shots per second
+damageValue(L) = 32 // 16   doubled to free up weapon slot on sub
+damageValue(H) = 24 // 12 
+
+damageValue(S) = 35 // 17 // 15 
+damageValue(D) = 20 // 10 // 8 
+damageValue(A) = 38 // 19 // 16 
+
+[Chain]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 0.03
+finishRadius = 0.001
+segmentTime = 0.03
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //"plasma.tga" //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 0.1    //0.3
+finishRadius = 0.03  //0.05
+segmentLength = 0.5  //3.0 
+segmentVariance = "0.0 0.0 0.0 "
+animateTime = 0.04 
+textureRate = 0.01
+

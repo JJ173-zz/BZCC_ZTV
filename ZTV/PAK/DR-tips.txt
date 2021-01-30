@@ -1,0 +1,30 @@
+DEATH RAY - Tips
+___________________________________________________________________________
+
+Restore the base defenses power as soon as you can by removing the power shunt.
+
+You may access the full team sat link station located in the rear of your base regardless of your commander status.
+
+The 51ers have created geologic interupters and are able to cause earthquakes and avalanches at will. Locating the camoflauged interuptors and destroying them will make the rest of the mission easier.
+
+Once the linear accelerator (Death Ray) is aquired, be careful not to bump against the walls of the underground lab system. It has a breeder reactor on board that allows it to regenerate massive amounts of power, but this causes a static charge effect that can cause unintentional teleportation to the surface into hazardous areas.
+
+M-curtains shield against a wide variety of weapons in this world, consider choosing them as your mine choice.
+
+Neutral service bays will service all teams once neutrals power is restored.
+
+You must restart FE before rejoining if you lag or leave for any reason or bad assets will result.
+
+Situation Report:
+
+On this planet a splinter group of earth scientists known as the 51ers have been exploring advanced technology in a secret installation. Their ultimate goal and allegience is unclear at this point. None of the scientists can be located for questioning. It appears as if they have been pursuing technologies beyond the capabilities of the EDF, perhaps to overthrow the present EDF power structure. All that is known for sure is that their activities are NOT authorized.
+
+The 51ers have a temporary truce with their scion neighbors to the north in exchange for the promise of sharing research and technology in the future. In trade, the Scions protect the planet until they can return.
+
+The Scions are so firmly entrenched in their mountain top position that it will likely be necessary to retrieve the advanced weaponry known to be secured by the 51ers to crack their base. The 51ers have left active security systems in place that will need to be defeated before you can gain access to their hidden labs.
+
+
+
+
+
+

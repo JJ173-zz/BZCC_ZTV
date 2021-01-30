@@ -1,0 +1,20 @@
+[WeaponClass]
+geometryname = "ivlavegg.xsi"
+geometryScale = 4
+classLabel = "dispenser"
+wpnName = "   "
+fireSound = "spawn.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "HAND"
+aiRange = 0
+isAssault = 0
+altName = "givegga"
+
+wpnIcon = "wire_giveggc.tga"
+
+localAmmo = 1  // 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "ivlavegg" 
+

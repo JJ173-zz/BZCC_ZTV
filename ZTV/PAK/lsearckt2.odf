@@ -1,0 +1,88 @@
+// Submarine Silkworm
+[OrdnanceClass]
+classLabel = "missile"
+shotGeometry = "searck2.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "lsearckt2.render"
+
+xplGround = "xlsetgnd2"
+xplVehicle = "xlsetcar2"
+xplBuilding = "xlsetbld2"
+
+ammoCost = 200 // 250 // 40 shots/10,000
+lifeSpan = 10  
+shotSpeed = 27.0  // 25
+
+// use explosion values instead
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.3 // .5 // .15 // .08 
+
+[ThermalMissileClass]
+coneAngle = 0.25 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "lsearckt2.flare"
+renderName2 = "lsearckt2.smoke"
+renderName4 = "lsearckt2.flame"
+renderName3= "lsearckt2.tail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 155 255"
+finishColor = "255 155 155 255"
+startRadius = 1.2
+finishRadius = 1.2
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 155 155"
+finishColor = "0 155 255 0"
+startRadius = 0.7
+finishRadius = 0.2
+animateTime = 0.5
+emitDelay = 0.02 // 0.009
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.5
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "40 40 40 60"
+finishColor = "60 60 60 0"
+startRadius = 0.5
+finishRadius = 1.5
+rotationRate = 5.0
+animateTime = 4.0
+emitDelay = 0.02
+emitVariance = "0.8 0.8 0.8"
+emitLife = 4.0
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "120 150 155 100"
+finishColor = "120 150 155 0"
+startRadius = 0.7
+finishRadius = 0.1 
+segmentTime = 3 // 1.0
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.03

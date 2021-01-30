@@ -1,0 +1,45 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = NULL // "sgstng00.xsi"
+shotSound = "ashield01.wav"
+
+renderName = "lsrtrk.render"
+
+xplGround = "xlasegnd" 
+xplVehicle = "xlasecar"
+xplBuilding = "xlasebld"
+
+ammoCost = 1 
+lifeSpan = 130E-3  
+shotSpeed = 1E3 
+
+damageValue(N) = 35 //  6 shots per second
+damageValue(L) = 30 // 
+damageValue(H) = 5 // 
+
+damageValue(S) = 30 // 
+damageValue(D) = 20 // 
+damageValue(A) = 10 //
+
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0 // 50 //45 // 30.0
+
+[ThermalMissileClass]
+coneAngle = 18 // 10
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //"plasma.tga" //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "105 0 255 255"  
+finishColor = "0 0 255 0"
+startRadius = 0.5    //0.3
+finishRadius = 0.03  //0.05
+segmentLength = 1.0  //3.0 
+segmentVariance = "0.0 0.0 0.0 "
+animateTime = 0.2 
+textureRate = 0.01
+

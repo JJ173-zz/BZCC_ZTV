@@ -1,0 +1,16 @@
+[WeaponClass]
+geometryName = "yeloball.xsi"
+classLabel = "dispenser"
+wpnName = "_Sky Fox"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+localAmmo = 5000 // [5 x 1000]
+
+[DispenserClass]
+shotDelay = 20.0
+objectClass = "ivskyfox2" 
+

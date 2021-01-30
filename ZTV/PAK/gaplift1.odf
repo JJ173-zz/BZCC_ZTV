@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser" 
+wpnName = "Secret Access"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 20
+objectClass = "liftpak5"
+

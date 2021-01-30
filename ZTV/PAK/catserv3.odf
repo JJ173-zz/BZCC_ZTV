@@ -1,0 +1,60 @@
+// blink/ snipe
+
+[GameObjectClass]
+baseName = "catserv1"
+geometryName = "catwalk9.xsi"
+geometryScale = 1.0
+classLabel = "turret"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+addHealth = 1
+maxAmmo = 10000
+unitName = "Catwalk 3"
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+powerCost = 0 
+ownsTerrain = 1
+canDetect = 0
+canInteract = 0
+canCollide = 0 // cant enter tunnel otherwise
+armorClass = H
+explosionName = "dmbasxpl"
+canSnipe = 1
+
+weaponMask = 0001
+weaponHard1 = "hp_special_2"
+visualHard1 = "hp_visual_1"
+weaponName1 =  "gapblnks" 
+weaponAssault1 = 0
+//weaponHard2 = "hp_special_4"
+//weaponName2 =  "gapprobe" 
+//weaponAssault2 = 1
+weaponHard2 = "hp_special_3"
+visualHard2 = "hp_visual_2"
+weaponName2 =  "gapbuddz" 
+weaponAssault2 = 1
+
+turretCount = 0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "catserv1.bluflasher"
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+
+[CraftClass]
+rangeScan = 1.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1

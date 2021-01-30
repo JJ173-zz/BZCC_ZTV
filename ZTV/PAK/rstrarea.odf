@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName = "rstrarea.xsi"
+geometryScale = 8.0
+classLabel = "computer"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 100 // doesnt seem to work with this class
+maxAmmo = 0
+unitName = "Holo Sign"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+cancollide = 0 // shouldnt use, since cannot destroy this class
+ownsTerrain = 0 // doesnt seem to affect its invulnerability
+
+[ComputerClass]
+ShieldVel = 0.5 //0.2
+ShieldAmp = 0.0 //0.05
+Shield = "shield"
+
+[BuildingClass]
+SoundAmbient = "igtow01.wav"
+SoundAmbientDist = 0.6
+

@@ -1,0 +1,33 @@
+// =========
+// FLAME HIT
+// =========
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+particleClass1 = "xflmhitic1.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = NULL
+damageRadius = 2.0
+damageValue(N) = 30
+damageValue(L) = 20
+damageValue(H) = 5
+damageValue(S) = 10
+damageValue(D) = 10
+damageValue(A) = 10
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 127"
+finishColor = "255 0 0 0"
+startRadius = 1.0
+finishRadius = 10.0
+animateTime = 0.5
+

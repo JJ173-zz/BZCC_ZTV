@@ -1,0 +1,17 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+
+shotRadius = 0.0
+
+xplGround = "xbombsnd"   
+xplVehicle = "xbombsnd" 
+xplBuilding = "xbombsnd"
+
+shotSound = ""
+
+xplExpire = "xbombsnd"
+ammoCost = 0
+lifeSpan =  0.01 
+shotSpeed = 0.01

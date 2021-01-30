@@ -1,0 +1,73 @@
+// =================
+// PHASER GROUND HIT
+// =================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xphicgnd_c.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xphicgnd_c.char"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xphicgnd_c.puff"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+explSound = "phasic2.wav"
+
+damageRadius = 1.0
+
+kickRadius = 1.5
+kickOmega = 1.0 
+kickVeloc = -1.5
+
+damageValue(N) = 3
+damageValue(L) = 2
+damageValue(H) = 1
+
+damageValue(S) = 2
+damageValue(D) = 2
+damageValue(A) = 2
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 120 0 255"
+finishColor = "100 0 0 0"
+startRadius = 0.5
+finishRadius = 1.5
+animateTime = 0.4
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 80 30 180"
+finishColor = "155 0 0 0"
+startRadius = 3
+finishRadius = 0.5
+animateTime = 3.0
+
+[Puff]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite" //"draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 80 30 120"
+finishColor = "155 0 0 0"
+startRadius = 0.2
+finishRadius = 1.0
+animateTime = 1.0
+rotationRate = 6

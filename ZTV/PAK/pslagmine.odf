@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName = "prmrslgmine.xsi"
+classLabel = "flare"
+scrapCost = -1
+scrapValue = 0
+maxHealth = 200
+maxAmmo = 1
+unitName = "Scrap Primer"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+armorClass = N
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+
+explosionName = "xicnullxpl"
+xplExpire = "xicnullxpl"
+
+[MineClass]
+lifeSpan = 0.1 
+
+[FlareMineClass]
+payloadName = "slagkick"
+fireSound = ""
+triggerDelay = 0
+shotDelay = 0.1
+shotVariance = 3.0 

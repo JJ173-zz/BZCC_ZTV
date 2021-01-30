@@ -1,0 +1,41 @@
+[GameObjectClass]
+GeometryName = "rockjax.xsi"
+geometryScale = 0.25
+classLabel = "torpedo"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 1200
+maxAmmo = 50
+unitName = "Rock It"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+canDetect = 0 
+canInteract = 0
+collisionRadius = 10
+heatSignature = 0.01
+imageSignature = 0.5
+radarSignature = 0.1
+isAssault = 0
+armorClass = L
+
+explosionName = "xplrock"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 1.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+velocForward = 25 // 20 // 15.0
+accelThrust = 20.0
+omegaTurn = 10 // 2.0
+alphaSteer = 20 // 5.0
+lifeSpan = 22.0
+
+xplBlast = "xplrock"
+
+soundThrust = "flame01.wav"
+

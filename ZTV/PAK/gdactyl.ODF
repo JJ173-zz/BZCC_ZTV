@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+ordName = "tvdactyl"
+wpnName = "Dactyl"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCKET"
+aiRange = 750
+isAssault = 0
+
+
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "tvdactyl"
+

@@ -1,0 +1,100 @@
+// ====================
+// Rocket Tower BUILDING HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xms2.wav"
+
+damageRadius = 3.0 // 5.0
+
+damageValue(N) = 3 // 10 // none
+damageValue(L) = 15 // 7 // light
+damageValue(H) = 2 // heavy
+
+damageValue(S) = 7 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 2 // absorbtion
+
+particleTypes = 4
+
+particleClass1 = "xlrktbld2.flame"
+particleCount1 = 2
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xlrktbld2.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xlrktbld2.spark"
+particleCount3 = 10
+particleVeloc3 = "5.0 5.0 5.0"
+particleBias3 = "0.0 1.0 0.0"
+
+particleClass4 = "xlrktbld2.core"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xlrktbld2.flameemit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 200 100 255"
+finishColor = "255 120 0 0"
+startRadius = 0.0
+finishRadius = 1.5
+animateTime = 0.3
+rotationRate = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 1.4
+finishRadius = 0.5
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.25
+finishRadius = 0.1
+animateTime = 1.2
+rotationRate = 0.1
+
+[Core]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 155 150 100"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 2.0
+animateTime = 2.0
+
+

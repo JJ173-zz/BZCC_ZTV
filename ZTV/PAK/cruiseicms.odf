@@ -1,0 +1,84 @@
+[GameObjectClass]
+geometryName = "cruise4.xsi"
+geometryScale = 2.0 // 2.0
+classLabel = "torpedo"
+baseName = "grccmi"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 800
+maxAmmo = 300 // 1000
+unitName = "Cruiser"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xplcrusicms"
+eplExpire = "xplcrusicms"
+
+isassault = 1
+
+heatSignature = 3.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+LightHard2 = "hp_emit_1"
+LightName2 = "dotorg"
+LightHard3 = "hp_emit_2"
+LightName3 = "dotorg"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "cruiseicms.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "cruiseicms.render"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 11.0
+alphaTrack = 8 // 20.0
+alphaDamp = 2 // 1 // 5.0 // terrain following
+velocForward = 20 // 20.0
+accelThrust = 65.0
+omegaTurn = 0.5 // 2.0
+alphaSteer = 1.5 // 5.0
+lifeSpan = 50.0
+xplBlast = "xplcrusicms"
+
+soundThrust = "crusicm.wav" //"icomm01.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "cruiseicms.smoke"
+renderName2 = "cruiseicms.flame"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor =   "70 70 70 40" 
+finishColor = "153 153 153 0"
+startRadius = 0.4
+finishRadius = 0.8
+animateTime = 0.6 
+emitDelay = 0.005 // 0.003
+emitVelocity = "0.0 0.0 15.0"
+emitVariance = "0.6 0.6 0.6"
+emitInherit = "1.0 0.65 1.0"
+emitLife = 0.6 
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.4
+finishRadius = 0.05
+animateTime = 0.07 
+emitDelay = 0.001 
+emitVelocity = "0.0 0.0 15.0"
+emitVariance = "2.0 2.0 2.0"
+emitLife = 0.09 
+emitInherit = "1.0 0.65 1.0"

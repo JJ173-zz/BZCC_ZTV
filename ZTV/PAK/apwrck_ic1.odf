@@ -1,0 +1,94 @@
+[GameObjectClass]
+geometryName = "daywrk_ic1.xsi"
+geometryScale = 10
+
+classLabel = "daywrecker"
+scrapCost = 40
+buildTime = 15
+scrapValue = 5
+maxHealth = 300 // 500
+maxAmmo = 0
+unitName = "500 lb. Bomb"
+aiName = "PowerUpProcess"
+
+heatSignature = 3.0
+imageSignature = 3.0
+radarSignature = 2.0
+
+// if shot down:
+explosionName = "xminxpl"
+
+requireCount = 2
+requireName1 = "ibdcen"
+requireText1 = "Build Data Center"
+requireName2 = "ibairvend2"
+requireText2 = "Upgrade Arsenal"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "apwrck_ic1.render"
+
+[DayWreckerClass]
+xplBlast = "xiccdwxpl" // ["xbmbxpl"]
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "apwrck_ic1.flare"
+renderName2 = "apwrck_ic1.halo"
+renderName3 = "apwrck_ic1.trail"
+renderName4 = "apwrck_ic1.sparks"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 60 0 120"
+finishColor = "255 30 0 120"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "200 80 0 127"
+finishColor = "255 30 0 127"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "150 30 0 155"  //100 alpha
+finishColor = "100 30 30 0"
+startRadius = 0.5    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.9
+segmentVariance = "0.1 0.1 0.1 "
+animateTime = 0.9 
+textureRate = 0.01
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "apwrck_ic1.sparker"
+emitDelay = 0.02 // 0.2 // 0.5
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.9
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "apwrck_ic1.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 170 80 250"
+finishColor = "200 50 0 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 0.9

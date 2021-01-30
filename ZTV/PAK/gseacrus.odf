@@ -1,0 +1,23 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+wpnName = "Trident"
+fireSound = "click02.wav" // "gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "CANNON"
+aiRange = 450
+isAssault = 1
+
+[LauncherClass]
+lockRange = 450.0
+shotDelay = 6.0
+lockDelay = 0.01
+coneAngle = 0.1
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[TorpedoLauncherClass]
+objectClass = "seacrus"

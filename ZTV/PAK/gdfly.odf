@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Support Unit"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 220 // 150
+isAssault = 0
+
+localAmmo = 6001 // 1 //needs to be amount of units capacity that you're dropping
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "tvdfly_dr" // dragonfly
+

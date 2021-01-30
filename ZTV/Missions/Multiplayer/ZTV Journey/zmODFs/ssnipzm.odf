@@ -1,0 +1,60 @@
+[OrdnanceClass]
+classLabel = "snipershell"
+
+shotGeometry = NULL
+xplGround = "xlgtgnd"
+xplVehicle = "xlgtcar"
+xplBuilding = "xlgtbld"
+renderName = "ssnipe.render"
+
+ammoCost = 70 // 100
+lifeSpan = 0.03 // 0.3 // 300m
+shotSpeed = 10000 //1000
+
+damageValue(N) = 200
+damageValue(L) = 150
+damageValue(H) = 50 // 0
+
+damageValue(S) = 150
+damageValue(D) = 200
+damageValue(A) = 50 // 0
+
+[SniperShellClass]
+killRadius = 1.0 // 0.5
+killLength = 40 // 15.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ssnipe.core"
+renderName2 = "ssnipe.halo"
+renderName3 = "ssnipe.trail"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 63"
+finishColor = "255 255 0 63"
+startRadius = 0.5
+finishRadius = 0.5
+rotationRate = 10.0
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "255 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.1
+finishRadius = 0.0
+segmentTime = 0.2
+

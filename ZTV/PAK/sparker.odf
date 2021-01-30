@@ -1,0 +1,111 @@
+// This replaces the stock build effect with a higher visibility version
+// does not cause bad assets
+
+[sparker]
+renderBase = "draw_multi"
+renderCount = 5
+
+renderName1 = "sparker.light" 
+renderName2 = "sparker.steamemit" 
+renderName3 = "sparker.emberemit"
+renderName4 = "sparker.sparkemit"
+renderName5 = "sparker.sparkemberemit"
+ 
+[Light]
+simulateBase = "sim_null"
+lifeTime = 5.0
+renderBase = "draw_light"
+startColor = "0 255 255 955"
+finishColor = "0 0 255 0"
+startRadius = 40.0
+finishRadius = 40.0
+animateTime = 5.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[SteamEmit]
+simulateBase = "sim_smoke"
+lifeTime = 7.0
+renderBase = "draw_emit"
+emitName = "sparker.steam"
+emitDelay = 0.09
+emitVelocity = "0.1 6.0 0.1"
+emitVariance = "2.5 6.0 2.5"
+
+[Steam]
+simulateBase = "sim_smoke"
+lifeTime = 7.0
+textureBlend = "one one modulate"
+renderBase = "draw_sprite"
+textureName = "flame.tga"
+startColor = "0 185 255 105"
+finishColor = "0 55 255 0"
+startRadius = 0.7
+finishRadius = 7.0
+animateTime = 7.0
+
+[EmberEmit]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_emit"
+emitName = "sparker.embertrails"
+emitDelay = 0.25
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[EmberTrails]
+simulateBase = "sim_ember"
+lifeTime = 2.0
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "0 155 255 155"
+finishColor = "0 0 200 100"
+startRadius = 0.07
+finishRadius = 0.0
+trailTime = 2.0
+segmentTime = 0.5
+
+[SparkEmit]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_emit"
+emitName = "sparker.sparks"
+emitDelay = 0.05
+emitVelocity = "0.5 1.0 0.5"
+emitVariance = "5.0 3.0 5.0"
+
+[Sparks]
+simulateBase = "sim_smoke"
+renderBase = "draw_sprite"
+emitLife = 3.0 
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "40 125 255 255"
+finishColor = "40 125 255 150"
+startRadius = 0.8
+finishRadius = 0.8
+animateTime = 3.0
+rotationRate = 3.0
+                
+[SparkEmberEmit]
+simulateBase = "sim_smoke"
+lifeTime = 2.5
+renderBase = "draw_emit"
+emitName = "sparker.sparkember"
+emitDelay = 0.15
+emitVelocity = "0.0 3.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[SparkEmber]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "45 125 255 255"
+finishColor = "40 125 255 255"
+startRadius = 0.8
+finishRadius = 0.8
+animateTime = 2.5
+               

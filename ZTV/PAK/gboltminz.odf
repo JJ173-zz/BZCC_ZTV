@@ -1,0 +1,12 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Bolt Mine"
+fireSound = "mmine01.wav"
+wpnReticle = "gproxmin"
+wpnCategory = "SPEC"
+
+localAmmo = 1400  // 7 @ 200
+
+[DispenserClass]
+shotDelay = 6.0  // 5.0
+objectClass = "boltmine"

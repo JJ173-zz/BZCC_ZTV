@@ -1,0 +1,74 @@
+[GameObjectClass]
+baseName = "ibvend1"
+geometryName = "ibvend3.xsi"
+classLabel = "turret"
+scrapCost = 40
+scrapValue = 10
+maxHealth = 5000
+maxAmmo = 0
+unitName = "Pilot Arsenal"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 4.0
+isAssault = 1
+powerCost = -1 // mc costs 2
+
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+
+canDetect = 1
+canCollide = 0 // cant enter tunnel otherwise
+
+ownsTerrain = 1
+
+armorClass = H
+
+buildSupport = F // B
+buildRequire = F
+
+//upgradeName = "ibvend2"
+
+requireCount = 1
+requireName1 = "ibtrnsyd"
+requireText1 = "Build Air Yard"
+
+provideCount = 1
+provideName1 = "ibvend1"
+
+weaponMask = 0001
+
+weaponHard1 = "hp_gun_1"
+weaponName1 =  "gaphoveric" 
+weaponAssault1 = 0
+
+weaponHard2 = "hp_special_2"
+weaponName2 =  "gmcjmmr" 
+weaponAssault2 = 1
+
+weaponHard3 = "hp_gun_2"
+weaponName3 =  "gapfwdthst" 
+weaponAssault3 = 1
+
+weaponHard4 = "hp_special_1"
+weaponName4 =  "gapsnpxtr" // "gapblnks2" 
+weaponAssault4 = 0
+
+
+[BuildingClass]
+soundAmbient = "command4.wav"
+
+[CraftClass]
+rangeScan = 1.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1
+
+powerTap1 = "HP_tap_1"
+powerName = "iblung_ic2" 

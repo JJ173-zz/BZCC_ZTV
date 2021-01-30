@@ -1,0 +1,30 @@
+[GameObjectClass]
+classLabel = "fvatank"
+scrapValue = 30 // 60
+scrapCost = 60 // 90
+customCost = 60 // 100
+buildTime = 10 // 15.0
+customTime = 10 // 20.0
+maxHealth = 6500 // 6000
+addHealth = -.01  // to cause service truck to follow
+
+[CraftClass]
+engageRange = 200 // 150
+braccelFactor = 0.09
+velFactor = 0.1
+omegaFactor = 0.1
+
+[TrackedVehicleClass]
+omegaSpin = 4.0
+velocForward = 16.0
+velocReverse = 5.0
+accelThrust = 35 // 10.0
+engineSound = "fatank02.wav"
+treadSound = "fatank02.wav"
+
+[AssaultTankClass]
+yawRate = 2.0
+pitchMin = -0.1
+pitchMax = 0.5
+recoilName1 = "cube2"
+recoilName2 = "cube4"

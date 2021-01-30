@@ -1,0 +1,44 @@
+[WeaponClass]
+classLabel = "cannon"
+geometryname = "canstrz.xsi"
+//altName = "gflaxz"
+ordName = "flaxz"
+wpnName = "Tail Flak"
+fireSound = "jax01.wav"
+wpnReticle = "gjax.0"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 120
+flashName = "gflaxz.flash"
+[CannonClass]
+shotDelay = 1.0
+shotVariance = 0.3
+shotPitch = 2.8 // 3.0
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "gflaxz.bursts"
+
+[Bursts]
+simulateBase = "sim_smoke"
+lifeTime = 0.12
+renderBase = "draw_emit"
+emitName = "gflaxz.puff"
+emitDelay = 0.008
+emitVelocity = "0.0 5.0 -30.0"
+emitVariance = "35.0 35.0 5.0"
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 255"
+finishColor = "50 50 50 0"
+startRadius = 18.0
+finishRadius = 50.0
+animateTime = 3.0
+
+

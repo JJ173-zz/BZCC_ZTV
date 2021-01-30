@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "tshell"
+wpnName = "Meteor"
+fireSound = "wlcan.wav" // "mort01.wav"
+wpnReticle = "ghartil"
+wpnLadder = "gmortar.L0"
+wpnPriority = 6
+wpnCategory = "MORT"
+aiRange = 600
+
+[CannonClass]
+shotDelay = 15.0
+
+shotVariance = 0.07
+
+salvoCount = 3
+salvoDelay = 2.5 

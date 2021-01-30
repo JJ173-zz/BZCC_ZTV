@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "ivlavegg.xsi" 
+geometryScale = 4
+ 
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 500
+maxAmmo = 0
+unitName = "Pilot Powerup"
+aiName = "PowerUpProcess"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivlavegg.effect"
+
+[PowerUpClass]
+soundPickup = "" // "babycry.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "givworm" // "giveggc"
+

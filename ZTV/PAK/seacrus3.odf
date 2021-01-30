@@ -1,0 +1,137 @@
+[GameObjectClass]
+geometryName = "glowrkt8.xsi"
+geometryScale = 1.0 
+classLabel = "torpedo"
+baseName = "grccmi"
+scrapValue = 0
+scrapCost = 0
+maxHealth = 700
+maxAmmo = 100
+unitName = "Trident"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xplseacr"
+eplExpire = "xplseacr"
+
+heatSignature = 3.0
+imageSignature = 1.0
+radarSignature = 1.0
+
+LightHard1 = "hp_emit_1"
+LightName1 = "dotred"
+LightHard2 = "hp_emit_2"
+LightName2 = "dotred"
+
+effectHard1 = "hp_emit_2"
+effectName1 = "seacrus3.tail"
+effectHard2 = "hp_emit_3"
+effectName2 = "seacrus3.tail"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 2.0
+alphaTrack = 10 // 40 
+alphaDamp = 5.0
+velocForward = 25 // 15.0
+accelThrust = 50.0
+omegaTurn = 1 // 2.0
+alphaSteer = 2.5 // 5.0
+lifeSpan = 35.0
+
+xplBlast = "xplseacr"
+
+soundThrust = "glowrkt.wav" 
+
+[Tail]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "seacrus3.taillong"
+renderName2 = "seacrus3.tailshort"
+
+[TailLong]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "220 100 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.1 
+segmentTime = 0.7 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.03
+
+[TailShort]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.01 
+segmentTime = 0.3 //1.5 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.15
+textureRate = 0.1 // 0.05
+
+[Flamer]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "seacrus.flame"
+renderName2 = "seacrus.trail"
+
+[Flame]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.02
+//emitDelayVar = 0.01
+emitVelocity = "0.0 0.0 2.0"
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 0.3 // 2.0 
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "0 200 255 128"
+finishColor = "0 155 255 0"
+startRadius = 0.4 // 1.2 
+finishRadius = 0.01
+animateTime = 0.3
+rotationRate = 5.0
+
+
+[Trail]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.01
+//emitDelayVar = 0.01
+emitVelocity = "0.0 0.0 2.0"
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.2 0.2 0.2"
+emitLife = 0.5 // 3.0
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "0 150 255 128"
+finishColor = "0 0 50 0"
+startRadius = 0.05
+finishRadius = 1.0 // .5
+animateTime = 0.5 // 3.0
+rotationRate = 7.0
+
+[Wire]
+renderBase = "draw_bolt"
+textureName = "boltline.tga"
+//textureBlend = "one one modulate"
+textureBlend = "invsrc invsrc modulate"
+startColor = "120 120 120 120"
+finishColor = "20 20 20 0"
+startRadius = 0.07 // 0.45
+finishRadius = 0.001 // 0.1 
+//segmentTime = 1.5 // time each segment animates
+segmentLength = 1.4
+segmentVariance = "0.01 0.01 0.01"
+animateTime = 0.2 //this starts when bolt dies
+textureRate = 0.03
+
+

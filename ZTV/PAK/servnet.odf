@@ -1,0 +1,65 @@
+[OrdnanceClass]
+classLabel = "anchor"
+
+shotGeometry = "notice1.xsi"
+//geometryScale = 0.05
+shotSound = "gshad02.wav"
+
+xplGround = "xplserv" 
+xplVehicle = "xplserv" //NULL 
+xplBuilding = NULL 
+
+renderName = "servnet.render"
+
+ammoCost = 2
+lifeSpan =  95e-4 //  
+shotSpeed = 1E4 // 150.0
+
+damageValue(N) = 0.5 // none
+damageValue(L) = 1.0 // light
+damageValue(H) = 0.5 // heavy
+
+damageValue(S) = 0.3 // standard
+damageValue(D) = 0.7 // deflection
+damageValue(A) = 0.2 // absorbtion
+
+[LeaderRoundClass]
+stickTime = 5.0 
+
+[AnchorRocketClass]
+accelDrag = 9.5 // 2.0 /// 2.2  
+alphaDrag = 2.4 // .45 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2 
+
+renderName1 = "servnet.trail"
+renderName2 = "servnet.contrail"
+
+[Trail]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga" 
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 90"
+finishColor = "0 0 0 0"
+startRadius = 2.0 // 1.0
+finishRadius = 4. 0 //1.5
+animateTime = 1.0
+emitDelay = 0.03 // 0.02 // 0.005
+emitVelocity = "0.0 0.0 0.5"
+emitVariance = "0.5 0.5 2.0"
+emitLife = 0.75
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "10 10 10 255"
+finishColor = "10 10 10 0"
+startRadius = 2.0
+finishRadius = 0.1 
+segmentTime = 0.6 // 3.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.5 // 0.05

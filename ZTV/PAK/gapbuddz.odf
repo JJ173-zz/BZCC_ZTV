@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "viobal2.xsi" 
+wpnName = "Robo Wing"
+ordName = NULL
+
+fireSound =  "icons02.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 180
+objectClass = "ivbuddz"
+

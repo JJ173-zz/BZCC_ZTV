@@ -1,0 +1,132 @@
+[GameObjectClass]
+geometryName = "seacraft3.xsi"
+geometryScale = 1
+classLabel = "apc"
+//classLabel = "wingman"
+collisionRadius = 1.0
+scrapValue = 10
+scrapCost = 80
+customCost = 80
+buildTime = 20.0
+customTime = 20.0
+maxHealth = 10000
+addHealth = 2
+maxAmmo = 50000 
+addAmmo = 150   
+unitName = "Sea Patrol"
+
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+
+heatSignature = 2.0
+imageSignature = 0.5
+radarSignature = 0.0
+isAssault = 1
+armorClass = H
+canSnipe = 0
+
+requireCount = 0
+canCollide = 1
+boxCollide = 0
+
+weaponMask = 01111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gturtrk2" //"gdemotrp" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gturtrk2" //"gdemotrp" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_cannon_1"
+weaponName3 = "gdemotrp"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_cannon_2"
+weaponName4 = "gdemotrp"
+weaponAssault4 = 0
+
+//weaponHard4 = "HP_mortar_1"
+//weaponName4 = "gzeeker" 
+//weaponAssault4 = 0
+
+weaponHard5 = "HP_special_1"
+weaponName5 = "gsitecam" // "gredfld" 
+weaponAssault5 = 0
+
+[CraftClass]
+DoIdleDispatch = false
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 0.0
+weaponPitch =  1.1 
+engageRange = 0
+
+braccelFactor = 0.05f;
+strafeFactor = 10.1f;
+steerFactor = 3.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+rescueMsg = "avapcv5.wav"
+
+MIN_BOUNCE_VEL = 0.5
+
+OBJECT_ELASTICITY = 0.425   // 0.125
+GROUND_ELASTICITY = 0.08125 // 0.03125
+
+avoidSpeed = 6
+topSpeed = 11
+
+[HoverCraftClass]
+setAltitude = -18 // rises to this on firing/deploying
+accelDragStop = 2 
+accelDragFull = 5 
+alphaTrack = 30 
+alphaDamp = 6 
+pitchPitch = 0.01
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 10.0
+velocReverse = 7.0
+velocStrafe = 5.0
+accelThrust = 20.0
+accelBrake = 20.0
+omegaSpin = 1.5
+omegaTurn = 1.0
+alphaSteer = 3.0
+accelJump = 0 // 120.0 speed to aquire alttitude low or high
+
+soundThrust = "water01.wav" 
+soundSteer = "rmort01.wav" 
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav" 
+
+UseWaterHeight = true
+DeployedUseWaterHeight = true
+
+//LIFT_SPRING = 15.0
+//LIFT_DAMP = 8.25
+
+[APCClass]
+soldierType = "iszpilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 1 
+
+flightAltitude = -28 
+AltitudeLookahead = 1.0 // # of seconds it will look ahead for adjusting altitude
+OverWater = true // true = set altitude is over water height, if present
+HovercraftPhysicsWhenUndeployed = false
+
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav"
+

@@ -1,0 +1,25 @@
+[GameObjectClass]
+geometryName = "winner.xsi"
+geometryScale = 7.0
+classLabel = "computer"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0 // doesnt seem to work with this class
+maxAmmo = 0
+unitName = "Holo Win Sign"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+cancollide = 0 // shouldnt use, since cannot destroy this class
+ownsTerrain = 0 // doesnt seem to affect its invulnerability
+
+[ComputerClass]
+ShieldVel = 0.5 //0.2
+ShieldAmp = 0.0 //0.05
+Shield = "shield"
+
+

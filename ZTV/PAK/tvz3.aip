@@ -1,0 +1,102 @@
+[Start]
+scrapCount = 40
+consClass = "tvcons"
+scavClass = "tvscavc"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 100
+buildtype1 = "tvrigapc1"
+buildcount1 = 1
+buildtype2 = "tvrigapc2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan2]
+planType = "buildminimums"
+planPriority = 90
+buildtype1 = "tvcrick2"
+buildcount1 = 1
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 80
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "tvrigapc1"
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 70
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "tvrigapc2"
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "buildminimums"
+planPriority = 60
+buildtype1 = "tvraven1"
+buildcount1 = 1
+buildtype2 = "tvraven2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "Hold"
+planPriority = 50
+holdtype1 = "tvraven1"
+holdcount1 = 1
+holdpoint = "hold1"
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "Hold"
+planPriority = 40
+holdtype1 = "tvraven2"
+holdcount1 = 1
+holdpoint = "hold3"
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "buildminimums"
+planPriority = 30
+buildtype1 = "tvdrillg1"
+buildcount1 = 1
+buildtype2 = "tvdrillg2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "Hold"
+planPriority = 20
+holdtype1 = "tvdrillg1"
+holdcount1 = 1
+holdpoint = "hold2"
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "Hold"
+planPriority = 10
+holdtype1 = "tvdrillg2"
+holdcount1 = 1
+holdpoint = "hold4"
+ContinueEvenIfFail = true

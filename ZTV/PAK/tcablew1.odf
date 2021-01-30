@@ -1,0 +1,52 @@
+[GameObjectClass]
+geometryName = "tcablew1.xsi"
+geometryScale= 0.35
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "cable"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "tcablew1.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "tcablew1.ontime"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "90.0 0.0 90.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.1  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "tcablew1.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga" //"boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.15
+finishRadius = 0.3
+segmentLength = 0.5 //.1 //1.0 //3.1
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 0.2
+
+
+[BuildingClass]
+SoundAmbient = "igtow01.wav"
+SoundAmbientDist = 0.8

@@ -1,0 +1,44 @@
+[OrdnanceClass]
+//classLabel = "bullet"
+classLabel = "pulse"
+shotGeometry = NULL
+shotRadius = -3
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+
+renderName = "rdrnull.render"
+
+ammoCost = 0
+lifeSpan = 7   //120e-6 // 120m
+shotSpeed = 30
+
+damageValue(N) = 5 
+damageValue(L) = 5 
+damageValue(H) = 1 
+
+damageValue(S) = 1 
+damageValue(D) = 1 
+damageValue(A) = 1 
+
+[PulseShellClass]
+pulseDelay = 0.75
+pulsePeriod = 0.75
+xplPulse = "rdrnullpls"
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "rdrnull.flare"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "ring.tga"
+lifeTime = 7
+textureBlend = "one one modulate"
+startColor = "5 155 255 15" 
+finishColor = "5 155 255 3" 
+startRadius = 5
+finishRadius = 100
+animateTime = 7

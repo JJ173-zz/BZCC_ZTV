@@ -1,0 +1,35 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 0
+particleClass1 = "xplstaz_car.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = NULL // "gmagg05.wav"
+damageRadius = 40.0
+kickRadius = 25 // 4.0
+kickOmega = 0.0 
+kickVeloc = 10.0
+
+damageValue(N) = 1000
+damageValue(L) = 1000
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 120"
+finishColor = "255 0 0 0"
+startRadius = 60
+finishRadius = 50
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16

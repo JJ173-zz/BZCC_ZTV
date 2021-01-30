@@ -1,0 +1,143 @@
+[GameObjectClass]
+baseName = "rckpylon"
+geometryName = "rocketpylon.xsi"
+geometryScale = 1.0
+animCount = 0
+classLabel = "turrettank"
+scrapCost = 80
+customCost = 95
+scrapValue = 25
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 6000
+maxAmmo = 5000
+addAmmo = 100
+unitName = "Rocket Pylon"
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+heatSignature = 0.3
+imageSignature = 0.5
+radarSignature = 1.5
+isAssault = 1
+canDetect = 1
+canInteract = 1
+canCollide = 1
+collisionRadius = 1.0
+ownsTerrain = 0
+armorClass = H
+requireCount = 0
+
+needPilot = 0
+canSnipe = 0
+
+/////// weapons ///////////////////
+
+weaponMask = 00000
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "glasrkt"
+weaponAssault1 = 1
+
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "glasrkt2" //"grpsmak"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_ROCKET_3"
+weaponName3 = "glasrkt2" //"grpsmak"
+weaponAssault3 = 0
+
+//////////////////////////////////
+
+effectHard1 = "hp_emit_1"
+effectName1 = "rckpylon.bluflasher"
+effectHard2 = "hp_emit_2"
+effectName2 = "rckpylon.bluflasher"
+effectHard3 = "hp_emit_3"
+effectName3 = "rckpylon.bluflasher"
+effectHard4 = "hp_emit_4"
+effectName4 = "rckpylon.bluflasher"
+
+turretCount = 3
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+[CraftClass]
+weaponPitch = 1.5
+rangeScan = 440.0
+periodScan = 2.0
+velocJam = 1.0
+engageRange = 300
+
+[HoverCraftClass]
+
+setAltitude = 0.1
+accelDragStop = 20.0
+accelDragFull = 1.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 0.0
+velocReverse = 0.0
+velocStrafe = 0.0
+accelThrust = 0.0
+accelBrake = 0.0
+omegaSpin = 1.0
+omegaTurn = 1.5
+alphaSteer = 0.0
+accelJump = 0.0
+
+soundThrust = "ienge.wav"
+soundSteer = "avturre8.wav"
+soundDeploy = "avturre4.wav"
+soundUndeploy = "avturre5.wav"
+
+[TurretTankClass]
+omegaTurret = 1.0
+alphaTurret = 2.0
+timeDeploy = 1.0
+timeUndeploy = 0.5
+
+[BluFlasher]
+renderBase = "draw_emit"
+emitName = "rckpylon.bflash1"
+emitDelay = 1.27 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "rckpylon.blulight"
+renderName2 = "rckpylon.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "0 0 255 1555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255"
+finishColor = "80 80 255 255"
+startRadius = 2.0 // 1
+finishRadius = 0.5
+
+

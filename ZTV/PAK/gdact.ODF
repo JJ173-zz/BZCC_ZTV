@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Empty Dactyl"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 150
+isAssault = 1
+flashName = xpmlaunc.shock
+
+localAmmo = 25 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 10.0
+objectClass = "ivdact_ic1" 
+

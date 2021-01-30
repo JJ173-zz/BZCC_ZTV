@@ -1,0 +1,90 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "lghttrp.xsi"
+shotSound = "tenv01.wav" // "crckt02.wav"
+
+renderName = "demotrp2.render"
+
+xplGround = "xdemotrv"
+xplVehicle = "xdemotrv"
+xplBuilding = "xdemotrv"
+
+ammoCost = 350 // 500
+lifeSpan = 80  
+shotSpeed = 14.0 // 12
+
+// plus 2000 25m radius from explosion
+// x2 for sub, x1 for platform
+
+damageValue(N) = 3500 // none | 2total 11000
+damageValue(L) = 2000 // light | 2total 6000
+damageValue(H) = 500 // 750 // heavy | 2total 3000 building
+
+damageValue(S) = 2000 // standard
+damageValue(D) = 3000 // deflection
+damageValue(A) = 1000 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.06 // .05 // 0.03
+
+[ThermalMissileClass]
+coneAngle = 0.25
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "demotrp.bubbles"
+renderName2 = "demotrp.flare"
+renderName3 = "demotrp.flame"
+renderName4 = "demotrp.contrail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "155 155 255 255"
+finishColor = "155 155 255 255"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "155 155 255 155"
+finishColor = "0 255 255 0"
+startRadius = 0.4
+finishRadius = 0.1
+animateTime = 0.15
+emitDelay = 0.02 // 0.009
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.15
+
+[Bubbles]
+renderBase = "draw_twirl_trail"
+textureName = "raindrop.tga"
+textureblend = "one one modulate"
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.03
+finishRadius = 0.1
+rotationRate = 0.0
+animateTime = 2.5
+emitDelay = 0.01
+emitVariance = "0.8 0.8 0.8"
+emitLife = 4.0
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate" 
+startColor = "125 125 255 75"
+finishColor = "205 205 255 0"
+startRadius = 0.4 // 0.05
+finishRadius = 0.1 //0.1 
+segmentTime = 4 //1.8  // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+textureRate = 0.05

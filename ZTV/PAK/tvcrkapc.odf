@@ -1,0 +1,155 @@
+[GameObjectClass]
+baseName = "tvtskapc"
+geometryName = "ivtskapc.xsi" // "ivapc00.xsi"
+geometryScale = 5.0
+classLabel = "apc"
+collisionRadius = 0.1
+scrapValue = 20
+scrapCost = 60
+customCost = 80
+buildTime = 5.0
+customTime = 5.0
+maxHealth = 2000
+maxAmmo = 9000
+unitName = "Cricket AC"
+aiName = "APCProcess"
+heatSignature = 10.0
+imageSignature = 0.5
+radarSignature = 0.01
+isAssault = 1
+
+canSnipe = 0
+needPilot = 0
+
+armorClass = L
+
+requireCount = 0
+boxCollide = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 =  
+effectHard1 = "hp_emit_1"
+effectName1 = "tvcrkapc.effect"
+
+[CraftClass]
+rangeScan = 300.0
+periodScan = 0.0
+velocJam = 0.0
+needPilot = 0
+engageRange = 600
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+selectOtherMsg = "avapcvj.wav"
+
+goMsg = "avapcv0.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+followMeMsg = "avapcv3.wav"
+repairMsg = "avapcv4.wav"
+recycleMsg = "avapcv6.wav"
+rescueMsg = "avapcv5.wav"
+otherMsg = "avapcvh.wav"
+
+deployedMsg = "avapcv2.wav"
+diedMsg = "abetty3.wav"
+
+[HoverCraftClass]
+setAltitude = 25.0 // 1.5
+accelDragStop = 4.0
+accelDragFull = 1.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.01 // 0.1
+rollSteer = 0.01 // 0.1
+
+velocForward = 20.0
+velocReverse = 15.0
+velocStrafe = 15.0
+accelThrust = 70.0
+accelBrake = 70.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 240 // 150.0
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[APCClass]
+soldierType = "tvcrick1" // "issold"
+soldierCount = 3
+soldierDelay = 0.5
+timeDeploy = 0.1 // 2.5
+flightAltitude = 50 // 75.0
+
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "tvcrkapc.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "tvcrkapc.blulight"
+renderName2 = "tvcrkapc.bluflare"
+renderName3 = "tvcrkapc.wave"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "0 255 0 1555"
+finishColor = "0 255 0 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 85 255"
+finishColor = "0 0 255 255"
+startRadius = 22.0 // 1
+finishRadius = 0.5
+animateTime = 0.1
+
+[Wave]
+renderBase = "draw_wave"
+textureName =  "wave.tga" //NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 70 55" 
+finishColor = "0 150 0 55" 
+startRadius = 3.0 
+finishRadius = 2.0 
+animateTime = 0.5 // 0.2
+waveAngle = 360 // .07 // 
+waveDepth = 0.6 // .3 //0.8
+waveSegments = 60 //8 across width, gradations 18 makes a star at 360

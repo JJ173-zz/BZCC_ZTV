@@ -1,0 +1,49 @@
+[GameObjectClass]
+geometryName = "probez2.xsi"
+geometryScale = 0.4
+classLabel = "sensor"
+//classLabel = "commbunker"
+//classLabel = "turret"
+scrapCost = 0
+scrapValue = 0
+isAssault = 1
+maxHealth = 1000
+armorClass = N
+
+
+//set ammo in probkikz instead
+maxAmmo = 0 
+
+powerCost =  -1 //0  
+
+unitName = "Probe"
+
+heatSignature = 0.5
+imageSignature = 0.5
+radarSignature = 0.0
+
+canCollide = 1 
+canDetect = 1 
+canInteract = 1
+ownsTerrain = 0
+ 
+explosionName = "lift2xpr"
+
+[BuildingClass]
+SoundAmbient = "ping.wav" 
+SoundAmbientDist = 0.9  // not working?
+
+//[CommBunkerClass]
+//rangeScan = 300
+//periodScan = 0.0
+
+[PoweredBuildingClass]
+detectRange = 300
+
+//[CraftClass]
+//rangeScan = 300.0f
+//periodScan = 1.0f
+//velocJam = 0.0f
+
+[MotionSensorClass]
+rangeScan = 300.0

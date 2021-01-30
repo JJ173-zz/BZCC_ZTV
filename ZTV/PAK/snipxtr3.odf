@@ -1,0 +1,60 @@
+[OrdnanceClass]
+classLabel = "snipershell"
+shotGeometry = NULL
+renderName = "snipxtr3.render"
+
+xplGround = "xbulgnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 30
+lifeSpan = 150e-2 // 150m, standard is 300
+shotSpeed = 1e2
+
+damageValue(N) = 5
+damageValue(L) = 5
+damageValue(H) = 5
+
+damageValue(S) = 5
+damageValue(D) = 5
+damageValue(A) = 5
+
+[SniperShellClass]
+killRadius = 0.2  //  0.5 is standard
+killLength = 1.8 //1.8 so it wont go thru windshields, 1.0 wont go thru feet // 15.0 stock
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "snipxtr3.core"
+renderName2 = "snipxtr3.halo"
+renderName3 = "snipxtr3.trail"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "175 255 175 255"
+finishColor = "175 255 175 0"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 63"
+finishColor = "0 255 0 63"
+startRadius = 0.5
+finishRadius = 0.5
+rotationRate = 10.0
+
+[Trail]
+renderBase = "draw_bolt"
+textureBlend = "one one modulate"
+startColor = "0 255 0 150"
+finishColor = "0 255 0 0"
+startRadius = 0.03
+finishRadius = 0.0
+segmentTime = 0.2
+segmentLength = 2

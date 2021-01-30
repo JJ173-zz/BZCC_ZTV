@@ -1,0 +1,15 @@
+[GameObjectClass]
+geometryScale = 1.5
+classLabel = "fvarch"
+canSnipe = 0
+
+[CraftClass]
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[HoverCraftClass]
+
+[MorphTankClass]
+
+[DeployableClass]

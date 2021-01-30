@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+
+ordName = "wormkick"
+wpnName = "Sea Worms"
+fireSound = "running.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 300 
+isAssault = 0
+
+//localAmmo = 200  
+
+[CannonClass]
+shotDelay = 180.0 
+salvoCount = 1 
+salvoDelay = 10.0 
+shotVariance = 0.6
+shotPitch = 0.1  // -1.58 = straight down

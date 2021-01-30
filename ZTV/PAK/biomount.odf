@@ -1,0 +1,45 @@
+[GameObjectClass]
+geometryName = "biomount.xsi"
+//geometryscale = 1
+classLabel = "deposit"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 20
+maxAmmo = 0
+unitName = "Silo Flange"
+heatSignature = 0.8
+imageSignature = 8.0
+radarSignature = 1.0
+collisionRadius = 1.0
+
+effectHard1 = "hp_emit_1"
+effectName1 = "biomount.render"
+
+[BuildingClass] 
+// tunnel required for deploy
+tunnelCount =  1
+
+tunnel01X0 = 1
+tunnel01Z0 = 1
+tunnel01DX = 2
+tunnel01DZ = 2
+tunnel01Edge = "wwtw"
+
+[DepositClass]
+
+[Render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.06 
+emitDelayVar = 0.03
+emitVelocity = "0.0 4.0 0.0" 
+emitVariance = "3.0 3.0 3.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 15.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 90"
+finishColor = "20 20 20 0"
+startRadius = 2
+finishRadius = 7.0
+animateTime = 10.0
+rotationRate = 3.0

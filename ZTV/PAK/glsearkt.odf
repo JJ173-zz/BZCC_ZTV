@@ -1,0 +1,23 @@
+[WeaponClass]
+classLabel = "targeting"
+altName = "glsearkt"
+
+ordName = "lsearckt"
+wpnName = "Silkworm"
+
+fireSound = "click02.wav" //"tmiss03.wav"
+wpnReticle = "gshotgun" // "ghornet.A" 
+
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 210
+
+[TargetingGunClass]
+leaderName = "sealead"
+leaderSound = "laslead3.wav" 
+shotDelay = 0.12  //  0.5
+firstDelay = 1.0 // 0.5
+salvoDelay = 3.0 // 0.5
+salvoCount = 1 
+
+lockedReticle = "ghornet.B"

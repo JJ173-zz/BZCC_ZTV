@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "forwrd"
+wpnName = "Forward"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 300 
+isAssault = 1
+
+[CannonClass]
+shotDelay = 0.2 
+salvoCount = 3000 
+salvoDelay = 0.2  
+shotVariance = 0.0
+
+shotPitch = 0.1  // -1.58 = straight down

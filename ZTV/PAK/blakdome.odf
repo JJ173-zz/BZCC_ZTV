@@ -1,0 +1,29 @@
+[GameObjectClass]
+classLabel = "flare" 
+geometryName = "tvartl2.xsi" 
+animCount = 0
+scrapValue = 0
+scrapCost = 65
+customCost = 70
+buildTime = 20.0
+buildTime = 20.0
+maxHealth = 5000
+maxAmmo = 9000
+addAmmo = 10
+unitName = "Black Dome"
+heatSignature = 1.0
+imageSignature = 0.1
+radarSignature = 0.01
+isAssault = 1
+armorClass = L
+
+
+[MineClass]
+lifeSpan = 1E6 
+
+[FlareMineClass]
+payloadName = "blkbult"
+fireSound = NULL
+triggerDelay = 0.5 
+shotDelay = 0.5
+shotVariance = 0 

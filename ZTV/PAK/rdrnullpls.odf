@@ -1,0 +1,40 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = ""
+
+damageRadius = 25.0
+
+damageValue(N) = 5
+damageValue(L) = 5
+damageValue(H) = 5
+
+damageValue(S) = 5
+damageValue(D) = 5
+damageValue(A) = 5
+
+
+particleTypes = 1
+
+particleClass1 = "rdrnullpls.flare"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 30.0"
+//emitInherit = "1 1 1"
+//ParticleInherit = "1 1 1"
+
+
+[Flare]
+simulateBase = "sim_smoke"
+lifeTime = 1.5
+
+
+
+renderBase = "draw_sprite"
+textureName = "ring.tga"
+
+textureBlend = "one one modulate"
+startColor = "5 155 255 20" // 15
+finishColor = "5 155 255 3" 
+startRadius = 10
+finishRadius = 40
+animateTime = 1.5

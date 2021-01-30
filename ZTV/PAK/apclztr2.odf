@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "clztmntdi.xsi"
+geometryScale = 4.0
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 1200
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+explosionName = "xiccdwxpl" // xicmcxpl"
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "omnired"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gclztbmb2"

@@ -1,0 +1,10 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Sea Worm"
+fireSound = "running.wav"
+wpnReticle = "gproxmin"
+wpnCategory = "SPEC"
+
+[DispenserClass]
+shotDelay = 180.0
+objectClass = "ivseawrm"

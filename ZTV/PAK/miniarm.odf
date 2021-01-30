@@ -1,0 +1,134 @@
+[GameObjectClass]
+geometryName = "miniarm.xsi"
+geometryScale = 0.5
+classLabel = "armory"
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 3000
+maxAmmo = 0
+unitName = "Field Armory"
+aiName = "ArmoryProcess"
+aiName2 = "ArmoryProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+armorClass = H
+canCollide = 1
+ownsTerrain = 1
+
+requireCount = 0
+
+provideCount = 4
+provideName1 = "ibarmo"
+provideName2 = "ibpgen"
+provideName3 = "ibsbay"
+provideName4 = "ibcbun"
+
+buildSupport = B
+buildRequire = F
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue"
+
+[BuildingClass]
+soundAmbient = "iarm01.wav"
+
+[PoweredBuildingClass]
+detectRange = 100
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[ArmoryGroup1]
+buildLabel = "Guns"
+buildItem1 = "apmini"
+buildItem2 = "aplase"
+buildItem3 = "appumm"
+buildItem4 = "apchain"
+buildItem5 = "apiong"
+buildItem6 = "aplock"
+buildItem6 = "apgaus"
+
+[ArmoryGroup2]
+buildLabel = "Cannons"
+buildItem1 = "apstab"
+buildItem2 = "appstb"
+buildItem3 = "apsstb"
+buildItem4 = "applas"
+buildItem5 = "apblst"
+buildItem6 = "apmagg"
+buildItem7 = "apsonic"
+buildItem8 = "apquil"
+buildItem9 = "aparcc"
+
+[ArmoryGroup3]
+buildLabel = "Rockets"
+buildItem1 = "aptagg"
+buildItem2 = "apfafm"
+buildItem3 = "apshdw"
+buildItem4 = "apmlock"
+buildItem5 = "apsting"
+
+[ArmoryGroup4]
+buildLabel = "Mortars"
+buildItem1 = "apmort"
+buildItem2 = "apmdmg"
+buildItem3 = "apspln"
+buildItem4 = "apsartl"
+buildItem5 = "apgas"
+buildItem6 = "apresn"
+buildItem7 = "appopg"
+
+[ArmoryGroup5]
+buildLabel = "Mines"
+buildItem1 = "apflar"
+buildItem2 = "apmcur"
+buildItem3 = "apmits"
+buildItem4 = "approx"
+buildItem5 = "apseek"
+buildItem6 = "approx"
+
+[ArmoryGroup6]
+buildLabel = "Specials"
+buildItem1 = "apredf"
+buildItem2 = "apphan"
+buildItem3 = "apsite"
+buildItem4 = "apffld"
+buildItem5 = "apblnk"
+buildItem6 = "apstatic"
+
+[ArmoryGroup7]
+buildLabel = "Pilot"
+buildItem1 = "apbazo"
+buildItem2 = "apsnip"
+buildItem3 = "apgren"
+buildItem4 = "apjetp"
+buildItem5 = "apslide"
+buildItem6 = "aphover8"
+buildItem1 = "spbazo"
+
+[ArmoryGroup8]
+buildLabel = "Advanced"
+buildItem1 = "apserv"
+buildItem2 = "apwrck"
+buildItem3 = "ivscout"
+buildItem4 = "comet_a"
+buildItem5 = "tvdactyl"
+buildItem6 = "tvcrick1"
+buildItem7 = "apsnipextr"
+
+[ArmoryGroup9]
+buildLabel = "Shields"
+buildItem1 = "apshld"
+buildItem2 = "apdefl"
+buildItem3 = "apabso"
+

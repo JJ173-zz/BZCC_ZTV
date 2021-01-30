@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+ordName = "ivtractor"
+wpnName = "Tasker Transport"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPEC"
+aiRange = 750
+isAssault = 1
+flashName = xpmlaunc.shock
+
+
+[DispenserClass]
+shotDelay = 400.0
+objectClass = "ivtractor"
+

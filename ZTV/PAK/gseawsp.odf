@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+altName = "gseawsp"
+wpnName = "Blowfish"
+fireSound = "jak07.wav" // "gwasp00.wav"
+wpnReticle = "gmlock_a"
+wpnCategory = "ROCK"
+aiRange = 400
+isAssault = 1
+
+[LauncherClass]
+lockRange = 450.0
+shotDelay = 2.25
+lockDelay = 0.1
+coneAngle = 0.075
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[TorpedoLauncherClass]
+objectClass = "seawasp"

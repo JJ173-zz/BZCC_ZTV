@@ -1,0 +1,27 @@
+[WeaponClass]
+geometryName = "snipback1.xsi"
+geometryScale = 0.12
+
+classLabel = "cannon" 
+ordName = "aburnic"
+wpnName = "Fwd Thrust"
+fireSound = "wingflap4.wav"
+wpnReticle = "gminigun"
+wpnCategory = "HAND"
+altName = "gfalcrkt"
+isAssault = 0
+
+
+// cockpit geometry
+cockpitName = "cockpit_hgrip7.xsi"
+cockpitScale = 0.12
+animCountCockpit = 0
+
+
+
+[CannonClass]
+shotDelay = 0.1  
+salvoCount = 10
+salvoDelay = 0.2
+//shotPitch = -2.8 // 3.0 
+

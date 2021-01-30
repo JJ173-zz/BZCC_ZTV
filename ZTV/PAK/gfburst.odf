@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "fburst"
+wpnName = "Flak Burst"
+fireSound = "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "GUN"
+isassault = 0
+
+aiRange = 400.0
+
+[CannonClass]
+shotDelay = 3.0
+
+shotpitch = 0.15
+shotVariance = 0.015 
+
+salvoCount = 2
+salvoDelay = 1 
+

@@ -1,0 +1,84 @@
+[WeaponClass]
+classLabel = "magnetgun"
+ordName = NULL
+altName = NULL 
+wpnName = "Tractor Beam"
+fireSound = "null.wav"
+wpnReticle = "gsonic_a"
+wpnCategory = "ROCK"
+flashName = "igtract1.flash"
+flashTime = 0.4
+isAssault = 0
+
+aiRange = 100
+
+[MagnetGunClass]
+TeamFilter = 51
+ammoCost = 1  // 8.5 
+activeSound = "stap01.wav"
+coneAngle = 0.8 // .08 
+fieldRadius = 80 // 100
+objPushCenter = 70 //45 
+objPushEdge = -140 
+objDrag = 6.5 // 7.8
+ordPushCenter = 95 // 1E6 
+ordPushEdge = 50 
+ordDrag = 1 // 290.0 
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "igtract1.flashwave"
+renderName2 = "igtract1.flashwave2"
+renderName3 = "igtract1.field"
+renderName4 = "igtract1.field2"
+
+[FlashWave]
+renderBase = "draw_wave"
+textureName =  NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 155" 
+finishColor = "100 0 20 155" 
+startRadius = 100.0 
+finishRadius = 1.0 
+animateTime = 0.4 // 0.2
+waveAngle = 0.4 // .07 // 
+waveDepth = 0.6 // .3 //0.8
+waveSegments = 6 //8 across width, gradations
+
+[FlashWave2]
+renderBase = "draw_wave"
+textureName = "wave.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 0 155" 
+finishColor = "0 0 255 155" 
+startRadius = 1.0 
+finishRadius = 100.0 
+animateTime = 0.4 // 0.2
+waveAngle = 0.4 //.07 // 
+waveDepth = 0.3 //0.8
+waveSegments = 6 //8 across width, gradations
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 10"
+finishColor = "100 0 0 90" 
+startRadius = 0.6 // 1.7
+finishRadius = 0.8 // 2.0
+animateTime = 0.4
+latitudeBands = 12
+longitudeSegments = 18
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 100"
+finishColor = "100 0 0 10" 
+startRadius = 0.8 //2.0
+finishRadius = 0.6 //1.7
+animateTime = 0.4
+latitudeBands = 12
+longitudeSegments = 18

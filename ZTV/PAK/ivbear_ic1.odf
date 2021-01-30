@@ -1,0 +1,131 @@
+[GameObjectClass]
+geometryName = "newplane5b.xsi"
+geometryScale = 1.8 //
+collisionRadius = 2.0
+cockpitName = "ivstas_cockpit.xsi"
+classLabel = "aircraft"
+Customcost = 80
+scrapCost = 55
+scrapValue = 0
+buildTime = 3.0 //.0
+customTime = 15.0
+
+maxHealth = 6000
+maxAmmo = 4500
+addAmmo = 5
+ 
+unitName = "_Sky Bear"
+heatSignature = 0.5 
+imageSignature = 1.0 
+radarSignature = 1.0 
+isAssault = 0
+
+armorClass = L
+
+canDetect = 1 
+canInteract = 1 
+canSnipe = 1
+
+addAmmo = 3 // 1
+
+boxCollide = 1
+
+requireCount = 1
+requireName1 = "ibtrnsyd3"
+requireText1 = "Upgd Air Yd to III"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivbear_ic1.tail"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivbear_ic1.tail"
+
+weaponMask = 01111
+weaponHard1 = "HP_ROCKET_1"
+VisualHard1 = "HP_ROCKET_1"
+weaponName1 = "glsearkt2" 
+weaponAssault1 = 1
+
+weaponHard2 = "HP_ROCKET_2"
+VisualHard2 = "HP_ROCKET_2"
+weaponName2 = "glsearkt2" 
+weaponAssault2 = 1
+
+weaponHard3 = "HP_ROCKET_3"
+VisualHard3 = "HP_ROCKET_3"
+weaponName3 = "glasrkt2i" // "glasrkt3a"
+weaponAssault3 = 0
+
+weaponHard4 = "HP_ROCKET_4"
+VisualHard4 = "HP_ROCKET_4"
+weaponName4 =  "glasrkt2i" // "glasrkt3a" 
+weaponAssault4 = 0
+
+weaponHard5 = "HP_CANNON_1"
+VisualHard5 = "HP_CANNON_1"
+weaponName5 =  "gflashxra" 
+weaponAssault5 = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue"
+
+[CraftClass]
+rangeScan = 350.0f
+periodScan = 5.0f
+velocJam = 5.0f
+engageRange = 225
+weaponPitch = 0.3
+
+[AirCraftClass]
+velocSet(L) = -15.0 // minimum velocity
+velocSet(M) = -0.001 // cruising velocity
+velocSet(H) = 25.0 // maximum velocity
+accelThrust = 30  // thrust acceleration
+accelBrake = 25 // 15 // 10.0 // brake acceleration
+accelDrag = 50 // 60.0 // drag acceleration -- affects sliding sideways
+// mouse as rudder
+omegaSteer(L) = 0.5  // 0.2 // steer turn rate at minimum
+omegaSteer(M) = 2.0  // 0.7 // steer turn rate at cruising
+omegaSteer(H) = 0.5 // 1.0 // steer turn rate at maximum
+// strafe affecting rudder
+omegaStrafe(L) = 0.1 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.5 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.9 // airbrake turn rate at maximum
+
+//this affects steering but not sliding
+alphaSteer = 0.8 // steering angular acceleration
+alphaStrafe = 0.01 // airbrake angular acceleration
+minAltitude = 10.0 // no effect? affects takeoff jump
+maxAltitude = 100.0 // maximum altitude no effect?
+alphaLevel = 7 // 10.0 // how fast you can change pitch/ overall manuver
+
+// this affects sliding sideways, 20 makes it jitter some tho 
+alphaDamp = 15 // 12 // damping angular acceleration
+//a low values under 5 get insanely tippy
+
+pitchPitch = 0.75 // 0.4 // maximum pitch angle
+rollSteer = 0.5 // 0.5 // maximum roll angle from steering
+rollStrafe = 0.5 //0.5 // maximum roll angle from airbraking
+// has imlications in deploy off map avs
+
+timeDeploy = 1.0 // 2.0 // time to deploy
+timeUndeploy = 2.0 // 2.0 // time to undeploy
+
+soundThrust = "ienge.wav"
+soundDeploy = "scifi_lift.wav"    // "avapce2.wav"
+soundUndeploy = "scifi_land.wav"  // "avapce0.wav"  
+soundBrake = "iengf.wav"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "20 50 90 150"
+finishColor = "30 60 80 0"
+startRadius = 0.7
+finishRadius = 0.2 
+segmentTime = 0.6 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

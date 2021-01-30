@@ -1,0 +1,10 @@
+Hold1 thru Hold4: 
+51er hold points
+
+spire1 thru spire11:
+Scions will build spires on these paths in numerical order.
+
+patrol1 and patrol2:
+scion patrols
+
+

@@ -1,0 +1,17 @@
+[WeaponClass]
+
+classLabel = "mortar"
+wpnName = "LavaWorm Egg"
+ordName = "lavegkick"
+fireSound = "spawn.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "HAND"
+aiRange = 0
+isAssault = 1
+altName = "giveggc"
+
+localAmmo = 1 // 20 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[CannonClass]
+shotDelay = 10.0
+

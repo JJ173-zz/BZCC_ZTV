@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon"
+geometryName = "datalink01.xsi"
+geometryScale = 0.4
+
+animCount = 0
+altname = "gprobgn"
+ordName = "probkikz2"
+wpnName = "Probe"
+fireSound = "cammo.wav" // "mdmort01.wav"
+wpnReticle = "ghornet.B"
+wpnLadder = "gmdmgun.L0"
+wpnPriority = 1
+wpnCategory = "MORTAR"
+aiRange = 250 
+isAssault = 0 // 1
+
+
+localAmmo = 1 // 1
+
+
+[CannonClass]
+shotDelay = 60 
+salvoCount = 1  
+shotVariance = 0.0
+//shotPitch = -0.6 // -1.58 = straight down
+
+
+

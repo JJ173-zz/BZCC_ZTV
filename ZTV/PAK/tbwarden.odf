@@ -1,0 +1,125 @@
+[GameObjectClass]
+geometryName = "tbwarden.xsi"
+geometryScale = 1.0
+
+//classLabel = "turret"
+classLabel = "turrettank"
+scrapCost = 50
+customCost = 60
+scrapValue = 20
+maxHealth = 4000
+maxAmmo = 10000
+addAmmo = 20
+aiAddAmmo = 40
+addHealth = 0.1
+unitName = "Warden"
+aiName = "GunTowerFriend" // need this for using panel
+aiName2 = "GunTowerEnemy"
+//aiName = "SupportProcess" // this may use weapons better but no panel access
+//aiName2 = "SupportProcess"
+//aiName = "TurretTankFriend"
+//aiName2 = "TurretTankEnemy"
+heatSignature = 0.5
+imageSignature = 0.3
+radarSignature = 0.3
+isAssault = 1
+armorClass = H
+requireCount = 0
+//powerCost = 0
+needPilot = 0
+
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "igwthrow" 
+weaponAssault1 = 1
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "igwthrow" 
+weaponAssault2 = 1
+
+//////////////////////////////////
+
+turretCount = 4
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "turret_x_2"
+turretName4 = "HP_eyepoint"
+
+[CraftClass]
+weaponPitch = 1.3
+rangeScan = 150.0
+periodScan = 0.0
+velocJam = 1.0
+engageRange = 140
+detectRange = 140
+
+OffensiveProcessIsTenacious = false // 1.0-1.3pb3 used a default of false
+OffensiveProcessIsTenaciousAITeam = false // 1.0-1.3pb3 used a default of false
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessMadTime = 5.0 // for OffensiveProcess.cpp
+ClosestEnemyGoodEyes = true // but defaults true for CLASS_TURRETTANK items
+
+selectGoMsg = "ivturr01.wav"
+selectAttackMsg = "ivturr03.wav"
+selectDeployMsg = "ivturr04.wav"
+selectOtherMsg = "ivturr03.wav"
+holdMsg = "ivturr12.wav"
+goMsg = "ivturr05.wav"
+followMeMsg = "ivturr08.wav"
+reloadMsg = "ivturr09.wav"
+repairMsg = "ivturr09.wav"
+rescueMsg = "ivturr10.wav"
+recycleMsg = "ivturr11.wav"
+otherMsg = "ivturr11.wav"
+attackMsg = "ivturr06.wav"
+deployedMsg = "ivturr14.wav"
+killedMsg = "ivturr07.wav"
+
+[HoverCraftClass]
+setAltitude = 0.5
+accelDragStop = 20.0
+accelDragFull = 5.0
+alphaTrack = 15.0
+alphaDamp = 8.0
+pitchPitch = 0.05
+pitchThrust = 0.01
+rollStrafe = 0.01
+rollSteer = 0.01
+
+velocForward = 0.0
+velocReverse = 0.0
+velocStrafe = 0.0
+accelThrust = 0.0
+accelBrake = 50.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 10.0
+accelJump = 0.0
+
+attackTask = "GunTowerAttack"
+subattackTask = "GunTowerAttack"
+subAttackClass = "NNS"
+
+// subAttackClass uses 3 letters.
+// 1st letter is either A or N.     A is include Air targets.         N is attack ground only.
+// 2nd letter is either D or N.     D is to deploy before attacking.  N for regular attack.
+// 3rd letter is either S or N.     S is for Stand.                   N is use the Engage Range to attack. 
+
+soundThrust = "silence.wav"
+soundSteer = "silence.wav"
+soundDeploy = "silence.wav"
+soundUndeploy = "silence.wav"
+
+[DeployableClass]
+timeDeploy = 0.1
+timeUndeploy = 3.0
+heightDeploy = 0.0
+soundDeploy = "silence.wav"
+soundUndeploy = "silence.wav"
+
+[TurretTankClass]
+omegaTurret = 1.5 // 1
+alphaTurret = 2.0
+timeDeploy = 0.1
+timeUndeploy = 0.1

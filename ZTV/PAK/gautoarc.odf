@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "autoarc"
+wpnName = "Arc Seeker"
+fireSound = "arc02.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "CANNON"
+aiRange = 200
+
+[CannonClass]
+shotDelay = 2.0 // 3.0
+shotPitch = 0 // 1.0
+shotLead = 1 // 1
+
+salvoCount = 7
+salvoDelay = 0.05 // .18
+shotVariance = 0.5 // 1.5

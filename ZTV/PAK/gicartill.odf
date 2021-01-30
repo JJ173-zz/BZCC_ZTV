@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "icshell"
+wpnName = "Meteor"
+fireSound = "wlcan.wav"
+wpnReticle = "ghartil"
+wpnLadder = "gmortar.L0"
+wpnPriority = 6
+wpnCategory = "ROCKET"
+aiRange = 400
+//isAssault = 1
+
+[CannonClass]
+shotDelay = 2.5 
+
+shotVariance = 0.05 
+
+salvoCount = 4
+salvoDelay = 1 
+
+//shotPitch = 0.1

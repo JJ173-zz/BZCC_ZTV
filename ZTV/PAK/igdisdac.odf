@@ -1,0 +1,32 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+
+ordName = "disdac"
+wpnName = "Sniffer II"
+fireSound = NULL
+wpnReticle = "grifle"
+wpnCategory = "HAND"
+wpnPriority = 3
+isAssault = 1
+isFlying = 0
+//altName = "igdisrup_c"
+flashName = "igdisdac.flash"
+airange = 240
+
+[CannonClass]
+shotDelay = 5 // 2.5
+shotVariance = 0.7
+
+salvoCount = 2
+salvoDelay = 0.05 //0.002
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.3
+geomName = "g_sflash.xsi"

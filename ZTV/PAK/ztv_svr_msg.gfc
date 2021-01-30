@@ -1,0 +1,19 @@
+// |==============================================================================
+// |  ZTV Server message: this script runs when activated by the ZTV custom interface.
+// |  
+// |  2 forward slashes comments the line out to deactivate the command.
+// |  This file must exist, but all commands may commented out for no auto features.
+// |=============================================================================
+
+
+
+// ------- This changes the SERVER MESSAGE upon pressing map link button ------------
+// ----------- do not exceed 256 characters in server messages ----------------------
+
+
+Cmd("network.session.servermsg='Beta 5-09 ~~~~~~~~~~~~~~~ Interested in beta testing? Go to timedisruptor.com. Fine maps, info and excellent multiplayer utilities. '");
+
+
+// Cmd("network.session.messagesappearforseconds=25");
+
+

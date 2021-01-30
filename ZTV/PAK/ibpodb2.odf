@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "podbay1.xsi"
+geometryScale = 1.0
+classLabel = "supplydepot"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+unitName = "Pod"
+powerCost = 0
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+canCollide = 0 
+isAssault = 0
+armorClass = H
+ownsTerrain = 0
+isSingle = 0
+
+provideCount = 0
+requireCount = 0
+
+lightHard1 = "light2"
+lightName1 = "omniblue"
+
+[SupplyDepotClass]
+supplyRange = 20 // 10.0 
+supplyRate = 45 // 35 // 15  
+supplySound = "mnu_empt.wav"
+

@@ -1,0 +1,33 @@
+[WeaponClass]
+classLabel = "mortar" //"cannon"
+//classLabel = "targeting"
+
+ordName = "javswarm2"
+wpnName = "Javelin2"
+fireSound = "gjav01.wav" //"tmiss01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 220
+
+[CannonClass]
+shotDelay = 4
+salvoCount = 6 //15
+salvoDelay = 0.2 //0.002
+shotVariance = 0.07 //0.2
+//shotPitch = 0.10
+
+
+//[TargetingGunClass]
+//leaderName = "javlead"
+//leaderSound = "arrowclk.wav" // "flash01.wav" 
+//shotDelay = 0.1  
+//firstDelay = 0.1 
+//salvoDelay = 0.2 
+//salvoCount = 7
+
+//shotVariance = 0.5 //0.06 
+
+lockingReticle = "gtaggun.1"
+lockedReticle = "gtaggun.2"

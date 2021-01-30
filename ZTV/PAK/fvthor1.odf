@@ -1,0 +1,124 @@
+[GameObjectClass]
+geometryName = "fvthor2.xsi"
+geometryScale = 2.5 
+classLabel = "morphtank"
+collisionRadius = 1.0
+scrapValue = 20
+scrapCost = 60
+customCost = 60
+buildTime = 40.0
+customTime = 40.0
+maxHealth = 12000
+addHealth = 10
+maxAmmo = 15000 
+addAmmo = 40  
+unitName = "Thor"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 10.0
+imageSignature = 1.5
+radarSignature = 0.0
+isAssault = 1
+canSnipe = 0 
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+weaponMask = 00011
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gsbomb" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_cannon_1"
+weaponName2 = "gautoarc" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SHIELD"
+weaponName3 = "gabsorb" 
+weaponAssault3 = 0
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 4.0
+velocJam = 0.0
+weaponPitch = 1.55
+engageRange = 0
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+[HoverCraftClass]
+setAltitude = 100
+accelDragStop = 8
+accelDragFull = 3
+alphaTrack = 25
+alphaDamp = 12
+pitchPitch = 0.01
+pitchThrust = 0.001
+rollStrafe = 0.001
+rollSteer = 0.001
+
+velocForward = 29 
+velocReverse = 10.0
+velocStrafe = 15.0
+accelThrust = 60.0
+accelBrake = 60.0
+omegaSpin = 2.5 
+omegaTurn = 1.8 
+alphaSteer = 3 
+accelJump = 35 
+
+soundThrust = "thund01b.wav"
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+maxHealth = 8000
+addHealth = 10
+maxAmmo = 25000 
+addAmmo = 100  
+unitName = "Thor"
+isAssault = 0
+engageRange = 0
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 0.0
+
+setAltitude = 50
+accelDragStop = 8
+accelDragFull = 3
+alphaTrack = 30
+alphaDamp = 9 
+pitchPitch = 0.01 
+pitchThrust = 0.001
+rollStrafe = 0.001 
+rollSteer = 0.001
+
+velocForward = 20
+velocReverse = 15.0
+velocStrafe = 10 
+accelThrust = 60.0
+accelBrake = 60.0
+omegaSpin = 1.5 
+omegaTurn = 0.4 
+alphaSteer = 3 
+accelJump = 30 
+
+soundThrust = "thund01b.wav"
+
+[DeployableClass]
+soundDeploy="thund02d.wav"
+soundUndeploy="thund02d.wav"
+deployTime = 1 // doesnt work
+

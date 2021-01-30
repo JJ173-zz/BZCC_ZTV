@@ -1,0 +1,80 @@
+[OrdnanceClass]
+classLabel = "beam"
+shotGeometry = NULL
+xplGround = "xtglgnd"
+xplVehicle = "xtglcar"
+xplBuilding = "xtglbld"
+
+renderName = "tglaser.render"
+
+ammoCost = 5.0  // 5.5
+lifeSpan = 150e-6 // 150m
+shotSpeed = 1e6
+
+damageValue(N) = 50 // none // 250
+damageValue(L) = 40 // light // 150
+damageValue(H) = 8 // heavy // 50
+
+damageValue(S) = 45 // standard // 150
+damageValue(D) = 50 // deflection // 250
+damageValue(A) = 25 // absorbtion // 50
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "tglaser.core"
+renderName2 = "tglaser.core2"
+renderName3 = "tglaser.tail"
+renderName4 = "tglaser.twizzle"
+
+[Core]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //NULL //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "50 250 130 400"
+finishColor = "0 255 100 100"
+startRadius = 0.1 // 0.1 //0.03
+finishRadius = 1
+segmentLength = 1.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3
+textureRate = 0.01
+
+[Core2]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "0 255 0 0"
+startRadius = 0.5 // 0.01 //0.03
+finishRadius = 0.003
+segmentLength = 1.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.1
+textureRate = 0.01
+
+[Tail]
+renderBase = "draw_bolt"
+textureName = "plasma.tga" //NULL // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 150 255"
+finishColor = "0 0 250 0"
+startRadius = 0.01
+finishRadius = 1.8 // .3  //0.1
+segmentLength = 1.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3
+textureRate = 0.02
+
+[Twizzle]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //NULL // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 50 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.2
+finishRadius = 0.6 // .3  //0.1
+segmentLength = 0.8
+segmentVariance = "0.9 0.9 0.9"
+animateTime = 0.3
+textureRate = 0.01

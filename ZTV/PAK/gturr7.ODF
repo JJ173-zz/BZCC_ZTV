@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+//ordName = "ivturr"
+wpnName = "System Arm"
+//fireSound = "gwasp00.wav"
+fireSound = "itug03.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "gun"
+aiRange = 150
+isAssault = 0
+
+localAmmo = 10000 // needs to be amount of units capacity that youre dropping, crickets are 100
+
+[DispenserClass]
+shotDelay = 1E6
+objectClass = "pbtunn03" //"ivturr"
+

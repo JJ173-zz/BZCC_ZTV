@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "mrmkick"
+wpnName = "Doom Mine"
+fireSound = "xlands.wav"// "mort01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 6
+wpnCategory = "MORTAR"
+aiRange = 150
+
+isAssault = 0
+
+[CannonClass]
+shotDelay = 5 
+shotVariance = 0.0 
+
+

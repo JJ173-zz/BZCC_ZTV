@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+//altName = "gtaggun_c"
+wpnName = "Rock Track"
+fireSound = "flame01.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+aiRange = 600
+isAssault = 1
+
+[LauncherClass]
+lockRange = 600.0
+shotDelay = 15.0
+lockDelay = 0.001
+coneAngle = 0.3 // 0.075
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[TorpedoLauncherClass]
+objectClass = "rocktrak"

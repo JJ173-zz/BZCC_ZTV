@@ -1,0 +1,67 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+particleClass1 = "xzeekxpl.core"
+particleCount1 = 3
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xzeekxpl.puff"
+particleCount2 = 50 
+particleVeloc2 = "40.0 40.0 40.0"
+particleClass3 = "xzeekxpl.shock"
+particleCount3 = 1 
+particleVeloc3 = "0.0 0.0 0.0"
+
+explSound = "xmv1.wav"
+
+damageRadius = 35.0
+
+damageValue(N) = 600 // none
+damageValue(L) = 750 // light
+damageValue(H) = 1000 // heavy
+
+damageValue(S) = 750 // standard
+damageValue(D) = 750 // deflection
+damageValue(A) = 750 // absorbtion
+
+kickRadius = 30.0
+kickOmega = 1.5
+kickVeloc = 3.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "155 255 180 255"
+finishColor = "0 0 255 0"
+startRadius = 5.0
+finishRadius = 50.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "0 0 255 0"
+startRadius = 6.0
+finishRadius = 30.0
+animateTime = 1.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 155 255 255" 
+finishColor = "0 0 255 0" 
+startRadius = 1.0
+finishRadius = 40.0
+animateTime = 0.3
+latitudeBands = 8
+longitudeSegments = 16

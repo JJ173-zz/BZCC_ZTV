@@ -1,0 +1,52 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = "igsatc00.xsi"
+ordName = "techkick"
+
+wpnName = "Upgrade Link"
+fireSound = "mmine01.wav" // "spawn.wav" //"pickup01.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnCategory = "SPEC"
+aiRange = 0
+
+isAssault = 0
+
+flashName = "gtechlink.render"
+
+localAmmo = 1   // needs to be amount of units ammo capacity that youre dropping
+
+[CannonClass]
+shotDelay = 10.0
+shotPitch = -1
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gtechlink.light"
+renderName2 = "gtechlink.poof"
+
+[Light]
+lifeTime = 1.0
+renderBase = "draw_light"
+startColor = "0 0 150 255"
+finishColor = "0 0 255 0"
+startRadius = 3.0
+finishRadius = 15.0
+animateTime = 1.0
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Poof]
+renderBase = "draw_twirl"
+lifeTime = 2.0
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 50 150 255"
+finishColor = "0 50 150 0"
+startRadius = 2.0 
+finishRadius = 6.0 
+animateTime = 2.0 
+rotationRate = 5.0 // 1.0

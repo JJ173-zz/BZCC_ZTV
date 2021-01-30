@@ -1,0 +1,10 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Scout Mine"
+fireSound = "running.wav"
+wpnReticle = "gproxmin"
+wpnCategory = "SPEC"
+
+[DispenserClass]
+shotDelay = 2.0
+objectClass = "fvscoutzm3"

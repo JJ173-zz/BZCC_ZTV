@@ -1,0 +1,47 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gbldheal"
+ordName = "bldheal"
+wpnName = "Spackle"
+fireSound = "mnu_empt.wav" 
+wpnReticle = "glaser"
+wpnCategory = "ROCKET"
+isAssault = 1
+aiRange = 120
+flashName = "gbldheal.render"
+
+[CannonClass]
+shotDelay = 0.1 
+//salvoCount = 1
+//salvoDelay = 0.1
+shotVariance = 0.01
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "gbldheal.wave"
+renderName2 = "gbldheal.flash"
+
+[Wave]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+lifeTime = 1
+textureBlend = "one one modulate"
+startColor = "15 155 255 25" 
+finishColor = "15 155 255 0" 
+startRadius = 5
+finishRadius = 10
+animateTime = 1
+
+[Flash]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+lifeTime = 0.5
+textureBlend = "one one modulate"
+startColor = "5 155 255 60" 
+finishColor = "5 155 255 0" 
+startRadius = 15
+finishRadius = 30
+animateTime = 0.5

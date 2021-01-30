@@ -1,0 +1,17 @@
+[WeaponClass]
+geometryName = "redball.xsi" //"yardring2.xsi" // 
+geometryScale = 1.5
+classLabel = "dispenser"
+wpnName = "_Sky Bear"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+localAmmo = 18000 // [4 x 4500]
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "ivbear_ic1" 
+

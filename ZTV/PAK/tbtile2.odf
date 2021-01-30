@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "tile2.xsi"
+classLabel = "terrain"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+powerCost = 0
+unitName = " "
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+canCollide = 0
+canDetect = 0
+canInteract = 0
+isAssault = 0
+//ownsTerrain = 0
+

@@ -1,0 +1,22 @@
+[OrdnanceClass]
+classLabel = "popper"
+shotGeometry = NULL // "sgproj00.xsi" this looks like a turret sorta, ball be better
+xplGround = NULL //"xpmlaunc"
+xplVehicle = NULL //"xpmlaunc"
+xplBuilding = NULL //"xpmlaunc"
+xplExpire = NULL //"xpmlaunc"
+
+ammoCost = 20
+lifeSpan = 0.2 // 2
+shotSpeed = 0.01 // 0.0
+damageValue(N) = 50
+damageValue(L) = 50
+damageValue(H) = 50
+damageValue(S) = 50
+damageValue(D) = 50
+damageValue(A) = 50
+
+[PopperClass]
+scanRange = 180 // 250.0
+launchXpl = "xarclncz"
+launchOrd = "autzarc2"

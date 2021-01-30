@@ -1,0 +1,95 @@
+[GameObjectClass]
+//geometryName = "apserv50.xsi"
+geometryName = "apserv00.xsi"
+//geometryScale = 0.5
+classLabel = "servicepod"
+buildTime = 2
+scrapCost = 5
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 2
+unitName = "Service Pod"
+aiName = "PowerUpProcess"
+
+lightHard1 = "light2"
+lightName1 = "omniblue"
+
+effectHard1 = "light2"
+effectName1 = "apserv_ic1.render"
+
+// if shot down:
+explosionName = "xminxpl"
+
+requireCount = 1
+requireName1 = "ibdcen"
+requireText1 = "Build Data Center"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[ServicePowerupClass]
+serviceUp = 750 // [1500]
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "apserv_ic1.flare"
+renderName2 = "apserv_ic1.halo"
+renderName3 = "apserv_ic1.trail"
+//renderName4 = "apserv_ic1.sparks"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 90 255 120"
+finishColor = "0 90 255 120"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 90 255 127"
+finishColor = "0 90 255 127"
+startRadius = 1.5
+finishRadius = 1.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "0 90 255 125"  
+finishColor = "0 90 255 0"
+startRadius = 1.2    
+finishRadius = 0.05  
+segmentTime = 1.5
+segmentVariance = "0.1 0.1 0.1 "
+animateTime = 1.5 
+textureRate = 0.01
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "apserv_ic1.sparker"
+emitDelay = 0.03 // 0.2 // 0.5
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "8.0 8.0 8.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.9
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "apserv_ic1.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 90 255 250"
+finishColor = "0 90 255 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 0.9

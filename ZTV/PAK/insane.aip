@@ -1,0 +1,171 @@
+[Start]
+scrapCount = 40
+consClass = "tvcons"
+scavClass = "tvscavc"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 150
+buildtype1 = "tvrigapc1"
+buildcount1 = 1
+buildtype2 = "tvrigapc2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan2]
+planType = "buildminimums"
+planPriority = 140
+buildtype1 = "tvsaucer1"
+buildcount1 = 1
+buildtype2 = "tvsaucer2"
+buildcount2 = 1
+buildtype3 = "tvdactylp"
+buildcount3 = 1
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 130
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ufotarg1"
+attacktype1 = "tvsaucer1"
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 120
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ufotarg2"
+attacktype1 = "tvsaucer2"
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 110
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "tvrigapc1"
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 100
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "tvrigapc2"
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "buildminimums"
+planPriority = 90
+buildtype1 = "tvmlnch1"
+buildcount1 = 1
+buildtype2 = "tvmlnch2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "Hold"
+planPriority = 80
+holdtype1 = "tvmlnch1"
+holdcount1 = 1
+holdpoint = "hold2"
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "Hold"
+planPriority = 70
+holdtype1 = "tvmlnch2"
+holdcount1 = 1
+holdpoint = "hold4"
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "buildminimums"
+planPriority = 60
+buildtype1 = "tvraven1"
+buildcount1 = 1
+buildtype2 = "tvraven2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "Hold"
+planPriority = 50
+holdtype1 = "tvraven1"
+holdcount1 = 1
+holdpoint = "hold1"
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "Hold"
+planPriority = 40
+holdtype1 = "tvraven2"
+holdcount1 = 1
+holdpoint = "hold7"
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "buildminimums"
+planPriority = 30
+buildtype1 = "tvsaucer1"
+buildcount1 = 2
+buildtype2 = "tvsaucer2"
+buildcount2 = 2
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 20
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ufotarg1"
+attacktype1 = "tvsaucer1"
+ContinueEvenIfFail = true
+
+[Plan15]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 10
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ufotarg2"
+attacktype1 = "tvsaucer2"
+ContinueEvenIfFail = true

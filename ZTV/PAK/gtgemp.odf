@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = NULL //"gelemp_a"
+ordName = "tgemp"
+wpnName = "Paralyzer"
+fireSound = "glock01.wav"
+wpnReticle = "glock"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 150
+engageRange = 150
+
+[CannonClass]
+shotDelay =  5.3  //2.0
+shotVariance = 0.01
+salvoCount = 3
+salvoDelay = 0.3 

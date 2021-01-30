@@ -1,0 +1,122 @@
+[GameObjectClass]
+//classLabel = "satchel"
+classLabel = "magnet"
+geometryName = "dr-tbmb4.xsi"
+geometryScale = 0.3 // 0.12
+scrapCost = 0
+scrapValue = 0
+maxHealth = 800
+maxAmmo = 99 // 1
+unitName = "Armed Time Bomb"
+heatSignature = 10.0
+imageSignature = 1.0
+radarSignature = 1.0
+canDetect = 1
+canInteract = 1
+canCollide = 1
+
+explosionName = "xdrtbxpl"
+xplExpire = "xdrtbxpr"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "dr-tbom2.bluflasher"
+effectHard2 = "hp_emit_2"
+effectName2 = "dr-tbom2.bluflasher2"
+
+[MineClass]
+lifeSpan = 30.0 
+xplBlast = "xdrtbxpl"
+
+[MagnetMineClass]
+TeamFilter = 51
+//triggerDelay = 0.0 
+fieldRadius = 0 
+objPushCenter = 0  
+objPushEdge = 0 
+objDrag = 0
+ordPushCenter = 0
+ordPushEdge = 0
+ordDrag = 0
+
+[BluFlasher]
+renderBase = "draw_emit"
+emitName = "dr-tbom2.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "dr-tbom2.blulight"
+renderName2 = "dr-tbom2.bluflare"
+renderName3 = "dr-tbom2.blusphere"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 0 0 955"
+finishColor = "255 0 0 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 455"
+finishColor = "255 0 0 255"
+startRadius = 3.0 // 1
+finishRadius = 0.5
+animateTime = 0.2
+
+[BluSphere]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 150"
+finishColor = "255 0 0 0"
+startRadius = 0.2 // 2.5
+finishRadius = 1.5
+animateTime = 0.1
+latitudeBands = 8
+longitudeSegments = 16
+
+[BluFlasher2]
+renderBase = "draw_emit"
+emitName = "dr-tbom2.bflash2"
+emitDelay = 0.1 // 1.0 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0
+
+[BFlash2]
+simulateBase = "sim_smoke"
+lifeTime = 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "dr-tbom2.blusphere2"
+
+[BluSphere2]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 155 120"
+finishColor = "55 55 155 0"
+startRadius = 1.90 // 2.5
+finishRadius = 1.5
+animateTime = 0.1
+latitudeBands = 32
+longitudeSegments = 48

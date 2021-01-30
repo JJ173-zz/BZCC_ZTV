@@ -1,0 +1,62 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscavc"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 100
+buildtype1 = "fvscavc"
+buildcount1 = 2
+
+[Plan4]
+planType = "buildminimums"
+planPriority = 70
+buildtype1 = "fvcons"
+buildcount1 = 1
+
+[Plan5]
+planType = "basebuildminimums"
+planPriority = 60
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[Plan6]
+planType = "upgrade"
+planPriority = 50
+planCondition = "NotExists"
+planConditionClass = "fbforg"
+planConditionCount = 1
+Unittype = "fbkiln"
+
+[Plan7]
+planType = "basebuildminimums"
+planPriority = 40
+buildtype1 = "fbdowe"
+buildloc1 = "dower"
+buildtype2 = "fbstro"
+buildloc2 = "stronghold"
+
+[Plan8]
+planType = "basebuildminimums"
+planPriority = 30
+buildtype1 = "fbantm"
+buildloc1 = "antenna"
+
+[Plan9]
+planType = "upgrade"
+planPriority = 20
+planCondition = "NotExists"
+planConditionClass = "fbover"
+planConditionCount = 1
+Unittype = "fbantm"
+
+[Plan10]
+planType = "basebuildminimums"
+planPriority = 10
+buildtype1 = "fbspirf"
+buildloc1 = "spire1"

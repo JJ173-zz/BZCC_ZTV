@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "_Air Tasker"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 150
+isAssault = 0
+flashName = xpmlaunc.shock
+
+localAmmo = 800 // [1 x 800]
+// 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 10.0
+objectClass = "ivairtaskr" 
+

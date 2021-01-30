@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "blink"
+ordName = NULL
+wpnName = "Blink"
+fireSound = "blink01.wav"
+wpnReticle = "gblink.0"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 250
+
+LocalAmmo = 560  // <300m blink 1 time or 160m/2blinks m  
+
+[BlinkDeviceClass]
+ammoBase = 200.0	// was 100
+ammoDist = 1.0	// was 10
+groundSprite = "splash.0"
+xplEnter = "xblinkin"
+xplExit = "xblinkout"

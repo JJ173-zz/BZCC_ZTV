@@ -1,0 +1,47 @@
+// ==============
+// MINE EXPLOSION
+// ==============
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+particleClass1 = "xzminxpl.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xzminxpl.puff"
+particleCount2 = 70
+particleVeloc2 = "90.0 90.0 90.0"
+
+explSound = "xmv1.wav"
+damageRadius = 80 // 50.0
+damageValue(N) = 500
+damageValue(L) = 600 // 400
+damageValue(H) = 700 // 200
+damageValue(S) = 700 // 400
+damageValue(D) = 700
+damageValue(A) = 700 // 200
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 5.0
+finishRadius = 50.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 10.0
+finishRadius = 1.0
+animateTime = 1.0

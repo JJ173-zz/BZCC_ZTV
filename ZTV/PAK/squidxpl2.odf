@@ -1,0 +1,122 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+
+particleClass1 = "squidxpl2.dark"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "squidxpl2.char"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "squidxpl2.smoke"
+particleCount3 = 4 //4
+particleVeloc3 = "25.0 25.0 25.0"
+
+particleClass4 = "squidxpl2.smokeemit"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "squidxpl2.bubemit"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+explSound = NULL // "gmagg05.wav"
+damageRadius = 40.0
+kickRadius = 40.0
+kickOmega = 0.3 
+kickVeloc = 0.0
+
+// 16 of these per squid missile
+
+damageValue(N) = 120 // 150 
+damageValue(L) = 80 // 120 
+damageValue(H) = 40 // 100
+
+damageValue(S) = 80
+damageValue(D) = 80
+damageValue(A) = 80
+
+[Dark]
+simulateBase = "sim_null"
+lifeTime = 3
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 25.0
+finishRadius = 50.0 
+animateTime = 3 
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0 
+renderBase = "draw_planar"
+textureName = "blackchar.tga"
+ 
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 255"
+finishColor = "0 0 0 50"
+startRadius = 40.0   
+finishRadius = 70.0 
+animateTime = 3.0
+
+[Smoke]
+simulateBase = "sim_dust"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 35.0
+finishRadius = 65.0
+animateTime = 3.0
+
+[SmokeEmit]
+simulateBase = "sim_dust"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "squidxpl2.smokepuff"
+emitDelay = 0.2
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "60.0 60.0 60.0"
+
+[SmokePuff]
+simulateBase = "sim_dust"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 5
+finishRadius = 50
+animateTime = 1.2
+rotationRate = 2.0
+
+[BubEmit]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_emit"
+emitName = "squidxpl2.darkbubs"
+emitDelay = 0.30
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "40.0 40.0 40.0"
+
+[DarkBubs]
+simulateBase = "sim_dust"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 255"
+finishColor = "0 0 0 0"
+startRadius = 10.0
+finishRadius = 40.0 
+animateTime = 1.0 
+latitudeBands = 16
+longitudeSegments = 24

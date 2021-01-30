@@ -1,0 +1,28 @@
+//sea slug generator
+// crashes?
+
+[GameObjectClass]
+geometryName = "rckminz2.xsi" 
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 100000 // seaslugs 2000 a piece
+unitName = "Sea Slugs"
+canCollide = 0
+canDetect = 0
+canInteract = 0
+
+explosionName = "xzm3nxpl"
+xplExpire = "xzm3nxpl"
+
+weaponHard1 = "hp_weapon_1" 
+weaponName1 = "gsslug"
+
+[MineClass]
+lifeSpan = 1E6
+
+[WeaponMineClass]
+searchRadius = 300.0
+heightScale = 2.0
+

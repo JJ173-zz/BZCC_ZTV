@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon" 
+ordName = "isotope"
+wpnName = "Isotopes"
+fireSound = NULL
+wpnReticle = "grifle"
+wpnCategory = "GUN"
+isAssault = 0
+altName = "gisotope"
+flashName = "gisotope.flash"
+aiRange = 150 
+
+[CannonClass]
+shotDelay = 2.5
+shotVariance = 0.15
+
+salvoCount = 6
+salvoDelay = 0.15 
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "85 0 255 255"
+finishColor = "255 0 255 0"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.3
+geomName = "g_sflash.xsi"

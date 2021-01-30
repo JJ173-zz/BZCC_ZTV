@@ -1,0 +1,52 @@
+[GameObjectClass]
+geometryName = "tbfact.xsi"
+classLabel = "factory"
+scrapCost = 55
+scrapValue = 10
+maxHealth = 6000
+maxAmmo = 0
+unitName = "Research Center"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+armorClass = H
+isSingle = 0
+
+requireCount = 0
+
+provideCount = 4
+provideName1 = "tbfact"
+provideName2 = "ibfact"
+provideName3 = "ibtcen"
+provideName4 = "ibtrain"
+
+collisionRadius = 4.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+[PoweredBuildingClass]
+detectRange = 100
+
+[BuildingClass]
+soundAmbient = "ibfact00.wav"
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+buildItem1 = "tvserv2"
+buildItem2 = "tvtskapc"
+buildItem3 = "tvjav"
+buildItem4 = "tvartl"
+buildItem5 = "tvcons"
+buildItem6 = "tvdrillg"
+buildItem7 = "tvsaucer"
+buildItem8 = "tvmlnch"
+buildItem9 = "tvrigapc"

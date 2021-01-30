@@ -1,0 +1,28 @@
+[Start]
+scrapCount = 40
+consClass = "fvdcons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[plan1]
+plantype = "buildminimums"
+planpriority = 200
+buildtype1 = "fvdcons"
+buildcount1 = 1
+
+
+[plan2]
+plantype = "basebuildminimums"
+planpriority = 194
+buildtype1 = "fbspirz"
+buildloc1 = "spireb1"
+buildtype2 = "fbspirz"
+buildloc2 = "spireb3"
+buildtype3 = "fbspirz"
+buildloc3 = "spireb5"
+buildtype4 = "fbspirz"
+buildloc4 = "spireb7"
+ContinueEvenIfFail = true

@@ -1,0 +1,50 @@
+[GameObjectClass]
+classLabel = "fspilo"
+geometryScale = 0.1
+addAmmo = 7.5 // 5
+unitName = "Sniper"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+weaponMask = 00101
+weaponHard1 = "HP_HAND_1"
+visualHard1 = "HP_DOCK_H"
+weaponAssault1 = 0
+weaponName1 = "sgsnipzm"
+
+weaponHard3 = "HP_PACK_1"
+visualHard3 = "HP_DOCK_P"
+weaponAssault3 = 0
+weaponName3 = "sgjetzm1"
+
+[CraftClass]
+engageRange = 700
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[PersonClass]
+engageRange = 700 // not sure if this is used or the craft class I added
+
+// crawling mode
+omegaSpinCrawl    = 2.0 // 0.5
+omegaTurnCrawl    = 2.0 // 0.5
+alphaSteerCrawl   = 10.0 // 5.0
+
+// running mode
+velocForwardRun  = 7 // 5.0
+accelThrustRun   = 40 // 20.0
+omegaSpinRun     = 4 // 3.0
+omegaTurnRun     = 3 // 2.0
+alphaSteerRun    = 20 // 15.0
+velocJumpRun     = 6 // 5.0
+
+// flying mode
+pitchPitchFly     = .5 // 0.35
+pitchThrustFly    = .3 // 0.15
+velocForwardFly   = 18 // 15.0
+velocReverseFly   = 13 // 10.0
+velocStrafeFly    = 13 // 10.0
+omegaSpinFly      = 3.0 // 2.0
+omegaTurnFly      = 2.5 // 1.5
+alphaSteerFly     = 3.0 // 2.0

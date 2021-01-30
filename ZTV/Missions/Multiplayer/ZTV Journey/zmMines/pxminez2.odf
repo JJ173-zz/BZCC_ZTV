@@ -1,0 +1,19 @@
+[GameObjectClass]
+geometryName = "igprox00.xsi"
+classLabel = "proximity"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000 
+maxAmmo = 200
+unitName = "Base Buster"
+
+explosionName = "xzmn2xpl"
+xplExpire = "xzmn2xpl"
+
+[MineClass]
+lifeSpan = 10
+xplBlast = "xzmn2xpl"
+
+[ProximityMineClass]
+triggerRadius = 150.0  // 20.0
+suppressRadius = 10 // 40.0

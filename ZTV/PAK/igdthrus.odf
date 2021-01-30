@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = NULL // "igjetp00.xsi"
+geometryScale = 0.12
+ordName = NULL
+wpnName = "Down"
+wpnIcon = NULL
+fireSound = NULL //
+flashName = NULL
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "SPECIAL"
+
+[JetPackClass]
+ammoCost = 0
+burnTime = 1.0
+accelThrust = -20  
+activeSound = NULL // "thrust03.wav"
+expireSound = NULL // "thrust04.wav"

@@ -1,0 +1,81 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "glasrkt"
+ordName = "rpsmakb"
+wpnName = "Heat Seekers"
+fireSound = "gmasg00.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "MORT"
+aiRange = 300
+isAssault = 0
+
+flashName = grpsmak.flash
+
+[CannonClass]
+shotDelay = 5.0 // 3.0
+//shotPitch = 0 // 1.0
+//shotLead = 1 // 1
+
+salvoCount = 5
+salvoDelay = 0.2
+shotVariance = 0.15 //1.5
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "grpsmak.core"
+renderName2 = "grpsmak.light"
+renderName3 = "grpsmak.shock"
+renderName4 = "grpsmak.puff"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 105 55 255"
+finishColor = "255 105 55 255"
+startRadius = 2.5
+finishRadius = 0.1
+animateTime = 0.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 105 55 955"
+finishColor = "255 105 55 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 105 55 100"
+finishColor = "255 105 55 0"
+startRadius = 2
+finishRadius = 0.5
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 105 55 255"
+finishColor = "255 105 55 0"
+startRadius = 2.0
+finishRadius = 0.5
+animateTime = 0.3

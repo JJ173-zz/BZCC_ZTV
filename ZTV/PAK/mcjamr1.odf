@@ -1,0 +1,61 @@
+[GameObjectClass]
+geometryName = "datalink01.xsi" 
+geometryScale = 0.4
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 500
+maxAmmo = 1
+unitName = "Shield Jammer"
+effectHard1 = "Shield Jammer"
+effectName1 = "mcjamr1.render"
+canCollide = 1
+armorClass = L
+
+explosionName = "xplelec1"
+xplExpire = "xplelec1"
+
+[MineClass]
+fireSound = "jmshield.wav"
+lifeSpan = 10.0
+
+[MagnetMineClass]
+TeamFilter = 51
+triggerDelay = 1.5
+fieldRadius = 16 
+objPushCenter = 0.1 
+objPushEdge = 0.1
+objDrag = 0.1
+ordPushCenter = 0.1
+ordPushEdge = 0.1
+ordDrag = 2
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "mcjamr1.field"
+renderName2 = "mcjamr1.flash"
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "wavesphr2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 15"
+finishColor = "0 55 255 15"
+startRadius = 1.0
+finishRadius = 14.0
+animateTime = 2.0
+latitudeBands = 8
+longitudeSegments = 16
+
+[Flash]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga" // "plasma.tga" // "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 80 110 255 70"
+finishColor = "80 110 255 10"
+startRadius = 20.0
+finishRadius = 4.0
+animateTime = 1.0
+//spriteCenter.x = 0.0
+spriteCenter.y = 0.1  // .2

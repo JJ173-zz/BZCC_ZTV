@@ -1,0 +1,83 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xflbgnd"
+xplVehicle = "xflbgnd" // "xflbcar"
+xplBuilding = "xflbgnd" // "xflbbld"
+
+renderName = "flashdr.render"
+
+ammoCost = 80
+lifeSpan = 400e-6 // longer to account for sonic shield it passes through
+shotSpeed = 1e6
+
+damageValue(N) = 40 // none //350
+damageValue(L) = 35 // light //250
+damageValue(H) = 30 // heavy //150
+
+damageValue(S) = 35 // standard //250
+damageValue(D) = 40 // deflection //350
+damageValue(A) = 30 // absorbtion //80
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "flashdr.core"
+renderName2 = "flashdr.fringe"
+renderName3 = "flashdr.twizzle"
+renderName4 = "flashdr.twizzle2"
+
+[Core]
+renderBase = "draw_bolt"
+textureName = "plasma.tga" // NULL
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 0 0"
+startRadius = 1 
+finishRadius = 0.1
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.2
+textureRate = 0.01
+textureSpeed = 30.0
+
+[Fringe]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 0 255"
+finishColor = "255 0 0 0"
+startRadius = 1.5 
+finishRadius = 5.0 
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3
+textureRate = 0.02
+textureSpeed = -5.0
+
+[Twizzle]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //NULL // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 90 0 255"
+finishColor = "255 105 0 0"
+startRadius = 0.2
+finishRadius = 0.3 
+segmentLength = 1.0
+segmentVariance = "1.0 1.0 1.0"
+animateTime = 0.2
+textureRate = 0.01
+
+[Twizzle2]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // NULL // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "1.2 1.2 1.0"
+animateTime = 0.2
+textureRate = 0.01

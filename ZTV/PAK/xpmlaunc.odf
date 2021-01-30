@@ -1,0 +1,80 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 4
+particleClass1 = "xpmlaunc.core"
+particleCount1 = 3
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xpmlaunc.puff"
+particleCount2 = 5
+particleVeloc2 = "10.0 10.0 10.0"
+particleClass3 = "xpmlaunc.light"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "xpmlaunc.shock"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+explSound = "xfire1.wav"
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+kickRadius = 0.0
+kickOmega = 0.0
+kickVeloc = 0.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 255"
+finishColor = "55 55 255 255"
+startRadius = 2.0
+finishRadius = 0.5
+animateTime = 0.5
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 255"
+finishColor = "55 55 255 0"
+startRadius = 2.0
+finishRadius = 0.5
+animateTime = 0.3
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "55 255 55 955"
+finishColor = "0 100 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "55 55 255 100"
+finishColor = "55 55 255 0"
+startRadius = 2
+finishRadius = 0.5
+animateTime = 0.2
+latitudeBands = 8
+longitudeSegments = 16

@@ -1,0 +1,23 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "automine.xsi"
+shotSound = "running.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+xplExpire = "xzm2nxpl"
+
+ammoCost = 80 // 1 for local ammo use
+lifeSpan =  10 //6
+shotSpeed = 10  
+
+damageValue(N) = 400
+damageValue(L) = 400
+damageValue(H) = 200
+damageValue(S) = 400
+damageValue(D) = 400
+damageValue(A) = 400
+
+[SprayBombClass]
+payloadName = "zeeker2"
+

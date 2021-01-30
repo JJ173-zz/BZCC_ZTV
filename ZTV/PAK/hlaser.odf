@@ -1,0 +1,95 @@
+[OrdnanceClass]
+classLabel = "beam"
+
+shotGeometry = NULL
+xplGround = "xhlasegnd"
+xplVehicle = "xhlasecar"
+xplBuilding = "xhlasebld"
+
+renderName = "hlaser.render"
+
+ammoCost = 7   // 49
+lifeSpan = 200e-6 // 200m
+shotSpeed = 1e6
+
+damageValue(N) = 300 // none
+damageValue(L) = 200 // light 
+damageValue(H) = 40 // heavy 
+
+damageValue(S) = 200 // standard 
+damageValue(D) = 350 // deflection 
+damageValue(A) = 60 // absorbtion 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "hlaser.core"
+renderName2 = "hlaser.tail"
+renderName3 = "hlaser.tail2"
+//renderName4 = "hlaser.sparkle"
+//renderName5 = "hlaser.sparkle2"
+
+[Core]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"  //NULL
+textureBlend = "one one modulate"
+startColor = "150 0 255 50"
+finishColor = "180 80 255 255"
+startRadius =  2.0 //1.5
+finishRadius = 0.01
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.4
+textureRate = 0.1 //0.01
+
+[Tail]
+renderBase = "draw_bolt"
+textureName = "trail2.tga" //NULL
+textureBlend = "one one modulate"
+startColor = "100 70 255 255"
+finishColor = "50 0 255 0"
+startRadius = 0.005
+finishRadius = 2.0 //1.0   //.2
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"  // "0.0 0.0 0.0"
+animateTime = 0.6 
+textureRate = 0.1 //0.01
+
+[Tail2]
+renderBase = "draw_bolt"
+textureName = "plasma.tga" // "trail2.tga" // NULL
+textureBlend = "one one modulate"
+startColor = "90 40 255 150"
+finishColor = "0 0 100 0"
+startRadius = 5.0 //3
+finishRadius = 0.01      //.2
+segmentLength = 5.0
+segmentVariance = "0.0 0.0 0.0"  // "0.0 0.0 0.0"
+animateTime = 0.2 
+textureRate = 0.01
+
+[Sparkle]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureblend = "one one modulate"
+startColor = "100 20 240 360"
+finishColor = "120 60 255 0"
+startRadius = 0.1    // 0.25
+finishRadius = 0.03   // .01
+animateTime =  1.5       // 1.0
+emitDelay = 0.002      //0.004
+emitVariance = "0.5 0.5 1.8"
+emitLife =  2.0        // 1.3
+
+[Sparkle2]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureblend = "one one modulate"
+startColor = "220 30 80 300"
+finishColor = "0 0 255 50"
+startRadius = 0.1    // 0.25
+finishRadius = 0.03   // .01
+animateTime =  1.5       // 1.0
+emitDelay = 0.002     //0.004
+emitVariance = "0.5 0.5 2.0"
+emitLife =  2.0        // 1.3

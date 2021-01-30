@@ -1,0 +1,47 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "grdrnull"
+ordName = "rdrnull"
+wpnName = "Radar Beam"
+fireSound = "ping.wav" 
+wpnReticle = "glaser"
+wpnCategory = "GUN"
+isAssault = 0
+aiRange = 220
+flashName = "grdrnull.render"
+
+[CannonClass]
+shotDelay = 2.0 
+salvoCount = 5
+salvoDelay = 2.0
+shotVariance = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "grdrnull.wave"
+renderName2 = "grdrnull.flash"
+
+[Wave]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+textureName = "ring.tga"
+lifeTime = 7
+textureBlend = "one one modulate"
+startColor = "15 155 255 20" 
+finishColor = "15 155 255 5" 
+startRadius = 8
+finishRadius = 100
+animateTime = 7
+
+[Flash]
+simulateBase = "sim_null"
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+lifeTime = 1
+textureBlend = "one one modulate"
+startColor = "5 155 255 60" 
+finishColor = "5 155 255 0" 
+startRadius = 20
+finishRadius = 50
+animateTime = 1

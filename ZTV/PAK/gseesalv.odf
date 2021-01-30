@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+altname = "gseesalv"
+ordName = "seekick"
+wpnName = "Seakers"
+fireSound = "mmine01.wav"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 120 
+isAssault = 0
+
+//localAmmo = 200  
+
+[CannonClass]
+shotDelay = 2.0 
+salvoCount = 3 
+salvoDelay = 2.0 
+shotVariance = 0.0
+shotPitch = -1.4 // -1.58 = straight down

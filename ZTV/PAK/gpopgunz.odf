@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "popper"
+wpnName = "Popper"
+fireSound = "gpopp00.wav"
+wpnReticle = "glockm"
+wpnLadder = "gpopgun.L0"
+wpnCategory = "GUN"
+aiRange = 220
+
+[CannonClass]
+shotDelay = 1.5
+shotPitch = 1.0
+shotLead = 0
+

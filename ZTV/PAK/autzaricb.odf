@@ -1,0 +1,46 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = NULL // "iorckt00.xsi"
+
+renderName = "autzaricb.render"
+
+xplGround = "xarccarz" //"xarcgnd_a"
+xplVehicle = "xarccarz"
+xplBuilding = "xarccarz"
+xplExpire = "xarccarz"
+
+ammoCost = 1 
+lifeSpan = 0.55 // .66 
+shotSpeed = 300.0
+
+damageValue(N) = 40 // 50 
+damageValue(L) = 20 // 30  
+damageValue(H) = 15 
+
+damageValue(S) = 30 
+damageValue(D) = 50  
+damageValue(A) = 15 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2 // 1.0
+
+omegaWaver = 1.0 	
+rateWaver = 3.0		
+
+[ThermalMissileClass]
+coneAngle = 0.4 // 0.4
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "255 75 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.3
+finishRadius = 0.01
+segmentLength = 7.0 
+segmentVariance = "2.0 2.0 0.5"
+animateTime = 0.8 // 0.2
+textureRate = 0.01
+

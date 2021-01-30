@@ -1,0 +1,53 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xstendc"
+xplBuilding = "xstendc"
+renderName = "stendgn.render"
+
+ammoCost = 0.5
+lifeSpan = 6 
+shotSpeed = 20.0
+
+damageValue(N) = 10 // none // 200
+damageValue(L) = 8 // light // 160
+damageValue(H) = 5 // heavy // 100
+
+damageValue(S) = 8 // standard // 160
+damageValue(D) = 5 // deflection // 100
+damageValue(A) = 10 // absorbtion // 200
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.3
+omegaWaver = 1.0 //.8 // .25 
+rateWaver = 15 //60 //10  
+
+[ThermalMissileClass]
+coneAngle = 0.4 // 0.25
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "stendgn.flare"
+renderName2 = "stendgn.tail"
+
+[Tail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "80 0 200 255"
+finishColor = "0 0 255 0"
+startRadius = 0.03 //0.02
+finishRadius = 0.06 //0.05
+segmentTime = 1.0
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "95 5 185 255"
+finishColor = "95 5 185 255"
+startRadius = 0.4 
+finishRadius = 0.4

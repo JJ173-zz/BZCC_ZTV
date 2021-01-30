@@ -1,0 +1,101 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "dvcarht.wav" // "gmagg04.wav"
+
+damageRadius = 5.0
+
+damageValue(N) = 20
+damageValue(L) = 20
+damageValue(H) = 20
+damageValue(S) = 10
+damageValue(D) = 10
+damageValue(A) = 10
+
+particleTypes = 5
+
+particleClass1 = "xddbulcar.core"
+particleVeloc1 = "0.0 0.0 0.0"
+particleBias1 = "0.0 0.0 0.0"
+particleCount1 = 1
+
+particleClass2 = "xddbulcar.spark"
+particleVeloc2 = "5.0 5.0 5.0"
+particleBias2 = "0.0 1.0 0.0"
+particleCount2 = 5
+
+particleClass3 = "xddbulcar.trail"
+particleVeloc3 = "5.0 5.0 5.0"
+particleBias3 = "0.0 1.0 0.0"
+particleCount3 = 3
+
+particleClass4 = "xddbulcar.puff"
+particleVeloc4 = "0.0 0.0 0.0"
+particleBias4 = "0.0 0.0 0.0"
+particleCount4 = 1
+
+particleClass5 = "xddbulcar.flare"
+particleVeloc5 = "0.0 0.0 0.0"
+particleBias5 = "0.0 0.0 0.0"
+particleCount5 = 1
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "bulhit.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 1
+animateTime = 0.2
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 0.05
+animateTime = 1.0
+rotationRate = 20.0
+
+[Trail]
+simulateBase = "sim_ember"
+lifeTime = 1.0
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.02
+finishRadius = 0.0
+trailTime = 1.0
+segmentTime = 0.1
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 255"
+finishColor = "255 0 5 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 1.0
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 125 0 255"
+finishColor = "255 50 0 0"
+startRadius = 7
+finishRadius = 0.1
+animateTime = 0.3

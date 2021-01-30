@@ -1,0 +1,81 @@
+[OrdnanceClass]
+classLabel = "anchor"
+
+shotGeometry = "seajav2.xsi"
+shotSound = "gshad02.wav"
+
+xplExpire = "xplsejvc" //"xsprxpr"
+
+xplGround = "xsprxprg" 
+xplVehicle = "xplsejvc" 
+xplBuilding = "xplsejvb" 
+
+renderName = "sprjav.render"
+
+ammoCost = 4.0 // 3.75
+lifeSpan =  3.0 //1.33 // 2.25   
+shotSpeed = 60 
+
+damageValue(N) = 50 // none
+damageValue(L) = 50 // light
+damageValue(H) = 50 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 100 // deflection
+damageValue(A) = 100 // absorbtion
+
+[LeaderRoundClass]
+stickTime = 5.0 
+
+[AnchorRocketClass]
+accelDrag = 2.0 // 2.5 // 3.0 //2.0
+alphaDrag = 0.3 // .4 // 0.6 // .2 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3 
+renderName1 = "sprjav.bubbles"
+renderName2 = "sprjav.rings"
+renderName3 = "sprjav.contrail"
+
+[Rings]
+renderBase = "draw_twirl_trail"
+textureName = "ring.tga" // "smoke.tga" 
+textureBlend = "one one modulate" 
+startColor = "130 150 255 70"
+finishColor = "35 135 255 0"
+startRadius = 0.05 // 1.0
+finishRadius = 0.6 //1.5
+animateTime = 0.5
+emitDelay = 0.02 // 0.02 // 0.005
+emitVelocity = "0.0 0.0 0.5"
+emitVariance = "0.5 0.5 2.0"
+emitLife = 0.5
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate" 
+startColor = "125 125 255 255"
+finishColor = "205 205 255 0"
+startRadius = 0.02 // 0.05
+finishRadius = 0.1 //0.1 
+segmentTime = 0.4 //1.8  // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+textureRate = 0.05
+
+[Bubbles]
+renderBase = "draw_twirl_trail"
+textureName = "raindrop.tga"
+textureblend = "one one modulate"
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.03
+finishRadius = 0.1
+rotationRate = 0.0
+animateTime = 3.0
+emitDelay = 0.005
+emitVariance = "0.8 0.8 0.8"
+emitLife = 3.0
+
+

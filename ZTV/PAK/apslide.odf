@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "aphand00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 100
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+armorClass = H
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyan-ap"
+
+requireCount = 0
+
+[PowerUpClass]
+soundPickup = "avapce0.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+//weaponName = "gslide"
+weaponName = "gsnipxtrc1"

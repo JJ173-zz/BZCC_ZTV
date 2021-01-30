@@ -1,0 +1,35 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = ""
+
+shotGeometry = NULL
+shotRadius = -2.0
+xplGround = ""
+xplVehicle = ""
+xplBuilding = ""
+xplExpire= "pshawyxpl"
+
+ammoCost = 0   
+lifeSpan = 0.5   
+shotSpeed = 20.0  // pretty much sets speed of vehcl
+
+damageValue(N) = 0 
+damageValue(L) = 0 
+damageValue(H) = 0 
+
+damageValue(S) = 0 
+damageValue(D) = 0
+damageValue(A) = 0 
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 7  
+objPushCenter = -40 
+objPushEdge = 80
+objDrag = 3.0  
+ordPushCenter = 0.0 
+ordPushEdge = 0.0 
+ordDrag = 0.0
+

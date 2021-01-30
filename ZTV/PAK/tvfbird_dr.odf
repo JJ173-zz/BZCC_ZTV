@@ -1,0 +1,143 @@
+[GameObjectClass]
+geometryName = "ivvulture.xsi"
+geometryScale = 1.0
+//glowTexture = "submglow.tga"
+classLabel = "apc"
+collisionRadius = 2.0
+scrapValue = 0
+scrapCost = 0
+customCost = 0
+buildTime = 10.0 //.0
+customTime = 10.0
+maxHealth = 3000
+addHealth = 1
+maxAmmo = 5000
+addAmmo = 8
+unitName = "FireBird"
+
+//aiName = "AttachOffensive"  // cant get attack menu, tho point works
+//aiName2 = "AttachOffensive"
+
+aiName = "RocketTankFriend"  
+aiName2 = "RocketTankEnemy"  
+
+heatSignature = 5.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 0
+needPilot = 0
+canSnipe = 0
+armorClass = L
+
+boxCollide = 0
+
+requireCount = 0
+//requireName1 = "ibtrnsyd2"
+//requireText1 = "Upgrade Air Yard"
+
+effectHard1 = "hp_special_1"
+effectName1 = "tvfbird_dr.tail"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue"
+
+weaponMask = 00011
+
+weaponHard2 = "HP_ROCKET_2"
+weaponName2 = "gicartill" // "gcruise"  
+weaponAssault2 = 1
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gicartill" // "gcruise"  
+weaponAssault1 = 1
+
+[CraftClass]
+//attackTask = "AimFireAttack" // "ArtlAttack"
+//subAttackTask = "ArtlSubAttack"
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+
+subAttackClass = "NDN" // "ADS"
+weaponPitch = 1.5
+rangeScan = 450.0
+periodScan = 3.0
+velocJam = 0.0
+engageRange = 350
+
+selectAttackMsg = "avrcktv0.wav"
+selectGoMsg = "avrcktvk.wav"
+selectFollowMsg = "avrcktvg.wav"
+selectOtherMsg = "avrcktvm.wav"
+
+goMsg = "avrcktv1.wav"
+goObjectMsg = "avrcktvf.wav"
+attackMsg = "avrcktv2.wav"
+followMeMsg = "avrcktv4.wav"
+followMsg = "avrcktvb.wav"
+repairMsg = "avrcktv8.wav"
+reloadMsg = "avrcktv9.wav"
+rescueMsg = "avrcktvc.wav"
+recycleMsg = "avrcktvd.wav"
+
+user1Msg = "avrcktva.wav"
+killedMsg = "avrcktv3.wav"
+diedMsg = "abetty3.wav"
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 10;
+topSpeed = 12;
+
+[HoverCraftClass]
+setAltitude = 70 // 100 // 70.0 // rises to this on firing - told to hold
+accelDragStop = 7 // 4.0
+accelDragFull = 1.0
+alphaTrack = 25.0 
+alphaDamp =  3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.01 // 0.1
+rollSteer = 0.01 // 0.1
+
+velocForward = 17 // 11.0
+velocReverse = 15 // 7.0
+velocStrafe = 7 // 10.0
+accelThrust = 10 // 40.0
+accelBrake = 15.0
+omegaSpin = 1.5 // 2.5
+omegaTurn = 1.0 // 1.5
+alphaSteer = 3 // 5.0
+accelJump = 250 // 150.0 speed to aquire alttitude low or high
+
+soundThrust = "ienge.wav"
+soundSteer = "avapce5.wav"
+
+[APCClass]
+soldierType = "iszpilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 2 // 2.5
+
+flightAltitude = 50// 125 // 90// tends to go to this to fight as rt ai
+
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" // "sonic03c.wav"
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "50 50 100 150"
+finishColor = "50 50 80 0"
+startRadius = 0.6
+finishRadius = 0.2 
+segmentTime = 0.9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

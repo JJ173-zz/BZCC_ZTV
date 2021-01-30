@@ -1,0 +1,73 @@
+[GameObjectClass]
+geometryName = "seawasp.xsi"
+geometryScale = 4.0 
+classLabel = "torpedo"
+baseName = "grccmi" 
+scrapValue = 0
+scrapCost = 0
+maxHealth = 900
+maxAmmo = 30
+unitName = "Blowfish"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "bfxprsnd" //"xbfblst2" //"xzm3nxpl"  
+//xplExpire = "bfxprsnd"  // torpedo uses explosionName for this
+heatSignature = 2.0
+imageSignature = 1.5
+radarSignature = 1.5
+//canDetect = 0 // doesnt affect torpedo class
+
+effectHard1 = "Blowfish"
+effectName1 = "blowfsh2.render"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 0.25 // 0.4 // .1 makes bounce some
+alphaTrack = 10 //25 // 20.0
+alphaDamp = 2.5 //3 // 5.0
+velocForward = 19
+accelThrust = 10 
+omegaTurn = 1.5
+alphaSteer = 4.0
+lifeSpan = 76.0 // 100
+xplBlast = "xbfblst1"
+
+soundThrust = "blowfish.wav" 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "blowfsh2.bubbles"
+renderName2= "blowfsh2.tail"
+
+[Bubbles]
+renderBase = "draw_twirl_trail"
+textureName = "raindrop.tga"
+textureblend = "one one modulate"
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.06
+finishRadius = 0.1
+rotationRate = 0.0
+animateTime = 2.0
+emitDelay = 0.01
+emitVariance = "1.3 1.3 1.3"
+emitLife = 2.0
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 250 255 60"
+finishColor = "0 20 120 0"
+startRadius = 1.2
+finishRadius = 0.1 
+segmentTime = 1 // 1.0
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.03
+

@@ -1,0 +1,97 @@
+[GameObjectClass]
+geometryName = "ibfact_ic3.xsi"
+classLabel = "factory"
+scrapCost = 55
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 0
+buildTime = 15
+unitName = "Research Cntr I"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+powerCost = 0
+armorClass = L
+//isSingle = 0
+
+upgradeName = "ibfact_ic2"
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "ibfact"
+//provideName2 = "ibtrain"
+
+collisionRadius = 4.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+buildSupport = B //  "A" didnt support anything
+buildRequire = F // F = free-anywhere
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ibfact_ic1.beam"
+effectHard2 = "hp_emit_2"
+effectName2 = "ibfact_ic1.beam"
+effectHard3 = "hp_emit_3"
+effectName3 = "ibfact_ic1.beam"
+effectHard4 = "hp_emit_4"
+effectName4 = "ibfact_ic1.beam"
+
+[PoweredBuildingClass]
+detectRange = 300
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "ivturr_ic2" 
+
+[BuildingClass]
+soundAmbient = "ibfact00.wav"
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+ buildItem1 = "ivserv2_ic1" // in RC II
+ buildItem2 = "ivftruck"    // in RC II
+ buildItem3 = "ivspydrn"    // in RC II
+ buildItem4 = "ivdfly"      // in RC II
+ buildItem5 = "ivcons_ic2"  
+ buildItem6 = "ivartl_ic1"
+ buildItem7 = "ivhawk1"   
+ buildItem8 = "ivdropshp3" // "ivairtaskr" 
+ buildItem9 = "ivmbreedr"  
+buildItem10 = "ivjav_ic1"  
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "ibfact_ic1.beamer"
+emitDelay = 0.3 
+emitVelocity = "0.0 200.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.17 // set length here
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ibfact_ic1.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "155 0 0 0"
+finishColor = "155 0 0 255"
+startRadius = 0.5
+finishRadius = 0.5
+segmentLength = 1.0 //3.1
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+textureRate = 0.01

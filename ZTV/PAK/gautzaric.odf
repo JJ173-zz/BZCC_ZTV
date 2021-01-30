@@ -1,0 +1,19 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "autzaric"
+wpnName = "Arc Seeker"
+fireSound = "rhin08.wav" // "arc01.wav"
+wpnReticle = "glockm"
+//wpnLadder = "gpopgun.L0"
+wpnCategory = "GUN"
+aiRange = 240
+isAssault = 0
+
+[CannonClass]
+shotDelay = 0.5 // 3.0
+shotPitch = 0 // 1.0
+shotLead = 1 // 1
+
+salvoCount = 7
+salvoDelay = 0.07 // .05 // .18
+shotVariance = 0.5 // 1.5

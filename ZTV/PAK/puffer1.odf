@@ -1,0 +1,53 @@
+[GameObjectClass]
+geometryName = "bubbler2.xsi"
+geometryScale = 0.25
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6
+unitName = "Puffer 1"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 1
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "puffer1.modulator"
+
+[modulator]
+renderBase = "draw_emit"
+emitName = "puffer1.ontime"
+emitDelay = 7.0
+emitDelayVar = 5 
+emitVelocity = "0.0 0.0 1.0"
+emitVariance = "5.0 5.0 5.0"
+
+[ontime]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "puffer1.puff"
+
+[Puff]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"//"srcalpha invsrcalpha modulatealpha"
+startColor = "20 50 10 70
+finishColor = "20 50 10 0"
+startRadius = 4 
+finishRadius = 6 
+animateTime = 1.0
+emitDelay = 0.10
+emitDelayVar = 0.03 
+emitVelocity = "0.0 1.5 0.0"
+emitVariance = "6.0 6.0 6.0"
+emitLife = 1.0
+

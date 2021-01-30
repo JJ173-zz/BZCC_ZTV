@@ -1,0 +1,34 @@
+[WeaponClass]
+classLabel = "cannon" 
+ordName = "aburn1"
+wpnName = "Afterburner I"
+fireSound = "aburn.wav"
+wpnReticle = "gminigun"
+wpnCategory = "SPEC"
+isAssault = 0
+flashName = "gabrn1.render"
+
+[CannonClass]
+shotDelay = 0.1    // 1.9   // 2.5
+salvoCount = 100 //190
+salvoDelay = 0.02
+shotVariance = 0.05
+
+shotPitch = 3.0 // 3.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "gabrn1.Light"
+
+[Light]
+renderBase = "draw_light"
+startColor = "255 100 100 750"
+finishColor = "255 50 50 0"
+startRadius = 15.0
+finishRadius = 0.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+

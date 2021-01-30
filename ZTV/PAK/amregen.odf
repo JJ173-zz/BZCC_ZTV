@@ -1,0 +1,35 @@
+[GameObjectClass]
+geometryName = "invisi.xsi"
+geometryScale = 0.01
+classLabel = "magnet" // "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1
+maxAmmo = -75 //-750 // 35 //1
+unitName = "Replenisher"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+//isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+
+explosionName = "xammoxpr"
+
+
+[MineClass]
+lifeSpan = 0.01
+
+//[MagnetMineClass]
+TeamFilter = 51
+//triggerDelay = 0.0 
+//fieldRadius = 16 
+//objPushCenter = -125 //-15.0 
+//objPushEdge = -500 // -1 
+//objDrag = 200 // 0.35
+//ordPushCenter = -500
+//ordPushEdge = -200
+//ordDrag = 3.0

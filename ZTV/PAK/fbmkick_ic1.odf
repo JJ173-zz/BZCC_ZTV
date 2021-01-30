@@ -1,0 +1,90 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "" // "orngbal2.xsi" 
+shotSound = "baz03.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+canCollide= 0
+rendername = "fbmkick_ic1.render"
+ammoCost = 20 // 1
+lifeSpan = 1e30
+shotSpeed = 25
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[BounceBombClass]
+soundBounce = "mdmort03.wav"
+bounceRatio = 0.01 //no bounce
+
+[SprayBombClass]
+payloadName = "firemn_ic1"
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "fbmkick_ic1.flare"
+renderName2 = "fbmkick_ic1.halo"
+renderName3 = "fbmkick_ic1.trail"
+renderName4 = "fbmkick_ic1.sparks"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 60 0 120"
+finishColor = "255 30 0 120"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "200 80 0 127"
+finishColor = "255 30 0 127"
+startRadius = 1.0
+finishRadius = 1.0
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "150 60 0 155"  
+finishColor = "100 30 30 0"
+startRadius = 0.9   
+finishRadius = 0.01  
+segmentTime = 0.9
+segmentVariance = "0.1 0.1 0.1 "
+animateTime = 0.9 
+textureRate = 0.01
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "fbmkick_ic1.sparker"
+emitDelay = 0.02 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "4.0 4.0 4.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.9
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "fbmkick_ic1.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 170 80 250"
+finishColor = "200 50 0 0"
+startRadius = 0.5
+finishRadius = 0.1
+animateTime = 0.9

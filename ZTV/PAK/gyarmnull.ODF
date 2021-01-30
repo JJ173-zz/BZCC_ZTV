@@ -1,0 +1,17 @@
+[WeaponClass]
+geometryName = "yardarm3.xsi" 
+geometryScale = 1.5
+classLabel = "dispenser"
+wpnName = "NULL"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+localAmmo = 1 // [2 x 1]
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "apserv_ic1" 
+

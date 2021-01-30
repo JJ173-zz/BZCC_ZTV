@@ -1,0 +1,27 @@
+[GameObjectClass]
+geometryName = "apgun00.xsi"
+classLabel = "wpnpower"
+scrapCost = 20
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = "Green Laser"
+aiName = "PowerUpProcess"
+
+lightHard1 = "hp_light_1"
+lightName1 = "omnicyan"
+
+requireCount = 3
+requireName1 = "ibarmo"
+requireText1 = "Build Armory"
+requireName2 = "ibtcen_zm2"
+requireText2 = "Requires Tech Center"
+requireName3 = "ibtcen_b_zm2"
+requireText3 = "Upgrade Tech Center"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "iggrnlaser"

@@ -1,0 +1,23 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = NULL //"iggren00.xsi"
+geometryScale = 0.12
+ordName = "purprain2"
+wpnName = "Purple Rain"
+fireSound = "flame01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "GUN"
+aiRange = 375
+
+altName = "gpurprain"
+
+isAssault = 1
+
+[CannonClass]
+shotDelay = 0.4 // 0.20
+salvoCount = 15 
+salvoDelay = 0.35 
+shotVariance = 0.25
+
+//shotPitch = 0.10

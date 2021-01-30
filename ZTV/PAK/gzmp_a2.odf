@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "machinegun"
+altName = "gzmp_c"
+ordName = "zmpdown_a"
+wpnName = "EMP Firestop"
+fireSound = "ipgen01.wav"
+wpnReticle = "glock"
+wpnCategory = "HAND"
+isAssault = 0
+aiRange = 150
+
+[CannonClass]
+shotDelay = 0.1
+shotVariance = 0.01
+

@@ -1,0 +1,28 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "betacnet"
+wpnName = "Stickers"
+altName = "gbetac"
+fireSound = "cgrowl.wav" 
+wpnReticle = "gshotgun" 
+wpnCategory = "SPEC"
+flashName = "gbetac.flash"
+isAssault = 0
+aiRange = 95
+
+[CannonClass]
+shotDelay = 3.0
+salvoCount = 1 
+salvoDelay = .3 
+shotVariance = 0.05 //0.1
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 3.0
+finishRadius = 1.0
+animateTime = 0.1
+geomName = "g_sflash.xsi"

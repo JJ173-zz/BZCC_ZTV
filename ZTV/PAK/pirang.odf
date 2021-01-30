@@ -1,0 +1,38 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = NULL
+xplGround = "xpirngnd"
+xplVehicle = "xpirncar"
+xplBuilding = "xpirnbld"
+renderName = "pirang.render"
+
+ammoCost = 0.25
+lifeSpan = 3 
+shotSpeed = 50.0
+
+damageValue(N) = 11 // none // 200
+damageValue(L) = 8 // light // 160
+damageValue(H) = 5 // heavy // 100
+
+damageValue(S) = 8 // standard // 160
+damageValue(D) = 5 // deflection // 100
+damageValue(A) = 10 // absorbtion // 200
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.3
+omegaWaver = 0.25 //.1
+rateWaver = 10 // 8 //4 
+
+[ThermalMissileClass]
+coneAngle = 0.25
+
+[Render]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "0 255 55 255"
+finishColor = "0 0 255 0"
+startRadius = 0.02
+finishRadius = 0.05
+segmentTime = 0.4

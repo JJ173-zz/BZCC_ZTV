@@ -1,0 +1,144 @@
+[GameObjectClass]
+baseName = "ivtasker"
+geometryName = "ivtasker3.xsi"
+geometryScale = 0.5 // .30
+cockpitName = "ivrckt_cockpit.xsi"
+//classLabel = "assaulttank"
+classLabel = "scavenger"
+scrapValue = 10
+scrapCost = 30
+customCost = 65
+buildTime = 3.0 //
+customTime = 10.0
+maxHealth = 1400
+maxAmmo = 1000
+addAmmo = 5
+addHealth = 1
+unitName = "Cleaner"
+weightInTons = 1E6
+
+
+//aiName = "SupportProcess"
+//aiName2 = "SupportProcess"
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+
+heatSignature = 0.01
+imageSignature = 0.1
+radarSignature = 0.05
+isAssault = 0
+needPilot = 0
+armorClass = L
+	
+/////// weapons /////////
+
+weaponMask = 11111
+
+weaponHard2 = "HP_GUN_1"
+weaponName2 = "gzmp_c" 
+weaponAssault2 = 0
+
+weaponHard1 = "HP_GUN_2"
+weaponName1 =  "gzmp_c" // "gfluxnet2" 
+weaponAssault1 = 0
+
+//weaponHard3 = "HP_gun_3" // 
+//weaponName3 =  "igemgun" 
+//weaponAssault3 = 0
+
+//weaponHard4 = "HP_CANNON_1"
+//weaponName4 = "gzmp_a2" 
+//weaponAssault4 = 0
+
+//////////////////////////////////
+
+effectHard1 = "hp_special_1"
+effectName1 = "ivtasker.cycleon"
+effectHard2 = "hp_special_2"
+effectName2 = "ivtasker.cycleon"
+
+turretCount = 3
+turretName1 = "turret_y" 
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+lightHard1 = "hp_special_1"
+lightName1 = "lasersiteic"
+//lightHard2 = "hp_light_2"
+//lightName2 = "spotlite"
+lightHard3 = "hp_light_1"
+lightName3 = "tasklite"
+lightHard4 = "hp_light_2"
+lightName4 = "tasklite"
+
+//ejectRatio = 0
+
+[CraftClass]
+rangeScan = 449.0f
+periodScan = 4.0f
+velocJam = 0.0f
+
+engageRange = 600
+
+braccelFactor = 0.5 // .1 // .05 // 0.05f; // serv truck is .09
+strafeFactor = 0.1 // 0.1f;  // serv truck is ---
+steerFactor = 0.9 // 0.85 // serv truck is 1.4
+omegaFactor = 0.01 // 0.01f;  // serv truck is .2
+velFactor = 0.2 // 0.2f;   // serv truck is .3
+
+[TrackedVehicleClass]
+omegaSpin = 3 //4.0
+velocForward = 12.0 //15.0
+velocReverse = 12.0 //15.0
+accelThrust = 10.0
+
+engineSound = "robo05c.wav" // "accelhum.wav" //"iatank01.wav"
+treadSound = "robo05.wav" // "ipgen01.wav" // "iatank02.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold =  5 // 0 will stop production, 30 is nice capture bonus
+deployClass = ""  //"ibscav"
+
+[AssaultTankClass]
+yawMax = 2.0 // 2.0
+pitchMin = -0.4 // -0.3
+pitchMax = 1.5 // 1.0
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "ivtasker.ontime"
+emitDelay = 0.05//0.1 
+emitVelocity = "0.0 0.0 10.0"
+emitVariance = "20.0 20.0 30.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.04 //
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ivtasker.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.05 // 0.15
+finishRadius = 0.25 // 0.3
+segmentLength = 0.09 // .5 
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 0.1
+
+
+
+

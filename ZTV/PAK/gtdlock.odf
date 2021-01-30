@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Tunnel Entrance"
+ordName = NULL
+
+//wpnIcon = "wire_igsatc1.tga"
+fireSound = "dropdoor.wav" // "itug03.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 100000
+objectClass = "pbatun03"
+

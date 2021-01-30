@@ -1,0 +1,53 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = ""
+
+shotGeometry = NULL
+shotRadius = -2.0
+xplGround = ""
+xplVehicle = ""
+xplBuilding = ""
+
+ammoCost = 2   // 3.9  // 4
+lifeSpan = 0.4  // .2 
+shotSpeed = 25.0  // pretty much sets speed of vehcl
+
+damageValue(N) = 0 
+damageValue(L) = 0 
+damageValue(H) = 0 
+
+damageValue(S) = 0 
+damageValue(D) = 0
+damageValue(A) = 0 
+
+//renderName = "aburnic.render"
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 4.5 // 3.5 
+objPushCenter = -70 // -30 
+objPushEdge = -5 // 2 // -3 
+objDrag = 3.0 // 0.7 
+ordPushCenter = 0.0 
+ordPushEdge = 0.0 
+ordDrag = 0.0
+
+
+
+
+[Render]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "wavesphr2.tga"
+textureBlend = "one one modulate"
+startColor = "50 100 155 80" 
+finishColor = "50 100 155 5" 
+startRadius = 3.3
+finishRadius = 3.1
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 24
+

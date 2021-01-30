@@ -1,0 +1,72 @@
+// ====================
+// Laser Guided Rockets Paint Hit Car
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = NULL // "xms2.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+particleTypes = 3
+
+particleClass1 = "xlrklead_car.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xlrklead_car.flare"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xlrklead_car.core"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "255 0 0 2550"
+finishColor = "255 0 0 0"
+startRadius = 8
+finishRadius = 1
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 255"
+finishColor = "255 0 0 190"
+startRadius = 16.0 // 1
+finishRadius = 0.5
+animateTime = 0.2
+
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 250"
+finishColor = "255 0 0 0"
+startRadius = 4.0
+finishRadius = 2.0
+animateTime = 0.3
+
+

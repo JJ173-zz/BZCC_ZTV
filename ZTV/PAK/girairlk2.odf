@@ -1,0 +1,23 @@
+[WeaponClass]
+classLabel = "imagelauncher"
+geometryName = "glorkt10i.xsi" // "glamprey.xsi"
+ordName = "irairlk2"
+altName = "girairlk2"
+wpnName = "Lamprey"
+fireSound = "tmiss03.wav"
+wpnReticle = "ghornet.0"
+wpnCategory = "ROCK"
+isAssault = 0
+aiRange = 250
+
+[LauncherClass]
+lockRange = 250 
+shotDelay = 2.0
+lockDelay = 3.0 
+coneAngle = 0.06 // .05 
+lockingReticle = "ghornet.A"
+lockingSound =  "lock01.wav"
+lockedReticle = "ghornet.B"
+lockedSound = "locked3.wav" // "lock02.wav"
+targetCount = 3
+targetReticle = "ghornet.1"

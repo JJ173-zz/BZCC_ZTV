@@ -1,0 +1,30 @@
+// anti bomber lancer --TV
+
+[GameObjectClass]
+baseName = "fvarch"
+geometryScale = 1.5
+classLabel = "fvarch"
+scrapCost = 45 // 55
+customCost = 45 // 65
+buildTime = 10 // 15.0
+customTime = 10 // 15.0
+canSnipe = 0
+aiName = "SupportProcess"
+aiName2 = "SupportProcess"
+
+requireCount = 0
+
+[CraftClass]
+engageRange = 220
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[HoverCraftClass]
+accelDragStop = 30 // 12.0 //how fast it stops once hands are off controls []
+pitchPitch = 0.5 // 0.25 //nose up []
+omegaSpin = 6.5 // 3.5 //spinning in place speed []
+omegaTurn = 5.0 // 3.0 //turning while moving speed [1.5]
+
+[MorphTankClass]

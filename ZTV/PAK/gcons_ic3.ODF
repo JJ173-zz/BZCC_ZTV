@@ -1,0 +1,18 @@
+[WeaponClass]
+geometryname = "consvisgun2.xsi"
+geometryScale = 0.60
+classLabel = "dispenser"
+wpnName = "Field Cnstr"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "CANNON"
+aiRange = 0
+isAssault = 1
+
+
+localAmmo = 1 // 20 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 15.0
+objectClass = "ivcons_ic4" 
+

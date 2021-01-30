@@ -1,0 +1,61 @@
+[GameObjectClass]
+geometryName = "sparkpt4.xsi"
+geometryScale = 3.0
+classLabel = "powered" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 24000 // 14000
+maxAmmo = 0
+unitName = "Tesla Gen"
+heatSignature = 2.0
+imageSignature = 0.05
+radarSignature = 1.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+canCollide = 1
+ownsTerrain = 0
+armorClass = L
+explosionName = "xdrtbxpr"
+
+powerCost = 50 // shunts 50 power
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "sparkpt3.cycleon"
+effectHard2 = "hp_emit_3" 
+effectName2 = "sparkpt3.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "sparkpt3.ontime"
+emitDelay = 0.1
+emitDelayVar = 0.03 
+emitVelocity = "0.0 0.0 2500.0" // lengh of bolt 250m
+emitVariance = "0.0 0.0 0.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime =  0.1  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparkpt3a.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.5 // 0.15
+finishRadius = 1.0 // 0.3
+segmentLength = 2 // .5 
+segmentVariance = "3 3 0 " // "0.5 0.5 0.0"
+animateTime = 0.2
+
+[BuildingClass]
+SoundAmbient = "igtow01.wav"
+SoundAmbientDist = 0.8
+

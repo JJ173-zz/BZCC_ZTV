@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Flak Burst"
+ordName = NULL
+geometryName = "orngball.xsi" //"gapflakz.xsi"
+
+fireSound =  "icons02b.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 60
+objectClass = "apflaxz"
+

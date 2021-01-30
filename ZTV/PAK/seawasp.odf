@@ -1,0 +1,69 @@
+[GameObjectClass]
+geometryName = "seawasp.xsi"
+geometryScale = 4.0 
+classLabel = "torpedo"
+baseName = "grccmi" 
+scrapValue = 0
+scrapCost = 0
+maxHealth = 900
+maxAmmo = 30
+unitName = "Blowfish"
+aiName = "TorpedoProcess"
+aiName2 = "TorpedoProcess"
+explosionName = "xbfblst2"
+heatSignature = 0.0
+imageSignature = 0.5
+radarSignature = 0.2
+
+effectHard1 = "Blowfish"
+effectName1 = "seawasp.render"
+
+[CraftClass]
+rangeScan = 0.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+[TorpedoClass]
+setAltitude = 0.4
+alphaTrack = 25 // 20.0
+alphaDamp = 3 // 5.0
+velocForward = 19
+accelThrust = 20 
+omegaTurn = 1.5
+alphaSteer = 4.0
+lifeSpan = 25.0
+xplBlast = "xbfblst1"
+
+soundThrust = "blowfish.wav" // "stap01.wav" 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "seawasp.sparks"
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "seawasp.sparker"
+emitDelay = 0.025 // 0.05
+emitDelayVar = 0.005 
+emitVelocity = "0.0 0.0 -10.0"
+emitVariance = "10.0 14.0 10.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 1.2
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "seawasp.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "raindrop.tga"
+textureBlend = "one one modulate"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "20 150 255 255"
+finishColor = "10 50 255 0"
+startRadius = 0.10 //0.6
+finishRadius = 0.4 // 0.12
+animateTime = 1.2
+

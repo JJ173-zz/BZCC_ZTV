@@ -1,0 +1,29 @@
+[GameObjectClass]
+geometryName = "scraprec.xsi"
+collisionRadius = 0
+animCount = 0
+mrmFactor = 0
+animCount = 0
+classLabel = "extractor"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Extractor"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+isAssault = 0
+canInteract = 0
+canDetect = 0
+cancollide = 0
+
+armorClass = H
+[BuildingClass]
+
+[ExtractorClass]
+initDelay = 0.0
+scrapDelay = 0.25
+scrapHold = 100
+detectRange = 100

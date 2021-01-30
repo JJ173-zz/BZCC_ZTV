@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "grnball.xsi" 
+wpnName = "_Skipper"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+localAmmo = 100 // [50] x 2
+
+[DispenserClass]
+shotDelay = 30
+objectClass = "ivskip1"
+

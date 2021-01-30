@@ -1,0 +1,68 @@
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = "sgjetp00.xsi"
+geometryScale = 0.12
+animCount = 0
+ordName = NULL
+wpnName = "Booster"
+wpnIcon = "wire_igjetp%d.tga"
+fireSound = "whcan.wav"
+flashName = "igjetzd2.render"
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "HAND"
+isAssault = 0
+//localAmmo = 1
+
+aiRange = 200
+
+[JetPackClass]
+ammoCost = 95 // 12
+burnTime = 1800.0
+accelThrust = 12.3 // 12.25 is almost neutral
+activeSound = "jpack01.wav"
+expireSound = "jpack02.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "igjetzd2.flare"
+renderName2 = "igjetzd2.smoke"
+renderName3 = "igjetzd2.flame"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 255"
+startRadius = 1.5
+finishRadius = 1.5
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 50"
+finishColor = "31 31 31 0"
+startRadius = 0.3
+finishRadius = 3.0
+animateTime = 2.0
+emitDelay = 0.02
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 2.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.2
+finishRadius = 0.02
+animateTime = 0.08
+emitDelay = 0.005
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 3.0"
+emitLife = 0.08

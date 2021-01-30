@@ -1,0 +1,25 @@
+//Flak ceiling
+
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotRadius = -15
+shotSound = NULL 
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+xplExpire = "kill1xpr"
+canCollide= 0
+
+renderName = "" 
+
+ammoCost = 0
+lifeSpan = 2
+shotSpeed = 1000
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0

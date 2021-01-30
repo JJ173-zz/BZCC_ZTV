@@ -1,0 +1,16 @@
+[GameObjectClass]
+geometryName = "canstrz.xsi"
+classLabel = "wpnpower"
+scrapCost = 5
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gflaxz2"

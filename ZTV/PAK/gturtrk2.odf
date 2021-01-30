@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+
+ordName = "autotur2"
+wpnName = "Auto Chain"
+fireSound = "gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+wpnPriority = 3
+isAssault = 0
+isFlying = 0
+flashName = "gturtrk2.flash"
+airange = 135
+
+[CannonClass]
+shotDelay = 0.1 // 2.5
+shotVariance = 0.05
+
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 127 0 255"
+finishColor = "255 127 0 0"
+startRadius = 2.0
+finishRadius = 0.75
+animateTime = 0.1
+geomName = "g_sflash.xsi"

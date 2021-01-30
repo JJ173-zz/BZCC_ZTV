@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "iorckt00.xsi"
+shotSound = "smort03.wav" //"laslead2.wav" //"smort03.wav"
+
+xplGround = "xshdwgnd"
+xplVehicle = "xshdwcar"  // 100 60 20
+xplBuilding = "xshdwbld"
+renderName = "falcnrkt.render"
+
+
+ammoCost = 55
+lifeSpan = 20.0 
+shotSpeed = 35.0
+
+damageValue(N) = 200 // none
+damageValue(L) = 200 // light
+damageValue(H) = 30 // heavy // 20 from xpl
+
+damageValue(S) = 180 // standard
+damageValue(D) = 140 // deflection
+damageValue(A) = 100 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2.25 // 2.0
+omegaWaver = 0.8  	
+rateWaver = 0.02  
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "falcnrkt.flare"
+renderName2 = "falcnrkt.halo"
+renderName3 = "falcnrkt.trail"
+renderName4 = "falcnrkt.sparks"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 60 0 120"
+finishColor = "255 30 0 120"
+startRadius = 1.4
+finishRadius = 1.4
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "200 80 0 127"
+finishColor = "255 30 0 127"
+startRadius = 0.2
+finishRadius = 0.2
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "150 30 0 255"  //100 alpha
+finishColor = "100 30 30 0"
+startRadius = 0.5    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.5
+segmentVariance = "0.1 0.1 0.1 "
+animateTime = 0.5 
+textureRate = 0.01
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "falcnrkt.sparker"
+emitDelay = 0.01 // 0.2 // 0.5
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "falcnrkt.sparkflare"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "200 170 80 250"
+finishColor = "200 50 0 0"
+startRadius = 0.15
+finishRadius = 0.02
+animateTime = 0.5
+
+

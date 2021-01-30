@@ -1,0 +1,33 @@
+[GameObjectClass]
+classLabel = "fvsent"
+buildTime = 10 //15.0
+customTime = 10 // 20.0
+canSnipe = 0
+
+/////// weapons ///////////////////
+
+weaponHard3 = "HP_SPECIAL_1"
+weaponName3 = "gblinkzm2" // "gseeker"
+weaponAssault3 = 0
+
+//////////////////////////////////
+
+[CraftClass]
+engageRange = 190 // 130
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+velocForward = 40 // 35.0
+
+// ASSAULT MODE /////////////////////
+
+[MorphTankClass]
+engageRange = 150 // 100
+addAmmo = 3.0
+
+[DeployableClass]

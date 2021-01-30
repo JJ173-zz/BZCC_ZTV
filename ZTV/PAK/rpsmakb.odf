@@ -1,0 +1,62 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "iorckt00.xsi"
+shotSound = "crckt02.wav"
+
+renderName = "rpsmakb.render"
+
+xplGround = "xrplaunc"
+xplVehicle = "xrplaunc"
+xplBuilding = "xrplaunc"
+xplExpire = "xrplaunc"
+
+ammoCost = 1 // 50
+lifeSpan = 9 //  500m once launched
+shotSpeed = 55.0
+
+damageValue(N) = 150 // 50 // none
+damageValue(L) = 120 // 45 // light
+damageValue(H) = 60 // 40 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 140 // deflection
+damageValue(A) = 60 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 5 // 1.0
+
+omegaWaver = 1.5 //1.5 	
+rateWaver = 12 // 6 // 3.0		
+
+[ThermalMissileClass]
+coneAngle = 0.40 // 0.4
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "rpsmakb.flare"
+renderName2 = "rpsmakb.tail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 225 205 255"
+finishColor = "255 225 205 255"
+startRadius = 2.0 // 1
+finishRadius = 0.5
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "200 0 0 255"
+finishColor = "150 160 0 30"
+startRadius = 1.0 //0.6
+finishRadius = 0.01 // 0.2 
+segmentTime = 1.0 // .9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.001 // 0.05

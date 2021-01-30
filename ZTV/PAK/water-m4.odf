@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "water-m4.xsi"
+geometryScale = 0.1
+//classLabel = "magnet"
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1
+unitName = "info 4"
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = L
+canCollide = 1
+canDetect = 0 
+canInteract = 0 
+ownsTerrain = 0
+
+[BuildingClass]
+soundAmbient = "chatter8.wav"

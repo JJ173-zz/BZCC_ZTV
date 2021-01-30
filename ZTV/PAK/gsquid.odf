@@ -1,0 +1,45 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gsquid"
+geometryName = "gsquid1.xsi"
+ordName = "squid"
+wpnName = "Squids"
+fireSound = "gpopp00.wav"
+wpnReticle = "gsalvo"
+wpnCategory = "ROCK"
+aiRange = 150
+isAssault = 0
+
+flashName = "gsquid.flash"
+
+[CannonClass]
+shotDelay = 3.0
+shotVariance = 0.04
+shotPitch = 0.05
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "gsquid.bursts"
+
+[Bursts]
+simulateBase = "sim_smoke"
+lifeTime = 0.12
+renderBase = "draw_emit"
+emitName = "gsquid.puff"
+emitDelay = 0.03
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 3.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 205"
+finishColor = "50 50 50 0"
+startRadius = 0.1
+finishRadius = 10.0
+animateTime = 3.0
+

@@ -1,0 +1,34 @@
+[ExplosionClass]
+classLabel = "explosion"
+explSound = ""
+
+damageRadius = 1000.0
+damageValue(N) = 1500
+damageValue(L) = 1500 
+damageValue(H) = 1500 
+damageValue(S) = 1500
+damageValue(D) = 1500
+damageValue(A) = 1500
+
+kickRadius = 0.0
+kickOmega = 0.0
+kickVeloc = 0.0
+
+particleTypes = 1
+particleClass1 = "lift2xpr.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.8
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 90"
+finishColor = "255 255 255 0"
+startRadius = 200
+finishRadius = 1000
+animateTime = 0.8
+latitudeBands = 12
+longitudeSegments = 18

@@ -1,0 +1,634 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 40
+moneyDelay = 5
+
+[IdleDispatcher]
+MaxTargets = 99
+ScavIdleSeconds = 1
+UnitIdleSeconds = 300
+BomberIdleSeconds = 1
+MaxBomberTargets = 20
+MinAttackForce = 10
+MaxAttackForce = 10
+MinMissionSeconds = 600
+
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 320
+buildtype1 = "fvscav"
+buildcount1 = 2
+buildtype2 = "fvtug"
+buildcount2 = 1
+
+[Plan2]
+planType = "CollectPool"
+planPriority = 310
+planCondition = "NotExists"
+planConditionClass = "fbscav"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "CollectPool"
+planPriority = 300
+planCondition = "NotExists"
+planConditionClass = "fbscav"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 290
+planCondition = "Exists"
+planConditionClass = "fvrbombz"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvrbombz"
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "buildminimums"
+planPriority = 280
+buildtype1 = "fvcons"
+buildcount1 = 1
+buildtype2 = "fvscoutztv"
+buildcount2 = 2
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 270
+// planCondition = "HisExists"
+// planConditionClass = "ivscout"
+// planCompare = ">="
+// planConditionCount = 2
+// planConditionClassProvided = true
+// targettype = "ivscout"
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvscoutztv"
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 260
+// planCondition = "HisExists"
+// planConditionClass = "ivscout"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+// targettype = "ivscout"
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvscoutztv"
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "basebuildminimums"
+planPriority = 250
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[Plan9]
+planType = "CollectPool"
+planPriority = 240
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "upgrade"
+planPriority = 230
+planCondition = "NotExists"
+planConditionClass = "fbforg"
+planConditionCount = 1
+Unittype = "fbkiln"
+
+[Plan11]
+planType = "buildminimums"
+planPriority = 220
+buildtype1 = "fvsentd"
+buildcount1 = 2
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 210
+// planCondition = "HisExists"
+// planConditionClass = "ivtank"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+// targettype = "ivtank"
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+attacktype1 = "fvsentd"
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 200
+// planCondition = "HisExists"
+// planConditionClass = "ivtank"
+// planCompare = ">="
+// planConditionCount = 2
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvsentd"
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "basebuildminimums"
+planPriority = 190
+buildtype1 = "fbdowe"
+buildloc1 = "dower"
+buildtype2 = "fbstro"
+buildloc2 = "stronghold"
+
+[Plan15]
+planType = "buildminimums"
+planPriority = 180
+buildtype1 = "fvwalke"
+buildcount1 = 3
+buildtype2 = "fvserv"
+buildcount2 = 4
+ContinueEvenIfFail = true
+
+[Plan16]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 170
+// planCondition = "HisExists"
+// planConditionClass = "ivturr"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+//targettype = "ivturr"
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvwalke"
+ContinueEvenIfFail = true
+
+[Plan17]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 160
+// planCondition = "HisExists"
+// planConditionClass = "ivturr"
+// planCompare = ">="
+// planConditionCount = 2
+// planConditionClassProvided = true
+//targettype = "ivturr"
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvwalke"
+ContinueEvenIfFail = true
+
+[Plan18]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 150
+// planCondition = "HisExists"
+// planConditionClass = "ibpgen"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvwalke"
+ContinueEvenIfFail = true
+
+[Plan19]
+planType = "basebuildminimums"
+planPriority = 140
+buildtype1 = "fbantm"
+buildloc1 = "antenna"
+
+[Plan20]
+planType = "upgrade"
+planPriority = 130
+planCondition = "NotExists"
+planConditionClass = "fbover"
+planConditionCount = 1
+Unittype = "fbantm"
+
+[Plan21]
+planType = "buildminimums"
+planPriority = 120
+buildtype1 = "suicideking"
+buildcount1 = 2
+ContinueEvenIfFail = true
+
+[Plan22]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 110
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "suicideking"
+ContinueEvenIfFail = true
+
+[Plan23]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 100
+planCondition = "HisExists"
+planConditionClass = "ibscup"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+targettype = "ibscup"
+attacktype1 = "suicideking"
+ContinueEvenIfFail = true
+
+[Plan24]
+planType = "buildminimums"
+planPriority = 90
+buildtype1 = "fvrbombz"
+buildcount1 = 2
+buildtype2 = "fvartl"
+buildcount2 = 2
+ContinueEvenIfFail = true
+
+[Plan25]
+planType = "buildminimums"
+planPriority = 80
+buildtype1 = "fvtugz"
+buildcount1 = 1
+buildtype2 = "fvatankw"
+buildcount2 = 1
+buildtype3 = "fvatankfish"
+buildcount3 = 1
+ContinueEvenIfFail = true
+
+[Plan26]
+planType = "buildminimums"
+planPriority = 70
+buildtype1 = "fvapc4"
+buildcount1 = 1
+ContinueEvenIfFail = true
+
+[Plan27]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 60
+planCondition = "Exists"
+planConditionClass = "fvrbombz"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvrbombz"
+ContinueEvenIfFail = true
+
+[Plan28]
+planType = "buildminimums"
+planPriority = 50
+buildtype1 = "fvtankz"
+buildcount1 = 2
+buildtype2 = "fvtanks"
+buildcount2 = 2
+ContinueEvenIfFail = true
+
+[Plan29]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 40
+// planCondition = "HisExists"
+// planConditionClass = "ivcons"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvtankz"
+attacktype2 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan30]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 30
+// planCondition = "HisExists"
+// planConditionClass = "ivcons"
+// planCompare = ">="
+// planConditionCount = 2
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvtankz"
+attacktype2 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan31]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 20
+// planCondition = "HisExists"
+// planConditionClass = "ibarmo"
+// planCompare = ">="
+// planConditionCount = 1
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvartl"
+ContinueEvenIfFail = true
+
+[Plan32]
+planType = "attacker"
+maxAttacks = 0
+planPriority = 10
+// planCondition = "HisExists"
+// planConditionClass = "ibarmo"
+// planCompare = ">="
+// planConditionCount = 2
+// planConditionClassProvided = true
+pickTargetType = 0  // pickTargetType = 1 // 0 = first match (usually oldest?), 1 = closest, 2 = random
+targetType = "ivtug"
+targetType1 = "ivscav"
+targetType2 = "ivcons"
+targetType3 = "ibscav"
+targetType4 = "ibscup"
+targetType5 = "ivscout"
+targetType6 = "ivmisl"
+targetType7 = "ivmbike"
+targettype8 = "ivtank"
+targetType9 = "ivturr"
+targetType10 = "ivserv"
+targetType11 = "ibpgen"
+targetType12 = "ibbomb"
+targetType13 = "ibtcen"
+targetType14 = "ibtrain"
+targetType15 = "ibarmo"
+targetType16 = "ibcbun"
+targetType17 = "ibfact"
+targetType18 = "ibrecy"
+targetType19 = "ivrckt"
+targetType20 = "ivatank"
+targetType21 = "ivwalk"
+targetType22 = "ibgtow"
+attacktype1 = "fvartl"
+ContinueEvenIfFail = true

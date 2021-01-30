@@ -1,0 +1,48 @@
+[GameObjectClass]
+baseName = "ibsens_ic1"
+geometryName = "radar_center.xsi" // "ibsens_ic1.xsi"
+classLabel = "commbunker"
+collisionRadius = 1.0
+scrapCost = 60
+scrapValue = 0
+maxHealth = 9000
+maxAmmo = 0
+powerCost = 2
+unitName = "Radar Array II"
+aiName = "CommTowerProcess" //dont need if not using panel access
+aiName2 = "CommTowerProcess"
+heatSignature = 1.00
+imageSignature = 1.00
+radarSignature = 1.00
+isAssault = 1
+addhealth = 0
+ownsTerrain = 1
+armorClass = L
+upgradeName = "ibsens_ic3"
+
+provideCount = 2
+provideName1 = "ibsens_ic1"
+provideName2 = "ibsens_ic2"
+
+requireCount = 1
+requireName1 = "ibfact_ic1"
+requireText1 = "Build Research Center"
+
+[PoweredBuildingClass]
+detectRange = 900 // 800
+
+powerTap1 = "HP_tap_1"
+powerName = "ivradr_ic1"
+
+[BuildingClass]
+
+[CommBunkerClass]
+rangeScan = 900 // 800
+periodScan = 2.0
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+[GameObjectClass]
+geometryName = "datalink01.xsi"
+geometryScale = 0.4
+classLabel = "moneybag"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 0
+unitName = "Data Link"
+aiName = "PowerUpProcess"
+canDetect = 1
+canInteract = 1
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "omniblue"
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "dataclue.cycleon" 
+
+effectHard2 = "hp_emit_2" 
+effectName2 = "dataclue.cycleon"
+
+
+[PowerUpClass]
+//soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[MoneyPowerupClass]
+moneyUp = 10
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "dataclue.ontime"
+emitDelay = 0.1 // .02 // 0.1 
+emitVelocity = "0.0 0.0 25.0"
+emitVariance = "0.0 0.0 0.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.03  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "dataclue.effect"
+renderName2 = "dataclue.light"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 0.03 // .5 // 1.25
+renderBase = "draw_bolt"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 120 255"
+finishColor = "50 255 95 0"
+startRadius = 0.05
+finishRadius = 0.2
+segmentLength = 0.04 // .5 
+segmentVariance = "0.0 0.2 0.0"
+animateTime = 0.03
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.4
+renderBase = "draw_light"
+startColor = "0 255 0 75"
+finishColor = "0 255 0 0"
+startRadius = 24 // 0.4
+finishRadius = 24 // 0.1
+animateTime = 0.4
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

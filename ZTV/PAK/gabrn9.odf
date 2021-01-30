@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon" 
+ordName = "aburn9"
+wpnName = "Afterburner"
+fireSound = "hover03.wav"
+wpnReticle = "gminigun"
+wpnCategory = "SPEC"
+isAssault = 1
+
+
+[CannonClass]
+shotDelay =  1.9  //2.5
+salvoCount = 190
+salvoDelay = 0.02
+shotPitch = 3.0 // 3.0

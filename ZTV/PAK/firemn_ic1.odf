@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = NULL 
+classLabel = "flare"
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 100
+unitName = "Fireball"
+heatSignature = 100.0
+canDetect = 0
+canInteract = 0
+
+[MineClass]
+lifeSpan = 20.0
+
+[FlareMineClass]
+payloadName = "firez_ic1"
+fireSound = "crckt02.wav"
+triggerDelay = 0.01
+shotDelay = 0.1
+shotVariance = 4.0
+
+damageRadius = 15.0  // 25
+
+damageValue(N) = 60 // 90  
+damageValue(L) = 50 // 100 
+damageValue(H) = 5 
+damageValue(S) = 100 
+damageValue(D) = 100 
+damageValue(A) = 50 
+

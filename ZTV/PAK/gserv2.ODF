@@ -1,0 +1,18 @@
+[WeaponClass]
+//geometryname = "consvisgun2.xsi"
+//geometryScale = 0.60
+classLabel = "dispenser"
+wpnName = "Service Relay"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "CANN"
+aiRange = 0
+isAssault = 1
+
+
+localAmmo = 1200 // 1200=service2 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 15.0
+objectClass = "ivserv2_ic1" 
+

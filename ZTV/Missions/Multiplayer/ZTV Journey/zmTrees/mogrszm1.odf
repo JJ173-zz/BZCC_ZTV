@@ -1,0 +1,25 @@
+[GameObjectClass]
+geometryName = "mograss01.xsi"
+classLabel = "plant"
+collisionRadius = 1.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Tree"
+heatSignature = 0
+imageSignature = 0
+radarSignature = 0
+explosionName = "xplnxpl"
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+[BuildingClass]
+
+[PlantClass]
+standUp = 0
+
+typeOfDeath = 0   // 0:none
+darkRadius = 0    // 28m radius
+darkScale = .9 

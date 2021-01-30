@@ -1,0 +1,93 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+shotGeometry = NULL 
+shotSound = "smort02.wav"
+
+renderName = "isotope.render"
+
+xplGround = "xptope_gnd"
+xplVehicle = "xptope_car"
+xplBuilding = "xptope_car"
+
+ammoCost = 5 
+lifeSpan = 2.5 
+shotSpeed = 60.0
+
+damageValue(N) = 65 
+damageValue(L) = 50 
+damageValue(H) = 15
+ 
+damageValue(S) = 15 
+damageValue(D) = 30 
+damageValue(A) = 20 
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 2 
+omegaWaver = 1 // 0.5 
+rateWaver = 20
+
+[ThermalMissileClass]
+coneAngle = 3
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "isotope.main"
+renderName2 = "isotope.halo"
+renderName3 = "isotope.sparks"
+
+[Main]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "130 60 255 225"
+finishColor = "130 60 255 225"
+startRadius = 0.4
+finishRadius = 0.4
+animateTime = 4
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "20 50 200 130"
+finishColor = "255 0 180 80"
+startRadius = 2.0
+finishRadius = 0.8
+animateTime = 3.75
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "isotope.sparker"
+emitDelay = 0.04
+emitVelocity = "0.0 0.0 30.0"
+emitVariance = "10.0 10.0 10.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "isotope.sparkflare"
+renderName2 = "isotope.sparkhalo"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "100 170 200 350"
+finishColor = "70 0 200 0"
+startRadius = 0.6
+finishRadius = 0.12
+animateTime = 1.0
+
+[SparkHalo]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 190 130"
+finishColor = "100 0 190 0"
+startRadius = 1.8
+finishRadius = 0.4
+animateTime = 1.0

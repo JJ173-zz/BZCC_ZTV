@@ -1,0 +1,77 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 3
+
+particleClass1 = "squedxpl.char"
+particleCount1 = 0
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "squedxpl.smoke"
+particleCount2 = 4 
+particleVeloc2 = "3.0 5.0 3.0"
+
+particleClass3 = "squedxpl.smokeemit"
+particleCount3 = 8
+particleVeloc3 = "3.0 5.0 3.0"
+
+explSound = NULL // "gmagg05.wav"
+
+damageRadius = 10.0
+kickRadius = 10.0
+kickOmega = 0.3 
+kickVeloc = 0.0
+
+damageValue(N) = 150 // 200
+damageValue(L) = 120 // 160
+damageValue(H) = 100
+
+damageValue(S) = 150
+damageValue(D) = 150
+damageValue(A) = 150
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0 
+renderBase = "draw_planar"
+textureName = "blackchar.tga"
+ textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 20 155"
+finishColor = "0 0 20 50"
+startRadius = 8.0   
+finishRadius = 8.0 
+animateTime = 3.0
+
+[Smoke]
+simulateBase = "sim_dust"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 20 125"
+finishColor = "0 0 20 0"
+startRadius = 3.0
+finishRadius = 15.0
+animateTime = 3.0
+
+[SmokeEmit]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_emit"
+emitName = "squedxpl.smokepuff"
+emitDelay = 0.2
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "5.0 5.0 5.0"
+
+[SmokePuff]
+simulateBase = "sim_ember"
+lifeTime = 1.2
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 20 125"
+finishColor = "0 0 20 0"
+startRadius = 2
+finishRadius = 10
+animateTime = 1.2
+rotationRate = 2.0

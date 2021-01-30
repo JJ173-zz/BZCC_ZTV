@@ -1,0 +1,66 @@
+[OrdnanceClass]
+classLabel = "magnetshell"
+shotGeometry = NULL
+shotRadius = -8
+shotSound = NULL
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+
+renderName = "mshldic1.render" 
+
+ammoCost = 0
+lifeSpan = 0.8
+shotSpeed = 0.0001
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 8 // 20.0
+
+objPushCenter = 600 // -10.0
+objPushEdge = 60 // 20.0
+objDrag = 2 
+
+ordPushCenter = 1600.0
+ordPushEdge = 1200.0
+ordDrag = 15
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "mshldic1.sphere"
+renderName2 = "mshldic1.flash"
+
+[Sphere]
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 0 0"
+finishColor = "255 255 255 30"
+startRadius = 7 
+finishRadius = 8 
+animateTime = 0.4 // .25
+latitudeBands = 24
+longitudeSegments = 36
+
+[Flash]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga" // "plasma.tga" // "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 80 110 255 80"
+finishColor = "80 110 255 0"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 0.4
+spriteCenter.x = 0.0
+spriteCenter.y = 0.15  // .2
+
+

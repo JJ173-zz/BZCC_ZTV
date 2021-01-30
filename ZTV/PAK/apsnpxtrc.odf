@@ -1,0 +1,73 @@
+[GameObjectClass]
+geometryName = "snipeext.xsi"
+geometryScale = 0.4
+classLabel = "wpnpower"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1000
+maxAmmo = 0
+aiName = "PowerUpProcess"
+canDetect = 0
+
+// lightHard1 = "hp_emit_2"
+// lightName1 = "omnigreen"
+
+//effectHard1 = "hp_emit_4"
+//effectName1 = "apsnpxtrc.fxer"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gabrnicb"
+
+[FXer]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "apsnpxtrc.glow"
+renderName2 = "apsnpxtrc.wave"
+
+[Glow]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.04
+emitDelayVar = 0.00
+emitVelocity = "0.0 0.0 2.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "0.0 0.0 0.0"
+emitLife = 0.2
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 128"
+finishColor = "100 255 100 0"
+startRadius = 0.3
+finishRadius = 0.01
+animateTime = 0.2
+rotationRate = 2.0
+
+[Wave]
+renderBase = "draw_emit"
+emitName = "apsnpxtrc.waver"
+emitDelay = 0.2 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Waver]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "apsnpxtrc.wave1"
+
+[Wave1]
+renderBase = "draw_wave"
+textureName = NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 255" 
+finishColor = "0 225 0 255" 
+startRadius = 6.0 
+finishRadius = 0.1 
+animateTime = 0.1 
+waveAngle = 0.03 //.2 
+waveDepth = 0.5 
+waveSegments = 6 //8 across width, gradations

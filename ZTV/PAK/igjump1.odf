@@ -1,0 +1,25 @@
+[WeaponClass]
+classLabel = "jetpack"
+geometryName = NULL 
+geometryScale = 0.12
+ordName = NULL
+
+wpnName = "Jumper"
+
+wpnIcon = NULL
+fireSound = NULL 
+flashName = NULL
+wpnReticle = "gphantom.0"
+wpnPriority = 0
+wpnCategory = "SPECIAL"
+isAssault = 0
+
+
+[JetPackClass]
+ammoCost = 1
+burnTime = 0.065
+accelThrust = 13 // 15  
+activeSound = NULL 
+expireSound = NULL 
+
+//shotPitch = -2.0 // -1.58 = straight down

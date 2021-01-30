@@ -1,0 +1,64 @@
+[OrdnanceClass]
+classLabel = "pulse"
+shotGeometry = "iorckt00.xsi" // NULL
+shotRadius = 0.5
+xplGround = "xchrggnd1"
+xplVehicle = "xchrgcar1"
+xplBuilding = "xchrgcar1"
+
+renderName = "chgpuls4.render"
+
+ammoCost = 1.5
+lifeSpan = 2.25 
+shotSpeed = 200.0
+
+damageValue(N) = 1000 // none 
+damageValue(L) = 700 // light 
+damageValue(H) = 400 // heavy 
+
+damageValue(S) = 1000 // standard 
+damageValue(D) = 1200 // deflection 
+damageValue(A) = 600 // absorbtion 
+
+[PulseShellClass]
+pulseDelay = 0.2 //  0.3
+pulsePeriod = 0.05 //  0.3
+xplPulse = "xplcgemit"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "chgpuls4.flare"
+renderName2 = "chgpuls4.halo"
+renderName3 = "chgpuls4.trail"
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 20 255"
+finishColor = "200 200 20 255"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "150 160 50 127"
+finishColor = "150 160 50 127"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "200 200 0 255"
+finishColor = "200 200 0 0"
+startRadius = 0.1    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.9  // time each segment animates
+segmentVariance = "0.001 0.001 0.001 "
+animateTime = 0.2 
+textureRate = 0.01

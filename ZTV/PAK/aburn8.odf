@@ -1,0 +1,35 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotRadius = -1
+shotGeometry = NULL
+xplGround = "xpaburn8"
+xplVehicle = "xpaburn8"
+xplBuilding = "xpaburn8"
+xplExpire = "xpaburn8"
+
+//rendername = "aburn8.render"
+
+ammoCost = 0.5 // 1.25
+lifeSpan = 0.02 // 0.001
+shotSpeed = 100 // 0.01
+
+damageValue(N) = 0 
+damageValue(L) = 0 
+damageValue(H) = 0 
+
+damageValue(S) = 0 
+damageValue(D) = 0 
+damageValue(A) = 0 
+
+[Render]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "150 190 0 255"
+finishColor = "100 0 0 0"
+startRadius = 0.5 // 0.05
+finishRadius = 1.0 //0.1 
+segmentTime = 0.2 // 1.8  // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+animateTime = 0.01
+textureRate = 0.05

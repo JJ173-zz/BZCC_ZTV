@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon" 
+ordName = "pshawy"
+wpnName = "Push Away"
+fireSound = "" // "hover03i.wav"
+wpnReticle = "gminigun"
+wpnCategory = "ROCKET"
+altName = "gpshawy_a"
+isAssault = 0
+aiRange = 600
+
+[CannonClass]
+shotDelay =  10  
+salvoCount = 3
+salvoDelay = 2.5
+shotPitch = 3 // 1.5 
+shotVariance = 0.15

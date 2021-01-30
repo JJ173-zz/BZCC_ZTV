@@ -1,0 +1,21 @@
+[GameObjectClass]
+geometryName = "ibpgen01.xsi"
+//classLabel = "i76building"
+classLabel = "powerplant"
+scrapCost = 10
+scrapValue = 10
+maxHealth = 4000
+maxAmmo = 0
+unitName = "Power Generator"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+
+armorClass = H
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 50

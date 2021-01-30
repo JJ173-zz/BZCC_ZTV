@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "minitrn.xsi" // "ibtrain00.xsi"
+classLabel = "barracks"
+scrapCost = 70
+scrapValue = 0
+maxHealth = 3000
+maxAmmo = 0
+unitName = " "
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.01
+canCollide = 0
+isAssault = 1
+powerCost = 0
+canDetect = 0
+canInteract = 0
+armorClass = H
+
+requireCount = 0 
+provideCount = 0 
+
+[BuildingClass]
+soundAmbient = "amb_wind.wav" //"abbarre0.wav"
+
+[PoweredBuildingClass]
+detectRange = 100
+
+[BarracksClass]
+pilotHold = 100
+
+//[Lod1]
+//geometryName = "ibtrainL1.xsi" ;geometry for lod1
+//distance = 64                    ;bsphere under 200 pixel => switch to lod1

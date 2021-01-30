@@ -1,0 +1,171 @@
+// snipable, pilotable urchin for players
+
+[GameObjectClass]
+geometryName = "fvapc05.xsi"
+geometryScale = 1.1 // 4.0
+glowTexture = "submglow.tga"
+classLabel = "apc"
+//classLabel = "wingman"
+//classLabel = "turrettank"
+collisionRadius = 3.0
+scrapValue = 20
+scrapCost = 40
+customCost = 40
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 4000
+addHealth = 1
+maxAmmo = 1000
+addAmmo = 5
+unitName = "Urchin"
+
+//aiName = "APCProcess"		 // TURRET TANK CAN CAUSE OCCASIONAL AVS
+
+aiName = "RocketTankFriend"  // TURRET TANK CAN CAUSE OCCASIONAL AVS
+aiName2 = "RocketTankEnemy"  // BUT THIS UNIT NEEDS IT TO WORK RIGHT
+//aiName = "TurretTankFriend"
+//aiName2 = "TurretTankEnemy"
+
+heatSignature = 10.0
+imageSignature = 0.5
+radarSignature = 0.01
+
+isAssault = 0
+needPilot = 1 // doesnt seem to matter with apc class
+addpilot = 1
+canSnipe = 1
+armorClass = N
+
+canCollide = 1
+boxCollide = 0
+
+requireCount = 0
+
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 =  "giongn_c"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 =  "giongn_c"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_ROCKET_1"
+weaponName3 = "gseawsp"  
+weaponAssault3 = 1
+
+weaponHard4 = "HP_ROCKET_2"
+weaponName4 = "gsting_c"  
+weaponAssault4 = 0
+
+weaponHard5 = "HP_SHIELD"
+weaponName5 = "gdeflect"
+weaponAssault5 = 0
+
+effectHard1 = "hp_special_1"
+effectName1 = "fvurch2.tail"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue2"
+
+[CraftClass]
+OffensiveProcessIsDistractable = true
+OffensiveProcessIsDistractableAITeam = true
+OffensiveProcessIsTenacious = false
+OffensiveProcessMadTime = 5.0
+
+IgnoreDestroyedTargets = true
+GotoTaskHasLeader = false
+AttackTaskUsesGroups = false
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANN" // "ADS"
+
+rangeScan = 400.0
+periodScan = 3.0
+velocJam = 0.0
+engageRange = 300
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 5;
+topSpeed = 13;
+
+goMsg = "fvatank06.wav"
+attackMsg = "fvatank05.wav"
+followMeMsg = "fvatank08.wav"
+followMsg = "fvatank03.wav"
+rescueMsg = "fvatank10.wav"
+recycleMsg = "fvatank11.wav" 
+holdMsg = "fvatank09.wav"
+
+[HoverCraftClass]
+setAltitude = -6.0 // rises to this on firing/deploying
+accelDragStop = 7 // 4.0
+accelDragFull = 1.0
+alphaTrack = 21.0 // nose up and down terrain tracking
+alphaDamp =  8 // 3.0  // stickiness to terrain height
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.01 // 0.1
+rollSteer = 0.01 // 0.1
+
+velocForward = 13.0
+velocReverse = 7.0
+velocStrafe = 5.0
+accelThrust = 30.0
+accelBrake = 20.0
+omegaSpin = 1.5
+omegaTurn = 1.0
+alphaSteer = 1.0
+accelJump = 15 // 150.0 speed to aquire alttitude low or high
+
+soundThrust = "water01.wav"
+soundSteer = "avapce5.wav"
+
+UseWaterHeight = true
+DeployedUseWaterHeight = true
+
+//LIFT_SPRING = 15.0
+//LIFT_DAMP = 8.25
+
+[APCClass]
+soldierType = "iszpilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 2.0 // 2.5
+SoldierAltitude = -6.0 // Altitude at which it starts spitting soldiers out.
+InternalSoldiersAreAmmo = true // if true, ammo meter shows the % of soldiers in the APC. (updated occasionally)
+flightAltitude = -6.0 // 75.0
+AltitudeLookahead = 1.0 // # of seconds it will look ahead for adjusting altitude
+OverWater = true // true = set altitude is over water height, if present
+HovercraftPhysicsWhenUndeployed = false
+
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" 
+
+[DeployableClass]
+canAttackWhenDeployed = true // if false, weapons inoperative when deployed
+canAttackWhenUndeployed = true  // if false, weapons inoperative when undeployed
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "50 50 100 150"
+finishColor = "50 50 80 0"
+startRadius = 0.6
+finishRadius = 0.2 
+segmentTime = 0.9 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

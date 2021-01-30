@@ -1,0 +1,19 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "running2.wav"
+
+particleTypes = 0
+
+damageRadius = 1E5 // 0.0
+damageValue(N) = -10000
+damageValue(L) = -10000 
+damageValue(H) = -10000 
+
+damageValue(S) = -10000
+damageValue(D) = -10000
+damageValue(A) = -10000
+
+kickRadius = 60
+kickOmega = 10.0
+kickVeloc = -50.0

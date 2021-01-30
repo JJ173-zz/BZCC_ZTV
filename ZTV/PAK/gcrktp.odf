@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+wpnName = "Trident"
+fireSound = "gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+aiRange = 450
+isAssault = 0
+//alternateFire = 1
+
+[LauncherClass]
+lockRange = 450.0
+shotDelay = 3.0
+lockDelay = 0.01
+coneAngle = 0.1 // 0.075
+lockingReticle = "gcomet.A"
+lockingSound = "" //"lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "" // "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[TorpedoLauncherClass]
+objectClass = "crktp"

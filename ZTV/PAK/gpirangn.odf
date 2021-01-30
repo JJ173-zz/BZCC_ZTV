@@ -1,0 +1,29 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+altName = "gpirangn"
+ordName = "pirang"
+wpnName = "Pirahna"
+fireSound = "piranha.wav" //"gmini01.wav"
+wpnReticle = "gminigun"
+wpnCategory = "GUN"
+isAssault = 0
+flashName = "gpirangn.flash"
+aiRange = 105
+
+[CannonClass]
+shotDelay = 0.072
+shotVariance = 0.2
+salvoCount = 5
+salvoDelay = 0.072
+shotPitch = -.05
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 255"
+startRadius = 2.0
+finishRadius = 0.75
+animateTime = 0.1
+geomName = "g_sflash.xsi"

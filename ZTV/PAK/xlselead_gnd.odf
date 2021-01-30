@@ -1,0 +1,85 @@
+// ====================
+// Laser Guided Rockets Paint Hit Ground
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = NULL // "xms2.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+particleTypes = 4
+
+particleClass1 = "xlselead_gnd.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xlselead_gnd.flare"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xlselead_gnd.lightsim"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xlselead_gnd.lightsim2"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "0 0 255 2550"
+finishColor = "0 0 255 0"
+startRadius = 8
+finishRadius = 1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "0 0 255 190"
+startRadius = 12.0 // 1
+finishRadius = 0.5
+animateTime = 0.1
+
+[Lightsim]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "100 160 255 255"
+finishColor = "70 120 255 190"
+startRadius = 3.0 // 1
+finishRadius = 0.2
+animateTime = 0.1
+
+[Lightsim2]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "220 240 255 255"
+finishColor = "220 240 255 190"
+startRadius = 1.0 // 1
+finishRadius = 0.1
+animateTime = 0.1

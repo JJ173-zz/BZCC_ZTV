@@ -1,0 +1,99 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 5
+
+particleClass1 = "flaxzxpl.smoke"
+particleCount1 = 8
+particleVeloc1 = "80.0 80.0 80.0"
+particleClass2 = "flaxzxpl.shock"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+particleClass3 = "flaxzxpl.core"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+particleClass4 = "flaxzxpl.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+particleClass5 = "flaxzxpl.flash"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+explSound = "gmagg05.wav"
+damageRadius = 90.0
+kickRadius = 90.0
+kickOmega = 1.0 
+kickVeloc = 0.0
+
+damageValue(N) = 200 // 250
+damageValue(L) = 125 // 200
+damageValue(H) = 100
+
+damageValue(S) = 150
+damageValue(D) = 150
+damageValue(A) = 150
+
+[Smoke]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 250"
+finishColor = "50 50 50 0"
+startRadius = 18.0
+finishRadius = 80.0
+animateTime = 3.0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 5 125" 
+finishColor = "255 55 5 5" 
+startRadius = 3.0
+finishRadius = 40.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 24
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 150 255"
+finishColor = "255 90 5 0"
+startRadius = 15.0
+finishRadius = 60.0
+animateTime = 0.5
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.05
+renderBase = "draw_light"
+startColor = "255 155 0 0"
+finishColor = "255 155 0 2550"
+startRadius = 100.0
+finishRadius = 100.0
+animateTime = 0.05
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 150 50 255" 
+finishColor = "255 150 50 0"
+startRadius = 35
+finishRadius = 10 
+animateTime = 0.2
+
+

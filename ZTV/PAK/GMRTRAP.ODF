@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "mrtrap"
+wpnName = "Sink Mortar"
+wpnReticle = "gsonic_c"
+wpnCategory = "MORTAR"
+aiRange = 150  // 49
+isAssault = 0
+
+[CannonClass]
+shotDelay = 0.25 
+salvoCount = 500 
+salvoDelay = 0.25 
+shotVariance = 0

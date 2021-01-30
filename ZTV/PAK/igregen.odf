@@ -1,0 +1,22 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = NULL 
+geometryScale = 0.12
+wpnName = "Ammo Booster"
+ordName = NULL
+aiRange = 0.1
+engageRange = 0.1
+wpnIcon = NULL 
+fireSound = "mnu_empt.wav" 
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 1 //3
+wpnCategory = "SPEC" 
+altName = "igrprpod"
+isAssault = 1 
+
+//localAmmo = 6  wont work for negative values and ammo pack
+
+[DispenserClass]
+shotDelay = 0.2 //2.0
+objectClass = "amregen"

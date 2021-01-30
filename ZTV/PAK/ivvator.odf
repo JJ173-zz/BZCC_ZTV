@@ -1,0 +1,119 @@
+[GameObjectClass]
+geometryName = "ivvator.xsi"
+geometryScale = 0.8
+cockpitName = "ivcons_cockpit.xsi"
+classLabel = "wingman"
+scrapValue = 0
+scrapCost = 0
+buildTime = 0
+maxHealth = 2000
+maxAmmo = 100
+unitName = "Personel Lift"
+weightInTons = 1000
+Mass = 1000
+heatSignature = 0.0001
+imageSignature = 0.5
+radarSignature = 10.0
+addAmmo = 3
+addHealth = 1
+engageRange = 0
+playerOnly = true
+
+//explosionName = "xsafexpl"
+
+armorClass = H
+canSnipe = 1
+collisionRadius = 0.3 
+canDetect = 0
+
+//TeamTransferrable = false 
+//needPilot = 1 
+
+effectHard1 = "hp_emit_1"
+effectName1 = ""
+effectHard2 = "hp_emit_2"
+effectName2 = "ivvator.yelflasher"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivvator.yelflasher"
+
+weaponMask = 00001
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 =  "igdthrus"
+weaponAssault1 = 1
+
+[CraftClass]
+
+CraftTeamIsPilotTeam = false
+
+rangeScan = 450.0f
+periodScan = 2.00f
+velocJam = 30.0f 
+
+weaponPitch = 1.5
+
+[HoverCraftClass]
+setAltitude = -0.01
+accelDragStop = 1.0 // 4.0
+accelDragFull = 1.0
+alphaTrack = 20.0
+alphaDamp = 5.0
+pitchPitch = 0.0 
+pitchThrust = 0.0 
+rollStrafe = 0.0 
+rollSteer = 0.0 
+
+velocForward = 0.0
+velocReverse = 0.0
+velocStrafe = 0.0
+accelThrust = 8.0 // 20.0
+accelBrake = 75.0
+omegaSpin = 3.5
+omegaTurn = 1.5
+alphaSteer = 5.0
+accelJump = 13.0 // 20.0
+
+soundThrust = "srecy01.wav" 
+soundTurbo = NULL //"scrapdn.wav"
+
+[YelFlasher]
+renderBase = "draw_emit"
+emitName = "ivvator.yflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[YFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivvator.yellight"
+renderName2 = "ivvator.yelflare"
+
+[YelLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 155 0 755"
+finishColor = "255 155 0 0"
+startRadius = 40 // 0.4
+finishRadius = 40 // 0.1
+animateTime = 0.10
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[YelFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 125 0 255"
+finishColor = "255 125 0 255"
+startRadius = 3.0 
+finishRadius = 0.0001
+animateTime = 0.1
+
+
+

@@ -1,0 +1,45 @@
+[GameObjectClass]
+geometryName = "ibdmmyfac2.xsi" 
+geometryScale = 1.0
+classLabel = "i76building"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+
+unitName = "Processor"
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+powerCost = 0 
+ownsTerrain = 1
+canDetect = 0
+canInteract = 1
+canCollide = 0 // cant enter tunnel otherwise
+armorClass = H
+
+buildSupport = F
+buildRequire = F
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "dmyrecy_ic2.smoke"
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.06 
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.3 4.0" 
+emitVariance = "3.0 3.0 5.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 10.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 90"
+finishColor = "20 20 20 0"
+startRadius = 4
+finishRadius = 10.0
+animateTime = 10.0
+rotationRate = 3.0
+

@@ -1,0 +1,100 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "dvgndhit.wav" // "gmagg04.wav" 
+
+damageRadius = 7.0
+
+damageValue(N) = 80
+damageValue(L) = 80
+damageValue(H) = 80
+damageValue(S) = 80
+damageValue(D) = 80
+damageValue(A) = 80
+
+particleTypes = 5
+particleClass1 = "xddbulgnd.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xddbulgnd.puff"
+particleVeloc2 = "0.0 0.0 0.0"
+particleBias2 = "0.0 0.0 0.0"
+particleCount2 = 1
+
+particleClass3 = "xddbulgnd.flare"
+particleVeloc3 = "0.0 0.0 0.0"
+particleBias3 = "0.0 0.0 0.0"
+particleCount3 = 1
+
+particleClass4 = "xddbulgnd.chardark"
+particleVeloc4 = "0.0 0.0 0.0"
+particleBias4 = "0.0 0.0 0.0"
+particleCount4 = 1
+
+particleClass5 = "xddbulgnd.smoke"
+particleVeloc5 = "0.0 0.0 0.0"
+particleBias5 = "0.0 0.0 0.0"
+particleCount5 = 2
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_sprite"
+spriteCenter.x = 0.0
+spriteCenter.y = 1.0
+textureName = "ground.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "153 153 153 255"
+finishColor = "153 153 153 0"
+startRadius = 0.4
+finishRadius = 3.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 255"
+finishColor = "255 0 5 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 1.0
+
+[Flare]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 85 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.8
+finishRadius = 5
+animateTime = 0.3
+
+[chardark]
+simulateBase = "sim_null"
+lifeTime = 4.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 20 20 20 180"
+finishColor = "20 20 20 0"
+startRadius = 7.0   // 2.0
+finishRadius = 1.0  // .05
+animateTime = 4.0
+
+[Smoke]
+simulateBase = "sim_dust"
+lifeTime = 1.5
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "30 30 30 70"
+finishColor = "50 50 50 0"
+startRadius = 2.0
+finishRadius = 10.0
+animateTime = 1.5

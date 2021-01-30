@@ -1,0 +1,116 @@
+[GameObjectClass]
+BaseName = "tvcrick4"
+classLabel = "aircraft"
+geometryName = "trackgn5.xsi"
+geometryScale = 1.0 
+scrapCost = 35
+scrapValue = 0
+maxHealth = 2500
+addHealth = 0
+maxAmmo = 5000
+addAmmo = 2
+unitName = "Track Turret"
+
+heatSignature = 10.0
+imageSignature = 3.0
+radarSignature = 1.0
+isAssault = 0
+armorClass = H
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+canSnipe = 1
+needPilot = 1
+collisionRadius = 2.0
+boxCollide = 1
+weightinTons = 500000
+weaponMask = 01111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gairchn1"  
+weaponAssault1 = 0
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gairchn1" 
+weaponAssault2 = 0
+weaponHard3 = "HP_rocket_1"
+
+weaponName3 =  "girairl2"
+weaponHard3 = "HP_rocket_1"
+visualHard3 =  "hp_visual_1"  
+weaponAssault3 = 0
+
+weaponHard4 = "HP_rocket_2"
+weaponName4 =  "girairl2" 
+weaponAssault4 = 0
+
+weaponHard5 = "HP_SPECIAL_1"
+weaponName5 = "gsitecmz"
+weaponAssault5 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 2.0f
+velocJam = 5.0f
+engageRange = 250
+weaponPitch = 0.55
+
+selectWaitMsg = "fvartl04.wav"
+selectAttackMsg = "fvartl01.wav"
+selectFollowMsg = "fvartl03.wav"
+selectGoMsg = "fvartl02.wav"
+selectOtherMsg = "fvartl04.wav"
+holdMsg = "fvartl12.wav"
+goMsg = "fvartl05.wav"
+attackMsg = "fvartl06.wav"
+followMeMsg = "fvartl08.wav"
+followMsg = "fvartl03.wav"
+rescueMsg = "fvartl10.wav"
+otherMsg = "fvartl05.wav" 
+killedMsg = "bombgen02.wav"
+
+[AirCraftClass]
+velocSet(L) = -14.0 // minimum velocity
+velocSet(M) = 0.0 // cruising velocity
+velocSet(H) = 14.0 // maximum velocity
+accelThrust = 4.0 //2.5 // thrust acceleration
+accelBrake = 20 // 4.0 // brake acceleration
+accelDrag = 100.0 //150//20.0 // drag acceleration
+// mouse as rudder
+omegaSteer(L) = 0.2 // steer turn rate at minimum
+omegaSteer(M) = 2.0 // steer turn rate at cruising
+omegaSteer(H) = 0.2 // steer turn rate at maximum
+// strafe affecting rudder
+omegaStrafe(L) = 0.01//0.6 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.1//0.9 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.01//1.1 // airbrake turn rate at maximum
+
+//this affects steering but not sliding
+alphaSteer = 1.5 // 0.7 // steering angular acceleration
+
+// tried .01 - 5 to stop sliding sideways not much effect
+alphaStrafe = 0.1 //0.5 // airbrake angular acceleration
+
+minAltitude = 0.08 // minimum altitude - no effect?
+maxAltitude = 0.1 // maximum altitude
+
+alphaLevel = 5 // 10.0 // leveling angular acceleration
+// this affects sliding sideways, 20 makes it jitter some tho 
+alphaDamp = 15 // 5.0 // damping angular acceleration (rocking from xpls)
+
+pitchPitch = 0.001 // maximum pitch angle
+rollSteer = 0.001 // maximum roll angle from steering
+rollStrafe = 0.01 // maximum roll angle from airbraking
+
+timeDeploy = 3.0 // time to deploy
+timeUndeploy = 3.0 // time to undeploy
+
+soundThrust = "itank01e.wav"
+soundSteer = "itank01h.wav"
+soundUndeploy = "itug03.wav"
+soundDeploy = "avapce0.wav"
+soundBrake = "itank01h.wav"

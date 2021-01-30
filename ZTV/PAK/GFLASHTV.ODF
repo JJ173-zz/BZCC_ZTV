@@ -1,0 +1,35 @@
+[WeaponClass]
+classLabel = "cannon"
+//altName = "gflash_a"
+ordName = "flashdr"
+wpnName = "Destructo"
+fireSound = "flash01.wav"
+wpnReticle = "gflashgn"
+wpnCategory = "CANNON"
+isAssault = 1
+aiRange = 200
+//flashName = "gflashdr.flash"
+
+[CannonClass]
+shotDelay = 0.1
+
+salvoCount = 10 // 5 mins
+salvoDelay = 0.1 
+shotVariance = 0.001
+
+
+///shotPitch = -1.58 // straight down
+
+
+[Flash]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "255 255 0 300"
+finishColor = "255 0 0 300"
+startRadius = 10.0
+finishRadius = 10.0
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

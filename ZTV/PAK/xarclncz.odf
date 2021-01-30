@@ -1,0 +1,39 @@
+// =====================
+// Auto Arc launch flash
+// =====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 1
+particleClass1 = "xarclncz.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = "lhit.wav"
+
+damageRadius = 0.0
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+kickRadius = 0
+kickOmega = 0.0
+kickVeloc = 0.0
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_twirl"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 0 0 0"
+startRadius = 0.1
+finishRadius = 2.0
+animateTime = 0.2

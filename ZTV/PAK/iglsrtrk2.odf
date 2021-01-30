@@ -1,0 +1,31 @@
+[WeaponClass]
+classLabel = "cannon" //"machinegun"
+
+ordName = "autolase2"
+wpnName = "Auto P-Laser"
+fireSound = NULL
+wpnReticle = "grifle"
+wpnCategory = "HAND"
+wpnPriority = 3
+isAssault = 1
+isFlying = 0
+flashName = "iglsrtrk2.flash"
+airange = 130
+
+[CannonClass]
+shotDelay = 1.5 // 2.5
+shotVariance = 0.03
+
+salvoCount = 6
+salvoDelay = 0.15 //0.002
+
+[Flash]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "55 0 255 255"
+finishColor = "55 0 255 255"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.3
+geomName = "g_sflash.xsi"

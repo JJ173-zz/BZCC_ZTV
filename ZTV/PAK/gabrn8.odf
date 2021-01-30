@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "cannon" 
+ordName = "aburn8"
+wpnName = "Afterburner"
+fireSound = "hover03.wav"
+wpnReticle = "gmortar"
+//wpnReticle = "gflare"
+//wpnLadder = "gmortar.L0"
+wpnCategory = "SPEC"
+isAssault = 1
+
+
+[CannonClass]
+shotDelay =  1.9  
+salvoCount = 190
+salvoDelay = 0.02
+shotPitch = 3.0 

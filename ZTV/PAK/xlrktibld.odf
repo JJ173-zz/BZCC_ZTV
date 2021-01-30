@@ -1,0 +1,113 @@
+// ====================
+// TAG MISSILE BUILDING HIT
+// ====================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xms2.wav"
+
+damageRadius = 3 // 5.0
+
+damageValue(N) = 2 // 10 // none
+damageValue(L) = 15 // 7 // light
+damageValue(H) = 2 // heavy
+
+damageValue(S) = 7 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 2 // absorbtion
+
+particleTypes = 5
+
+particleClass1 = "xlrktibld.flame"
+particleCount1 = 2
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xlrktibld.light"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xlrktibld.spark"
+particleCount3 = 6
+particleVeloc3 = "5.0 5.0 5.0"
+particleBias3 = "0.0 1.0 0.0"
+
+particleClass4 = "xlrktibld.core"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xlrktibld.burst"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+[flame]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "xlrktibld.flameemit"
+emitDelay = 0.1
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[flameemit]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = " 255 200 100 255"
+finishColor = "255 120 0 0"
+startRadius = 0.0
+finishRadius = 1.5
+animateTime = 0.3
+rotationRate = 1.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 1.4
+finishRadius = 0.5
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Spark]
+simulateBase = "sim_ember"
+lifeTime = 1.2
+renderBase = "draw_twirl"
+textureName = "spark.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 0 0 0"
+startRadius = 0.25
+finishRadius = 0.1
+animateTime = 1.2
+rotationRate = 0.1
+
+[Core]
+simulateBase = "sim_smoke"
+lifeTime = 2.0
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "155 155 150 100"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 2.0
+animateTime = 2.0
+
+[Burst]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "105 55 255 255"
+finishColor = "105 55 255 150"
+startRadius = 20.0
+finishRadius = 0.5
+animateTime = 0.2

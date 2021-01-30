@@ -1,0 +1,89 @@
+[OrdnanceClass]
+classLabel = "imagemissile"
+shotGeometry = "glorkt10i.xsi"
+shotSound = "crckt02.wav"
+renderName = "irairlk2.render"
+
+// no damage, just light kick
+xplGround = "xlrktcar3i"
+xplVehicle = "xlrktcar3i"
+xplBuilding = "xlrktcar3i" 
+xplExpire = "xlrktcar3i"
+
+ammoCost = 50 // 75 
+lifeSpan = 18  
+shotSpeed = 55.0 
+
+damageValue(N) = 350 // 360| x2  
+damageValue(L) = 250 // 180 | x2 
+damageValue(H) = 50  // 50| x2 
+
+damageValue(S) = 300 // standard
+damageValue(D) = 300 // deflection
+damageValue(A) = 300 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 1.0 // 2.0
+omegaWaver = 0.5 
+rateWaver = 8 
+
+[ThermalMissileClass]
+coneAngle = 0.4
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "irairlk2.sparkles"
+renderName2 = "irairlk2.flare"
+renderName3 = "irairlk2.flame"
+renderName4 = "irairlk2.contrail"
+
+[Sparkles]
+renderBase = "draw_twirl_trail"
+textureName = "plasma.tga"
+textureblend = "one one modulate"
+startColor = "255 85 5 255"
+finishColor = "255 0 5 0"
+startRadius = 0.05
+finishRadius = 0.2
+rotationRate = 0.0
+animateTime = 1.0
+emitDelay = 0.008
+emitVariance = "0.8 0.8 0.8"
+emitLife = 1.0
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 155 55 255"
+startRadius = 1.2
+finishRadius = 1.2
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 205 5 155"
+finishColor = "255 155 55 0"
+startRadius = 0.4
+finishRadius = 0.1
+animateTime = 0.15
+emitDelay = 0.015
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.15
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate" 
+startColor = "165 155 105 75"
+finishColor = "50 50 50 0"
+startRadius = 0.4 // 0.05
+finishRadius = 1.5 //0.1 
+segmentTime = 1 // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+textureRate = 0.05

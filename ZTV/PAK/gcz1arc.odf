@@ -1,0 +1,49 @@
+[WeaponClass]
+classLabel = "arccannon"
+altName = "garc_c"
+ordName = NULL
+wpnName = "Arc Stream"
+fireSound = "arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 1
+aiRange = 115.0
+flashName = "gcz1arc.flash"
+
+[ArcCannonClass]
+startDist = 10.0
+
+finishDist = 115.0 // 100.0
+
+travelVeloc = 30 // 10.0
+
+coneAngle = 0.5 // 0.25
+
+ammoCost = 0  // 150.0
+
+damageValue(N) = 30 // 500.0 // none
+damageValue(L) = 300 // 500.0 // light
+damageValue(H) = 400.0 // heavy
+
+damageValue(S) = 400.0 // standard
+damageValue(D) = 500.0 // deflection
+damageValue(A) = 300.0 // absorbtion
+
+activeSound = "arc01.wav"
+
+xplGround = "xarcgnd_a"
+xplVehicle = "xarccar_a"
+xplBuilding = "xarccar_a"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 0.3
+segmentLength = 2.0
+segmentVariance = "1.0 1.0 1.0"
+animateTime = 0.3
+textureRate = 0.01

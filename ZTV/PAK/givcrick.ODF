@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Crickets"
+fireSound = "spawn.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCKET"
+aiRange = 150
+isAssault = 1
+flashName = xpmlaunc.shock
+
+localAmmo = 200 // [4 x 50]
+// needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 2.0
+objectClass = "ivcrick_ic1" 
+

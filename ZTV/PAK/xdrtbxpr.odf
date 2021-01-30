@@ -1,0 +1,163 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xmag05.wav" // "xlrgcar.wav" weakish// "fmiss03.wav" //"xmag04.wav"
+
+particleTypes = 7
+particleClass1 = "xdrtbxpr.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xdrtbxpr.chunks"
+particleCount2 = 3
+particleVeloc2 = "-3.0 1.0 -3.0"
+particleBias2 = "-5.0 5.0 -5.0"
+particleVariance = "8.0 8.0 8.0"
+
+particleClass3 = "xdrtbxpr.chunks2"
+particleCount3 = 3
+particleVeloc3 = "7.0 5.0 7.0"
+particleBias3 = "5.0 5.0 5.0"
+particleVariance = "15.0 15.0 15.0"
+
+particleClass4 = "xdrtbxpr.chunks3"
+particleCount4 = 3
+particleVeloc4 = "5.0 3.0 5.0"
+particleBias4 = "5.0 5.0 -5.0"
+particleVariance = "15.0 15.0 15.0"
+
+particleClass5 = "xdrtbxpr.chunks4"
+particleCount5 = 3
+particleVeloc5 = "3.0 5.0 3.0"
+particleBias5 = "0.0 5.0 0.0"
+particleVariance = "15.0 15.0 15.0"
+
+particleClass6 = "xdrtbxpr.shock"
+particleCount6 = 1
+particleVeloc6 = "0.0 0.0 0.0"
+
+particleClass7 = "xdrtbxpr.chunks5"
+particleCount7 = 3
+particleVeloc7 = "0.0 0.0 0.0"
+particleBias7 = "0.0 0.0 0.0"
+particleVariance = "5.0 5.0 5.0"
+
+particleClass8 = "xdrtbxpr.leaflet"
+particleCount8 = 1
+particleVeloc8 = "0.0 0.0 0.0"
+particleBias8 = "0.0 0.0 0.0"
+particleVariance = "0.0 0.0 0.0"
+
+explSound = "xcollapse.wav" // "xfire1.wav"
+
+damageRadius = 400.0
+damageValue(N) = 1500
+damageValue(L) = 3000
+damageValue(H) = 2000
+damageValue(S) = 1500
+damageValue(D) = 1500
+damageValue(A) = 1500
+
+kickRadius = 150.0
+kickOmega = 5.0
+kickVeloc = 8.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_light"
+startColor = "255 255 0 1250"
+finishColor = "255 0 0 255"
+startRadius = 100.0
+finishRadius = 20.0
+animateTime = 0.3
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Chunks]
+simulateBase = "sim_ember"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 70 255" 
+finishColor = "155 80 0 0"
+startRadius = 1
+finishRadius = 50 //4.5
+animateTime = 0.9
+
+[Chunks2]
+simulateBase = "sim_ember"
+lifeTime = 0.8
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 200 90 255" 
+finishColor = "155 100 0 0"
+startRadius = 1
+finishRadius = 55 // 3.8
+animateTime = 0.8
+
+[Chunks3]
+simulateBase = "sim_ember"
+lifeTime = 0.7
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 190 40 255" 
+finishColor = "155 120 0 0"
+startRadius = 1
+finishRadius = 55 // 6.0
+animateTime = 0.7
+
+[Chunks4]
+simulateBase = "sim_ember"
+lifeTime = 0.9
+renderBase = "draw_sprite"
+textureName = "flame2.tga"
+textureBlend = "one one modulate"
+startColor = "255 190 80 255" 
+finishColor = "255 100 0 0"
+startRadius = 1
+finishRadius = 65 // 5.0
+animateTime = 0.9
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.35
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 55 255"
+finishColor = "255 155 55 0"
+startRadius = 0.1
+finishRadius = 50
+animateTime = 0.3
+latitudeBands = 16
+longitudeSegments = 24
+
+[Chunks5]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "255 190 70 255" 
+finishColor = "255 190 70 0"
+startRadius = 5
+finishRadius = 50 // 5.0
+animateTime = 0.5
+
+[Leaflet]
+simulateBase = "sim_ember"
+lifeTime = 5.0
+renderBase = "draw_twirl"
+textureName = "zeeder2.tga" 
+textureBlend = "invsrc invsrc modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.01 // 0.11
+finishRadius = 30  // 0.11
+animateTime = 5.0
+rotationRate = 10.0

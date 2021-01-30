@@ -1,0 +1,120 @@
+[GameObjectClass]
+geometryName = "dwnbeam.xsi"
+geometryScale = 20
+classLabel = "apc"
+collisionRadius = 5.0
+scrapValue = 25
+scrapCost = 140
+customCost = 160
+buildTime = 3.0 // // 30.0
+customTime = 30.0
+maxHealth = 9000
+addHealth = 5
+maxAmmo = 500000 // 15000 local ammo handles now 
+addAmmo = 100 //100  
+unitName = "_Saucer"
+
+powerCost = 6
+
+heatSignature = 10.0
+imageSignature = 2.0
+radarSignature = 2.0
+isAssault = 1
+armorClass = H
+canSnipe = 0 
+boxCollide = 1
+explosionName = "xnegxpl"
+
+requireCount = 3
+
+requireName1 = "ibtrnsyd3"
+requireText1 = "Upgd Air Yd to III"
+
+requireName2 = "ibsens_ic3"
+requireText2 = "Upgrade Radar Array"
+
+requireName3 = "ibairvend2"
+requireText3 = "Upgrade Arsenal"
+
+lightHard1 = "hp_light_1"
+lightName1 = "ufolite"
+lightHard2 = "hp_light_2"
+lightName2 = "ufolite"
+lightHard3 = "hp_light_3"
+lightName3 = "ufolite"
+lightHard4 = "hp_light_4"
+lightName4 = "ufolite"
+
+weaponMask = 00111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gflashic" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_special_1"
+weaponName2 = "gsonshl3" 
+weaponAssault2 = 1 // 0
+
+weaponHard3 = "HP_cannon_1"
+weaponName3 = "gautzarc" 
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_SPECIAL_2"
+//weaponName4 =  "igdthru2"
+//weaponAssault4 = 1
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 0.0
+weaponPitch = 0.070 // .05 works pretty good
+engageRange = 0 // 75
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 3.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+[HoverCraftClass]
+setAltitude = 8 // lowers to this on firing/deploying
+accelDragStop = 1.5 
+accelDragFull = 2 
+alphaTrack = 30 
+alphaDamp = 6 
+pitchPitch = 0.01
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 30  // 17 
+velocReverse = 30 // 6.0
+velocStrafe = 5.0
+accelThrust = 20 // 5.0 
+accelBrake = 6 // 3.0
+omegaSpin = 0.6 
+omegaTurn = 0.4 
+alphaSteer = 0.5 
+accelJump = 150 // 250.0 speed to aquire alttitude low or high
+
+
+soundThrust = "iapc02.wav"
+soundSteer = "avapce5.wav"
+soundDeploy = "iapc04.wav"
+soundUndeploy = "avapc30.wav"
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 2.5 
+
+flightAltitude = 125 // 16 
+
+//soundThrust = "ienge.wav"
+//soundSteer = "ienge.wav"
+soundDeploy = "dropleav.wav"
+soundUndeploy = "droppass.wav"

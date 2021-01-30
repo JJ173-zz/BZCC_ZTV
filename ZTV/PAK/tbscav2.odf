@@ -1,0 +1,41 @@
+[GameObjectClass]
+mrmFactor=0
+geometryName="tbwarden01.xsi"
+animCount=0
+//animName1="deploy"
+//animFile1="ibscav00.xsi"
+//animName2="loop"
+//animFile2="ibscav01.xsi"
+classLabel="extractor"
+scrapCost=20
+scrapValue=2
+maxHealth=5000
+maxAmmo=0
+unitName="Warden"
+heatSignature=2.0
+imageSignature=1.0
+radarSignature=1.0
+collisionRadius=1.0
+isAssault=1
+canInteract=1 // for missile lock
+
+armorClass=H
+
+
+
+[PoweredBuildingClass]
+powerCost = 0
+powerTap1 = "HP_tap_1"
+powerName = "tbturr01"
+detectRange = 1000
+
+[BuildingClass]
+soundAmbient="iext01.wav"
+
+[ExtractorClass]
+initDelay=0
+scrapDelay=1
+scrapHold=0
+detectRange=100
+
+

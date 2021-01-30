@@ -1,0 +1,98 @@
+[GameObjectClass]
+//classLabel = "apc"
+classLabel = "wingman"
+
+geometryName = "seaworm.xsi"
+geometryScale = 0.12 // .17
+scrapCost = 0
+scrapValue = 0
+maxHealth = 2000
+maxAmmo = 2500
+addAmmo = 5
+unitName = "Sea Worm"
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+heatSignature = 1.0
+imageSignature = 0.5
+radarSignature = 0.0
+
+canDetect = 0
+canInteract = 1
+armorClass = N 
+isAssault = 1
+
+ejectRatio = 0
+canSnipe = 0
+needPilot = 0
+
+//------------------------------------
+weaponMask = 00111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gswormgn"
+weaponAssault1 = 0
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gswormgn"
+weaponAssault2 = 0
+//weaponHard4 = "HP_ROCKET_1"
+//weaponName4 = NULL
+//weaponAssault4 = 0
+//weaponHard5 = "HP_SPECIAL_1"
+//weaponName5 = NULL 
+//weaponAssault5 = 0
+
+effectHard1 = "Sea Worm"
+effectName1 = "swimmyz.render"
+
+[CraftClass]
+braccelFactor = 0.08
+velFactor = 0.4
+steerFactor = 1
+omegaFactor = 0.4
+strafeFactor = 0.1
+engageRange = 400
+weaponPitch = 1.1
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANN"
+
+[HoverCraftClass]
+setAltitude = 0.5 // rises to this on firing/deploying
+accelDragStop = 2 
+accelDragFull = 5 //10 
+alphaTrack = 30 
+alphaDamp = 15 
+pitchPitch = 0.01
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 11.0
+velocReverse = 5.0
+velocStrafe = 2.0
+accelThrust = 5 
+accelBrake = 4 // 10.0
+omegaSpin = 3.0
+omegaTurn = 3.0
+alphaSteer = 2.0
+accelJump = 400 // 120.0 speed to aquire alttitude low or high, terrain tracking
+
+soundThrust = "rmort01.wav" 
+soundSteer = "rmort01.wav" 
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav" 
+soundTurbo = "rmort01.wav" 
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 1 
+
+flightAltitude = 0.5 
+
+soundThrust = "rmort01.wav" 
+soundSteer = "rmort01.wav" 
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav" 
+soundTurbo = "rmort01.wav"

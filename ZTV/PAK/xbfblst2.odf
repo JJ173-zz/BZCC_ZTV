@@ -1,0 +1,43 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+particleClass1 = "xbfblst2.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "xbfblst2.puff"
+particleCount2 = 40
+particleVeloc2 = "40.0 40.0 40.0"
+
+explSound = "xmv1.wav"
+damageRadius = 50.0
+damageValue(N) = 300
+damageValue(L) = 400
+damageValue(H) = 500
+damageValue(S) = 300
+damageValue(D) = 300
+damageValue(A) = 300
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 85 205"
+finishColor = "0 255 100 0"
+startRadius = 4.0
+finishRadius = 50.0
+animateTime = 1.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.8
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "63 255 55 185"
+finishColor = "0 200 55 0"
+startRadius = 8.0
+finishRadius = 2.0
+animateTime = 0.8

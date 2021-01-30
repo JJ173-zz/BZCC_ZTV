@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+//geometryName = "grnbal2.xsi" 
+wpnName = "Thrust/Falcon"
+ordName = NULL
+
+fireSound =  "pilotpwrds.wav" //  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "GUN" //"SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 20
+objectClass = "apgabrnic"
+

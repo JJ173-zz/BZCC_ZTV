@@ -1,0 +1,254 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscavc"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 300
+buildtype1 = "fvscavc"
+buildcount1 = 2
+
+[Plan4]
+planType = "buildminimums"
+planPriority = 270
+buildtype1 = "fvcons"
+buildcount1 = 3
+
+[Plan5]
+planType = "basebuildminimums"
+planPriority = 260
+buildtype1 = "fbkiln"
+buildloc1 = "kiln"
+
+[Plan7]
+planType = "upgrade"
+planPriority = 240
+planCondition = "NotExists"
+planConditionClass = "fbforg"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+Unittype = "fbkiln"
+
+[Plan8]
+planType = "buildminimums"
+planPriority = 230
+buildtype1 = "fvapcz"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 220
+planCondition = "HisExists"
+planConditionClass = "ivaccelgun"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ivaccelgun"
+attacktype1 = "fvapcz"
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "basebuildminimums"
+planPriority = 210
+buildtype1 = "fbdowe"
+buildloc1 = "dower"
+buildtype2 = "fbstro"
+buildloc2 = "stronghold"
+buildtype3 = "fbspirz"
+buildloc3 = "spire1"
+
+[Plan11]
+planType = "buildminimums"
+planPriority = 200
+buildtype1 = "fvwalkz"
+buildcount1 = 2
+buildtype2 = "fvwalkp"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 190
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ibscav"
+attacktype1 = "fvwalkz"
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 180
+planCondition = "HisExists"
+planConditionClass = "ivturr"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ivturr"
+attacktype1 = "fvwalkz"
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "buildminimums"
+planPriority = 170
+buildtype1 = "fvtanks"
+buildcount1 = 2
+ContinueEvenIfFail = true
+
+[Plan15]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 160
+planCondition = "HisExists"
+planConditionClass = "ivtank"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ivtank"
+attacktype1 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan16]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 150
+planCondition = "HisExists"
+planConditionClass = "ivtank"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+targettype = "ivtank"
+attacktype1 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan17]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 140
+planCondition = "HisExists"
+planConditionClass = "ivscout"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ivscout"
+attacktype1 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan18]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 130
+planCondition = "HisExists"
+planConditionClass = "ivscout_m"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ivscout_m"
+attacktype1 = "fvtanks"
+ContinueEvenIfFail = true
+
+[Plan19]
+planType = "basebuildminimums"
+planPriority = 120
+buildtype1 = "fbspirz"
+buildloc1 = "spire2"
+
+[Plan20]
+planType = "basebuildminimums"
+planPriority = 110
+buildtype1 = "fbantm"
+buildloc1 = "antenna"
+
+[Plan21]
+planType = "upgrade"
+planPriority = 100
+planCondition = "NotExists"
+planConditionClass = "fbover"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+Unittype = "fbantm"
+
+[Plan24]
+planType = "buildminimums"
+planPriority = 70
+buildtype1 = "fvrbombz2"
+buildcount1 = 2
+ContinueEvenIfFail = true
+
+[Plan25]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 60
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+planConditionClassProvided = true
+targettype = "ibrecy"
+attacktype1 = "fvrbombz2"
+ContinueEvenIfFail = true
+
+[Plan26]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 50
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 2
+planConditionClassProvided = true
+targettype = "ibrecy"
+attacktype1 = "fvrbombz2"
+ContinueEvenIfFail = true
+
+[Plan27]
+planType = "basebuildminimums"
+planPriority = 40
+buildtype1 = "fbspirz"
+buildloc1 = "spire8"
+ContinueEvenIfFail = true
+
+[Plan28]
+planType = "basebuildminimums"
+planPriority = 30
+buildtype1 = "fbspirz"
+buildloc1 = "spire10"
+ContinueEvenIfFail = true
+
+[Plan29]
+planType = "basebuildminimums"
+planPriority = 20
+buildtype1 = "fbspirz"
+buildloc1 = "spire9"
+ContinueEvenIfFail = true
+
+[Plan30]
+planType = "basebuildminimums"
+planPriority = 10
+buildtype1 = "fbspirz"
+buildloc1 = "spire11"
+ContinueEvenIfFail = true

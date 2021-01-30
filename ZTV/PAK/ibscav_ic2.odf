@@ -1,0 +1,39 @@
+[GameObjectClass]
+baseName = "ibscav_ic1"
+geometryName = "ibscav_ic6.xsi"  
+geometryScale = 0.5
+classLabel = "extractor"
+scrapCost = 60
+scrapValue = 20
+maxHealth = 7000
+maxAmmo = 0
+unitName = "Silo, Powered"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 1.0
+isAssault = 1
+canInteract=1 
+ownsTerrain = 1
+powerCost = 2
+
+armorClass = L
+
+//buildSupport = "A"
+buildRequire = "B" // "A" // "F" is free // "A" is adjacent // "B" is next to bunker
+
+requireCount = 1
+requireName1 = "ibfact_ic1"
+requireText1 = " Need Research Center"
+
+provideCount = 1
+provideName1 = "ibscav_ic2"
+
+[BuildingClass]
+soundAmbient = "iext01.wav"
+
+[ExtractorClass]
+initDelay = 1E6 // 12.0
+scrapDelay = 1E6 // 1.0
+scrapHold = 20
+detectRange = 250 // 100

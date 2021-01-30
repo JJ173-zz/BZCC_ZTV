@@ -1,0 +1,25 @@
+[WeaponClass]
+classLabel = "multilauncher"
+ordName = "crktp2"
+wpnName = "Air Locker"
+fireSound = "glowrkt.wav" //"gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+aiRange = 250
+isAssault = 0
+
+[LauncherClass]
+lockRange = 350.0
+shotDelay = 0.7
+lockDelay = 0.1
+coneAngle = 0.2 // 0.075
+lockingReticle = "gcomet.A"
+lockingSound = "" //"lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[MultiLauncherClass]
+targetCount = 3
+loseAngle = 2.0

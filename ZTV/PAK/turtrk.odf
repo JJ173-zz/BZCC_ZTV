@@ -1,0 +1,44 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+renderName = "turtrk1.render"
+
+xplGround = "xbulgnd" 
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 2.00 
+lifeSpan = 500E-2  
+shotSpeed = 300E2 
+
+damageValue(N) = 15 //  10 shots per second
+damageValue(L) = 12  
+damageValue(H) = 8 
+
+damageValue(S) = 12 
+damageValue(D) = 8 
+damageValue(A) = 15 
+
+[Minigun]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+textureName = "trail.tga"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.025
+finishRadius = 0.05
+segmentTime = 0.04
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" //"plasma.tga" //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 127 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.1    //0.3
+finishRadius = 0.03  //0.05
+segmentLength = 0.5  //3.0 
+segmentVariance = "0.0 0.0 0.0 "
+animateTime = 0.04 
+textureRate = 0.01
+

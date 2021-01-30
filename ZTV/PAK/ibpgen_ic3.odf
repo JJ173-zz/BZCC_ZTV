@@ -1,0 +1,41 @@
+[GameObjectClass]
+geometryName = "ibpwrhuge4.xsi"
+geometryScale = 1.0
+classLabel = "powered"
+scrapCost = 40 
+scrapValue = 0
+maxHealth = 10000
+maxAmmo = 0
+unitName = "Power Reactor"
+heatSignature = 5.0
+imageSignature = 5.0
+radarSignature = 2.0
+collisionRadius = 5.0
+
+armorClasss = H
+
+powerCost = 0
+canDetect = 1
+canInteract = 1
+//ownsTerrain = 1
+//canCollide = 1
+
+upgradeName = "ibpgen_ic2"
+
+buildSupport = B // A was nothing, F = nothing? B=All
+buildRequire = F
+
+provideCount = 3
+provideName1 = "ibcbun"
+provideName2 = "ibpgen"
+provideName3 = "ibpgen_ic1"
+
+
+[BuildingClass]
+soundAmbient = "ipgen01.wav"
+
+[PoweredBuildingClass]
+detectRange = 200
+powerTap1 = "HP_tap_1"
+powerName = "iblung_ic3" 
+

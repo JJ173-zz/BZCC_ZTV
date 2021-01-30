@@ -1,0 +1,41 @@
+[OrdnanceClass]
+classLabel = "bouncebomb"
+shotGeometry = "bombball.xsi"
+shotSound = "baz03.wav"
+
+xplGround = "sbombxpr"
+xplVehicle = "sbombxpr"
+xplBuilding = "sbombxpr"
+xplExpire = "sbombxpr"
+
+renderName = "sbomb.render"
+
+ammoCost = 1
+lifeSpan = 8
+shotSpeed = 25 // 50.0
+
+damageValue(N) = 500 // none
+damageValue(L) = 450 // light
+damageValue(H) = 400 // heavy
+
+damageValue(S) = 500 // standard
+damageValue(D) = 500 // deflection
+damageValue(A) = 500 // absorbtion
+
+[BounceBombClass]
+bounceRatio = 0.60 // .925
+bounceSound = "xcollapse.wav"
+
+[Render]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "174 174 164 45"
+finishColor = "190 190 180 0"
+startRadius = 2
+finishRadius = 4.0
+animateTime = 1.0
+emitDelay = 0.025
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "1.0 1.0 1.0"
+emitLife = 1.0

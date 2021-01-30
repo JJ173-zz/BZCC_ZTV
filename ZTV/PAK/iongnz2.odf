@@ -1,0 +1,56 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+xplGround = "xiongnd"
+xplVehicle = "xbulcar"
+xplBuilding = "xbulbld"
+
+ammoCost = 1.0 // 1.5
+lifeSpan = 1.0 // 100m
+shotSpeed = 200.0
+
+damageValue(N) = 2 // 20 // none
+damageValue(L) = 10 // 10 // light
+damageValue(H) = 3 // 1 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 10 // deflection
+damageValue(A) = 1 // absorbtion
+
+renderName = "iongnz2.render"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "iongnz2.core"
+renderName2 = "iongnz2.halo"
+renderName3 = "iongnz2.trail"
+
+[Core]
+renderBase = "draw_twirl"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 255 255"
+finishColor = "255 255 255 0"
+startRadius = 0.5
+finishRadius = 0.5
+
+[Halo]
+renderBase = "draw_twirl"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "0 255 0 63"
+finishColor = "0 255 0 63"
+startRadius = 0.2
+finishRadius = 0.2
+rotationRate = 10.0
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "0 255 0 127"
+finishColor = "255 255 0 0"
+startRadius = 0.05
+finishRadius = 0.0
+segmentTime = 0.1

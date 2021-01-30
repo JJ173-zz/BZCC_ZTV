@@ -1,0 +1,63 @@
+[GameObjectClass]
+geometryName = "ibgtoww1.xsi"
+classLabel = "turret"
+collisionRadius = 10.0
+scrapCost = 0
+powerCost = 0
+scrapValue = 20
+maxHealth = 15000
+addHealth = 1
+maxAmmo = 10000 // 0 is *not* treated as infinite ammo!
+addAmmo = 100
+unitName = "Gun Tower"
+aiName = "GunTowerFriend"
+aiName2 = "GunTowerEnemy"
+heatSignature = 5.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+canDetect = 1
+canInteract = 1
+ownsTerrain = 1
+
+armorClass = H
+
+buildSupport = "A"
+buildRequire = "F"
+
+requireCount = 0
+
+provideCount = 1
+provideName1 = "ibgtow"
+
+weaponMask = 00011
+weaponHard1 = "hp_cannon_1"
+weaponName1 = "gtower"
+weaponAssault1 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotwhite"
+
+turretCount = 3
+turretName1 = "turret_y_1"
+turretName2 = "turret_x_1"
+turretName3 = "hp_light_1"
+
+[BuildingClass]
+soundAmbient = "igtow01.wav"
+
+[CraftClass]
+rangeScan = 210
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 1.5
+steerFactor = 0.5
+engageRange = 210
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS"
+
+[TurretCraftClass]
+omegaTurret = 2.0
+detectRange = 200

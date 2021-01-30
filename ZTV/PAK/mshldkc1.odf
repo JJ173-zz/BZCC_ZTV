@@ -1,0 +1,36 @@
+[GameObjectClass]
+geometryName = "airmine6.xsi"
+geometryScale = 0.25
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+
+maxHealth = 3000
+armorClass = L
+
+maxAmmo = 1
+
+unitName = "Shield Gen"
+
+heatSignature = 0.5
+imageSignature = 1.0
+radarSignature = 2.0
+
+canCollide = 1
+canDetect = 1 
+canInteract = 1 
+
+explosionName = "xicppxpl"  // if killed before expired
+xplExpire = "xzm3nxpl"
+
+[MineClass]
+lifeSpan = 900  //  15 mins
+
+[FlareMineClass]
+payloadName = "mshldic1"
+
+fireSound = "wuflhum.wav"
+
+triggerDelay = 0.5
+shotDelay = 0.5
+shotVariance = 0.0 

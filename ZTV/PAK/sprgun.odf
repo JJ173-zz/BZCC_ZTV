@@ -1,0 +1,67 @@
+[OrdnanceClass]
+classLabel = "anchor"
+
+shotGeometry = "javelinp.xsi"
+geometryScale = 0.25
+shotSound = "gshad02.wav"
+
+xplExpire = "xsprxpr"
+
+xplGround = "xsprxprg" 
+xplVehicle = "xplsgun" //NULL 
+xplBuilding = "xplsgun" //NULL // "xsprxprg"
+
+renderName = "sprgun.render"
+
+ammoCost = 15
+lifeSpan =  2.0 //1.33 // 2.25   
+shotSpeed = 60 
+
+damageValue(N) = 10 // none
+damageValue(L) = 10 // light
+damageValue(H) = 1 // heavy
+
+damageValue(S) = 10 // standard
+damageValue(D) = 8 // deflection
+damageValue(A) = 15 // absorbtion
+
+[LeaderRoundClass]
+stickTime = 5.0 
+
+[AnchorRocketClass]
+accelDrag = 5.0 // 9.5 
+alphaDrag = 0.5 // 2.4 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2 
+
+renderName1 = "sprgun.trail"
+renderName2 = "sprgun.contrail"
+
+[Trail]
+renderBase = "draw_twirl_trail"
+textureName = "ring.tga" // "smoke.tga" 
+textureBlend = "one one modulate" // "srcalpha invsrcalpha modulatealpha"
+startColor = "130 150 255 70"
+finishColor = "35 135 255 0"
+startRadius = 0.05 // 1.0
+finishRadius = 0.6 //1.5
+animateTime = 0.4
+emitDelay = 0.02 // 0.02 // 0.005
+emitVelocity = "0.0 0.0 0.5"
+emitVariance = "0.5 0.5 2.0"
+emitLife = 0.4
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate" //"invsrc invsrc modulate" // "one one modulate"
+startColor = "125 125 255 255"
+finishColor = "205 205 255 0"
+startRadius = 0.02 // 0.05
+finishRadius = 0.1 //0.1 
+segmentTime = 0.4 //1.8  // time each segment animates
+segmentVariance = "0.05 0.05 0.05"
+//animateTime = 0.6
+textureRate = 0.05

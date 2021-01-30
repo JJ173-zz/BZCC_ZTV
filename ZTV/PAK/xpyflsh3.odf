@@ -1,0 +1,67 @@
+[OrdnanceClass]
+classLabel = "bullet"
+
+shotGeometry = NULL
+shotRadius = 2.0
+xplGround = NULL 
+xplVehicle = "xhvydmg"
+xplBuilding = NULL
+xplExpire = "xhvydmg"
+
+renderName = "xpyflsh3.render"
+ammoCost = 1e-6 
+lifeSpan = 2.0
+shotSpeed = 0.001
+
+damageValue(N) = 5
+damageValue(L) = 1000
+damageValue(H) = 50
+damageValue(S) = 5
+damageValue(D) = 5
+damageValue(A) = 5
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "xpyflsh3.sphere"
+renderName2 = "xpyflsh3.yellight"
+renderName3 = "xpyflsh3.yelflare"
+
+[Sphere]
+simulateBase = "sim_null"
+lifeTime = 0.07 // 1.0
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" //NULL // "plasma.tga" //"vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 0"
+finishColor = "255 155 10 155"
+startRadius = 3.3
+finishRadius = 0.1 // 0.3
+animateTime = 0.07
+latitudeBands = 4 
+longitudeSegments = 8 
+
+[YelLight]
+//simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 155 0 955"
+finishColor = "255 155 0 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[YelFlare]
+//simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 255"
+finishColor = "255 155 0 190"
+startRadius = 3.0 // 1
+finishRadius = 0.5
+animateTime = 0.2

@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "grnball.xsi" 
+wpnName = "_Air Tasker"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+localAmmo = 3200 // [800] x 4
+
+[DispenserClass]
+shotDelay = 30
+objectClass = "ivairtaskr"
+

@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName = "javelin2.xsi"
+geometryScale = 0.4
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 // amount mine holds for weapon
+unitName = "rocket"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+

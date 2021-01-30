@@ -1,0 +1,50 @@
+[GameObjectClass]
+geometryName = "lavaeggs.XSI" 
+geometryScale = 4.0
+classLabel = "flare"
+scrapValue = 0
+scrapCost = 0
+customCost = 0
+buildTime = 3.0 // 
+customTime = 15.0
+maxHealth = 0
+addHealth = 0.5 
+maxAmmo = 1E6
+addAmmo = 50
+armorClass = N
+unitName = "Worm Eggs"
+heatSignature = 0.5
+imageSignature = 0.2
+radarSignature = 0.0
+isassault = 1
+
+//explosionName = "xicrnxpl"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivlavegg.effect"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivlavegg.effect"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivlavegg.effect"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivlavegg.effect"
+
+[MineClass]
+lifeSpan = 1E6
+
+[FlareMineClass]
+payloadName = ""
+fireSound = ""
+triggerDelay = 1
+shotDelay = 0.2
+shotVariance = 0.0
+damageRadius = 30.0
+damageValue(N) = 8 
+damageValue(L) = 2 
+damageValue(H) = 1 
+damageValue(S) = 10 
+damageValue(D) = 10 
+damageValue(A) = 10 
+kickRadius = 0.0
+kickVeloc = 0.0
+kickOmega = 0.0

@@ -1,0 +1,38 @@
+[OrdnanceClass]
+classLabel = "spraybomb"
+shotGeometry = "datalink01.xsi"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+rendername = "techkick.render"
+
+ammoCost = 1 
+lifeSpan = 1e30
+shotSpeed = 15 
+
+damageValue(N) = 10
+damageValue(L) = 10
+damageValue(H) = 10
+damageValue(S) = 10
+damageValue(D) = 10
+damageValue(A) = 10
+
+[SprayBombClass]
+payloadName = "techlink"
+
+[Render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.03
+emitVelocity = "0.0 1.5 0.2" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 2  
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 70"
+finishColor = "20 20 20 0"
+startRadius = 0.5 
+finishRadius = 3 
+animateTime = 2 
+rotationRate = 3.0

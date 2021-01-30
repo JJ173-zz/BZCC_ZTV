@@ -1,0 +1,5 @@
+// cfg-a-matic
+Cmd("sky.visibilityrange 300");
+Cmd("sky.fogrange 150,300");
+Cmd("sky.fogbreak 0.40");
+Cmd("editor.camera.wireframe=0");

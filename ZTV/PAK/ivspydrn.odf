@@ -1,0 +1,109 @@
+[GameObjectClass]
+baseName = "ivspydrn"
+geometryName = "ivskip.xsi" // "ivspydrn.xsi" 
+geometryScale = 1.75 // 1.1
+animCount = 0
+classLabel = "apc"
+scrapValue = 0
+scrapCost = 20
+customCost = 20
+buildTime = 3.0 // 
+customTime = 10.0
+maxHealth = 300
+addHealth = 0.5
+maxAmmo = 50
+addAmmo = 1
+unitName = "Spy Drone"
+aiName = "ScoutFriend"
+aiName2 = "ScoutEnemy"
+
+//powerCost = 1
+
+canSnipe = 0
+
+heatSignature = 0.5
+imageSignature = 0.5
+radarSignature = 0.0
+
+isAssault = 0
+
+armorClass = N
+
+requireCount = 0
+
+weaponMask = 00011
+weaponHard1 = "HP_MORTAR_1"
+weaponName1 = "gprobgn2"
+weaponAssault1 = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+
+[CraftClass]
+rangeScan = 450.0f
+periodScan = 1.5f
+velocJam = 10.0f
+engageRange = 200 // 0
+weaponPitch = 0.7
+
+braccelFactor = 0.05
+velFactor = 0.2
+steerFactor = 1.0
+omegaFactor = 0.5
+strafeFactor = 0.2
+
+topSpeed = 50
+
+selectWaitMsg = "chatter6.wav" //"ivscout04.wav"
+selectAttackMsg = "chatter1.wav" //"ivscout01.wav"
+selectFollowMsg = "chatter5.wav" //"ivscout03.wav"
+selectGoMsg = "chatter8.wav" //"ivscout02.wav"
+selectOtherMsg = "chatter7.wav" //"ivscout04.wav"
+goMsg = "chatter6.wav" //"ivscout05.wav"
+attackMsg = "chatter1.wav" //"ivscout06.wav"
+followMeMsg = "chatter5.wav" //"ivscout03.wav"
+followMsg = "chatter8.wav" //"ivscout08.wav"
+repairMsg = "chatter6.wav" //"ivscout09.wav"
+reloadMsg = "chatter7.wav" //"ivscout09.wav"
+rescueMsg = "chatter2.wav" //"ivscout10.wav"
+recycleMsg = "chatter3.wav" //"ivscout11.wav"
+otherMsg = "chatter4.wav" //"ivscout10.wav" 
+holdMsg = "chatter6.wav" // "ivscout12.wav"
+user1Msg = ""  
+killedMsg = "chatter6.wav" 
+diedMsg = ""
+
+[HoverCraftClass]
+setAltitude = 80 // 80.0 // rises to this on firing/deploying
+accelDragStop = 10 
+accelDragFull = 10  
+alphaTrack = 15 
+alphaDamp = 6 
+pitchPitch = 0.1
+pitchThrust = 0.1 
+rollStrafe = 0.1 
+rollSteer = 0.1 
+
+velocForward = 49.0
+velocReverse = 49.0
+velocStrafe = 2.0
+accelThrust = 25 // 4 
+accelBrake = 20 // 4 // 10.0
+omegaSpin = 2.0 // 0.7
+omegaTurn = 2.0 //0.7
+alphaSteer = 2.0 //0.7
+accelJump = 400 // 120.0 speed to aquire alttitude low or high, terrain tracking
+
+soundThrust = "ssent01c.wav" 
+soundSteer = "ssent01c.wav" 
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 1 
+
+flightAltitude = 150 // 150  
+
+soundDeploy = "srecy02.wav"
+soundUndeploy = "srecy02.wav" 

@@ -1,0 +1,53 @@
+// pilot Lift 130m
+
+[OrdnanceClass]
+classLabel = "magnetshell"
+shotGeometry = NULL
+shotRadius = -15
+shotSound = NULL // "baruin1b.wav"
+xplGround = NULL
+xplVehicle = NULL
+xplBuilding = NULL
+xplExpire = "lift2xpr"
+canCollide= 0
+
+renderName = "liftfas2.render" 
+
+ammoCost = 0
+lifeSpan = 26
+shotSpeed = 5
+
+damageValue(N) = 0
+damageValue(L) = 0
+damageValue(H) = 0
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 1.0 
+objPushCenter = -10.0
+objPushEdge = -20.0
+objDrag = 1.5
+ordPushCenter = 0.0 
+ordPushEdge = 0.0 
+ordDrag = 0.0
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "liftfas2.sphere"
+
+[Sphere]
+renderBase = "draw_sphere"
+textureName = "bubsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 7"
+finishColor = "255 255 255 7"
+startRadius = 1.5  // 1.2
+finishRadius = 1.5
+animateTime = 15
+latitudeBands = 24
+longitudeSegments = 36

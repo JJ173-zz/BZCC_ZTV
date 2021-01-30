@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "ickybeam.xsi"
+geometryScale = 0.28 // .45 /// .29 just bshows pilot antenna
+classLabel = "Cnozzle"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+
+unitName = "Beam"
+
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 0.0
+canDetect = 0
+canInteract = 0
+canCollide = 0
+ownsTerrain = 0
+
+[BuildingClass]
+
+[ComputerClass]
+beamname = "obj65"

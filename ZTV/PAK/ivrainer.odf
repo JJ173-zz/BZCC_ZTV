@@ -1,0 +1,166 @@
+[GameObjectClass]
+geometryName = "ivrainer.XSI" 
+geometryScale = 7.0
+classLabel = "apc"
+scrapValue = 0
+scrapCost = 55
+customCost = 80
+buildTime = 3.0 //.0
+customTime = 15.0
+maxHealth = 700
+addHealth = 0.5 
+maxAmmo = 1500
+addAmmo = 4
+armorClass = N
+unitName = "Black Cloud"
+aiName = "AttachOffensive" 
+aiName2 = "AttachOffensive"
+heatSignature = 0.5
+imageSignature = 1.0
+radarSignature = 0.0
+isassault = 0
+canSnipe = 0 
+needPilot = 0
+explosionName = "xicrnxpl"
+ejectRatio = 0
+
+weaponMask = 00001
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gpurprain" 
+weaponAssault1 = 1
+
+//weaponHard2 = "HP_gun_2"
+//weaponName2 = "gpurprain" 
+//weaponAssault2 = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivrainer.effect"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 5.0
+weaponPitch = 1.55
+engageRange = 400
+
+selectGoMsg = "ivturr01.wav"
+selectAttackMsg = "robo05c.wav"
+selectDeployMsg = "ivturr04.wav"
+selectOtherMsg = "robo05c.wav"
+holdMsg = "ivturr12.wav"
+goMsg = "ivturr05.wav"
+followMeMsg = "ivturr08.wav"
+reloadMsg = "ivturr09.wav"
+repairMsg = "ivturr09.wav"
+rescueMsg = "ivturr10.wav"
+recycleMsg = "ivturr11.wav"
+otherMsg = "ivturr11.wav"
+attackMsg = "ivturr06.wav"
+
+deployedMsg = "ivturr14.wav"
+killedMsg = "ivturr07.wav"
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+[HoverCraftClass]
+setAltitude = 325.0
+accelDragStop = 3 
+alphaTrack = 10 
+alphaDamp = 3 
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 14 
+velocReverse = 10 
+velocStrafe = 10 
+accelThrust = 30 
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 600 // 400.0
+soundThrust = "benv03.wav"
+
+// [APCClass]
+// soldierType = "ispilo"
+// soldierCount = 0
+// soldierDelay = 0.1
+// timeDeploy = 2 // 2.5
+// flightAltitude = 325 // 90// tends to go to this to fight as rt ai
+
+// soundDeploy = "srecy02.wav"
+// soundUndeploy = "srecy02.wav" 
+
+[Effect]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivrainer.darkemit"
+renderName2 = "ivrainer.alternate"
+
+[DarkEmit]
+renderBase = "draw_emit"
+emitName = "ivrainer.dark"
+emitDelay = 0.1  
+emitVelocity = "0.0 -0.2 0.0"
+emitVariance = "5.0 1.0 5.0"
+emitInherit = "0.95 0.95 0.95"
+
+[Dark]
+simulateBase = "sim_smoke"
+//simulateBase = "sim_null"
+lifeTime = 3
+renderBase = "draw_sprite"
+textureName = "smoke.tga"
+//textureBlend = "srcalpha invsrcalpha modulatealpha"
+textureBlend = "invsrc invsrc modulate"
+startColor = "0 0 5 205"
+finishColor = "0 0 5 0"
+startRadius = 4.0
+finishRadius = 7.0 
+animateTime = 3
+ 
+///////////////////////
+
+[DarkEmit2]
+renderBase = "draw_emit"
+emitName = "ivrainer.dark2"
+emitDelay = 0.2  
+emitVelocity = "0.0 -0.2 0.0"
+emitVariance = "4.0 1.0 4.0"
+emitInherit = "0.9 0.9 0.9"
+
+[Dark2]
+simulateBase = "sim_null"
+lifeTime = 2
+renderBase = "draw_twirl"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+//textureBlend = "invsrc invsrc modulate"
+startColor = "0 0 5 185"
+finishColor = "0 0 5 0"
+startRadius = 6.0
+finishRadius = 8.0 
+animateTime = 2 
+
+
+[Alternate]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 0.0" 
+emitVariance = "2.0 2.0 2.0"
+emitInherit = "0.9 0.9 0.9"
+emitLife = 2.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "0 0 0 200"
+finishColor = "0 0 0 0"
+startRadius = 5
+finishRadius = 7.0
+animateTime = 2.0
+rotationRate = 3.0
+

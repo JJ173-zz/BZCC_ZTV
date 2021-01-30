@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "redbal2.xsi" 
+wpnName = "Falcon Rkt"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 60
+objectClass = "appakrk2"
+

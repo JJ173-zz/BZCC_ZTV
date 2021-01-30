@@ -1,0 +1,91 @@
+[GameObjectClass]
+classLabel = "turret"
+geometryName = "aiprobe.xsi"
+geometryScale = 5.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 5000
+maxAmmo = 8000
+addAmmo = 50
+
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+
+unitName = "Teleporter"
+heatSignature = 0.01
+imageSignature = 0.1
+radarSignature = 1.0
+isAssault = 1
+armorClass = H
+canCollide = 1
+canDetect = 1
+canInteract = 1
+ownsTerrain = 0
+powerCost = 0
+addHealth = 2
+engageRange = 750
+needPilot = 0 
+
+weaponMask = 00001
+weaponHard1 = "HP_SPECIAL_1"
+weaponName1 = "gtractor"
+weaponAssault1 = 1
+
+effectHard1 = "hp_emit_1"
+effectName1 = "aiprobe-d.effect"
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+
+turretCount = 3
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+[CraftClass]
+rangeScan = 800.0f
+periodScan = 1.0f
+velocJam = 0.0f
+
+[PoweredBuildingClass]
+detectRange = 800
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "aiprobe-d.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "aiprobe-d.blulight"
+renderName2 = "aiprobe-d.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "0 0 255 12555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255"
+finishColor = "80 80 255 255"
+startRadius = 22.0 // 1
+finishRadius = 0.5
+animateTime = 0.1

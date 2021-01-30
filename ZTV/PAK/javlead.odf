@@ -1,0 +1,40 @@
+[OrdnanceClass]
+classLabel = "targeting"
+shotGeometry = "javelin.xsi" // "iorckt00.xsi"
+xplGround = "xlrklead_gnd"
+xplVehicle = "xlrklead_car"
+xplBuilding = "xlrklead_car"
+
+renderName = "javlead.trail"
+
+ammoCost = 1
+lifeSpan = 250E-3
+shotSpeed = 1E3
+
+damageValue(N) = 200 // none
+damageValue(L) = 100 // light
+damageValue(H) = 20 // heavy
+
+damageValue(S) = 100 // standard
+damageValue(D) = 150 // deflection
+damageValue(A) = 50 // absorbtion
+
+[LeaderRoundClass]
+stickTime = 7.0 // 7.0
+
+[trail]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate" //"invsrc invsrc modulate"//
+startColor = "250 110 0 255"
+finishColor = "250 110 0 0"
+startRadius = 0.2
+finishRadius = 0.1
+segmentLength = 2 // 1.0
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 // 3.0 //0.5
+textureRate = 0.01
+
+
+
+

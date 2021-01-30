@@ -1,0 +1,19 @@
+[WeaponClass]
+geometryname = "ivlavegg.xsi"
+geometryScale = 4
+
+classLabel = "mortar"
+wpnName = "LavaWorm Egg"
+ordName = "lavwmkick"
+fireSound = "spawn.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "SPECIAL"
+aiRange = 50
+isAssault = 1
+altName = "givworm"
+
+localAmmo = 1 // 20 // 1 needs to be amount of units ammo capacity that youre dropping
+
+[CannonClass]
+shotDelay = 10.0
+

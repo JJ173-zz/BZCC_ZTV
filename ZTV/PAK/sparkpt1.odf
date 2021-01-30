@@ -1,0 +1,66 @@
+[GameObjectClass]
+geometryName = "sparkpnt.xsi"
+geometryScale = 2.0
+//classLabel = "i76building"
+classLabel = "powered" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 14000
+maxAmmo = 0
+unitName = "Spark Gen"
+heatSignature = 1.0
+imageSignature = 0.0
+radarSignature = 1.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+canSnipe = 0
+canCollide = 1
+ownsTerrain = 0
+armorClass = L
+explosionName = "xdrtbxpr"
+
+//powerCost = 250 // shunts 200 power
+
+//lightHard2 = "hp_light_1"
+//lightName2 = "omniblue"
+
+//effectHard1 = "hp_emit_1" 
+//effectName1 = "pwrshunt.cycleon"
+
+//effectHard2 = "hp_emit_2" 
+//effectName2 = "pwrshunt.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "pwrshunt.ontime"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 50.0"
+emitVariance = "0.0 0.0 0.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.1  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "pwrshunt.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.15
+finishRadius = 0.3
+segmentLength = 0.5 
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 0.2
+
+
+[BuildingClass]
+SoundAmbient = "igtow01.wav"
+SoundAmbientDist = 0.8
+

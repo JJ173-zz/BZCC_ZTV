@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "cannon"
+wpnName = "Power Pack"
+ordName = "pwrkick1"
+isassault = 0
+
+fireSound = "mmine01.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 1
+wpnCategory = "MORTAR"
+
+localAmmo = 1 // 1 x [1]
+aiRange = 10
+
+[CannonClass]
+shotDelay = 10.0

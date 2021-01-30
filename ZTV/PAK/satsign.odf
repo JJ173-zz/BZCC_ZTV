@@ -1,0 +1,26 @@
+[GameObjectClass]
+geometryName = "satsign.xsi"
+geometryScale = 1.0
+classLabel = "computer"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Sat Screen"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 0
+canInteract = 0
+canSnipe = 0
+
+[ComputerClass]
+ShieldVel = 0.3 //0.2
+ShieldAmp = 0.0 //0.05
+Shield = "shield"
+
+[BuildingClass]
+SoundAmbient = "igtow01.wav"
+SoundAmbientDist = 0.6
+

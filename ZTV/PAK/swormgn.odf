@@ -1,0 +1,94 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = NULL //"sgstng00.xsi"
+shotSound = "swormg.wav"
+
+renderName = "swormgn.render"
+
+xplGround = "xpwormg"
+xplVehicle = "xpwormc"
+xplBuilding = "xpwormg"
+
+ammoCost = 4.5
+lifeSpan = 2.5 // 100m
+shotSpeed = 40.0
+
+damageRadius = 1.0
+damageValue(N) = 35 // 15.0 // none
+damageValue(L) = 30 // 25 // light
+damageValue(H) = 25 // heavy
+damageValue(S) = 15 // standard
+damageValue(D) = 30 // deflection
+damageValue(A) = 20 // absorbtion
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 0.1  // 15
+omegaWaver = 0.5 
+rateWaver = 20
+
+[ThermalMissileClass]
+coneAngle = 1
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "swormgn.main"
+renderName2 = "swormgn.halo"
+renderName3 = "swormgn.sparks"
+
+[Main]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "125 190 255 255"
+finishColor = "120 190 255 180"
+startRadius = 0.4
+finishRadius = 0.2
+animateTime = 3.75
+
+[Halo]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "125 190 255 155"
+finishColor = "120 190 255 130"
+startRadius = 2.0
+finishRadius = 0.8
+animateTime = 3.75
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "swormgn.sparker"
+emitDelay = 0.05 // 0.2 // 0.5
+emitVelocity = "0.0 0.0 30.0"
+emitVariance = "10.0 10.0 10.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 2.0 // 0.5
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "swormgn.sparkflare"
+renderName2 = "swormgn.sparkhalo"
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "100 170 200 350"
+finishColor = "0 150 200 0"
+startRadius = 0.6
+finishRadius = 0.1
+animateTime = 2.0 //1.0
+
+[SparkHalo]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 190 130"
+finishColor = "0 200 200 0"
+startRadius = 1.8
+finishRadius = 0.4
+animateTime = 2.0 //1.0

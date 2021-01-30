@@ -1,0 +1,82 @@
+[GameObjectClass]
+basename = "ibairvend1"
+geometryName = "ibairvend2.xsi"
+classLabel = "turret"
+scrapCost = 60
+scrapValue = 0
+maxHealth = 5500
+maxAmmo = 0
+unitName = "Arsenal II"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 0.0
+isAssault = 1
+powerCost = 0 // mc costs 2
+// total = 2 power cost
+
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+
+canDetect = 1
+canCollide = 0 
+ownsTerrain = 1
+armorClass = H
+
+// upgradeName = "ibairvend3"
+
+provideCount = 2
+provideName1 = "ibairvend1"
+provideName2 = "ibairvend2"
+
+requireCount = 2
+requireName1 = "ibdcen"
+requireText1 = "Need Data Center"
+requireName2 = "ibtrnsyd3"
+requireText2 = "Upgd Air Yd to III"
+
+buildSupport = F
+buildRequire = F
+
+weaponMask = 0001
+
+weaponHard1 = "hp_special_1"
+visualHard1 = "hp_visual_1"
+weaponName1 =  "gapclztr2" 
+weaponAssault1 = 0
+
+weaponHard2 = "hp_special_2"
+visualHard2 = "hp_visual_2"
+weaponName2 =  "gapdevstr" // "gaplmpry2" 
+weaponAssault2 = 1
+
+weaponHard3 = "hp_gun_1"
+visualHard3 = "hp_visual_3"
+weaponName3 =  "gapsquid2" 
+weaponAssault3 = 0
+
+weaponHard4 = "hp_gun_2"
+visualHard4 = "hp_visual_4"
+weaponName4 =  "gapflaxz2" 
+weaponAssault4 = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "iblite"
+
+[BuildingClass]
+soundAmbient = "command4.wav"
+
+[CraftClass]
+rangeScan = 1.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1
+
+powerTap1 = "HP_tap_1"
+powerName = "iblung_ic2" 

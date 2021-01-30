@@ -1,0 +1,24 @@
+[GameObjectClass]
+geometryName = "rckminz1.xsi" 
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 25000 // need ammo to account for each maulers full ammo 5000 each
+unitName = "Mauler Mine"
+canCollide = 0
+canDetect = 0
+
+explosionName = "xzm1nxpl"
+xplExpire = "xzm1nxpl"
+
+weaponHard1 =  "hp_weapon_1" 
+weaponName1 = "gwlkzm2"
+
+[MineClass]
+lifeSpan = 1E6
+
+[WeaponMineClass]
+searchRadius = 300.0
+heightScale = 2.0
+

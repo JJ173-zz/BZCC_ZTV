@@ -1,0 +1,92 @@
+[GameObjectClass]
+geometryName = "outerfac2.xsi"
+geometryScale = 1.5
+classLabel = "terrain"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Reactor Hull"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 5.0
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_yellow_nf"
+
+//effectHard5 = "hp_emit_1"
+//effectName5 = "outerfac.beam"
+//effectHard6 = "hp_emit_2"
+//effectName6 = "outerfac.beam"
+//effectHard7 = "hp_emit_3"
+//effectName7 = "outerfac.beam"
+//effectHard8 = "hp_emit_4"
+//effectName8 = "outerfac.beam"
+
+effectHard1 = "hp_emit_5"
+effectName1 = "outerfac.beam2"
+effectHard2 = "hp_emit_6"
+effectName2 = "outerfac.beam2"
+effectHard3 = "hp_emit_7"
+effectName3 = "outerfac.beam2"
+effectHard4 = "hp_emit_8"
+effectName4 = "outerfac.beam2"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+
+[Beam2]
+renderBase = "draw_emit"
+emitName = "outerfac.beamer2"
+emitDelay = 0.3 
+emitVelocity = "0.0 0.0 -200.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer2]
+simulateBase = "sim_smoke"
+lifeTime = 0.34 // set length here
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "outerfac.Bleam2"
+
+[Bleam2]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 0"
+finishColor = "0 100 255 255"
+startRadius = 0.5
+finishRadius = 0.5
+segmentLength = 1.0 //3.1
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+textureRate = 0.01
+
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "outerfac.beamer"
+emitDelay = 0.3 
+emitVelocity = "0.0 0.0 200.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.34 // set length here
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "outerfac.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 100 255 0"
+finishColor = "0 100 255 255"
+startRadius = 0.5
+finishRadius = 0.5
+segmentLength = 1.0 //3.1
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+textureRate = 0.01

@@ -1,0 +1,138 @@
+[GameObjectClass]
+baseName = "ivseadog"
+geometryName = "seadog1.xsi"
+geometryScale = 1.5
+classLabel = "apc"
+//classLabel = "wingman"
+collisionRadius = 1.0
+scrapValue = 10
+scrapCost = 45
+customCost = 60
+buildTime = 15.0
+customTime = 25.0
+maxHealth = 1600
+addHealth = 1
+maxAmmo = 250 
+addAmmo = 0.25   
+unitName = "Sea Dog"
+
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+
+heatSignature = 10.0
+imageSignature = 1.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canSnipe = 0
+
+requireCount = 0
+canCollide = 1
+boxCollide = 0
+
+weaponMask = 00111
+
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gpirangn"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gpirangn"
+weaponAssault2 = 0
+
+weaponHard3 = "HP_rocket_1"
+weaponName3 = "gsprjav" // "glsearkt" // "gseacrus" 
+weaponAssault3 = 0
+
+weaponHard4 = "HP_rocket_2"
+weaponName4 = "gseacrus" 
+weaponAssault4 = 1
+visualHard4 = "HP_rocket_2"
+
+weaponHard5 = "HP_special_1"
+weaponName5 = "gzwaflak" // "gsitecmz"
+weaponAssault5 = 1  //  assault mode prevents upgrade
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+[CraftClass]
+DoIdleDispatch = false
+rangeScan = 450.0
+periodScan = 4.0
+velocJam = 0.0
+engageRange = 250
+
+attackTask = "AssaultTankAttack"
+subAttackTask = "SupportSubAttack"
+subAttackClass = "ANS" // "ADS"
+
+braccelFactor = 0.05f;
+strafeFactor = 10.1f;
+steerFactor = 3.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+selectWaitMsg = "avapcva.wav"
+selectDropoffMsg = "avapcvf.wav"
+selectPickupMsg = "avapcvg.wav"
+attackMsg = "avapcv9.wav"
+followMsg = "avapcvh.wav"
+rescueMsg = "avapcv5.wav"
+
+MIN_BOUNCE_VEL = 0.5
+
+OBJECT_ELASTICITY = 0.425   // 0.125
+GROUND_ELASTICITY = 0.08125 // 0.03125
+
+avoidSpeed = 10
+topSpeed = 35
+
+[HoverCraftClass]
+setAltitude = -18 // rises to this on firing/deploying
+accelDragStop = 2 
+accelDragFull = 5 //10 
+alphaTrack = 30 
+alphaDamp = 15 
+pitchPitch = 0.01
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 37 // 35.0
+velocReverse = 10.0
+velocStrafe = 2.0
+accelThrust = 6 // 4 
+accelBrake = 6 // 4 // 10.0
+omegaSpin = 1.0 // 0.7
+omegaTurn = 1.0 // 0.7
+alphaSteer = 1.5 // .9 // 0.7
+accelJump = 2 // 120.0 speed to aquire alttitude low or high, terrain tracking
+
+soundThrust = "seaeng2.wav" 
+soundSteer = "rmort01.wav" 
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav" 
+
+UseWaterHeight = true
+DeployedUseWaterHeight = true
+
+//LIFT_SPRING = 15.0
+//LIFT_DAMP = 8.25
+
+[APCClass]
+soldierType = "ispilo"
+soldierCount = 0
+soldierDelay = 0.1
+timeDeploy = 1 
+
+flightAltitude = -28
+AltitudeLookahead = 1.0 // # of seconds it will look ahead for adjusting altitude
+OverWater = true // true = set altitude is over water height, if present
+HovercraftPhysicsWhenUndeployed = false
+
+soundDeploy = "rmort01.wav" 
+soundUndeploy = "rmort01.wav"
+

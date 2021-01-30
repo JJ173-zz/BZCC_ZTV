@@ -1,0 +1,96 @@
+[GameObjectClass]
+geometryName = "ibrecy_ic4.xsi"
+classLabel = "recycler"
+powerCost = -14 // 0
+buildTime = 20 // also demolish time
+scrapCost = 140
+scrapValue = 0
+maxHealth = 20000 // 15000
+addHealth = 0
+maxAmmo = 0
+unitName = "Rectifier"
+aiName = "BuildingProcess"
+aiName2 = "BuildingProcess"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+isSingle = 1
+
+collisionRadius = 5.0
+
+armorClass = H
+
+// upgradeName = "ibrecy_ic2"
+
+requireCount = 1
+requireName1 = "ibdcen"
+requireText1 = "Need Data Center"
+
+provideCount = 3
+provideName1 = "ibcbun"
+provideName2 = "ibpgen"
+provideName3 = "ibrecy_ic1"
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_white_nf"
+
+effectHard1 = "hp_emit_1" 
+effectName1 = "ibrecy_ic1.smoke"
+
+effectHard2 = "hp_emit_2"
+effectName2 = "ibrecy_ic1.smoke"
+
+[PoweredBuildingClass]
+detectRange = 300
+
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "ivturr_ic2" // ["ibrecturr"]
+
+
+[BuildingClass]
+soundAmbient = "ibrecy01.wav"
+
+[FactoryClass]
+soundBuild = "ibrecy02.wav"
+soundFinish = "iapc04.wav"
+
+buildItem1 = "ivscav_ic3"
+buildItem2 = "ivcrick_ic1" // "ivscout_ic1"
+buildItem3 = "ivturr_ic1"
+buildItem4 = "pslagmine" // "ivtug_ic1"
+buildItem5 = "ivcons_ic1"
+buildItem6 = "ivcons_ic2" // "apsprimer" // "ivserv_ic1"
+buildItem7 = "apserv"
+buildItem8 = "ivdact_ic2"
+buildItem9 = "ivskyfox1" // "ivcrick_ic1"
+buildItem10 = "" // "ivskyfox1"
+buildEmptyItem = 8
+buildEmptyItem = 9
+
+reloadMsg = "ivrecy12.wav"
+rescueMsg = "ivrecy13.wav"
+
+[RecyclerClass]
+scrapHold = 20 // 40
+scrapDelay = 1E6 // 3.0 // # of seconds before +1 scrap
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.06 
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.3 4.0" 
+emitVariance = "3.0 3.0 5.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 10.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 90"
+finishColor = "20 20 20 0"
+startRadius = 4
+finishRadius = 10.0
+animateTime = 10.0
+rotationRate = 3.0
+

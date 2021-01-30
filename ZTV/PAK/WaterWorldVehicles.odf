@@ -1,0 +1,24 @@
+[MPVehicles]
+xsi1 = "ivscout00.xsi"
+cfg1 = "ivscout"
+Description1 = "Scout"
+
+xsi2 = "water-m1.xsi"
+cfg3 = "water-m1"
+Description2 = "Objective 1"
+
+xsi3 = "water-m2.xsi"
+cfg3 = "water-m2"
+Description3 = "Objective 2"
+
+xsi4 = "water-m3.xsi"
+cfg4 = "water-m3"
+Description4 = "Objective 3"
+
+xsi5 = "water-m4.xsi"
+cfg5 = "water-m4"
+Description5 = "Objective 4"
+
+xsi6 = "water-m5.xsi"
+cfg6 = "water-m5"
+Description6 = "Objective 5"

@@ -1,0 +1,96 @@
+[GameObjectClass]
+geometryName = "fvthor2.xsi"
+geometryScale = 2.5 
+//classLabel = "apc"
+classLabel = "wingman"
+collisionRadius = 1.0
+scrapValue = 20
+scrapCost = 60
+customCost = 60
+buildTime = 40.0
+customTime = 40.0
+maxHealth = 8500
+addHealth = 3
+maxAmmo = 15000 
+addAmmo = 40 
+unitName = "Thor   "
+
+aiName = "TurretTankFriend"  //Rocket not tested in mission yet
+aiName2 = "TurretTankEnemy"
+//aiName = "RocketTankFriend"  didnt deploy right
+//aiName2 = "RocketTankEnemy"
+
+heatSignature = 10.0
+imageSignature = 1.5
+radarSignature = 0.0
+isAssault = 1
+canSnipe = 0
+
+requireCount = 0
+boxCollide = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue2"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue2"
+
+weaponMask = 00011
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gsbomb2" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_cannon_1"
+weaponName2 = "gautoarc" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_SHIELD"
+weaponName3 = "gabsorb" 
+weaponAssault3 = 0
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 4.0
+velocJam = 0.0
+weaponPitch = 1.55
+engageRange = 80
+
+braccelFactor = 0.05f;
+strafeFactor = 0.1f;
+steerFactor = 1.0f;
+omegaFactor = 0.2f;
+velFactor = 0.2f;
+
+avoidSpeed = 20;
+topSpeed = 30;
+
+[HoverCraftClass]
+setAltitude = 80 
+accelDragStop = 8 
+accelDragFull = 3 
+alphaTrack = 25 
+alphaDamp = 12 
+pitchPitch = 0.01 
+pitchThrust = 0.001 
+rollStrafe = 0.001 
+rollSteer = 0.001 
+
+velocForward = 23
+velocReverse = 10.0
+velocStrafe = 20.0
+accelThrust = 60.0
+accelBrake = 60.0
+omegaSpin = 1.0
+omegaTurn = 0.8 
+alphaSteer = 2 
+accelJump = 100 
+
+soundThrust = "thund01.wav"
+
+// [APCClass]
+// soldierType = "ispilo"
+// soldierCount = 0
+// soldierDelay = 0.1
+// timeDeploy = 0.1 
+// flightAltitude = 20 
+// soundDeploy = "thund02d.wav"
+// soundUndeploy = "thund02d.wav"

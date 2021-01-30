@@ -1,0 +1,47 @@
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xemt2.wav"
+damageRadius = 0.1
+damageValue(N) = 1
+damageValue(L) = 1
+damageValue(H) = 1
+damageValue(S) = 1
+damageValue(D) = 1
+damageValue(A) = 1
+
+
+particleTypes = 2
+
+particleClass1 = "xtgl2gnd.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xtgl2gnd.char"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "50 200 150 255"
+finishColor = "0 255 0 0"
+startRadius = 0.2
+finishRadius = 2.5
+animateTime = 0.4
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 3.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 50 255 100 255"
+finishColor = "0 255 0 0"
+startRadius = 2.5
+finishRadius = 0.05
+animateTime = 2.0

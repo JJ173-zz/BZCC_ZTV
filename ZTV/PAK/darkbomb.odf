@@ -1,0 +1,30 @@
+[GameObjectClass]
+geometryName = "capmine.xsi" //"igflar00.xsi"
+geometryScale = 0.5
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 1200
+maxAmmo = 800
+unitName = "Dark Bomb"
+addAmmo = 1
+addHealth = 0.5
+
+fireSound = "gmasg00.wav"
+
+heatSignature = 0.5
+imageSignature = 0.001
+radarSignature = 0.0
+canDetect = 1
+canInteract = 1
+canCollide = 1
+armorClass = L
+
+[MineClass]
+lifeSpan = 30
+
+[FlareMineClass]
+payloadName = "darkb"
+triggerDelay = 0.5
+shotDelay = 0.5 // 1.25 //  0.75
+shotVariance = 0.25

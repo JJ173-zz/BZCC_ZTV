@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Cricket"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 200
+isAssault = 0
+
+localAmmo = 200 // needs to be amount of units capacity that youre dropping, crickets are 100
+
+
+[DispenserClass]
+shotDelay = 20.0
+objectClass = "tvcrick2"
+

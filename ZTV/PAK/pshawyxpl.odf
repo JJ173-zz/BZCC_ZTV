@@ -1,0 +1,36 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 0
+
+particleClass1 = "fburstxpl.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+explSound = ""
+damageRadius = 0 
+kickRadius = 25 
+kickOmega = 0 
+kickVeloc = 5
+
+damageValue(N) = 0
+damageValue(L) = 0 
+damageValue(H) = 0
+
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 5 125" 
+finishColor = "255 55 5 5" 
+startRadius = 3.0
+finishRadius = 20.0
+animateTime = 0.2
+latitudeBands = 16
+longitudeSegments = 24

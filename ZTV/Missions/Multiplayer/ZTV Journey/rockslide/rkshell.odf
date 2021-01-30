@@ -1,0 +1,24 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "rocksld3.xsi"
+shotSound = "crckt02.wav"
+
+xplGround = "xplrrain" // 
+xplVehicle = "xplrrain" // 
+xplBuilding = "xplrrain" //
+
+renderName = "rocksld.render"
+
+ammoCost = 1
+lifeSpan = 70.0
+shotSpeed = 100 //75.0
+
+damageValue(N) = 500 //270 // none
+damageValue(L) = 500 //260 // light
+damageValue(H) = 500 //250 // heavy
+
+damageValue(S) = 500 //260 // standard
+damageValue(D) = 400 //250 // deflection
+damageValue(A) = 500 //270 // absorbtion
+

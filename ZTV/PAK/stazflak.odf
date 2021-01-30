@@ -1,0 +1,35 @@
+[OrdnanceClass]
+classLabel = "anchor" 
+shotGeometry = NULL
+xplGround = NULL
+xplVehicle = "xplstaz_car"
+xplBuilding = NULL
+xplExpire = "xplstaz_xpr" 
+
+shotSound = NULL
+
+// renderName = "stazflak.render"
+
+ammoCost = 0
+lifeSpan = 0.1
+shotSpeed = 330 // 33 m @.1 life
+
+[LeaderRoundClass]
+stickTime = 3.0 //2.0
+
+[AnchorRocketClass]
+accelDrag = 200.0 // 10.0
+alphaDrag = 1 // 0.5
+
+[Render]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"//"invsrc invsrc modulate"//"one one modulate"
+startColor = "0 0 255 100"
+finishColor = "0 0 255 0"
+startRadius = 0.5
+finishRadius = 0.5 
+segmentLength = 0.5 
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.2 // 0.3
+textureRate = 0.1 //0.05

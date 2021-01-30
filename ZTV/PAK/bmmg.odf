@@ -1,0 +1,54 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+xplGround = "xbulgnd"
+xplVehicle = "xmmg"
+xplBuilding = "xmmg"
+renderName = "bmmg.render"
+
+ammoCost = 1.8 // 2.7
+lifeSpan = 0.6 // 0.5 // 175.0m
+shotSpeed = 350.0
+
+damageValue(N) = 28 // none
+damageValue(L) = 22 // 24 // light
+damageValue(H) = 12 // 20 // heavy
+
+damageValue(S) = 28 // standard
+damageValue(D) = 18 // deflection
+damageValue(A) = 28 // 14 // absorbtion
+
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "bmmg.trail"
+renderName2 = "bmmg.flare"
+renderName3 = "bmmg.trail2"
+
+[Trail]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "80 130 70 28"
+finishColor = "0 0 0 0"
+startRadius = 0.05
+finishRadius = 0.2
+segmentTime = 0.1
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "=flare1.tga"
+textureBlend = "one one modulate"
+startColor = "80 130 70 180"
+finishColor = "255 255 255 180"
+startRadius = 0.4
+finishRadius = 0.2
+
+[Trail2]
+renderBase = "draw_trail"
+textureBlend = "one one modulate"
+startColor = "160 250 140 23"
+finishColor = "0 0 0 0"
+startRadius = 0.03
+finishRadius = 0.2
+segmentTime = 0.06

@@ -1,0 +1,79 @@
+[GameObjectClass]
+basename = "ibtrnsyd"
+geometryName = "ibtrnsyd4.xsi"
+classLabel = "turret"
+scrapCost = 40
+scrapValue = 0
+maxHealth = 7000
+maxAmmo = 10000
+unitName = "Air Yard I"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 0.0
+isAssault = 1
+powerCost = -1 // mc costs 2
+
+aiName = "GunTowerFriend" 
+aiName2 = "GunTowerEnemy"
+
+canDetect = 1
+canCollide = 0 // cant enter tunnel otherwise
+
+ownsTerrain = 1
+
+armorClass = L
+
+upgradeName = "ibtrnsyd2"
+
+buildSupport = B // B seems to support anything, A = nothing, F = nothing
+buildRequire = F // F = Free (anywhere)
+
+requireCount = 1
+requireName1 = "ibrecy_ic1"
+requireText1 = " Need Rectifier"
+
+provideCount = 1
+provideName1 = "ibtrnsyd" 
+
+weaponMask = 0001
+
+weaponHard1 = "hp_special_1"
+visualHard1 = "hp_visual_1"
+weaponName1 =  "givdrpshp" 
+weaponAssault1 = 0
+
+weaponHard2 = "hp_special_2"
+visualHard2 = "hp_visual_2"
+weaponName2 =  "givtaskr" // "givskip"  
+weaponAssault2 = 1
+
+weaponHard3 = "hp_gun_1"
+visualHard3 = "hp_visual_3"
+weaponName3 =  "givfox" 
+weaponAssault3 = 0
+
+weaponHard4 = "hp_gun_2"
+visualHard4 = "hp_visual_4"
+weaponName4 =  "givdact2" 
+weaponAssault4 = 1
+
+
+[BuildingClass]
+soundAmbient = "command4.wav"
+
+[CraftClass]
+rangeScan = 1.0
+periodScan = 0.0
+velocJam = 0.0
+weaponPitch = 0
+steerFactor = 0.5
+engageRange = 0
+
+[TurretCraftClass]
+omegaTurret = 0.0
+detectRange = 1
+
+powerTap1 = "HP_tap_1"
+powerName = "iblung_ic2" 
+

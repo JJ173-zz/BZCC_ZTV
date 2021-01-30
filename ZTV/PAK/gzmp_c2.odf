@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gzmp_a"
+ordName = "zmpdown_c"
+wpnName = "EMP Stasis"
+fireSound = "ipgen01.wav"
+wpnReticle = "glock"
+wpnCategory = "HAND"
+isAssault = 1
+aiRange = 150
+
+[CannonClass]
+shotDelay = 0.1 // 1.5  //2.0
+

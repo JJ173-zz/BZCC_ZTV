@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = "iggren00.xsi"
+geometryScale = 0.12
+ordName = "wthrow"
+wpnName = "Disolvant"
+//wpnIcon = "wire_iggren3.tga" 
+fireSound = "flame01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "GUN"
+aiRange = 140
+
+//altName = "igskipf"
+
+isAssault = 1
+
+[CannonClass]
+shotDelay = 0.1
+//salvoCount = 10 
+//salvoDelay = 0.05 
+shotVariance = 0.02 // 0.1 
+
+// shotPitch = 0.10

@@ -1,0 +1,14 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "sdfshld"
+wpnName = "Deflector"
+wpnReticle = "gsonic_c"
+wpnCategory = "SPEC"
+aiRange = 300 
+isAssault = 0
+
+[CannonClass]
+shotDelay = 0.3 
+salvoCount = 1000 
+salvoDelay = 0.3 
+shotVariance = 0

@@ -1,0 +1,73 @@
+[GameObjectClass]
+//geometryName = "aiprobe.XSI"
+geometryName = "datalink01.xsi"
+geometryScale = 0.4
+classLabel = "commbunker"
+collisionRadius = 1.0
+scrapCost = 85
+scrapValue = 5
+maxHealth = 800
+maxAmmo = 0
+powerCost = 0
+unitName = "Sensor"
+//aiName = "CommTowerProcess" //dont need if not using panel access
+//aiName2 = "CommTowerProcess"
+heatSignature = 0.00
+imageSignature = 0.00
+radarSignature = 0.00
+isAssault = 0
+baseName = "tbsenztv"
+addhealth = 5
+ownsTerrain = 0
+armorClass = N
+canCollide = 1
+
+provideCount = 0
+
+[PoweredBuildingClass]
+detectRange = 1200 // 1200
+
+[BuildingClass]
+
+[CommBunkerClass]
+rangeScan = 1200 //1200
+periodScan = 0.0
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "tbsenztv.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "tbsenztv.blulight"
+renderName2 = "tbsenztv.bluflare"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "0 0 255 12555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "80 80 255 255"
+finishColor = "80 80 255 255"
+startRadius = 22.0 // 1
+finishRadius = 0.5

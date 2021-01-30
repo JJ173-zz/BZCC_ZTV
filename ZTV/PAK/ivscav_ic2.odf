@@ -1,0 +1,74 @@
+[GameObjectClass]
+baseName = "ivscav_ic3"
+geometryName = "moblsilo3.xsi"
+cockpitName = "ivscav_cockpit.xsi"
+animCount = 0
+classLabel = "scavenger"
+geometryScale = 1.5
+scrapValue = 0
+scrapCost = 0
+buildTime = 5.0
+maxHealth = 3000
+
+addHealth = -5
+
+maxAmmo = 1 // 10 // set ammo for weapons under scavenger class section
+unitName = "_Silo Truck"
+
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 2.0
+
+isAssault = 1
+
+armorClass = L
+
+requireCount = 0
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue" 
+
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue" 
+
+weaponMask = 00011
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "gloclase" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "gloclase" 
+weaponAssault2 = 0
+
+[CraftClass]
+rangeScan = 300.0
+periodScan = 0.0
+velocJam = 0.0
+
+braccelFactor = 0.09
+velFactor = 0.3
+steerFactor = 1.5
+omegaFactor = 0.1
+
+
+[TrackedVehicleClass]
+velocForward = 9 // 15.0
+velocReverse = 8 // 10.0
+accelThrust = 50.0
+omegaSpin = 1.0 // [2.0]
+
+engineSound = "iscav01.wav"
+treadSound = "iscav01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 1.0 // 5
+timeUndeploy = 1.0 // 5
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold = 0 // 30
+deployClass = "ibscav_ic1"
+
+

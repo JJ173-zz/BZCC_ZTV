@@ -1,0 +1,202 @@
+[GameObjectClass]
+baseName = "ivturr"
+geometryName = "tvturr4.xsi"
+geometryScale = 4.0
+cockpitName = "ivturr_cockpit.xsi"
+animCount = 0
+
+classLabel = "turrettank"
+scrapCost = 60
+customCost = 60
+scrapValue = 20
+buildTime = 10.0
+customTime = 10.0
+maxHealth = 3000
+addHealth = 1
+maxAmmo = 5000
+addAmmo = 10
+unitName = "Sentinel"
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+heatSignature = 0.1
+imageSignature = 1.0
+radarSignature = 0.1
+isAssault = 0
+canDetect = 1
+canInteract = 1
+armorClass = L
+requireCount = 0
+canSnipe = 0
+needPilot = 0
+ejectRatio = 0
+
+/////// weapons ///////////////////
+
+weaponMask = 11100
+weaponHard1 = "HP_gun_1"
+weaponName1 = "gfluxnet3" //"gtgemp" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_gun_2"
+weaponName2 = "gtglaser"
+weaponAssault2 = 0
+
+//////////////////////////////////
+
+lightHard1 = "hp_light_1"
+lightName1 = "lasersite1"
+lightHard2 = "hp_light_2"
+lightName2 = "dotred"
+lightHard3 = "hp_light_3"
+lightName3 = "dotblue"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "tvturr3.effect"
+
+//effectHard2 = "hp_emit_2"
+//effectName2 = "tvturr3.beam"
+
+turretCount = 3
+turretName1 = "turret_y"
+turretName2 = "turret_x_1"
+turretName3 = "HP_eyepoint"
+
+[CraftClass]
+weaponPitch = 1.5
+rangeScan = 150.0
+periodScan = 0.0
+velocJam = 1.0
+engageRange = 150
+
+selectGoMsg = "ivturr01.wav"
+selectAttackMsg = "ivturr03.wav"
+selectDeployMsg = "ivturr04.wav"
+selectOtherMsg = "ivturr03.wav"
+holdMsg = "ivturr12.wav"
+goMsg = "ivturr05.wav"
+followMeMsg = "ivturr08.wav"
+reloadMsg = "ivturr09.wav"
+repairMsg = "ivturr09.wav"
+rescueMsg = "ivturr10.wav"
+recycleMsg = "ivturr11.wav"
+otherMsg = "ivturr11.wav"
+attackMsg = "ivturr06.wav"
+deployedMsg = "ivturr14.wav"
+killedMsg = "ivturr07.wav"
+
+[HoverCraftClass]
+
+setAltitude = 0.1 // 0.5
+accelDragStop = 20.0
+accelDragFull = 1.0
+alphaTrack = 10.0
+alphaDamp = 3.0
+pitchPitch = 0.5
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 20 //15.0
+velocReverse = 20 //15.0
+velocStrafe = 20 //15.0
+accelThrust = 50.0
+accelBrake = 50.0
+omegaSpin = 4.0
+omegaTurn = 1.5
+alphaSteer = 10.0
+accelJump = 15.0
+
+soundThrust = "ienge.wav"
+soundSteer = "avturre8.wav"
+soundDeploy = "avturre4.wav"
+soundUndeploy = "avturre5.wav"
+
+[TurretTankClass]
+omegaTurret = 1.0
+alphaTurret = 2.0
+timeDeploy = 5 // 1.0
+timeUndeploy = 0.5
+
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "tvturr3.beamer"
+emitDelay = 0.3 
+//emitVelocity = "0.0 0.0 228.0"
+emitVelocity = "0.0 0.0 100.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.5 // 0.09 // 0.6
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "tvturr3.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 0"
+finishColor = "100 0 255 255"
+startRadius = 0.3
+finishRadius = 0.3
+segmentLength = 1.0 //1.0 //3.1
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "tvturr3.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "tvturr3.blulight"
+renderName2 = "tvturr3.bluflare"
+renderName3 = "tvturr3.wave"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 0 0 2555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "255 0 0 255"
+startRadius = 22.0 // 1
+finishRadius = 0.5
+animateTime = 0.1
+
+[Wave]
+renderBase = "draw_wave"
+textureName =  "wave.tga" //NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 55" 
+finishColor = "255 0 255 55" 
+startRadius = 2.5 
+finishRadius = 2.0 
+animateTime = 0.5 // 0.2
+waveAngle = 360 // .07 // 
+waveDepth = 0.6 // .3 //0.8
+waveSegments = 60 //8 across width, gradations 18 makes a star at 360
+
+

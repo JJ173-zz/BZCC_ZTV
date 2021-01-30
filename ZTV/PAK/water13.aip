@@ -1,0 +1,110 @@
+[Start]
+scrapCount = 40
+consClass = "fvcons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 120
+buildtype1 = "fvcons"
+buildcount1 = 1
+
+[Plan2]
+planType = "basebuildminimums"
+planPriority = 110
+buildtype1 = "fbspire"
+buildloc1 = "spirea1"
+buildtype2 = "fbspire"
+buildloc2 = "spirea2"
+buildtype3 = "fbspire"
+buildloc3 = "spirea3"
+buildtype4 = "fbspire"
+buildloc4 = "spirea4"
+doNextOnFail = 1
+
+[Plan3]
+planType = "basebuildminimums"
+planPriority = 100
+buildtype1 = "fbspire"
+buildloc1 = "spirea9"
+
+[Plan4]
+planType = "basebuildminimums"
+planPriority = 90
+buildtype1 = "fbspire"
+buildloc1 = "spirea10"
+
+[Plan5]
+planType = "basebuildminimums"
+planPriority = 80
+buildtype1 = "fbspire"
+buildloc1 = "spirea11"
+
+[Plan6]
+planType = "basebuildminimums"
+planPriority = 70
+buildtype1 = "fbspire"
+buildloc1 = "spirea12"
+
+[Plan7]
+planType = "basebuildminimums"
+planPriority = 60
+buildtype1 = "fbjammz"
+buildloc1 = "jambase"
+
+[Plan8]
+planType = "basebuildminimums"
+planPriority = 50
+buildtype1 = "fbspire"
+buildloc1 = "spirea5"
+buildtype2 = "fbspire"
+buildloc2 = "spirea6"
+
+[Plan9]
+planType = "buildminimums"
+planPriority = 40
+buildtype1 = "fvcons"
+buildcount1 = 2
+
+[Plan10]
+planType = "basebuildminimums"
+planPriority = 30
+buildtype1 = "fbspire"
+buildloc1 = "spire1"
+buildtype2 = "fbspire"
+buildloc2 = "spire2"
+
+// [Plan11]
+// planType = "buildminimums"
+// planPriority = 20
+// buildtype1 = "fvurch1"
+// buildcount1 = 1
+// ContinueEvenIfFail = true
+
+// [Plan12]
+// planType = "attacker"
+// maxAttacks = 0
+// planPriority = 10
+// planCondition = "HisExists"
+// planConditionClass = "ibsbay"
+// planConditionCount = 1
+// targettype = "ibsbay"
+// attacktype1 = "fvurch1"
+// doNextOnFail = 1
+// ContinueEvenIfFail = true
+
+// [Plan13]
+// planType = "attacker"
+// maxAttacks = 0
+// planPriority = 5
+// planCondition = "HisExists"
+// planConditionClass = "ibsbay"
+// planConditionCount = 2
+// targettype = "ibsbay"
+// attacktype1 = "fvurch1"
+// doNextOnFail = 1
+// ContinueEvenIfFail = true

@@ -1,0 +1,87 @@
+[WeaponClass]
+classLabel = "magnetgun"
+ordName = NULL
+altName = NULL 
+wpnName = "Tractor Crane"
+fireSound = "null.wav"
+wpnReticle = "gsonic_a"
+wpnCategory = "ROCK"
+flashName = "igtract5.flash"
+flashTime = 0.4
+isAssault = 0
+
+aiRange = 150
+
+[CannonClass]
+shotPitch = -1.5 
+
+[MagnetGunClass]
+TeamFilter = 51
+ammoCost = 8.5 
+activeSound = "stap01.wav"
+coneAngle = 0.2 // .08 
+fieldRadius = 200
+objPushCenter = 150 //70 //45 
+objPushEdge = -200 //-140 
+objDrag = 9 // 6.5 // 7.8
+ordPushCenter = 0 
+ordPushEdge = 0 
+ordDrag = 0.0 
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 4
+renderName1 = "igtract5.flashwave"
+renderName2 = "igtract5.flashwave2"
+renderName3 = "igtract5.field"
+renderName4 = "igtract5.field2"
+
+[FlashWave]
+renderBase = "draw_wave"
+textureName =  NULL //"wave.tga"
+textureBlend = "invsrc invsrc modulate" // "one one modulate"
+startColor = "0 0 255 155" 
+finishColor = "100 0 20 155" 
+startRadius = 200.0 
+finishRadius = 1.0 
+animateTime = 0.4 // 0.2
+waveAngle = 0.10 // .07 // 
+waveDepth = 0.6 // .3 //0.8
+waveSegments = 6 //8 across width, gradations
+
+[FlashWave2]
+renderBase = "draw_wave"
+textureName = "wave.tga"
+textureBlend = "invsrc invsrc modulate" // "one one modulate"
+startColor = "100 0 0 155" 
+finishColor = "0 0 255 155" 
+startRadius = 1.0 
+finishRadius = 200.0 
+animateTime = 0.4 // 0.2
+waveAngle = 0.10 //.07 // 
+waveDepth = 0.3 //0.8
+waveSegments = 6 //8 across width, gradations
+
+[Field]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 10"
+finishColor = "100 0 0 90" 
+startRadius = 0.6 // 1.7
+finishRadius = 0.8 // 2.0
+animateTime = 0.4
+latitudeBands = 12
+longitudeSegments = 18
+
+[Field2]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 100"
+finishColor = "100 0 0 10" 
+startRadius = 0.8 //2.0
+finishRadius = 0.6 //1.7
+animateTime = 0.4
+latitudeBands = 12
+longitudeSegments = 18

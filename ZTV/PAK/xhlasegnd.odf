@@ -1,0 +1,100 @@
+// ================
+// FLASH GROUND HIT
+// ================
+
+[ExplosionClass]
+classLabel = "explosion"
+
+explSound = "xemt2.wav"
+damageRadius = 0.1
+damageValue(N) = 1
+damageValue(L) = 1
+damageValue(H) = 1
+damageValue(S) = 1
+damageValue(D) = 1
+damageValue(A) = 1
+
+
+particleTypes = 5
+
+particleClass1 = "xhlasegnd.core"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xhlasegnd.charlite"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xhlasegnd.char"
+particleCount3 = 1
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xhlasegnd.light"
+particleCount4 = 1
+particleVeloc4 = "0.0 0.0 0.0"
+
+particleClass5 = "xhlasegnd.puff"
+particleCount5 = 1
+particleVeloc5 = "0.0 0.0 0.0"
+
+[Core]
+simulateBase = "sim_null"
+lifeTime = 0.7  // .5
+renderBase = "draw_planar"
+textureName = "ring.tga"
+textureBlend = "one one modulate"
+startColor = "70 0 200 255"
+finishColor = "0 0 255 0"
+startRadius = 0.3   // .2
+finishRadius = 4.0  // 2.0
+animateTime = 0.7
+
+[charlite]
+simulateBase = "sim_null"
+lifeTime = 2.0
+renderBase = "draw_planar"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 100 20 255 255"
+finishColor = "30 0 120 0"
+startRadius = 4.0   // 2.0
+finishRadius = 1  // .05
+animateTime = 2.0
+
+[char]
+simulateBase = "sim_null"
+lifeTime = 10.0
+renderBase = "draw_planar"
+textureName = "grndchar.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 0 0 0 125"
+finishColor = "0 0 0 60"
+startRadius = 5.0   // 2.0
+finishRadius = 2.0  // .05
+animateTime = 5.0
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.15
+renderBase = "draw_light"
+startColor = "105 0 255 2550"
+finishColor = "105 0 255 0"
+startRadius = 20.0
+finishRadius = 20.0
+animateTime = 0.15
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 0.7
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "105 55 255 255"
+finishColor = "0 0 0 0"
+startRadius = 1.0
+finishRadius = 4.0
+animateTime = 0.7
+rotaionRate = 10

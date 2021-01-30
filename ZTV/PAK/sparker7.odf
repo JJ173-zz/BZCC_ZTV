@@ -1,0 +1,66 @@
+[GameObjectClass]
+geometryName = "bubbler.xsi"
+geometryScale = 0.25
+classLabel = "i76building" 
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1E6 // amount mine holds for weapon
+unitName = "Sparker 7"
+isAssault = 0
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = N
+canCollide = 0
+canDetect = 0 
+canInteract = 0
+ownsTerrain = 0
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "sparker7.modulator"
+
+[Modulator]
+renderBase = "draw_emit"
+emitName = "sparker7.on"
+emitDelay = 4.0
+emitDelayVar = 3.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "30.0 30.0 0.0"
+
+[On]
+simulateBase = "sim_smoke"
+lifeTime = 1
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker7.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "sparker7.ontime"
+emitDelay = 0.2 
+emitDelayVar = 0.2
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "120.0 120.0 0.0"
+
+[OnTime]
+simulateBase = "sim_smoke"
+lifeTime = 0.3  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "sparker7.effect"
+
+[effect]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga" //"boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "50 40 255 0"
+startRadius = 0.3
+finishRadius = 0.7
+segmentLength = 1 //.1 //1.0 //3.1
+segmentVariance = "1.5 1.5 0.0"
+animateTime = 0.2

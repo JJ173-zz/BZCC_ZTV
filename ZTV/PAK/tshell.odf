@@ -1,0 +1,101 @@
+[OrdnanceClass]
+classLabel = "grenade"
+
+shotGeometry = "ioartl00.xsi"
+shotSound = "crckt02.wav"
+
+xplGround = "xpltvart" // 
+xplVehicle = "xpltvart" // 
+xplBuilding = "xpltvart" //
+
+renderName = "tshell.render"
+
+ammoCost = 20
+lifeSpan = 70.0
+shotSpeed = 110 //75.0
+
+damageValue(N) = 500 //270 // none
+damageValue(L) = 500 //260 // light
+damageValue(H) = 0 //250 // heavy
+
+damageValue(S) = 300 //260 // standard
+damageValue(D) = 300 //250 // deflection
+damageValue(A) = 300 //270 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "tshell.flare"
+renderName2 = "tshell.tail"
+renderName3 = "tshell.tail2"
+renderName4 = "tshell.sparks"
+[Flare]
+lifeTime = 30
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 255"
+finishColor = "255 155 0 255"
+startRadius = 3.0
+finishRadius = 3.0
+
+[Tail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "250 200 0 180"
+finishColor = "100 0 0 0"
+startRadius = 0.75
+finishRadius = 7.0 // 0.1 
+segmentTime = 0.6 // 1.5 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.6 // 0.3
+textureRate = 0.03
+
+[Tail2]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "250 0 0 250"
+finishColor = "80 0 0 0"
+startRadius = 0.6
+finishRadius = 0.1 // 0.1 
+segmentTime = 0.3 // 1.5 // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3 // 0.3
+textureRate = 0.08
+
+[Sparks]
+renderBase = "draw_emit"
+emitName = "tshell.sparker"
+emitDelay = 0.005 // 0.05 
+emitVelocity = "0.0 0.0 1.0"
+emitVariance = "20.0 20.0 5.0"
+
+[Sparker]
+simulateBase = "sim_smoke"
+lifeTime = 0.6
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "tshell.sparkhalo"
+renderName2 = "tshell.sparkflare"
+
+[SparkHalo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "220 170 100 150"
+finishColor = "150 80 0 0"
+startRadius = 0.9 // 0.6
+finishRadius = 3 // 0.12
+animateTime = 0.5
+
+[SparkFlare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "240 100 50 350"
+finishColor = "200 0 0 0"
+startRadius = 2.0 // 0.6
+finishRadius = 0.9 // 0.12
+animateTime = 0.5

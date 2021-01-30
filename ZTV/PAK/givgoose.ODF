@@ -1,0 +1,17 @@
+[WeaponClass]
+geometryName = "vioball.xsi" //"yardring2.xsi" // 
+geometryScale = 1.5
+classLabel = "dispenser"
+wpnName = "_Goose"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+localAmmo = 10000 // [2 x 5000]
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "ivsgoose1" 
+

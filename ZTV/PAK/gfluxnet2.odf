@@ -1,0 +1,50 @@
+[WeaponClass]
+classLabel = "arccannon"
+//altName = "garc_c"
+ordName = NULL
+wpnName = "Red Tape"
+fireSound = "igtow01.wav" //"arc02.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 100
+flashName = "gfluxnet2.flash"
+
+[ArcCannonClass]
+
+startDist = 10.0
+
+finishDist = 100.0
+
+travelVeloc = 20.0
+
+coneAngle = 0.5
+
+ammoCost = 4.0
+
+damageValue(N) = 40.0 // none
+damageValue(L) = 30.0 // light
+damageValue(H) = 20.0 // heavy
+
+damageValue(S) = 30.0 // standard
+damageValue(D) = 40.0 // deflection
+damageValue(A) = 20.0 // absorbtion
+
+activeSound = "igtow01.wav"
+
+xplGround = NULL
+xplVehicle = "xplfluxnet2"
+xplBuilding = "xplfluxnet2"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName =  "trail2.tga"//"plasma.tga" //"trail2.tga"
+textureBlend = "invsrc invsrc modulate" // "one one modulate"
+startColor = "255 0 0 350"
+finishColor = "255 0 0 60"
+startRadius = 0.1 // 0.15
+finishRadius = 0.3 // 0.4
+segmentLength = 0.5 // 2.0
+segmentVariance = "2.0 2.0 2.0"
+animateTime = 0.8
+textureRate = 0.01

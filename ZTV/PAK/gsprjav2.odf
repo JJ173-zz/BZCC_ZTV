@@ -1,0 +1,23 @@
+// AI version for rocket tank ai
+
+[WeaponClass]
+classLabel = "cannon"
+
+ordName = "sprjav"
+
+wpnName = "Anchor"
+fireSound = "gbmin00.wav" // "glock02b.wav"
+wpnReticle = "gshotgun" 
+wpnCategory = "ROCK"
+isAssault = 0
+isFlying = 0
+wpnPriority = 1
+altName = "gpakflar"
+aiRange = 180
+
+[CannonClass]
+shotDelay = 15 // 1.0
+salvoCount = 3  // 1 
+salvoDelay = 1.0 
+shotVariance = 0.01 
+

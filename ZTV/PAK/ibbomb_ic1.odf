@@ -1,0 +1,46 @@
+[GameObjectClass]
+geometryName = "ibbomb_ic1.xsi" //"ibbomb00.xsi"
+classLabel = "BomberBay"
+scrapCost = 100
+scrapValue = 0
+maxHealth = 6000 // 5000
+maxAmmo = 0
+unitName = "Bomber Bay"
+heatSignature = 2.0
+imageSignature = 1.0
+radarSignature = 1.0
+isAssault = 1
+
+armorClass = H
+
+requireCount = 1
+//requireName1 = "ibtrain"
+//requireText1 = "Build Training"
+requireName1 = "ibdcen"
+requireText1 = "Build Data Center"
+
+provideCount = 2
+provideName1 = "ibbomb"
+provideName2 = "ibbomb_ic1"
+
+
+buildSupport = B // B seems to support anything, A = nothing, F = nothing
+buildRequire = F // F = Free (anywhere)
+
+
+lightHard1 = "hp_light_1"
+lightName1 = "o_blue_nf"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+
+[BomberBayClass]
+bomberType = "ivbomb_ic1"
+downTime = 10 // 30
+
+[PoweredBuildingClass]
+detectRange = 300 // 100
+
+[Lod1]
+geometryName = ""ibbomb_icL1.xsi"" ;geometry for lod1
+distance = 80

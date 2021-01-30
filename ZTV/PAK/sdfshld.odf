@@ -1,0 +1,52 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = NULL 
+
+shotGeometry = NULL
+shotRadius = -2
+xplGround = NULL 
+xplVehicle = NULL 
+xplBuilding = NULL 
+
+//xplExpire = "xsonxpr" 
+
+
+renderName = "sdfshld.flash"
+
+ammoCost = 0
+lifeSpan = 0.5 
+shotSpeed = 0.1
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 3.3 
+objPushCenter = 0.0
+objPushEdge = 0.0
+objDrag = 0.0
+ordPushCenter = 3E3
+ordPushEdge = 3E3
+ordDrag = 2.0
+
+
+[Flash]
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga" 
+textureBlend = "one one modulate"
+startColor = "60 0 255 35" 
+finishColor = "200 0 255 0" 
+startRadius = 2.0
+finishRadius = 2.0
+animateTime = 0.2
+
+
+

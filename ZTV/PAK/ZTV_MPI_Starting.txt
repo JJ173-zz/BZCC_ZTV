@@ -1,0 +1,19 @@
+//
+// MPVehicles.txt - listing of multiplayer vehicles usable in BZ2
+//
+// Format of lines: xsi filename, space separator, odf filename, space separator, description
+// Lines starting with // are ignored. 
+//
+// Tip: do not put .odf extension on odf filename; added automatically on loading
+//
+fvscout_skel.xsi fvscout Drone
+ivscout00.xsi ivscout Scout
+//
+fvtank_skel.xsi fvtank Warrior
+ivtank00.xsi ivtank Sabre
+//
+fvlancer_skel.xsi fvarch Lancer
+ivmisl00.xsi ivmisl Avenger
+//
+fvtitan_skel.xsi fvatank Titan
+ivatank00.xsi ivatank Bulldog

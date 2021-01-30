@@ -1,0 +1,23 @@
+[WeaponClass]
+classLabel = "torpedolauncher"
+wpnName = "Cruise Missile"
+fireSound = "gcome00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCK"
+aiRange = 800
+isAssault = 1
+
+[LauncherClass]
+lockRange = 800.0
+shotDelay = 10.0
+lockDelay = 0.2
+coneAngle = 0.075
+lockingReticle = "gcomet.A"
+lockingSound = "lock01.wav"
+lockedReticle = "gcomet.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gcomet.1"
+
+[TorpedoLauncherClass]
+objectClass = "cruzicms"

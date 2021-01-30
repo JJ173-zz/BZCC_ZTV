@@ -1,0 +1,31 @@
+// Powerup lifter
+
+[GameObjectClass]
+geometryName = NULL // "igmits00.xsi"
+classLabel = "flare"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 300
+unitName = "Bubbleator "
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+armorClass = N
+canCollide = 0
+canDetect = 0 //1 
+canInteract = 0 //1 
+ownsTerrain = 0
+explosionName = "xzm3nxpl"
+xplExpire = "xzm3nxpl"
+
+[MineClass]
+lifeSpan = 1E6
+
+[FlareMineClass]
+payloadName = "liftfas3"
+
+fireSound = NULL
+triggerDelay = 5
+shotDelay = 15.0
+shotVariance = 0.0 

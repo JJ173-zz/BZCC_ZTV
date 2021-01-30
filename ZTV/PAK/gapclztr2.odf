@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Clusters 2x9"
+ordName = NULL
+geometryName = "yelobal2.xsi" 
+
+fireSound =  "armocrnk.wav" // "icons02b.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "GUN"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 45
+objectClass = "apclztr2"
+

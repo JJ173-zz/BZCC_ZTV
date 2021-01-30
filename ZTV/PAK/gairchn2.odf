@@ -1,0 +1,104 @@
+[WeaponClass]
+classLabel = "machinegun"
+
+ordName = "airchn2"
+wpnName = "Aero Chain"
+fireSound = "gatlingic.wav" // "gchain01.wav"
+wpnReticle = "gchain"
+wpnCategory = "GUN"
+isAssault = 0
+altName = "gairchn2"
+flashName = "gairchn2.flash"
+airange = 180
+
+[CannonClass]
+shotDelay = 0.1 
+shotVariance = 0.025
+salvoCount = 10
+salvoDelay = 0.10
+
+[Flash]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "gairchn2.muzzle"
+//renderName2 = "gairchn2.casing"
+//renderName3 = "gairchn2.ember"
+renderName2 = "gairchn2.burn"
+renderName3 = "gairchn2.puff"
+
+[Muzzle]
+renderBase = "draw_geom"
+textureName = "sflash.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 0 255"
+finishColor = "255 255 255 255"
+startRadius = 3.0
+finishRadius = 1
+animateTime = 0.3
+geomName = "g_sflash.xsi"
+
+[Casing]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_emit"
+emitName = "gairchn2.shell"
+emitDelay = 0.1
+emitVelocity = "2.0 3.0 0.0"
+emitVariance = "1.0 1.0 0.0"
+
+[Shell]
+simulateBase = "sim_ember"
+lifeTime = 2.5
+renderBase = "draw_twirl"
+textureName = "scasing.tga"
+textureBlend = "one one modulate"
+startColor = "100 100 100 255"
+finishColor = "100 100 100 255"
+startRadius = 0.11
+finishRadius = 0.11
+animateTime = 2.5
+rotationRate = 0.1
+
+[Ember]
+simulateBase = "sim_dust"
+lifeTime = 0.5
+renderBase = "draw_emit"
+emitName = "gairchn2.spark"
+emitDelay = 0.01
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "10.0 10.0 2.0"
+
+[Spark]
+simulateBase = "sim_smoke"
+lifeTime = 0.3
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 100 63 255"
+finishColor = "255 0 0 50"
+startRadius = 0.05
+finishRadius = 0.005
+animateTime = 0.3
+
+[Burn]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 0 255"
+finishColor = "255 85 0 255"
+startRadius = 3
+finishRadius = 0.5
+animateTime = 0.20
+
+[Puff]
+simulateBase = "sim_smoke"
+lifeTime = 1.0
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 155 63 255"
+finishColor = "255 0 5 0"
+startRadius = 1.0
+finishRadius = 3.0
+animateTime = 1.0
+

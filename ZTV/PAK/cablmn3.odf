@@ -1,0 +1,28 @@
+[GameObjectClass]
+geometryName = "cablez3.xsi" 
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0  
+unitName = "electrical cable"
+canCollide = 0
+canDetect = 0
+canInteract = 0
+
+explosionName = "xzm1nxpl"
+xplExpire = "xzm1nxpl"
+
+weaponHard1 =  "hp_weapon_1" 
+weaponName1 = "gcz1arc"
+
+effectHard1 = "hp_weapon_1" 
+effectName1 = "cablmn1.modulator"
+
+[MineClass]
+lifeSpan = 1E6
+
+[WeaponMineClass]
+searchRadius = 120.0
+heightScale = 1.0
+

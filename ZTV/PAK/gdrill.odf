@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Drill Transport"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange =  220 //150
+isAssault = 0
+flashName = xpmlaunc.shock
+
+localAmmo = 6001 // 1 needs to be amount of units capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 30.0
+objectClass = "tvdrill"
+

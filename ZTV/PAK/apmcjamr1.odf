@@ -1,0 +1,24 @@
+[GameObjectClass]
+
+geometryName = "datalink01.xsi"
+geometryScale = 0.5
+
+buildTime = 1
+ 
+classLabel = "wpnpower"
+scrapCost = 5
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 0
+unitName = "Pilot Powerup"
+aiName = "PowerUpProcess"
+
+explosionName = "xplelec1"
+xplExpire = "xplelec1"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gabrnic3" // "gmcjamr1"

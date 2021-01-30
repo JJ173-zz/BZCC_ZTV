@@ -1,0 +1,21 @@
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = NULL
+shotRadius = 1
+xplGround = "bldhealxpl"
+xplVehicle = "bldhealxpl"
+xplBuilding = "bldhealxpl"
+
+//renderName = "bldheal.render"
+
+ammoCost = 0.3
+lifeSpan = 4   //120e-6 // 120m
+shotSpeed = 30
+
+damageValue(N) = -1 
+damageValue(L) = -1 
+damageValue(H) = -1 
+
+damageValue(S) = -1 
+damageValue(D) = -1 
+damageValue(A) = -1 

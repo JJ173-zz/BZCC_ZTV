@@ -1,0 +1,87 @@
+[GameObjectClass]
+geometryName = "grssrvm2.xsi"
+geometryScale = 1.0
+classLabel = "i76building"
+collisionRadius = 0.0
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+addHealth = 1
+maxAmmo = 10000
+unitName = "sea grass"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+isAssault = 0
+powerCost = 0 
+ownsTerrain = 0
+canDetect = 0
+canInteract = 0
+canCollide = 0 
+armorClass = H
+explosionName = "dmbasxpl"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "grssrvm2.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "grssrvm2.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "grssrvm2.render"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "grssrvm2.bubbles"
+renderName2 = "grssrvm2.bubbles2"
+renderName3 = "grssrvm2.bubbles3"
+
+[Bubbles]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.05
+emitVelocity = "0.0 4.0 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.04
+finishRadius = 0.1
+animateTime = 20.0
+rotationRate = 0.0
+
+[Bubbles2]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.5 
+emitDelayVar = 0.05
+emitVelocity = "0.0 3.7 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.1
+finishRadius = 0.2
+animateTime = 20.0
+rotationRate = 0.0
+
+[Bubbles3]
+renderBase = "draw_twirl_trail"
+emitDelay = 1.8 
+emitDelayVar = 0.1
+emitVelocity = "0.0 3.5 0.0" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 20.0 
+textureName = "raindrop.tga"
+textureBlend = "one one modulate" 
+startColor = "155 255 255 155"
+finishColor = "100 200 255 0"
+startRadius = 0.2
+finishRadius = 0.3
+animateTime = 20.0
+rotationRate = 0.0

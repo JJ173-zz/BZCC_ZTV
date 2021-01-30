@@ -1,0 +1,25 @@
+[WeaponClass]
+
+classLabel = "targeting"
+// altName = "glasrkt2"
+
+ordName = "javswarm"
+wpnName = "Javelin"
+fireSound = "tmiss03.wav"
+wpnReticle = "gtaggun.0"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 220
+
+[TargetingGunClass]
+leaderName = "javlead"
+leaderSound = "arrowclk.wav" // "flash01.wav" 
+shotDelay = 0.1  
+firstDelay = 0.1 
+salvoDelay = 0.2 
+salvoCount = 7
+
+//shotVariance = 0.5 //0.06 
+
+lockingReticle = "gtaggun.1"
+lockedReticle = "gtaggun.2"

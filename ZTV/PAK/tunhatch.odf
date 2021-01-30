@@ -1,0 +1,17 @@
+[GameObjectClass]
+geometryName = "tunhatch.xsi"
+geometryScale = 1
+classLabel = "i76building"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = "Locked Hatch"
+heatSignature = 0.0
+imageSignature = 0.0
+radarSignature = 0.0
+collisionRadius = 1.0
+canDetect = 1
+canInteract = 1
+//canCollide = 1
+ownsTerrain = 1

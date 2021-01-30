@@ -1,0 +1,26 @@
+[GameObjectClass]
+geometryName = "iblung_ic1.xsi"
+geometryScale = 2.25 
+classLabel = "powerlung"
+animCount = 1
+animName1 = "loop"
+animFile1 = "iblung_ic1.xsi"
+collisionRadius = 1.0
+scrapCost = 60
+scrapValue = 0
+maxHealth = 8000 // 6000
+maxAmmo = 0
+unitName = "Power Core."
+heatSignature = 2.0
+imageSignature = 2.0
+radarSignature = 2.0
+canCollide = 1
+isAssault = 0
+powerCost = -30
+
+explosionName = "xicpcxpl"
+
+armorClass = L
+
+[BuildingClass]
+soundAmbient = 

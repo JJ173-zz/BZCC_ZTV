@@ -1,0 +1,39 @@
+[OrdnanceClass]
+classLabel = "MagnetShell"
+
+shotSound = "sonic03b.wav"
+
+shotGeometry = "drillbit.xsi" //NULL
+shotRadius = 4.0 // 8.0
+xplGround = "xdrill"
+xplVehicle = "xdrillcar"
+xplBuilding = "xdrill"
+
+//renderName = "pushb.render"
+
+ammoCost = 2
+lifeSpan = 250 // 150m
+shotSpeed = 20.0
+
+damageValue(N) = 550 // 400 // none
+damageValue(L) = 250 // light
+damageValue(H) = 20 // heavy
+
+damageValue(S) = 700 // standard
+damageValue(D) = 500 // deflection
+damageValue(A) = 600 // absorbtion
+
+[MagnetShellClass]
+TeamFilter = 51
+triggerDelay = 0.0
+fieldRadius = 10 // 16.0    
+objPushCenter = 30 // 0   //80 // 30.0
+objPushEdge = 15   //10 // 3.0
+objDrag = 1.5 // .8   // 0              // 0.1
+ordPushCenter = 100 // 1400      // 300.0 
+ordPushEdge = 60 //140.0       // 30.0 
+ordDrag = 2        // 1.0
+
+
+
+

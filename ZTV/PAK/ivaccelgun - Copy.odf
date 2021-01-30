@@ -1,0 +1,225 @@
+[GameObjectClass]
+baseName = "ivaccelgun"
+geometryName = "dray01.xsi"
+cockpitName = "dr-cpit.xsi"
+classLabel = "assaulttank"
+scrapValue = 50
+scrapCost = 200
+customCost = 200
+buildTime = 45.0
+customTime = 45.0
+maxHealth = 15000
+maxAmmo = 6000
+addAmmo = 3
+addHealth = 20
+unitName = "Linear Accelerator"
+//aiName = "RocketTankFriend" acts very dorky
+//aiName2 = "RocketTankEnemy"
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy" // "TurretTankFriend"
+heatSignature = 0.3
+imageSignature = 0.5
+radarSignature = 0.5
+isAssault = 1
+engageRange = 450
+
+armorClass = H
+
+//==================
+
+Mass = 500000
+	
+/////// weapons ///////////////////
+weaponMask = 10111
+weaponHard1 = "HP_GUN_1"
+weaponName1 = "ghlaser"
+weaponAssault1 = 1
+weaponHard2 = "HP_GUN_2"
+weaponName2 = "ghlaser"
+weaponAssault2 = 1
+weaponHard3 = "HP_CANNON_1"
+weaponName3 = "gchgpuls"
+weaponAssault3 = 1
+weaponHard4 = "HP_SPECIAL_1"
+weaponName4 = "igrprpod"
+weaponAssault4 = 0
+weaponHard5 = "HP_SPECIAL_2"
+weaponName5 = "igregen" 
+weaponAssault5 = 1
+
+//////////////////////////////////
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivaccelgun.flashes"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivaccelgun.flashes"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivaccelgun.flashes"
+
+turretCount = 3
+turretName1 = "turret_y" 
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+lightHard1 = "hp_light_1"
+lightName1 = "lasersite1"
+lightHard2 = "hp_light_2"
+lightName2 = "spotlite3"
+lightHard3 = "hp_light_3"
+lightName3 = "spotblue3"
+lightHard4 = "hp_light_4"
+lightName4 = "spotred3"
+
+[CraftClass]
+
+OffensiveProcessIsDistractable = true 
+OffensiveProcessIsDistractableAITeam = true 
+
+rangeScan = 449.0f
+periodScan = 0.0f
+velocJam = 0.0f
+
+braccelFactor = 0.05 // 0.05f; // serv truck is .09
+strafeFactor = 0.1 // 0.1f;  // serv truck is ---
+steerFactor = 0.9 // 0.85 // serv truck is 1.4
+omegaFactor = 0.5  // 0.01 // 0.01f;  // serv truck is .2
+velFactor = 0.2 // 0.2f;   // serv truck is .3
+
+selectWaitMsg = "ivscav05.wav"
+selectAttackMsg = "avrcktva.wav"
+selectFollowMsg = "ivmisl03.wav"
+selectGoMsg = "ivmisl02.wav"
+selectOtherMsg = "ivmisl04.wav"
+
+goMsg = "avrcktva.wav"
+attackMsg = "ivmbike13.wav"
+followMeMsg = "supply4.wav"
+followMsg = "ivscav05.wav"
+repairMsg = "ivmisl09.wav"
+reloadMsg = "ivmisl09.wav"
+rescueMsg = "ivmbike09.wav"
+recycleMsg = "ivmisl11.wav"
+otherMsg = "ivscav12.wav" 
+holdMsg = "ivmisl12.wav"
+user1Msg = ""  
+killedMsg = "avrcktv9.wav"
+diedMsg = ""
+
+[TrackedVehicleClass]
+
+TREAD_STATIC_FRICTION = 5.0  //1.5
+SPRING_FACTOR = 0.1 // 0.5
+DAMPING_FACTOR = 3 // 4  // 10  //2
+
+LevelForce =  0.0   // 1 //  0.0 
+
+ThrustTrack = -0.5 //0.0
+
+CENTER_SHIFT = -0.9
+
+//COLLISION_RAISE = 0.25 
+//SUSPENSION_MIN = -0.2 
+//SUSPENSION_MAX = 0.3 
+//SPRING_FACTOR = 0.5 // minimum value: 0.01 
+//DAMPING_FACTOR = 2.0 // 2.0 = critical damped, minimum value: 0.01 
+//TREAD_STATIC_FRICTION = 1.5 
+
+//UseGlobalFriction = true 
+//GlobalFrictionMaxThrottle = 0.04f 
+//GlobalFrictionMaxHeight = 2.0f 
+//GlobalFrictionStaticCoeff = 0.4f 
+//GlobalFrictionDynamicCoeff = 0.24f 
+//LiftSpring = 0.0 
+//TreadForceFeedback = 1.0 
+//LevelForce = 0.0 
+//ThrustTrack = 0.0 
+
+//CENTER_SHIFT = -1.0 // -1.0 for bottom, 0.0 for center, +1.0 for top
+
+
+omegaSpin = 0.4 // 1 // 8 //4.0
+velocForward = 18.0 //15.0
+velocReverse = 12.0 //15.0
+accelThrust = 80.0
+
+engineSound = "accelhum.wav" //"iatank01.wav"
+treadSound = "ipgen01.wav" // "iatank02.wav"
+
+[AssaultTankClass]
+yawMax = 1.0 // 2.0
+pitchMin = -0.35 // -0.2
+pitchMax = 1.5 // 1.0
+
+//===========================
+
+[Flashes]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivaccelgun.flash"
+renderName2 = "ivaccelgun.beam"
+
+[Flash]
+renderBase = "draw_emit"
+emitName = "ivaccelgun.flasher"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Flasher]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "ivaccelgun.light"
+renderName2 = "ivaccelgun.spark"
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.2
+renderBase = "draw_light"
+startColor = "120 0 255 850"
+finishColor = "120 0 255 0"
+startRadius = 12
+finishRadius = 1
+animateTime = 0.2
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[Spark]
+renderBase = "draw_sprite"
+textureName = "plasma.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 350"
+finishColor = "100 0 255 0"
+startRadius = 0.8
+finishRadius = 0.12
+animateTime = 0.2
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "ivaccelgun.beamer"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 120.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.1
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ivaccelgun.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 255"
+finishColor = "100 0 255 0"
+startRadius = 0.03
+finishRadius = 0.2
+segmentLength = 0.1 
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.1 
+textureRate = 0.01
+

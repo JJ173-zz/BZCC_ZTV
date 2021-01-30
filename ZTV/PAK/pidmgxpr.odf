@@ -1,0 +1,51 @@
+[ExplosionClass]
+classLabel = "explosion"
+
+particleTypes = 2
+particleClass1 = "pidmgxpr.light"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+particleClass2 = "pidmgxpr.shock"
+particleCount2 = 1
+particleVeloc2 = "0.0 0.0 0.0"
+
+// negative damage heals all other teams buildings, but not vehicles
+// even team 0
+
+explSound = NULL
+damageRadius = 180 // 195.0
+
+damageValue(N) = 80 // none
+damageValue(L) = 2200 // light
+damageValue(H) = 0 // 400 //heavy
+
+damageValue(S) = 250 // standard
+damageValue(D) = 250 // deflection
+damageValue(A) = 250 // absorbtion
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "255 0 0 155"
+finishColor = "255 0 0 5"
+startRadius = 10.0
+finishRadius = 180.0
+animateTime = 0.5
+latitudeBands = 16
+longitudeSegments = 24
+
+[Light]
+simulateBase = "sim_null"
+lifeTime = 0.5
+renderBase = "draw_light"
+startColor = "255 0 0 755"
+finishColor = "255 0 0 0"
+startRadius = 220.0
+finishRadius = 220.0
+animateTime = 0.5
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0

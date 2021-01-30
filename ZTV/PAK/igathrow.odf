@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryName = NULL //"iggren00.xsi"
+geometryScale = 0.12
+ordName = "athrow"
+wpnName = "Ion Drip"
+//wpnIcon = "wire_iggren3.tga" 
+fireSound = "flame01.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnCategory = "ROCKET"
+aiRange = 125
+
+//altName = "igskipf"
+
+isAssault = 1
+
+[CannonClass]
+shotDelay = 0.2
+salvoCount = 20 
+salvoDelay = 0.15 
+shotVariance = 0.01 // 0.1 
+
+shotPitch = 0.10

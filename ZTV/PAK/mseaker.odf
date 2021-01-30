@@ -1,0 +1,34 @@
+[GameObjectClass]
+geometryName = "seaseek1.xsi"
+geometryScale = 1.2
+classLabel = "weaponmine"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 1
+unitName = "Seaker"
+canDetect = 1
+canInteract = 1
+canCollide = 1
+
+explosionName = "xzm2nxpl""
+
+weaponHard1 = "hp_weapon"
+weaponName1 = "gseaker"
+
+effectHard1 = "Seaker"
+effectName1 = "seeker.render"
+
+[MineClass]
+lifeSpan = 10
+xplBlast = "xseekxpl"
+xplExpire = "xzm2nxpl"
+
+[WeaponMineClass]
+searchRadius = 200.0
+heightScale = 2.0
+effectHard1 = "Seeker"
+effectName1 = "seeker.render"
+
+
+

@@ -1,0 +1,113 @@
+//////////////////////////////
+// FLAK DELIVERY ORDNANCE
+//////////////////////////////
+
+[OrdnanceClass]
+classLabel = "bullet"
+shotGeometry = "gravanchor.xsi"
+xplGround = NULL
+xplVehicle = "xwaflakc"
+xplBuilding = "xwaflakc"
+xplExpire = "xwaflak"
+
+shotSound = "gmdmg00.wav"
+
+renderName = "waflak.render"
+
+ammoCost = 0.1
+lifeSpan = 1
+shotSpeed = 125
+
+damageValue(N) = 0 // none
+damageValue(L) = 0 // light
+damageValue(H) = 0 // heavy
+damageValue(S) = 0 // standard
+damageValue(D) = 0 // deflection
+damageValue(A) = 0 // absorbtion
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 7
+renderName1 = "waflak.trail"
+renderName2 = "waflak.flare"
+renderName3 = "waflak.flare2"
+renderName4 = "waflak.flash"
+renderName5 = "waflak.flame"
+renderName6 = "waflak.puff"
+renderName7 = "waflak.flash"
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 120 160 80"
+finishColor = "30 110 120 0"
+startRadius = 0.6
+finishRadius = 1.5 
+segmentTime = 0.6 
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.6 
+textureRate = 0.1 
+
+[Flare]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "255 205 155 255"
+finishColor = "255 205 155 255"
+startRadius = 2.0
+finishRadius = 2.0
+
+[Flare2]
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 255 90 25 255"
+finishColor = "255 90 25 255"
+startRadius = 1.0
+finishRadius = 1.0
+animateTime = 1.0
+
+[Flame]
+renderBase = "draw_twirl_trail"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "255 255 63 255"
+finishColor = "255 0 0 0"
+startRadius = 0.4
+finishRadius = 0.15
+animateTime = 0.1
+emitDelay = 0.003
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "3.0 3.0 2.0"
+emitLife = 0.1
+
+[Puff]
+renderBase = "draw_twirl_trail"
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = " 40 90 180 165"
+finishColor = "57 57 127 0"
+startRadius = 0.7
+finishRadius = 5
+rotationRate = 5.0
+animateTime = 3.0
+emitDelay = 4
+emitVariance = "0.8 0.8 0.8"
+emitVelocity = "0.0 0.0 1.0"
+emitLife = 3.0
+
+[Flash]
+renderBase = "draw_twirl_trail"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = " 90 180 255 255"
+finishColor = "50 90 255 0"
+startRadius = 3.0
+finishRadius = 12
+rotationRate = 0.0
+animateTime = 1.0
+emitDelay = 4
+emitVariance = "0.0 0.0 0.0"
+emitVelocity = "0.0 0.0 0.0"
+emitLife = 1.0

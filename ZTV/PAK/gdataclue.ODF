@@ -1,0 +1,15 @@
+[WeaponClass]
+//geometryName = "redbal2.xsi"
+classLabel = "dispenser"
+wpnName = "Bonus"
+fireSound = "armor_up.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 0
+isAssault = 1
+
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "dataclue2" 
+

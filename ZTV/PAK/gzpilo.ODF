@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Soldier"
+fireSound = "team0104.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN" 
+aiRange = 200
+isAssault = 0
+
+localAmmo = 800 // 4 x 200 -  needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 200.0
+objectClass = "iszpilo"
+

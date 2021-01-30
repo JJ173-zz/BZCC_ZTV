@@ -1,0 +1,135 @@
+[ExplosionClass]
+classLabel = "explosion"
+explSound = "arc01.wav" // lhit.wav
+
+damageRadius = 0.0
+damageValue(N) = 0
+damageValue(L) = 0 
+damageValue(H) = 0 
+damageValue(S) = 0
+damageValue(D) = 0
+damageValue(A) = 0
+
+kickRadius = 16.0
+kickOmega = 2.0
+kickVeloc = 0.0
+
+particleTypes = 4
+particleClass1 = "xplelec1.shock"
+particleCount1 = 1
+particleVeloc1 = "0.0 0.0 0.0"
+
+particleClass2 = "xplelec1.sparkbase"
+particleCount2 = 4
+particleVeloc2 = "0.0 0.0 0.0"
+
+particleClass3 = "xplelec1.sparkscatter"
+particleCount3 = 2
+particleVeloc3 = "0.0 0.0 0.0"
+
+particleClass4 = "xplelec1.bluepuffs"
+particleCount4 = 3
+particleVeloc4 = "0.0 0.0 0.0"
+
+[Shock]
+simulateBase = "sim_null"
+lifeTime = 0.3
+renderBase = "draw_sphere"
+textureName = "vsmoke.tga"
+textureBlend = "one one modulate"
+startColor = "155 195 255 80"
+finishColor = "255 255 255 0"
+startRadius = 1
+finishRadius = 10
+animateTime = 0.3
+latitudeBands = 12
+longitudeSegments = 18
+
+///////////////////
+
+[SparkBase]
+simulateBase = "sim_smoke"
+lifeTime = 2  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "xplelec1.cycleon"
+
+[CycleOn]
+renderBase = "draw_emit"
+emitName = "xplelec1.ontime2"
+emitDelay = 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "20.0 20.0 20.0" 
+
+[OnTime2]
+simulateBase = "sim_smoke"
+lifeTime = 0.3  // duration of effect, length of bolt
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "xplelec1.bolts"
+
+[bolts]
+simulateBase = "sim_null"
+lifeTime = 1.25
+renderBase = "draw_bolt"
+textureName = "trail2.tga" // "boltline.tga" 
+textureBlend = "one one modulate"
+startColor = "80 180 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.1
+finishRadius = 0.2
+segmentLength = 0.5 
+segmentVariance = "0.5 0.5 0.0"
+animateTime = 0.2
+
+/////////////////////
+
+[SparkScatter] 
+simulateBase = "sim_smoke"
+lifeTime = 4  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "xplelec1.cycleonb"
+
+[CycleOnb]
+renderBase = "draw_emit"
+emitName = "xplelec1.ontime2b"
+emitDelay = 0.05 // 0.1 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "120.0 0.0 120.0" 
+
+[OnTime2b]
+simulateBase = "sim_smoke"
+lifeTime = 0.05  
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "xplelec1.effectb"
+
+[effectb]
+simulateBase = "sim_null"
+lifeTime = 0.05
+renderBase = "draw_bolt"
+textureName = "lightflare.tga" 
+textureBlend = "one one modulate"
+startColor = "50 120 180 255"
+finishColor = "20 40 80 0"
+startRadius = 3  
+finishRadius = 5  
+segmentLength = 1.0 
+segmentVariance = "0.2 0.2 0.0"
+animateTime = 0.1
+textureRate = 1
+
+/////////////////
+
+[BluePuffs]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_twirl"
+textureName = "flame.tga"
+textureBlend = "one one modulate"
+startColor = "5 155 255 125"
+finishColor = "5 200 255 0"
+startRadius = 2.0
+finishRadius = 8.0
+animateTime = 0.5

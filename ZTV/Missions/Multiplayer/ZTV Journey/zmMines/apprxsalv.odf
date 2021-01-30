@@ -1,0 +1,22 @@
+[GameObjectClass]
+geometryName = "betacred.xsi"
+geometryScale = .1 // .05
+classLabel = "wpnpower"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 0
+unitName = NULL
+aiName = "PowerUpProcess"
+
+canDetect = 0
+canInteract = 0
+
+requireCount = 0
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gprxsalv"

@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "_Sky Fox"
+fireSound = "transdrop.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN"
+aiRange = 150
+isAssault = 1
+flashName = xpmlaunc.shock
+
+localAmmo = 1000 // [1 x 1000]
+// 1 needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 10.0
+objectClass = "ivskyfox2" 
+

@@ -1,0 +1,18 @@
+[GameObjectClass]
+geometryName = "cockpit_hgrip6.xsi" // "ivlavegg.xsi" 
+geometryScale = 0.5
+ 
+classLabel = "wpnpower"
+scrapCost = 5
+scrapValue = 0
+maxHealth = 300
+maxAmmo = 0
+unitName = "Pilot Powerup"
+aiName = "PowerUpProcess"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[WeaponPowerupClass]
+weaponName = "gabrnic"

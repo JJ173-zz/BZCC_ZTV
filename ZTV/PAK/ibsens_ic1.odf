@@ -1,0 +1,41 @@
+[GameObjectClass]
+baseName = "ibsens_ic1"
+geometryName = "radar_center.xsi"
+classLabel = "commbunker"
+collisionRadius = 1.0
+scrapCost = 40
+scrapValue = 0
+maxHealth = 7000
+maxAmmo = 0
+powerCost = 1 // -1
+unitName = "Radar Array I"
+aiName = "CommTowerProcess" //dont need if not using panel access
+aiName2 = "CommTowerProcess"
+heatSignature = 1.00
+imageSignature = 1.00
+radarSignature = 1.00
+isAssault = 1
+addhealth = 0
+ownsTerrain = 1
+armorClass = L
+
+upgradeName = "ibsens_ic2"
+
+provideCount = 1
+provideName1 = "ibsens_ic1"
+
+requireCount = 0
+//requireName1 = "ibvend1"
+//requireText1 = "Build Pilot Arsenal"
+
+[PoweredBuildingClass]
+detectRange = 700 
+
+powerTap1 = "HP_tap_2"
+powerName = "ivradr_ic1" 
+
+[BuildingClass]
+
+[CommBunkerClass]
+rangeScan = 700 
+periodScan = 4.0

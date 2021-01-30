@@ -1,0 +1,63 @@
+[WeaponClass]
+classLabel = "arccannon"
+//altName = "garc_c"
+ordName = NULL
+wpnName = "Flux Stream"
+fireSound = "igtow01.wav"
+wpnReticle = "garc_a"
+wpnCategory = "CANNON"
+isAssault = 0
+aiRange = 120 // 150
+flashName = "gfluxnet4i.render"
+
+[ArcCannonClass]
+
+startDist = 20.0
+
+finishDist = 100 // 80.0
+
+travelVeloc = 25.0
+
+coneAngle = 0.5
+
+ammoCost = 3.0
+
+damageValue(N) = 45 // 20.0 // none
+damageValue(L) = 35 // 15.0 // light
+damageValue(H) = 15.0 // heavy
+
+damageValue(S) = 20.0 // standard
+damageValue(D) = 20.0 // deflection
+damageValue(A) = 15.0 // absorbtion
+
+activeSound = "igtow01.wav"
+
+xplGround = NULL
+xplVehicle = "xplfluxnet4i"
+xplBuilding = "xplfluxnet4i"
+
+[Flash]
+renderBase = "draw_bolt"
+textureName =  "trail2.tga"//"plasma.tga" //"trail2.tga"
+textureBlend = "invsrc invsrc modulate" // "one one modulate"
+startColor = "70 0 255 2050"
+finishColor = "0 0 255 0"
+startRadius = 0.05 // .15 // 0.15
+finishRadius = 0.2 // .5 // 0.4
+segmentLength = 1.0 // 2.0
+segmentVariance = "2.0 2.5 2.0"
+animateTime = 0.8
+textureRate = 0.01
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 0 460"  // 590
+finishColor = "40 0 155 0"
+startRadius = 1.5 // 0.3
+finishRadius = 0.01
+segmentLength = 2 // 1 // 7.0 
+segmentVariance = "3.0 3.0 2.0"
+animateTime = 0.8 // 0.2
+textureRate = 0.01

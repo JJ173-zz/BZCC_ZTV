@@ -1,0 +1,25 @@
+[GameObjectClass]
+classLabel = "fvartl"
+geometryScale = 2.0
+
+scrapCost = 50 //65
+customCost = 50 //70
+buildTime = 10.0 // 20.0
+customTime = 10.0 // 20.0
+maxHealth = 1000
+maxAmmo = 3000 // 2000
+addAmmo = 4 // 0
+
+[CraftClass]
+engageRange = 375
+
+attackTask = "ArtlAttack"
+subAttackTask = "ArtlSubAttack"
+subAttackClass = "AD"	// include air units as attack targets only when deployed
+
+[HoverCraftClass]
+
+[ArtilleryClass]
+
+[DeployableClass]
+timeUndeploy = 10

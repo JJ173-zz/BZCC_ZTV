@@ -1,0 +1,173 @@
+[GameObjectClass]
+geometryName = "ivturr_ic1a.XSI" 
+geometryScale = 5.0
+classLabel = "turrettank"
+//classLabel = "sav"
+// players can never enter sav class
+
+scrapValue = 0
+scrapCost = 50
+customCost = 80
+
+buildTime = 3.0 // 
+customTime = 15.0
+
+maxHealth = 2000
+addHealth = 1 
+maxAmmo = 3000
+addAmmo = 10
+armorClass = L
+unitName = "Sentinel"
+//aiName = "SAVFriend" // RKT combats slightly better
+//aiName2 = "SAVEnemy" // but this hunts pilots better
+
+aiName = "TurretTankFriend"
+aiName2 = "TurretTankEnemy"
+
+heatSignature = 0.5
+imageSignature = 1.0
+radarSignature = 0.1
+isAssault = 0
+
+provideCount = 1
+provideName1 = "ivturr"
+
+//explosionName = "xbldxpl"
+
+canSnipe = 1 // doesnt work on sav class
+needPilot = 1
+
+weaponMask = 00011
+
+weaponHard1 = "HP_ROCKET_1"
+weaponName1 = "gcrktp3i" 
+weaponAssault1 = 0
+
+weaponHard2 = "HP_gun_1"
+weaponName2 = "glsrtrkic" 
+weaponAssault2 = 1
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "lasersiteic"
+lightHard2 = "hp_light_2"
+lightName2 = "dotredic"
+lightHard1 = "hp_light_3"
+lightName1 = "dotblueic"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivturr_ic1.effect"
+
+turretCount = 3
+turretName1 = "turret_y"
+turretName2 = "turret_x"
+turretName3 = "HP_eyepoint"
+
+[CraftClass]
+rangeScan = 450.0
+periodScan = 2.0
+velocJam = 5.0
+weaponPitch = 1.5
+engageRange = 200
+
+selectGoMsg = "ivturr01.wav"
+selectAttackMsg = "robo05c.wav"
+selectDeployMsg = "ivturr04.wav"
+selectOtherMsg = "robo05c.wav"
+holdMsg = "ivturr12.wav"
+goMsg = "ivturr05.wav"
+followMeMsg = "ivturr08.wav"
+reloadMsg = "ivturr09.wav"
+repairMsg = "ivturr09.wav"
+rescueMsg = "ivturr10.wav"
+recycleMsg = "ivturr11.wav"
+otherMsg = "ivturr11.wav"
+attackMsg = "ivturr06.wav"
+
+deployedMsg = "ivturr14.wav"
+killedMsg = "ivturr07.wav"
+
+[HoverCraftClass]
+setAltitude = 12 // 30.0
+accelDragStop = 3 //5.0
+alphaTrack = 10 //20.0
+alphaDamp = 3 // 5.0
+pitchPitch = 0.25
+pitchThrust = 0.1
+rollStrafe = 0.1
+rollSteer = 0.1
+
+velocForward = 15 // 60.0
+velocReverse = 10 // 20.0
+velocStrafe = 5 // 10.0
+accelThrust = 10 // 30.0
+omegaSpin = 2.0
+omegaTurn = 1.0
+alphaSteer = 5.0
+accelJump = 30 // 250 // 400.0
+soundThrust = "benv03.wav"
+
+[TurretTankClass]
+omegaTurret = 1.0
+alphaTurret = 2.0
+timeDeploy = 5 // 1.0
+timeUndeploy = 0.5
+
+//[SavClass]
+//flightAltitude = 50 // 150.0
+//soundDeploy = "benv03.wav"
+//soundUndeploy = "benv03.wav"
+
+[Effect]
+renderBase = "draw_emit"
+emitName = "ivturr_ic1.bflash1"
+emitDelay = 0.5 
+emitVelocity = "0.0 0.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+emitInherit = "1.0 1.0 1.0"
+
+[BFlash1]
+simulateBase = "sim_smoke"
+lifeTime = 0.1 
+renderBase = "draw_multi"
+renderCount = 3
+renderName1 = "ivturr_ic1.blulight"
+renderName2 = "ivturr_ic1.bluflare"
+renderName3 = "ivturr_ic1.wave"
+
+[BluLight]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_light"
+startColor = "255 0 0 2555"
+finishColor = "0 0 255 0"
+startRadius = 30 // 0.4
+finishRadius = 30 // 0.1
+animateTime = 0.1
+attenuateConstant = 0.0
+attenuateLinear = 1.0
+attenuateQuadratic = 0.0
+
+[BluFlare]
+simulateBase = "sim_null"
+lifeTime = 0.1
+renderBase = "draw_sprite"
+textureName = "lightflare.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 255"
+finishColor = "255 0 0 255"
+startRadius = 23 // 22.0 
+finishRadius = 0.5
+animateTime = 0.1
+
+[Wave]
+renderBase = "draw_wave"
+textureName =  "wave.tga" //NULL //"wave.tga"
+textureBlend = "one one modulate"
+startColor = "0 0 255 55" 
+finishColor = "255 0 255 55" 
+startRadius = 3.25 // 3
+finishRadius = 2.25 // 2
+animateTime = 0.5 
+waveAngle = 360  
+waveDepth = 0.6  
+waveSegments = 60 //8 across width, gradations 18 makes a star at 360

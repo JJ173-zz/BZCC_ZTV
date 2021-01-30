@@ -1,0 +1,217 @@
+[Start]
+scrapCount = 40
+consClass = "tvcons"
+scavClass = "tvscavc"
+checkProvides = true
+
+[IdleDispatcher] 
+ScavIdleSeconds = 1 
+UnitIdleSeconds = 300 // <== After a units is this many seconds, the ID grabs it 
+MinAttackForce = 1 
+MaxAttackForce = 3
+MaxTargets = 99 
+BomberIdleSeconds = 300 
+MaxBomberTargets = 99 
+//MinMissionSeconds = 600 
+sendAllUnitsOnStartup = false
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+[Plan1]
+planType = "buildminimums"
+planPriority = 140
+buildtype1 = "tvrigapc1"
+buildcount1 = 1
+buildtype2 = "tvrigapc2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan2]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 100
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planConditionCount = 1
+targettype = "ibscav"
+attacktype1 = "tvrigapc1"
+ContinueEvenIfFail = true
+
+[Plan3]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 90
+planCondition = "HisExists"
+planConditionClass = "ibscav"
+planConditionCount = 1
+targettype = "ibscav"
+attacktype1 = "tvrigapc2"
+ContinueEvenIfFail = true
+
+[Plan4]
+planType = "buildminimums"
+planPriority = 89
+buildtype1 = "tvsaucer1"
+buildcount1 = 1
+buildtype2 = "tvsaucer2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan5]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 88
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ufotarg1"
+attacktype1 = "tvsaucer1"
+ContinueEvenIfFail = true
+
+[Plan6]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 87
+planCondition = "HisExists"
+planConditionClass = "ibrecy"
+planConditionCount = 2
+targettype = "ufotarg2"
+attacktype1 = "tvsaucer2"
+ContinueEvenIfFail = true
+
+[Plan7]
+planType = "buildminimums"
+planPriority = 80
+buildtype1 = "tvmlnch1"
+buildcount1 = 1
+buildtype1 = "tvmlnch2"
+buildcount1 = 1
+ContinueEvenIfFail = true
+
+[Plan8]
+planType = "Hold"
+planPriority = 70
+holdtype1 = "tvmlnch1"
+holdcount1 = 1
+holdpoint = "hold2"
+ContinueEvenIfFail = true
+
+[Plan9]
+planType = "Hold"
+planPriority = 60
+holdtype1 = "tvmlnch2"
+holdcount1 = 1
+holdpoint = "hold4"
+ContinueEvenIfFail = true
+
+[Plan10]
+planType = "buildminimums"
+planPriority = 50
+buildtype1 = "tvraven1"
+buildcount1 = 1
+buildtype2 = "tvraven2"
+buildcount2 = 1
+buildtype3 = "tvjav1"
+buildcount3 = 1
+buildtype4 = "tvjav2"
+buildcount4 = 1
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 40
+planCondition = "HisExists"
+planConditionClass = "ivturr"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ivturr"
+attacktype1 = "tvraven1"
+ContinueEvenIfFail = true
+
+[Plan11]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 40
+planCondition = "HisExists"
+planConditionClass = "ivturr"
+planCompare = ">="
+planConditionCount = 1
+targettype = "ivturr"
+attacktype1 = "tvraven2"
+ContinueEvenIfFail = true
+
+[Plan12]
+planType = "Hold"
+planPriority = 30
+holdtype1 = "tvraven1"
+holdcount1 = 1
+holdpoint = "hold1"
+ContinueEvenIfFail = true
+
+[Plan13]
+planType = "Hold"
+planPriority = 20
+holdtype1 = "tvraven2"
+holdcount1 = 1
+holdpoint = "hold3"
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 10
+planCondition = "HisExists"
+planConditionClass = "ibbomb"
+planConditionCount = 1
+targettype = "ibbomb"
+attacktype1 = "tvjav1"
+ContinueEvenIfFail = true
+
+[Plan14]
+planType = "attacker"
+maxAttacks = 0
+AttackAnything = true
+planPriority = 10
+planCondition = "HisExists"
+planConditionClass = "ibbomb"
+planConditionCount = 1
+targettype = "ibbomb"
+attacktype1 = "tvjav2"
+ContinueEvenIfFail = true
+
+
+[Plan15]
+planType = "buildminimums"
+planPriority = 86
+buildtype1 = "ivtechbot1"
+buildcount1 = 1
+buildtype2 = "ivtechbot2"
+buildcount2 = 1
+ContinueEvenIfFail = true
+
+[Plan16]
+planType = "Hold"
+planPriority = 85
+holdtype1 = "ivtechbot1"
+holdcount1 = 1
+holdpoint = "hold6"
+ContinueEvenIfFail = true
+
+[Plan17]
+planType = "Hold"
+planPriority = 84
+holdtype1 = "ivtechbot2"
+holdcount1 = 1
+holdpoint = "hold8"
+ContinueEvenIfFail = true

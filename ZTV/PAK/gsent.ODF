@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Sentry"
+fireSound = "gwasp00.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "GUN" 
+aiRange = 400
+isAssault = 1
+
+altName = "gscout"
+
+//localAmmo = 15000 // 1 // needs to be amount of units ammo capacity that youre dropping
+
+[DispenserClass]
+shotDelay = 1.5
+objectClass = "fvsentns"
+

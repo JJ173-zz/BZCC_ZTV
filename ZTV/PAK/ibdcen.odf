@@ -1,0 +1,85 @@
+[GameObjectClass]
+geometryName = "ibdcen4.xsi"//"ibsuprtech.xsi" // 
+classLabel = "barracks" // "powered"
+scrapCost = 80 // 100 
+scrapValue = 0
+maxHealth = 7000
+maxAmmo = 0
+unitName = "Data Center"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 1.0
+collisionRadius = 4.0
+isAssault = 1
+powercost = 2
+armorClass = H
+
+requireCount = 3
+
+requireName1 = "ibminbay"
+requireText1 = "Build Service Bay"
+
+requireName2 = "ibvend1"
+requireText2 = "Build Pilot Arsenal"
+
+requireName3 = "ibfact_ic1"
+requireText3 = "Build Research Center"
+
+provideCount = 2
+provideName1 = "ibdcen"
+provideName2 = "ibfact"
+
+buildSupport = B // B = Base, A = Adjacency, F = Free
+buildRequire = F // F = Free (anywhere)
+
+//lightHard1 = "hp_light_1"
+//lightName1 = "o_lblue_nf"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ibdcen.beam"
+effectHard2 = "hp_emit_2"
+effectName2 = "ibdcen.beam"
+effectHard3 = "hp_emit_3"
+effectName3 = "ibdcen.beam"
+effectHard4 = "hp_emit_4"
+effectName4 = "ibdcen.beam"
+
+[BuildingClass]
+soundAmbient = "iabomb01.wav"
+
+[PoweredBuildingClass]
+detectRange = 250
+
+powerTap1 = "HP_tap_1"
+powerTap2 = "HP_tap_2"
+powerName = "ivturr_ic3"
+
+[BarracksClass]
+pilotHold = 0  // [500]
+
+[Beam]
+renderBase = "draw_emit"
+emitName = "ibdcen.beamer"
+emitDelay = 0.3 
+emitVelocity = "0.0 216.0 0.0"
+emitVariance = "0.0 0.0 0.0"
+
+[Beamer]
+simulateBase = "sim_smoke"
+lifeTime = 0.5
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ibdcen.Bleam"
+
+[Bleam]
+renderBase = "draw_bolt"
+textureName = "boltline.tga" // "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "100 0 255 0"
+finishColor = "100 0 255 255"
+startRadius = 0.3
+finishRadius = 0.3
+segmentLength = 1.0 //3.1
+segmentVariance = "0.0 0.0 0.0"
+animateTime = 0.3 
+textureRate = 0.01

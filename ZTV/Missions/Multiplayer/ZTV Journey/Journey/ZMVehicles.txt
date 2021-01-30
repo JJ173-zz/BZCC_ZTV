@@ -1,0 +1,11 @@
+ivscout00.xsi ivscout Default ISDF
+ivtank00.xsi ivtankdm Sabre
+ivmbik00.xsi ivmbikedm Jackal
+ivmisl00.xsi ivmisldm Avenger
+ivatnk00.xsi ivatankdm Bull Dog
+ivrckt00.xsi ivrcktdm Rocket Tank
+ivwalk_skel.xsi ivwalkdm Attila LM
+ispilo_rifle_skel.xsi ispilo ISDF Pilot
+ivturr00.xsi ivturr Rattler
+
+

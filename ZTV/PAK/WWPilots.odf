@@ -1,0 +1,35 @@
+[MPVehicles]
+xsi1 = "ispilo_rifle_skel.xsi"
+cfg1 = "isseapi"
+Description1 = "Sea Pilot"
+
+xsi2 = "ispilo_rifle_skel.xsi"
+cfg2 = "isseapi2"
+Description2 = "Sub Mariner"
+
+xsi3 = "ispilo_bazooka_run.xsi"
+cfg3 = "isshock"
+Description3 = "Shock Trooper"
+
+xsi4 = "ispilo_rifle_run.xsi"
+cfg4 = "islase"
+Description4 = "Laserman"
+
+xsi5 = "ispilo_rifle_run.xsi"
+cfg5 = "isphase"
+Description5 = "Phaserman"
+
+xsi6 = "ispilo_bazooka_run.xsi"
+cfg6 = "issold3"
+Description6 = "Rocketman"
+
+///////------------  ivar4 value for map infs ------------////////////
+
+//   Hover Sniper        //  1
+//   Shock Trooper       //  2
+//   Laserman            //  4 
+//   Phaserman           //  8
+//   Rocketman           //  16
+
+
+

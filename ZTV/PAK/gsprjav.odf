@@ -1,0 +1,21 @@
+[WeaponClass]
+classLabel = "cannon"
+
+ordName = "sprjav"
+
+wpnName = "Harpoon"
+fireSound = "gbmin00.wav" // "glock02b.wav"
+wpnReticle = "gshotgun" 
+wpnCategory = "ROCK"
+isAssault = 0
+isFlying = 0
+wpnPriority = 1
+altName = "gpakflar"
+aiRange = 180
+
+[CannonClass]
+shotDelay = 1.0
+//salvoCount = 3 
+//salvoDelay = 0.3 
+shotVariance = 0.01 
+

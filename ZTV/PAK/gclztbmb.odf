@@ -1,0 +1,27 @@
+[WeaponClass]
+classLabel = "cannon"
+
+// external geometry
+geometryName = "clstmnt2.xsi"
+
+animCount = 0
+altname = "gclztbmb"
+ordName = "clztbmb"
+wpnName = "Clusters"
+fireSound = "igun01l.wav" // "cammo.wav" 
+wpnReticle = "gmdmgun.0"
+wpnLadder = "gmdmgun.L0"
+wpnPriority = 1
+wpnCategory = "SPEC"
+aiRange = 120 
+isAssault = 1
+
+[CannonClass]
+shotDelay = 0.3 
+salvoCount = 9 
+salvoDelay = 0.3 
+shotVariance = 0.1
+//shotPitch = -0.6 // -1.58 = straight down
+
+
+

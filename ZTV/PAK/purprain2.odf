@@ -1,0 +1,47 @@
+[OrdnanceClass]
+classLabel = "grenade"
+shotSound = "purprain.wav"
+xplGround = "xprpraingnd"
+xplVehicle = "xprpraincar"
+xplBuilding = "xprprainbdg"
+
+renderName = "purprain2.render"
+
+ammoCost = 0.1 // 3.0
+lifeSpan = 15 
+shotSpeed = 80 // 40 
+
+damageValue(N) = 100 
+damageValue(L) = 50 
+damageValue(H) = 20 
+
+damageValue(S) = 100 
+damageValue(D) = 100 
+damageValue(A) = 100 
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 2
+renderName1 = "purprain2.trail"
+renderName2 = "purprain2.halo"
+[Halo]
+renderBase = "draw_sprite"
+textureName = "lighthalo.tga"
+textureBlend = "one one modulate"
+startColor = "60 0 180 127"
+finishColor = "30 0 180 127"
+startRadius = 0.8  // .5
+finishRadius = 0.8  // .5
+
+[Trail]
+renderBase = "draw_trail"
+textureName = "boltline.tga"
+textureBlend = "one one modulate"
+startColor = "60 0 255 255"
+finishColor = "0 0 255 0"
+startRadius = 0.15    //0.3
+finishRadius = 0.01  //0.05
+segmentTime = 0.5 // 0.9  // time each segment animates
+segmentVariance = "0.001 0.001 0.001 "
+animateTime = 0.2
+

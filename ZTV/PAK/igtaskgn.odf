@@ -1,0 +1,24 @@
+[WeaponClass]
+classLabel = "cannon"
+ordName = "taskkick"
+wpnName = "Energy Drain"
+fireSound = "snip02.wav" 
+wpnReticle = "ghornet.0"
+wpnCategory = "GUN"
+aiRange = 800
+
+//altName = "igpdust_c"
+
+isAssault = 0
+
+isFlying = 0
+wpnCategory = "GUN"
+//localAmmo = 6
+
+[CannonClass]
+shotDelay = 120 
+salvoCount = 3 // 3 
+salvoDelay = 0.3 
+shotVariance = 0.5 
+
+shotPitch = 0.2

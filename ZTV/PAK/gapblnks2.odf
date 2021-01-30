@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "dispenser"
+geometryName = "grnbal2.xsi" 
+wpnName = "Teleport"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+
+wpnPriority = 3
+wpnCategory = "SPECIAL"
+isAssault = 0
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 60
+objectClass = "apsnpxtrb2" //"appakrk2"
+

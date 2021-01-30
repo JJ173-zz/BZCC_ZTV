@@ -1,0 +1,33 @@
+//alternate falcon/thruster combo
+
+[WeaponClass]
+classLabel = "imagelauncher"
+
+geometryName = "snipback1.xsi"
+geometryScale = 0.12
+
+ordName = "falcrkt"
+wpnName = "Falcon Rkt"
+fireSound = "gatst03.wav" 
+wpnReticle = "gshotgun" 
+wpnCategory = "HAND"
+
+isFlying = 1
+wpnPriority = 1
+isAssault = 1
+altName = "gabrnic"
+aiRange = 200
+
+[LauncherClass]
+lockRange = 220.0 
+shotDelay = 1.5
+lockDelay = 0.5
+coneAngle = 0.05
+lockingReticle = "gshadow.A"
+lockingSound = "" //"lock01.wav"
+lockedReticle = "gshadow.B"
+lockedSound = "lock02.wav"
+targetCount = 3
+targetReticle = "gshadow.1"
+
+

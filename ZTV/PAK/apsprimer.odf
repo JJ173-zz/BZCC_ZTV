@@ -1,0 +1,40 @@
+[GameObjectClass]
+geometryName = "primerslg3.xsi"
+classLabel = "servicepod"
+scrapCost = -1 // integers only
+scrapValue = 0
+BuildTime = 4
+maxHealth = 150
+maxAmmo = 0
+unitName = "Primer Slag"
+aiName = "PowerUpProcess"
+
+// if shot:
+explosionName = "xscrprxpl"
+
+effectHard1 = "HP_emit_1" 
+effectName1 = "apsprimer.smoke"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[ServicePowerupClass]
+serviceUp = -100
+
+[Smoke]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.7 0.1" 
+emitVariance = "1.0 1.0 1.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 1.5 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 70"
+finishColor = "20 20 20 0"
+startRadius = 0.9 
+finishRadius = 3 
+animateTime = 1.5 
+rotationRate = 3.0

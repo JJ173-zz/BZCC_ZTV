@@ -1,0 +1,20 @@
+[GameObjectClass]
+geometryName = "apserv50.xsi"
+geometryScale = 0.5
+classLabel = "servicepod"
+scrapCost = 2
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 0
+unitName = "Service Pod"
+aiName = "PowerUpProcess"
+
+lightHard1 = "light2"
+lightName1 = "omniblue"
+
+[PowerUpClass]
+soundPickup = "pickup01.wav"
+soundReject = "reject.wav"
+
+[ServicePowerupClass]
+serviceUp = 750 // 1500

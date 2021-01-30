@@ -1,0 +1,18 @@
+[WeaponClass]
+classLabel = "mortar"
+geometryScale = 0.12
+wpnName = "Fire Bomb"
+ordName = "fbomkick"
+
+//wpnIcon = "wire_igsatc1.tga"
+fireSound = "bounce.wav"
+wpnReticle = "gproxmin"
+wpnLadder = "gmortar.L0"
+wpnPriority = 3
+wpnCategory = "HAND"
+isAssault = 1
+localAmmo = 2 
+
+
+[CannonClass]
+shotDelay = 10.0

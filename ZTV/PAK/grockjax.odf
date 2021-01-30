@@ -1,0 +1,15 @@
+[WeaponClass]
+classLabel = "cannon"
+altName = "gjax"
+ordName = "rockjax"
+wpnName = "Rock Jax"
+fireSound = "xlands.wav" // "jax01.wav"
+wpnReticle = "gjax.0"
+wpnCategory = "SPEC"
+isAssault = 0
+aiRange = 600
+
+[CannonClass]
+shotDelay = 3.0 // 1.5
+shotVariance = 0.5 // 0.2
+shotPitch = 0.25 //.5 //1.0 //3.0

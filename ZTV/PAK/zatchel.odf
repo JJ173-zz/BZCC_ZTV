@@ -1,0 +1,17 @@
+[GameObjectClass]
+classLabel = "satchel"
+//geometryName = "igsatc00.xsi"
+geometryName = "dr-tbmb6.xsi"
+geometryScale = 0.12
+scrapCost = 0
+scrapValue = 0
+maxHealth = 150
+maxAmmo = 1
+unitName = "Timed Chg"
+
+[BuildingClass]
+soundAmbient = "switch01.wav"
+
+[MineClass]
+lifeSpan = 10.0
+xplBlast = "xpak2xpl" // "xsatxpl"

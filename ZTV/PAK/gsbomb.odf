@@ -1,0 +1,20 @@
+[WeaponClass]
+classLabel = "mortar"
+ordName = "sbomb"
+wpnName = "Bounce Bomb"
+fireSound = "thund02d.wav"
+wpnReticle = "gmortar"
+wpnLadder = "gmortar.L0"
+wpnPriority = 2
+wpnCategory = "GUN"
+isassault = 1
+
+aiRange = 140.0
+
+[CannonClass]
+shotDelay = 7.0
+salvoCount = 6 
+salvoDelay = 1.1 
+shotVariance = 0.9
+
+shotPitch = -0.2   //-1.58 // straight down

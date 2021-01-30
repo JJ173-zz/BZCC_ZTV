@@ -1,0 +1,137 @@
+[GameObjectClass]
+geometryName = "ivdact_ic1.xsi"
+geometryScale = 0.6
+cockpitName = "ivcons_cockpit.xsi"
+classLabel = "aircraft"
+scrapCost = 20
+customCost = 40
+scrapValue = 0
+buildTime = 2
+customTime = 15
+maxHealth = 1200
+maxAmmo = 25 // 50
+addAmmo = 2 
+addHealth = 0.5
+
+unitName = "_Dactyl"
+heatSignature = 1.0
+imageSignature = 1.0
+radarSignature = 0.0
+isAssault = 0
+armorClass = L
+//canCollide = 1
+canDetect = 1 
+canInteract = 1
+canSnipe = 1
+ 
+collisionRadius = 1.0
+//boxCollide = 1
+
+lightHard1 = "hp_light_1"
+lightName1 = "omniblue"
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivdact_ic1.render"
+
+weaponMask = 00001
+
+weaponHard1 = "HP_GUN_2"
+visualHard1 = "HP_GUN_2"
+weaponName1 = "gflux_ic1" 
+weaponAssault1 = 1
+
+weaponHard2 = "HP_GUN_1"
+visualHard2 = "HP_GUN_1"
+weaponName2 = "gfbm_ic1" 
+weaponAssault2 = 0
+
+weaponHard3 = "HP_CANNON_1"
+visualHard3 = "HP_CANNON_1"
+weaponName3 = "gspodic" 
+weaponAssault3 = 0
+
+//weaponHard4 = "HP_ROCKET_1"
+//weaponName4 = "gbldheal" 
+//weaponAssault4 = 1
+
+//weaponHard2 = "HP_SPECIAL_1"
+//weaponName2 = "iggspormine" //  ground spores
+//weaponAssault2 = 0
+
+[CraftClass]
+weaponPitch = 0.4
+rangeScan = 450.0f
+periodScan = 3.0f
+velocJam = 0.0f
+engageRange = 0
+
+braccelFactor = 0.03
+velFactor = 0.2
+steerFactor = 1.5
+omegaFactor = 0.2
+strafeFactor = 0.2
+
+avoidSpeed = 30;
+topSpeed = 30;
+
+[AirCraftClass]
+velocSet(L) = -35.0 // minimum velocity
+velocSet(M) = 0.0 // cruising velocity
+velocSet(H) = 38.0 // maximum velocity
+accelThrust = 20  // thrust acceleration
+accelBrake = 30 // 10.0 // brake acceleration
+accelDrag = 60 // 60.0 // drag acceleration -- affects sliding sideways
+// mouse as rudder
+omegaSteer(L) = 3.0  // 0.2 // steer turn rate at minimum
+omegaSteer(M) = 5.0  // 0.7 // steer turn rate at cruising
+omegaSteer(H) = 1.0 // 1.0 // steer turn rate at maximum
+// strafe affecting rudder
+omegaStrafe(L) = 0.1 // airbrake turn rate at minimum
+omegaStrafe(M) = 0.5 // airbrake turn rate at cruising
+omegaStrafe(H) = 0.5 // airbrake turn rate at maximum
+
+//this affects steering but not sliding
+alphaSteer = 0.8 // steering angular acceleration
+// more = more turning from strafing
+alphaStrafe = 0.1 // 0.01 // airbrake angular acceleration
+
+minAltitude = 10.0 // no effect? affects takeoff jump
+maxAltitude = 100.0 // maximum altitude no effect?
+alphaLevel = 8 // 10.0 // how fast you can change pitch/ overall manuver
+
+// this affects sliding sideways, 20 makes it jitter some tho 
+alphaDamp = 15 // 12 // damping angular acceleration
+//a low values under 5 get insanely tippy
+
+pitchPitch = 1.5 // 0.7 // maximum pitch angle
+rollSteer = 0.2 // 0.5 // maximum roll angle from steering
+rollStrafe = 0.2 //0.5 // maximum roll angle from airbraking
+// has imlications in deploy off map avs
+
+timeDeploy = 1.0 // 2.0 // time to deploy
+timeUndeploy = 2.0 // 2.0 // time to undeploy
+
+soundThrust = "dacteng3.wav" // "ienge.wav"
+
+soundDeploy = "scifi_lift.wav"    // "avapce2.wav"
+soundUndeploy = "scifi_land.wav"  // "avapce0.wav" 
+
+soundBrake = "dacteng1.wav" // "iengf.wav"
+
+[Render]
+renderBase = "draw_multi"
+renderCount = 1
+renderName1 = "ivdact_ic1.contrail"
+
+[Contrail]
+renderBase = "draw_trail"
+textureName = "trail2.tga"
+textureBlend = "one one modulate"
+startColor = "120 110 140 110"
+finishColor = "100 100 140 0"
+startRadius = 2.0
+finishRadius = 0.8 
+segmentTime = 0.6 // 3.0  // time each segment animates
+segmentVariance = "0.1 0.1 0.1"
+animateTime = 0.3
+textureRate = 0.05

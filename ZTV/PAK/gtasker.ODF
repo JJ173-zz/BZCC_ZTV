@@ -1,0 +1,16 @@
+[WeaponClass]
+classLabel = "dispenser"
+wpnName = "Tasker"
+fireSound = "itug03.wav"
+wpnReticle = "gcomet.0"
+wpnCategory = "ROCKET"
+aiRange = 200
+isAssault = 0
+flashName = xpmlaunc.shock
+
+localAmmo = 1001 // 1 //needs to be amount of units capacity that you're dropping
+
+[DispenserClass]
+shotDelay = 60.0
+objectClass = "tvtasker"
+

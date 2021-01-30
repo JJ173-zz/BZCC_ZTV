@@ -1,0 +1,17 @@
+[WeaponClass]
+classLabel = "dispenser"
+//geometryName = "grnbal2.xsi" 
+wpnName = "Wing Pack"
+ordName = NULL
+
+fireSound =  "spawn.wav"
+wpnReticle = "gproxmin"
+wpnPriority = 3
+wpnCategory = "GUN" //"SPECIAL"
+isAssault = 1
+// localAmmo = 6
+
+[DispenserClass]
+shotDelay = 15
+objectClass = "aphoveric"
+

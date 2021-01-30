@@ -1,0 +1,8 @@
+[MPVehicles]
+xsi1 = "ivscout00.xsi"
+cfg1 = "ivscout"
+Description1 = "Scout"
+
+//xsi2 = "dr-read4.xsi"
+//cfg2 = "ivscout"
+//Description2 = "Read Me"

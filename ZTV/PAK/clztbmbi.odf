@@ -1,0 +1,27 @@
+[OrdnanceClass]
+classLabel = "bouncebomb" 
+shotGeometry = "cluzterbi.xsi"
+
+xplGround = "xclztixpl"
+xplVehicle = "xclztixpl"
+xplBuilding = "xclztixpl"
+xplExpire = "xclztixpl"
+
+shotSound = "crckt02.wav"
+
+
+ammoCost = 25
+lifeSpan = 5
+shotSpeed = 10.0
+
+damageValue(N) = 600
+damageValue(L) = 500
+damageValue(H) = 300
+damageValue(S) = 500
+damageValue(D) = 500
+damageValue(A) = 500
+
+[BounceBombClass]
+soundBounce = "mdmort03.wav"
+bounceRatio = 0.6
+

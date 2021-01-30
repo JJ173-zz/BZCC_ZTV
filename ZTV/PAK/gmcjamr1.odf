@@ -1,0 +1,23 @@
+[WeaponClass]
+geometryName = "snipback1.xsi"
+geometryScale = 0.12
+
+classLabel = "mortar"
+ordName = "mcjamkick1"
+
+wpnName = "Shield Jammer"
+
+altName = "gabrnic3"
+
+fireSound = "jamkick.wav"
+wpnReticle = "gmcurmin"
+
+wpnCategory = "HAND"
+isAssault = 1
+
+LocalAmmo = 1
+
+
+[CannonClass]
+shotDelay = 5.0
+

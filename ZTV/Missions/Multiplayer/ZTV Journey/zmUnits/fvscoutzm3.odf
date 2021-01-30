@@ -1,0 +1,55 @@
+[GameObjectClass]
+classLabel = "fvscout"
+scrapCost = 0
+customCost = 0
+buildTime = 1.0
+customTime = 1.0
+maxHealth = 1400
+addHealth = 0.1
+aiName = "RocketTankFriend"
+aiName2 = "RocketTankEnemy"
+canSnipe = 0
+
+/////// weapons ///////////////////
+
+weaponMask = 00011
+weaponHard1 = "HP_CANNON_1"
+weaponName1 = "gsplasma_c" // "gsonic_c"
+weaponAssault1 = 0
+
+weaponHard2 = "HP_SPECIAL_1"
+weaponName2 = "gjump4"
+weaponAssault2 = 1
+
+//////////////////////////////////
+
+[CraftClass]
+periodScan = 3.0f
+engageRange = 450
+
+// AI Handling Info -- 
+// Enhanced by Zero Angel 
+braccelFactor = 0.008f; // .004 Strafe 'width' 
+strafeFactor = 0.9f; // .9 How often this unit will change strafe direction 
+steerFactor = 1.9f; // Low values = slow AI steer 
+omegaFactor = 0.20f; // Target lead 'smoothing', low values = tighter lead tracking but also aim wobble 
+velFactor = 0.05f; // Low value = aggressive back/forward movement, High = smoother 
+
+avoidSpeed = 40;
+topSpeed = 40;
+
+// COMBAT MODE /////////////////////
+
+[HoverCraftClass]
+accelThrust = 40.0 //acceleration [50]
+accelJump = 30.0 // [20]
+
+setAltitude = 1.7 // 1.5 // how high off the ground
+
+pitchPitch = .2 // 0.12 //nose up [.25]
+pitchThrust = .2 // 0.12 //nose down [.1]
+
+omegaSpin = 4.5 //spinning in place speed [4.0]
+omegaTurn = 4.0 //turning while moving speed [4.5]
+
+[MorphTankClass]

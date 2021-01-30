@@ -1,0 +1,36 @@
+[Start]
+scrapCount = 40
+consClass = "fvscons"
+scavClass = "fvscav"
+
+[Cheat]
+moneyAmount = 20
+moneyDelay = 5
+
+
+[plan1]
+plantype = "buildminimums"
+planpriority = 200
+buildtype1 = "fvscons"
+buildcount1 = 1
+
+[plan2]
+plantype = "basebuildminimums"
+planpriority = 194
+buildtype1 = "fbspirz"
+buildloc1 = "spirea1"
+buildtype2 = "fbspirz"
+buildloc2 = "spirea2"
+buildtype3 = "fbspirz"
+buildloc3 = "spirea3"
+buildtype4 = "fbspirz"
+buildloc4 = "spirea4"
+buildtype5 = "fbspirz"
+buildloc5 = "spirea5"
+buildtype6 = "fbspirz"
+buildloc6 = "spirea6"
+buildtype7 = "fbspirz"
+buildloc7 = "spirea7"
+buildtype8 = "fbspirz"
+buildloc8 = "spirea8"
+ContinueEvenIfFail = true

@@ -1,0 +1,45 @@
+[OrdnanceClass]
+classLabel = "thermalmissile"
+
+shotGeometry = "sgstng00.xsi"
+shotSound = "ashield01.wav"
+
+renderName = "disdac.render"
+
+xplGround = "xdisdacg"
+xplVehicle = "xdisdacc"
+xplBuilding = "xdisdacg"
+
+ammoCost = 3
+lifeSpan = 4.5 
+shotSpeed = 50.0
+
+damageValue(N) = 150 // 2.0 // none
+damageValue(L) = 80 // 5 // light
+damageValue(H) = 20 // 1 // heavy
+
+damageValue(S) = 400 // standard
+damageValue(D) = 400 // deflection
+damageValue(A) = 600 // absorbtion
+
+
+[MissileClass]
+TeamFilter = 3  // 0 = targets all teams, 1 = targets same team only, 2 = targets only allies, 3 = targets only enemies, 4 = targets not same team
+omegaTurn = 50 //45 // 30.0
+
+[ThermalMissileClass]
+coneAngle = 18 // 10
+
+[Render]
+renderBase = "draw_bolt"
+textureName = "plasma.tga" //"trail2.tga"
+textureBlend = "one one modulate"
+startColor = "230 100 0 140"  //100 alpha
+finishColor = "100 90 80 0"
+startRadius = 0.2    //0.3
+finishRadius = 0.03  //0.05
+segmentLength = 2.0  //3.0 
+segmentVariance = "0.2 0.2 0.2 "
+animateTime = 2.5 //3
+textureRate = 0.01
+

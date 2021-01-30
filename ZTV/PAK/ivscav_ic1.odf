@@ -1,0 +1,98 @@
+[GameObjectClass]
+geometryName = "scrapmobile7.xsi"
+geometryScale = 2.0 // 2.5
+cockpitName = "ivscav_cockpit.xsi"
+classLabel = "scavenger"
+scrapValue = 0
+scrapCost = 60
+buildTime = 5.0 //
+maxHealth = 20000
+addHealth = 0
+maxAmmo = 0
+explosionName = "xiccbxpl"
+weightInTons = 1E6
+powerCost = 6
+
+addAmmo = 0.25 // .5  // this controls scrap production rate
+
+unitName = "Mobile Breeder"
+
+aiName = "ScavProcess"
+aiName2 = "ScavProcess"
+
+heatSignature = 5.0
+imageSignature = 3.0
+radarSignature = 1.0
+isAssault = 0
+
+armorClass = L
+
+requireCount = 0
+boxCollide = 1
+
+cansnipe = 0
+needPilot = 0 // 0 means it wont pick you up
+
+lightHard1 = "hp_light_1"
+lightName1 = "spotblue"
+lightHard2 = "hp_light_2"
+lightName2 = "spotblue" 
+
+effectHard1 = "hp_emit_1"
+effectName1 = "ivmbreedr.render"
+effectHard2 = "hp_emit_2"
+effectName2 = "ivmbreedr.render"
+effectHard3 = "hp_emit_3"
+effectName3 = "ivmbreedr.render"
+effectHard4 = "hp_emit_4"
+effectName4 = "ivmbreedr.render"
+
+[CraftClass]
+TeamTransferrable = false
+
+rangeScan = 450.0
+periodScan = 1.0
+velocJam = 0.0
+
+braccelFactor = 0.09
+velFactor =	0.3
+steerFactor = 1.5
+omegaFactor = 0.1
+
+[TrackedVehicleClass]
+velocForward = 3 
+velocReverse = 2
+accelThrust = 20 
+omegaSpin = 0.2
+
+engineSound= "accelhum.wav" // "irecy01.wav"
+treadSound = "accelhum.wav" // "irecy01b.wav"
+
+[TrackedDeployableClass]
+timeDeploy = 5.0
+timeUndeploy = 5.0
+soundDeploy = "irecy03.wav"
+soundUndeploy = "trundepl.wav"
+
+[ScavengerClass]
+soundPickup = "suck.wav"
+scrapHold =  5 // 0 will stop production, 30 is nice capture bonus
+deployClass = ""  //"ibscav"
+
+[Render]
+renderBase = "draw_twirl_trail"
+emitDelay = 0.1 
+emitDelayVar = 0.03
+emitVelocity = "0.0 0.0 4.0" 
+emitVariance = "4.0 4.0 4.0"
+emitInherit = "0.3 0.3 0.3"
+emitLife = 6.0 
+textureName = "smoke.tga"
+textureBlend = "srcalpha invsrcalpha modulatealpha"
+startColor = "60 60 60 90"
+finishColor = "20 20 20 0"
+startRadius = 2
+finishRadius = 5.0
+animateTime = 6.0
+rotationRate = 3.0
+

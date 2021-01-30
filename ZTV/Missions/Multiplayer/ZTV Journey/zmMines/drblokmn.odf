@@ -1,0 +1,33 @@
+[GameObjectClass]
+geometryName = "morock01.xsi"
+classLabel = "magnet"
+scrapCost = 0
+scrapValue = 0
+maxHealth = 0
+maxAmmo = 1
+unitName = "Boulder"
+addAmmo = 1
+addHealth = .5
+//explosionName = "drpflxpl"
+//xplExpire = "drpflxpl"
+
+heatSignature = 0.00
+imageSignature = 0.0
+radarSignature = 0.0
+canDetect = 0
+canInteract = 1
+canCollide = 1
+armorClass = H 
+
+[MineClass]
+lifeSpan = 1800.0
+
+[MagnetMineClass]
+triggerDelay = 1.0
+fieldRadius = 20.0
+objPushCenter = 100.0
+objPushEdge = 100.0
+objDrag = 0.5
+ordPushCenter = 200.0
+ordPushEdge = 500.0
+ordDrag = 1.5
