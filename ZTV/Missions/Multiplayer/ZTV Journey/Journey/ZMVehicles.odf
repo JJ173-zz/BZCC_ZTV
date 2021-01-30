@@ -1,9 +1,42 @@
-ivscout00.fbx ivscout Default ISDF
-ivtank00.fbx ivtankdm Sabre
-ivmbik00.fbx ivmbikedm Jackal
-ivmisl00.fbx ivmisldm Avenger
-ivatnk00.fbx ivatankdm Bull Dog
-ivrckt00.fbx ivrcktdm Rocket Tank
-ivwalk_skel.fbx ivwalkdm Attila LM
-ispilo_rifle_skel.fbx ispilo ISDF Pilot
-ivturr00.fbx ivturr Rattler
+//
+// ZMVehicles.odf - listing of multiplayer vehicles usable in BZ2
+//
+//
+// Tip: do not put .odf extension on cfg# = "" entries; added automatically on loading
+// 
+[MPVehicles]
+xsi1 = "ivscout00.fbx"
+cfg1 = "ivscout"
+Description1 = "Default ISDF"
+
+xsi2 = "ivtank00.fbx"
+cfg2 = "ivtankdm"
+Description2 = "Sabre"
+
+xsi3 = "ivmbik00.fbx"
+cfg3 = "ivmbikedm"
+Description3 = "Jackal"
+
+xsi4 = "ivmisl00.fbx"
+cfg4 = "ivmisldm"
+Description4 = "Avenger"
+
+xsi5 = "ivrckt00.fbx"
+cfg5 = "ivrcktdm"
+Description5 = "Rocket Tank"
+
+xsi6 = "ivatnk00.fbx"
+cfg6 = "ivatankdm"
+Description6 = "Bulldog"
+
+xsi7 = "ivwalk_skel.fbx"
+cfg7 = "ivwalkdm"
+Description7 = "Attila LM"
+
+xsi8 = "ivturr00.fbx"
+cfg8 = "ivturrdm"
+Description8 = "Rattler"
+
+xsi9 = "ispilo_rifle_skel.fbx"
+cfg9 = "ispilo"
+Description9 = "ISDF Pilot"
