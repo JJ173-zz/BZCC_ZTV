@@ -22,7 +22,6 @@ ivar13 = 1 // 1 = scion cpu enemy
 ivar16 = 0 // keep sniper rifle on pilot respawn
 ivar23 = 0 // Default scrap cheat for humans
 ivar24 = 2 // Default scrap cheat for CPU
-ivar25 = 1 // in MPI, if set to 1, will lock the CPU's team to whatever was set by ivar13
 
 // Svar0 (.bzn filename, used to look for an .inf file like this)
 // *not* read in, as that would cause an infinite loop

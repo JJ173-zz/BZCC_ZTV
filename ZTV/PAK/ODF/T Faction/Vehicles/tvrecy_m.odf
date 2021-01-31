@@ -1,0 +1,14 @@
+[GameObjectClass]
+classLabel = "tvrecy"
+
+[CraftClass]
+
+[TrackedVehicleClass]
+
+[TrackedDeployableClass]
+
+[DeployBuildingClass]
+
+[RecyclerVehicleClass]
+
+[Lod1]
