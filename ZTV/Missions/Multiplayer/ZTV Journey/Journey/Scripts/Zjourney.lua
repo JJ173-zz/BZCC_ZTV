@@ -6,14 +6,43 @@
 
 assert(load(assert(LoadFile("_requirefix.lua")),"_requirefix.lua"))();
 
+-- DEBUG
+local DEBUG = true;
+
 -- Scripts
 local _ZTVTauntLogic = require('_ZTVTauntLogic');
+
+-- Modules
+require('_DLLUtils');
 
 -- Objective Text
 local _obj1 = "Commander, we need a base, and we need it quickly!";
 
 -- Timers 
 local _RockslideTimer = 20 * 60 -- 20 minutes.
+
+-- Network Variables
+local AIPType0 = 0; 
+local AIPType1 = 1; 
+local AIPType2 = 2;
+local AIPType3 = 3; 
+local AIPTypeA = 4; 
+local AIPTypeL = 5; 
+local AIPTypeS = 6;
+local MAX_AIP_TYPE = 7;
+
+local AIPTypeExtensions = '0123als';
+
+-- NETLIST VARS
+local NETLIST_MPVehicles = 0;
+local NETLIST_StratStarting = 1;
+local NETLIST_Recyclers = 2;
+local NETLIST_AIPs = 3;
+local NETLIST_Animals = 4;
+local NETLIST_STCTFGoals = 5;
+local NETLIST_IAHumanRecyList = 6;
+local NETLIST_IACPURecyclers = 7;
+local NETLIST_IAAIPs = 8;
 
 local MissionVars = {
 	TPS = 0,
@@ -28,12 +57,18 @@ local MissionVars = {
 	MissionState = 0,
 	DropshipDoorSoundTimer = 0,
 	RockslideTimer = 0,
+	FirstAIPSwitchTime = 0,
+	AssaultCounter = 0,
+	LastCPUPlan = 0,
 
 	-- Strings
 	TempMsgString,
+	HumanTeamRace,
 
 	-- Bools
-	GameOver,
+	GameOver = false,
+	CheckedSVar3 = false,
+	PastAIP0 = false,
 
 	-- Tables
 	TeamPos = {},
@@ -43,6 +78,7 @@ local MissionVars = {
 
 	-- MISSION RELATED VARIABLES
 	HumanRecy,
+	CPURecy,
 	Dropship,
 	MainPlayer,
 	Nav1,
@@ -76,7 +112,50 @@ function InitialSetup()
 end
 
 function AddObject(h)
+	local ODFName = GetCfg(h);
+	local ObjClass = GetClassLabel(h);
 
+	if (MissionVars.TurnCounter < 2) then
+		if (GetTeamNum(h) == MissionVars.StratTeam) then
+			print(ObjClass);
+
+			if (ObjClass == "CLASS_RECYCLER") then
+				if (not MissionVars.PastAIP0) then
+					MissionVars.PastAIP0 = true;
+
+					local stratchoice = MissionVars.TurnCounter % 2;
+
+					print("Value of stratchoice: " .. stratchoice);
+
+					if (stratchoice == 0) then
+						SetCPUAIPlan(AIPType1);
+					elseif (stratchoice == 1) then
+						SetCPUAIPlan(AIPType2);
+					elseif (stratchoice == 2) then
+						SetCPUAIPlan(AIPType3);
+					end
+				end
+			elseif ((ObjClass == "CLASS_ASSAULTTANK") or (ObjClass == "CLASS_WALKER")) then
+				MissionVars.AssaultCounter = MissionVars.AssaultCounter + 1;
+			end
+		end
+	end
+
+	if (not MissionVars.PastAIP0 and MissionVars.FirstAIPSwitchTime > 0 and MissionVars.TurnCounter > MissionVars.FirstAIPSwitchTime) then
+		local stratchoice = MissionVars.TurnCounter % 2;
+
+		print("Value of stratchoice: " .. stratchoice);
+
+		if (stratchoice == 0) then
+			SetCPUAIPlan(AIPType1);
+		elseif (stratchoice == 1) then
+			SetCPUAIPlan(AIPType2);
+		elseif (stratchoice == 2) then
+			SetCPUAIPlan(AIPType3);
+		end
+
+		MissionVars.PastAIP0 = true;
+	end
 end
 
 function DeleteObject(h)
@@ -306,6 +385,36 @@ function HandleGameTime()
 	end
 end
 
+function SetCPUAIPlan(Type)
+	if (not MissionVars.CheckedSVar3) then
+		MissionVars.CheckedSVar3 = true;
+		local pContents = GetCheckedNetworkSvar(3, NETLIST_AIPs);
+
+		if ((pContents == nil) or (pContents == "")) then
+			MissionVars.CustomAIPNameBase = "stock_";
+		else 
+			MissionVars.CustomAIPNameBase = pContents;
+		end
+	end
+
+	if ((Type < 0) or (Type >= MAX_AIP_TYPE)) then
+		Type = AIPType3;
+	end
+
+	if (((Type > AIPType3) and (MissionVars.CPUCommBunkerCount == 0)) and (MissionVars.LastCPUPlan <= AIPType3)) then
+		return;
+	end
+
+	local AIPFile = MissionVars.CustomAIPNameBase .. MissionVars.CPUTeamRace .. MissionVars.HumanTeamRace .. string.sub(AIPTypeExtensions, Type + 1, Type + 1) .. ".aip";
+	SetAIP(AIPFile, MissionVars.CPUTeamNumber);
+
+	MissionVars.LastCPUPlan = Type;
+
+	if (not MissionVars.setFirstAIP) then
+		MissionVars.setFirstAIP = true;
+	end
+end
+
 function Update()
 	MissionVars.TurnCounter = MissionVars.TurnCounter + 1;
 
@@ -329,16 +438,41 @@ function Start()
 	local PlayerEntryH;
 	local LocalTeamNum = GetLocalPlayerTeamNumber();
 
---	PlayerEntryH = GetPlayerHandle();
---	if IsAround(PlayerEntryH) then
---		RemoveObject(PlayerEntryH);
---	end
+	--	PlayerEntryH = GetPlayerHandle();
+	--	if IsAround(PlayerEntryH) then
+	--		RemoveObject(PlayerEntryH);
+	--	end
 
---	if ImServer() or not IsNetworkOn() then
---		PlayerH = SetupPlayer(LocalTeamNum);
---		SetAsUser(PlayerH, LocalTeamNum);
---		AddPilotByHandle(PlayerH);
---	end
+	--	if ImServer() or not IsNetworkOn() then
+	--		PlayerH = SetupPlayer(LocalTeamNum);
+	--		SetAsUser(PlayerH, LocalTeamNum);
+	--		AddPilotByHandle(PlayerH);
+	--	end
+
+	MissionVars.FirstAIPSwitchTime = GetVarItemInt("network.session.ivar26");
+
+	if (MissionVars.FirstAIPSwitchTime == 0) then
+		MissionVars.FirstAIPSwitchTime = 180;
+	elseif (MissionVars.FirstAIPSwitchTime > 0) then
+		MissionVars.FirstAIPSwitchTime = GameTPS;
+	end
+
+	-- Set the HumanTeamRace variable..
+	MissionVars.HumanTeamRace = GetRaceOfTeam(MissionVars.StratTeam);
+
+	-- Set the CPUTeamRace variable..
+	local ShellRace = GetVarItemInt("network.session.ivar13");
+
+	print(ShellRace .. " " .. string.char(ShellRace));
+	
+	if (ShellRace > 0) then
+		MissionVars.CPUTeamRace = string.char(ShellRace);
+	else
+		MissionVars.CPUTeamRace = GetRaceOfTeam(MissionVars.CPUTeamNumber);
+	end
+
+	-- Spawn the ZTV AI Team.
+	SpawnZTVAITeam();
 
 	-- END IMPORTANT SERVER STUFF --
 
@@ -346,10 +480,43 @@ function Start()
 	MissionVars.Dropship = GetHandle("PlayerDropship");
 	MissionVars.HumanRecy = GetHandle("HumanRecy");
 
+	-- Open the dropship doors.
 	SetAnimation(MissionVars.Dropship, "deploy", 1);
 
 	-- Make sure the dropship emitters are masked.
 	MaskEmitter(MissionVars.Dropship, 0);
+end
+
+function SpawnZTVAITeam()
+	-- Debug? Okay, time to ally teams.
+	if (DEBUG) then
+		print("Current Race of AI Team: (" .. MissionVars.CPUTeamRace .. ")");
+		Ally(MissionVars.StratTeam, MissionVars.CPUTeamNumber);
+	end
+
+	-- Spawn the CPU Recycler if it doesn't yet exist.
+	if (GetObjectByTeamSlot(MissionVars.CPUTeamNumber, DLL_TEAM_SLOT_RECYCLER) == nil) then
+		local startRecyODF = nil;
+		local pContents = GetCheckedNetworkSvar(12, NETLIST_Recyclers);
+
+		if (pContents ~= nil and pContents ~= "") then
+			startRecyODF = pContents;
+		else
+			startRecyODF = MissionVars.CPUTeamRace .. "vrecycpu";
+		end
+
+		MissionVars.CPURecy = BuildObject(startRecyODF, MissionVars.CPUTeamNumber, "RecyclerEnemy");
+		SetRandomHeadingAngle(MissionVars.CPURecy);
+	end
+
+	-- Set the CPU Recycler to the first group.
+	SetGroup(MissionVars.CPURecy, 0);
+
+	-- Give the CPU Team 40 scrap to start.
+	SetScrap(MissionVars.CPUTeamNumber, 40);
+
+	-- Set first AIP.
+	SetCPUAIPlan(AIPType0);
 end
 
 function HandleMissionLogic() 
@@ -401,7 +568,8 @@ function HandleMissionLogic()
 				-- Remove marker from Nav1
 				SetObjectiveOff(MissionVars.Nav1);
 
-				-- Set AIP?
+				-- Give team 1 40 scrap.
+				AddScrap(1, 40);
 
 				-- Set timer for Rocksliders.
 				MissionVars.RockslideTimer = MissionVars.RockslideTimer + SecondsToTurns(_RockslideTimer);
