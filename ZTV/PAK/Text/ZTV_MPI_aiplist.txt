@@ -22,4 +22,3 @@
 //
 // The first field on each line must be 5 characters or longer, or the
 // line will be ignored.
-water ZTV Water World

@@ -17,7 +17,7 @@
 // The first field on each line must be 5 characters or longer, or the
 // line will be ignored.
 //
-ivrecy_zm2 ZTV
+//ivrecy_zm2 ZTV
 //ivrecy_mb Strat/MPI: Stock Repair Units
 //ivrecystb Strat/MPI: Automatic Repair Units
 //ivrecytb Strat/MPI: No Empty Scouts
