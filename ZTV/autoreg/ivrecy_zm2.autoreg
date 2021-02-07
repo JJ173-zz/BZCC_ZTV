@@ -1,0 +1,16 @@
+[RecyclerList]
+ODFName = "ivrecy_zm2"
+Description = "ZTV"
+
+[RecyclerListFFA]
+ODFName = "ivrecy_zm2"
+Description = "ZTV"
+
+[RecyclerListMPI]
+ODFName = "ivrecy_zm2"
+Description = "ZTV"
+
+[IAHumanRecyclerList]
+ODFName = "ivrecy_zm2"
+Description = "ZTV"
+
