@@ -18,20 +18,17 @@ ivar8 = 1 // Sync Join. 0=off, 1=on.
 ivar9 = 50 //unit limit, 0 is unlimited
 ivar11 = 1 // locks team play
 ivar12 = 1 // lock all to team 1
-ivar13 = 102 // 1 = scion cpu enemy
+ivar13 = 1 // 1 = scion cpu enemy
 ivar16 = 0 // keep sniper rifle on pilot respawn
 ivar23 = 0 // Default scrap cheat for humans
 ivar24 = 2 // Default scrap cheat for CPU
-ivar30 = 1 // Weapon Linking 0=off/1=on
 
 // Svar0 (.bzn filename, used to look for an .inf file like this)
 // *not* read in, as that would cause an infinite loop
 svar1 = "Meat Sacks" // Team name for team 1
 svar2 = "Zeederians" // Team name for team 2
-svar3 = "scionztv" // AIP name prefix
 svar4 = "ZMVehicles.odf"
 
 svar7 = "mpi" // Custom shell page to pull up [actually bzshell_multi_####.cfg]
 svar8 = "MPICheck.odf" // File to add to asset check
 svar9 = "RecyListMPI.txt" // Loads up a custom recycler list file
-svar11 = "Rogues" // Team name for a craft on team "group" 3 (teams 11..15)
