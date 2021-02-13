@@ -23,7 +23,7 @@ TileTexture10 = "dune3.tga"
 TileTexture11 = "dune4.tga"
 TileTexture12 = "dune5.tga"
 TileTexture13 = "dune6.tga"
-TileTexture14 = "mbextf01.tga"
+TileTexture14 = "treebark01.dds"
 TileTexture15 = "mbextf02.tga"
 TileTexture16 = "dune9.tga"
 
