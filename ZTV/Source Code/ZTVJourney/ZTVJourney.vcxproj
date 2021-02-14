@@ -71,12 +71,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\..\Debug\missions\</OutDir>
-    <IntDir>$(SolutionDir)\..\Build\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>..\..\missions</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\Debug\missions\redist</OutDir>
+    <OutDir>..\..\missions</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -98,7 +98,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>..\..\debug\battlezone2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\debug\battlezone2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
       <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
       <StripPrivateSymbols>$(OutDir)Redist\$(ProjectName).pdb</StripPrivateSymbols>
@@ -159,7 +159,8 @@
     <ClInclude Include="..\Shared\TRNAllies.h" />
     <ClInclude Include="..\Source\fun3d\ScriptUtils.h" />
     <ClInclude Include="StratInstant.h" />
-    <ClInclude Include="ZTVJourney.h" />
+    <ClInclude Include="ZTVMain.h" />
+    <ClInclude Include="ZTVMission.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Shared\DllBase.cpp" />
@@ -169,7 +170,8 @@
     <ClCompile Include="..\Shared\Taunts.cpp" />
     <ClCompile Include="..\Shared\TRNAllies.cpp" />
     <ClCompile Include="StratInstant.cpp" />
-    <ClCompile Include="ZTVJourney.cpp" />
+    <ClCompile Include="ZTVMain.cpp" />
+    <ClCompile Include="ZTVMission.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

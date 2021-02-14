@@ -39,13 +39,16 @@
     <ClInclude Include="..\Shared\TRNAllies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ZTVJourney.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StratInstant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\Source\fun3d\ScriptUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTVMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ZTVMission.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,10 +71,13 @@
     <ClCompile Include="..\Shared\TRNAllies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ZTVJourney.cpp">
+    <ClCompile Include="StratInstant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StratInstant.cpp">
+    <ClCompile Include="ZTVMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ZTVMission.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,13 +1,18 @@
-﻿  DllBase.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(445,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  DllBase.cpp
   DLLUtils.cpp
   StartingVehicles.cpp
   SubMission.cpp
   Taunts.cpp
   TRNAllies.cpp
-  ZTVJourney.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1274,5): warning MSB8012: TargetPath(C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.exe) does not match the Linker's OutputFile property value (C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1275,5): warning MSB8012: TargetExt(.exe) does not match the Linker's OutputFile property value (.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+  StratInstant.cpp
+  ZTVMain.cpp
+  ZTVMission.cpp
+C:\GitHub\BZCC_ZTV_GIT\ZTV\Source Code\ZTVJourney\ZTVMission.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
      Creating library Release\ZTVJourney.lib and object Release\ZTVJourney.exp
-DllBase.obj : error LNK2001: unresolved external symbol "class DLLBase * __cdecl BuildMission(void)" (?BuildMission@@YAPAVDLLBase@@XZ)
-MSVCRT.lib(exe_winmain.obj) : error LNK2001: unresolved external symbol _WinMain@16
-C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.dll : fatal error LNK1120: 2 unresolved externals
+  Generating code
+  0 of 131 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ZTVJourney.vcxproj -> C:\GitHub\BZCC_ZTV_GIT\ZTV\Source Code\ZTVJourney\..\..\missions\ZTVJourney.dll
