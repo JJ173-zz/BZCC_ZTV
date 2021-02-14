@@ -1,0 +1,13 @@
+﻿  DllBase.cpp
+  DLLUtils.cpp
+  StartingVehicles.cpp
+  SubMission.cpp
+  Taunts.cpp
+  TRNAllies.cpp
+  ZTVJourney.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1274,5): warning MSB8012: TargetPath(C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.exe) does not match the Linker's OutputFile property value (C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1275,5): warning MSB8012: TargetExt(.exe) does not match the Linker's OutputFile property value (.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library Release\ZTVJourney.lib and object Release\ZTVJourney.exp
+DllBase.obj : error LNK2001: unresolved external symbol "class DLLBase * __cdecl BuildMission(void)" (?BuildMission@@YAPAVDLLBase@@XZ)
+MSVCRT.lib(exe_winmain.obj) : error LNK2001: unresolved external symbol _WinMain@16
+C:\GitHub\BZCC_1.3_Code\Experimental\Missions\Release\ZTVJourney.dll : fatal error LNK1120: 2 unresolved externals
