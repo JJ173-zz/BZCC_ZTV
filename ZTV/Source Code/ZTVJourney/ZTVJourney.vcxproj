@@ -26,7 +26,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -76,6 +76,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Debug\missions\redist</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -116,6 +117,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\debug\battlezone2.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -147,8 +149,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\fun3d\ScriptUtils.h" />
-    <ClInclude Include="..\MPInstant\StratInstant.h" />
     <ClInclude Include="..\Shared\DllBase.h" />
     <ClInclude Include="..\Shared\DLLUtils.h" />
     <ClInclude Include="..\Shared\MPVehicles.h" />
@@ -157,16 +157,18 @@
     <ClInclude Include="..\Shared\SubMission.h" />
     <ClInclude Include="..\Shared\Taunts.h" />
     <ClInclude Include="..\Shared\TRNAllies.h" />
+    <ClInclude Include="..\Source\fun3d\ScriptUtils.h" />
+    <ClInclude Include="StratInstant.h" />
     <ClInclude Include="ZTVJourney.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\MPInstant\StratInstant.cpp" />
     <ClCompile Include="..\Shared\DllBase.cpp" />
     <ClCompile Include="..\Shared\DLLUtils.cpp" />
     <ClCompile Include="..\Shared\StartingVehicles.cpp" />
     <ClCompile Include="..\Shared\SubMission.cpp" />
     <ClCompile Include="..\Shared\Taunts.cpp" />
     <ClCompile Include="..\Shared\TRNAllies.cpp" />
+    <ClCompile Include="StratInstant.cpp" />
     <ClCompile Include="ZTVJourney.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

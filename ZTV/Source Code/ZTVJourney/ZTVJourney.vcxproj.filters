@@ -36,16 +36,16 @@
     <ClInclude Include="..\Shared\Taunts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\fun3d\ScriptUtils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\Shared\TRNAllies.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ZTVJourney.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\MPInstant\StratInstant.h">
+    <ClInclude Include="StratInstant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\fun3d\ScriptUtils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -71,7 +71,7 @@
     <ClCompile Include="ZTVJourney.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\MPInstant\StratInstant.cpp">
+    <ClCompile Include="StratInstant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
