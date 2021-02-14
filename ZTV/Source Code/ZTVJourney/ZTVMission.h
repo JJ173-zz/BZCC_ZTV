@@ -13,12 +13,17 @@ public:
 	virtual void Setup(void);
 	// Execution method that can be called upon from ZTVMain.
 	virtual void Execute(bool* pTeamIsSetUp, Handle* pRecyclerHandles);
+	// Based on player races and type, set AIPlan
+	void ExecuteMissionCode(void);
 
 	// Zeeder's handle that can be populated from ZTVMain.
 	Handle m_Zeeder;
 	// TV's handle that can be populated from ZTVMain.
 	Handle m_TimeVirus;
 private:
+	int
+		m_MissionState = 0;
+
 	bool
 		m_TVIdle,
 		m_ZeederIdle,

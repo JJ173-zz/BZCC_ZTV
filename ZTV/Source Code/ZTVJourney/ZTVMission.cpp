@@ -8,7 +8,10 @@
 
 ZTVMission::ZTVMission() { }
 
-void ZTVMission::Setup() { }
+void ZTVMission::Setup() 
+{ 
+	PrintConsoleMessage("ZTV Journey DLL - Converted to BZCC by AI_Unit.");
+}
 
 void ZTVMission::Execute(bool* pTeamIsSetUp, Handle* pRecyclerHandles)
 {
@@ -34,4 +37,12 @@ void ZTVMission::Execute(bool* pTeamIsSetUp, Handle* pRecyclerHandles)
 		// Make sure we don't loop
 		m_ZeederIdle = false;
 	}
+
+	// Handle the main portion of our mission code.
+	ExecuteMissionCode();
+}
+
+void ZTVMission::ExecuteMissionCode()
+{
+
 }

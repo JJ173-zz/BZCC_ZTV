@@ -23,6 +23,9 @@ char CustomAIPNameBase[256];
 // Make sure we mark whether we have checked SVar3 or not.
 bool CheckedSVar3 = false;
 
+// Check if we're in debug state
+bool DEBUG = true;
+
 /* Checkers */
 static int IsRecyclerODF(Handle h)
 {
@@ -295,6 +298,16 @@ void ZTVMain::Setup()
 
 	// How many players we got? 
 	m_NumHumans = CountPlayers();
+
+	// Debug..
+	if (DEBUG)
+	{
+		Ally(m_StratTeam, m_CPUTeamNumber);
+		Ally(m_CPUTeamNumber, m_StratTeam);
+	}
+
+	// Run ZTV Setup...
+	ZMission.Setup();
 }
 
 void ZTVMain::Execute(bool* pTeamIsSetUp, Handle* pRecyclerHandles)
