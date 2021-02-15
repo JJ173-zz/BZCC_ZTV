@@ -1985,7 +1985,7 @@ false
 independence [1] =
 1
 [GameObject]
-objClass = zjnypool
+objClass = mepool01
 seqno [1] =
 800e25
 team [1] =
@@ -2080,7 +2080,7 @@ false
 independence [1] =
 1
 [GameObject]
-objClass = zjnypool
+objClass = mepool01
 seqno [1] =
 800e26
 team [1] =
@@ -2175,7 +2175,7 @@ false
 independence [1] =
 1
 [GameObject]
-objClass = zjnypool
+objClass = mepool01
 seqno [1] =
 800e2c
 team [1] =
@@ -2308,7 +2308,7 @@ scrapTimer [1] =
 9.99827862e-01
 animStart [1] =
 false
-saveClass = zjnypool
+saveClass = mepool01
 saveMatrix [1] =
   right.x [1] =
 1.00000000e+00
@@ -2338,7 +2338,7 @@ saveTeam [1] =
 0
 saveSeqno [1] =
 3626
-saveLabel = unnamed_zjnypool
+saveLabel = mepool01
 saveName = Biometal Pool
 illumination [1] =
 1.00000000e+00
@@ -2629,7 +2629,7 @@ scrapTimer [1] =
 9.99892652e-01
 animStart [1] =
 false
-saveClass = zjnypool
+saveClass = mepool01
 saveMatrix [1] =
   right.x [1] =
 1.00000000e+00
@@ -2659,7 +2659,7 @@ saveTeam [1] =
 0
 saveSeqno [1] =
 3627
-saveLabel = unnamed_zjnypool
+saveLabel = mepool01
 saveName = Biometal Pool
 illumination [1] =
 1.00000000e+00
@@ -11217,7 +11217,7 @@ scrapTimer [1] =
 9.99933004e-01
 animStart [1] =
 false
-saveClass = zjnypool
+saveClass = mepool01
 saveMatrix [1] =
   right.x [1] =
 1.00000000e+00
@@ -11247,7 +11247,7 @@ saveTeam [1] =
 0
 saveSeqno [1] =
 3623
-saveLabel = unnamed_zjnypool
+saveLabel = mepool01
 saveName = Biometal Pool
 illumination [1] =
 1.00000000e+00
@@ -11348,7 +11348,7 @@ scrapTimer [1] =
 9.99935985e-01
 animStart [1] =
 false
-saveClass = zjnypool
+saveClass = mepool01
 saveMatrix [1] =
   right.x [1] =
 1.00000000e+00
@@ -11378,7 +11378,7 @@ saveTeam [1] =
 0
 saveSeqno [1] =
 3624
-saveLabel = unnamed_zjnypool
+saveLabel = mepool01
 saveName = Biometal Pool
 illumination [1] =
 1.00000000e+00
@@ -11479,7 +11479,7 @@ scrapTimer [1] =
 6.49931967e-01
 animStart [1] =
 false
-saveClass = zjnypool
+saveClass = mepool01
 saveMatrix [1] =
   right.x [1] =
 1.00000000e+00
@@ -11509,7 +11509,7 @@ saveTeam [1] =
 0
 saveSeqno [1] =
 3625
-saveLabel = unnamed_zjnypool
+saveLabel = mepool01
 saveName = Biometal Pool
 illumination [1] =
 1.00000000e+00
