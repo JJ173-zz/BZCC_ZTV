@@ -1,7 +1,7 @@
 [GameObjectClass]
 baseName = "ivmbike"
 geometryName = "ivmbik00.xsi"
-cockpitName = "ivmbike_cockpit.xsi"
+cockpitName = "ivmbik_cockpit.fbx"
 classLabel = "wingman"
 animCount = 3
 animName1 = "forward"

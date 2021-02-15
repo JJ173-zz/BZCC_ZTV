@@ -2,7 +2,7 @@
 
 classLabel = "aircraft"
 geometryName = "plane1a.xsi"
-geometryScale = 1.5 //1.2
+//geometryScale = 1.5 //1.2
 cockpitName = "ivstas_cockpit.xsi"
 scrapCost = 35
 customcost = 40
