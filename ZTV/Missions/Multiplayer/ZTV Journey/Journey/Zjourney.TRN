@@ -7,7 +7,12 @@ Width = 4096.0
 Depth = 4096.0
 Height = 100.0
 Tile = 1
-Color = "51 125 20 255"
+Color = "255 255 255 255"
+
+[NormalView]
+DiffuseColor = "178.5 178.5 178.5"
+SpecularColor = "10 10 10"
+SpecularPower = 1024.0
 
 [Texture]
 TileTexture1 = "mire.tga"
